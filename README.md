@@ -1,7 +1,5 @@
 # DarkeLIB
-The original DarkeLIB as used by Daybreak Ridge from 1999. i made some edits in 2005 wuth schroom and hellbringer.
-
-thrace and i hosted darkelib as daybreak ridge in 1998 with traer. This is a fork of parnells git repo.  Changes are being made to remove errors and make it easier to install.  This is also a place for wizards of the server we are working on to collaborate fixes and changes to the code.
+The original DarkeLIB as used by Daybreak Ridge from 1999. This is a fork of parnells git repo.  Changes are being made to remove errors and make it easier to install.  This is also a place for wizards of the server we are working on to collaborate fixes and changes to the code.
 
 # How to use
 The following commands were run on linux mint 19.3 in a terminal window.  For all of the sudo commands you will need to enter your password for each of them.  Also I would recommend taking note of where you run this, as it will install in the location that you are currently at in a folder called DarkeLIB-master.
@@ -25,6 +23,7 @@ chmod -R 777 *
 sed -i 's/libz-dev/libz-dev libicu-dev/' Dockerfile
 
 sudo docker-compose up
+
 
 
 Log in as parnell `password` to be admin
