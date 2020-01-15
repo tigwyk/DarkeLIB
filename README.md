@@ -22,8 +22,6 @@ cd DarkeLIB-master
 
 chmod -R 777 *
 
-sed -i 's/libz-dev/libz-dev libicu-dev/' Dockerfile
-
 sudo docker-compose up
 
 
