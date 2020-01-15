@@ -24,5 +24,5 @@ sudo docker-compose up
 
 
 
-Log in as parnell `password` to be admin
 
+Log in as parnell `password` to be admin
