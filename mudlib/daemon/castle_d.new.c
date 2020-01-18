@@ -1,8 +1,8 @@
 //  Castle update daemon...extremely simple.
 //  Diewarzau
-#include <rooms.h>
-#include <security.h>
-#include <daemons.h>
+#include "/adm/include/rooms.h"
+#include "/adm/include/security.h"
+#include "/adm/include/daemons.h"
 
 int no_dest(object item) {
   if(item->query_is_locker()) {

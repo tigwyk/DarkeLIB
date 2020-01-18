@@ -1,7 +1,7 @@
 //  Maxwell's UnderGround Mudlib
 //  Thief Guild Joining Room
 
-#include <under.h>
+#include "under.h"
 inherit "/wizards/maxwell/join_roo";
 
 void create() {

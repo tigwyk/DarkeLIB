@@ -2,10 +2,11 @@
 //    reboots.  Handles all functions concerning cloning the lockers and putting them in.
 //    DarkeLIB 0.1
 //    -Diewarzau 7/29/95
+// (TINY) Found info from Parnell copy of 1999 applying that code to here "SAVE_D fixed parnell 1999
 
-#include <std.h>
-#include <daemons.h>
-#include <security.h>
+#include "/adm/include/std.h"
+#include "/adm/include/daemons.h"
+#include "/adm/include/security.h"
 
 inherit "/std/vault";
 
@@ -21,7 +22,7 @@ void create() {
   
   ::create();
   set_property("storage room", 1);
-  if(!load_status) call_out("load_lockers", 2);
+  if(!load_status) delayed_call("load_lockers", 2);
   return;
 }
 
@@ -40,7 +41,7 @@ int receive_objects() {
   if(!::receive_objects()) return 0;
   if(load_status < 2) return 1;
   if(previous_object() && previous_object()->query_is_locker())
-    call_out("update_me", 1);
+    delayed_call("update_me", 1);// Logic added thanks to parnells old code added TINY 2020
   return 1;
 }
 

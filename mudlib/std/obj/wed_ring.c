@@ -3,7 +3,7 @@
 //	a wedding ring for the married ones of the mud
 //	created by Descartes of Borg august 1992
 
-#include <std.h>
+#include "/adm/include/std.h"
 
 inherit ARMOUR;
 void notify_jealous(int);

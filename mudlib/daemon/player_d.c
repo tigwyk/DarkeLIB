@@ -3,9 +3,9 @@
 //      a daemon to keep track of player progress
 //      created by Descartes of Borg 10 july 1993
 
-#include <objects.h>
-#include <save.h>
-#include <security.h>
+#include "/adm/include/objects.h"
+#include "/adm/include/save.h"
+#include "/adm/include/security.h"
 
 string *monsters;
 mapping *player_list;

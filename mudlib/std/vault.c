@@ -3,9 +3,9 @@
 //	A room with as many doors as exits will allow
 //	created by Descartes of Borg 23 february 1993
 
-#include <std.h>
-#include <clock.h>
-#include <daemons.h>
+#include "/adm/include/std.h"
+#include "/adm/include/clock.h"
+#include "/adm/include/daemons.h"
 
 inherit ROOM;
  

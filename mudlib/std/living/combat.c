@@ -7,11 +7,11 @@
 // Modified by Geldron 031096 to fix HeartBeat prob
 // Modified by Geldron 031096 to work with arena
 
-#include <std.h>
-#include <party.h>
-#include <daemons.h>
-#include <council.h>
-#include <balance.h>
+#include "/adm/include/std.h"
+#include "/adm/include/party.h"
+#include "/adm/include/daemons.h"
+#include "/adm/include/council.h"
+#include "/adm/include/balance.h"
 // Remove non-standard includes out of std files!
 // Security and stability risk.
 
@@ -493,7 +493,7 @@ if((int)attackers[0]->query_max_internal_encumbrance() <= 0)
 		switch(random(10)) {
 		case 0..1:
                     if (spec_com > 10) break;
-		    message("my_combat", "%^RED%^%^BOLD%^Special combat:%^RESET%^ Extra attack!",
+		    message("my_combat", "%^RED%^%^BOLD%^- Living Special combat:%^RESET%^ Extra attack!",
 		      me);
                     spec_com++;
                     num_attacks++;
@@ -501,21 +501,21 @@ if((int)attackers[0]->query_max_internal_encumbrance() <= 0)
 		    break;
 		case 2..6:
 		default:
-		    message("my_combat", "%^RED%^%^BOLD%^Special combat:%^RESET%^ Extra damage!",
+		    message("my_combat", "%^RED%^%^BOLD%^- Living Special combat:%^RESET%^ Extra damage!",
 		      me);
 		    if(mapp(damage))
 			damage = map_mapping(damage, (: ($3 + $2) :), 20 +
 			  skill-99 + random(skill-99));
 		    break;
 		case 7..8:
-		    message("my_combat", "%^RED%^%^BOLD%^Special combat:%^RESET%^ Extra critical!",
+		    message("my_combat", "%^RED%^%^BOLD%^-Living Special combat:%^RESET%^ Extra critical!",
 		      me);
 		    if(mapp(damage))
 			criticals += map_array(keys(damage), (: $1 + $2 :), " B");
 		    break;
 		case 9..9:
                     if (spec_com > 5) break;
-		    message("my_combat", "%^RED%^%^BOLD%^Special combat:%^RESET%^ 2 extra attacks!",
+		    message("my_combat", "%^RED%^%^BOLD%^- Living Special combat:%^RESET%^ 2 extra attacks!",
 		      me);
                     spec_com++;
 		    num_attacks += 2;
@@ -523,7 +523,8 @@ if((int)attackers[0]->query_max_internal_encumbrance() <= 0)
 			weapons += ({ current, current });
                     break;
 		}
-            }
+            } 
+
 	    if(current) {
 		w_hit = current->query_hit();
 		if(functionp(w_hit)) w_hit = evaluate(w_hit, attackers[0]);

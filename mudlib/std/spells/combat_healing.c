@@ -1,4 +1,4 @@
-#include <spell.h>
+#include "/adm/include/spell.h"
 
 inherit "/std/spells/spell";
 

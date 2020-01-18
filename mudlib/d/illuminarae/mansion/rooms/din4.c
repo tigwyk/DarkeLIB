@@ -1,6 +1,6 @@
 // din 4
 
-#include <std.h>
+#include "mansion.h"
 
 inherit ROOM;
 

@@ -1,7 +1,7 @@
-#include <std.h>
-#include <daemons.h>
-#include <security.h>
-#include <post.h>
+#include "/adm/include/std.h"
+#include "/adm/include/daemons.h"
+#include "/adm/include/security.h"
+#include "/adm/include/post.h"
 
 inherit OBJECT;
 

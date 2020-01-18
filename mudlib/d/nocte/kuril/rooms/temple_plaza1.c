@@ -1,5 +1,5 @@
 #include <std.h>
-#include <nevin.h>
+#include "nevin.h"
 inherit "/std/vault";
 
 void init() {
@@ -18,8 +18,8 @@ void reset() {
 		if(!present("guard")) {
 			new(MON+"wm_chaotic")->move(TO);
 			new(MON+"wm_chaotic")->move(TO);
-		}
-		if(!present("hound")) {
+		}		
+            if(!present("hound")) {
 			new(MON+"chound")->move(TO);
 			new(MON+"chound")->move(TO);
 		}

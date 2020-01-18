@@ -7,9 +7,9 @@
 //    DarkeLIB 0.1
 //    -Diewarzau 8/2/95
 
-#include <std.h>
-#include <move.h>
-#include <daemons.h>
+#include "/adm/include/std.h"
+#include "/adm/include/move.h"
+#include "/adm/include/daemons.h"
 #define CURRS ({ "gold", "silver", "copper" })
 
 inherit MONSTER;
@@ -62,7 +62,7 @@ void create() {
     set_overall_ac(25);
     set_lang_prof("common", 10);
     set("no clean up", 1);
-    call_out("load_store", 2);
+    delayed_call("load_store", 2);
     return;
 }
 

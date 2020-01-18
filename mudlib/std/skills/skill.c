@@ -3,7 +3,7 @@
 //	DarkeLIB 0.1
 //	Diewarzau 4/1/94
 
-#include <std.h>
+#include "/adm/include/std.h"
 
 inherit OBJECT;
 

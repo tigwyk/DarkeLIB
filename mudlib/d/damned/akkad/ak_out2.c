@@ -1,7 +1,7 @@
 inherit "std/room";
 
 
-
+/*
 void reset() {
 object mon;
 ::reset();
@@ -14,7 +14,7 @@ void init() {
     add_action("block_exit", "plains");
   }
 }
-
+*/
 int block_exit(string str) {
   write("Guests are not allowed to exit the city.");
   return 1;
@@ -24,8 +24,8 @@ void create() {
      set_property("light",3);
      set_property("night light", 2);
      add_exit("/d/damned/akkad/ak_ngate", "south");
-     add_exit("/d/damned/virtual/room_10_10.world","plains");
-    add_exit("/d/damned/guilds/necromancer/front_gate", "north");
+     add_exit("/d/damned/virtual/room_5_9.world","plains");
+    //add_exit("/d/damned/guilds/necromancer/front_gate", "north");
      set("short","Outside the northern gate of Akkad");
      set("long","You are standing just outside the northern gate of Akkad."+
 	 "The town looks very inviting to the weary traveler.  You hear " +

@@ -1,6 +1,6 @@
 // Possibly change so that it increases damage and not just crits.
 
-#include <clock.h>
+#include "/adm/include/clock.h"
  
 inherit "/std/skills/skill.c";
  

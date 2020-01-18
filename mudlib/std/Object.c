@@ -9,11 +9,11 @@
 // 93-06-23   Pallando added seteuid(getuid()) to create()
 
 // std contains the def of MOVE
-#include <std.h>
+#include "/adm/include/std.h"
 // daemons contains the #define of ALCHEMIST_D
-#include <daemons.h>
-#include <dirs.h>
-#include <clock.h>
+#include "/adm/include/daemons.h"
+#include "/adm/include/dirs.h"
+#include "/adm/include/clock.h"
 
 // move contains the functions "move", "remove", "clean_up", "set_no_clean"
 //   "set_last_location", "query_last_location", "set_weight", "query_weight"

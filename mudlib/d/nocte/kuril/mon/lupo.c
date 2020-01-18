@@ -1,5 +1,5 @@
 #include <std.h>
-#include <nevin.h>
+#include "nevin.h"
 inherit "/std/npc_shop";
 
 void create() {
@@ -24,7 +24,7 @@ void create() {
 	set_exp(1000000);
 	set_class("fighter");
 	set("aggressive", 0);
-	add_money("silver", 200 + random(500));
+	add_money("silver", 200);
 	set_languages( ({"common", "yin", "dwarvish"}) );
 	set("storage room", ROOMS+"butcher_shop_storage.c");
 	set_emotes(5, ({"Lupo starts kicking a dirty of piece of meat around the room.", "Lupo takes a mighty swing with his cleaver--only to take off his own thumb!", "Lupo runs around the room screaming in pain."}), 0);

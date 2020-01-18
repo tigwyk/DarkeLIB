@@ -4,9 +4,9 @@
 //	created by Descartes of Borg 27 february 1993
 // Multiple character coping added by Pallando (93-06-04)
 
-#include <security.h>
-#include <voting.h>
-#include <daemons.h>
+#include "/adm/include/security.h"
+#include "/adm/include/voting.h"
+#include "/adm/include/daemons.h"
 
 static string current_class;
 int elir;

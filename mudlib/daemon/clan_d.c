@@ -7,9 +7,9 @@
 
 #define FORBIDDEN ({ "admin", "cre", "newbie", "darke", \
   "gossip", "intercre", "sales", "council", "none" })
-#include <clan.h>
-#include <security.h>
-#include <dirs.h>
+#include "/adm/include/clan.h"
+#include "/adm/include/security.h"
+#include "/adm/include/dirs.h"
 
 class clan_list {
   string cname;

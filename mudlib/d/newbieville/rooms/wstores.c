@@ -1,5 +1,5 @@
 #include "../newbieville.h"
-#include <std.h>
+#include "/adm/include/std.h"
 #define WEAPONS ({ "long-sword", "short-sword", "bastard-sword", \
   "two-handed-sword", "halberd", "glaive", "dagger", "footman's-mace", \
   "footman's-flail", "quarter-staff", "great-axe", "hand-axe", \

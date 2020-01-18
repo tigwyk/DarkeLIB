@@ -4,8 +4,8 @@
 //	created by Descartes of Borg 1september 1992
 //	recoded 14 february 1993
 
-#include <daemons.h>
-#include <clock.h>
+#include "/adm/include/daemons.h"
+#include "/adm/include/clock.h"
 
 string char_class;
 mapping skills;

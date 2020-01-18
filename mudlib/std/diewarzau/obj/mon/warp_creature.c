@@ -1,7 +1,7 @@
 // a warp monster
 // made functional by Excelsior 4-15-96
 
-#include <std.h>
+#include "/adm/include/std.h"
 
 inherit MONSTER;
 

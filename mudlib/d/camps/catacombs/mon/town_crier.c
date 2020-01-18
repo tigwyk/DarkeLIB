@@ -1,7 +1,7 @@
 /* Town Crier coded by Traer for Darke Domain. */
 /* 03-22-99 */
  
-#include <std.h>
+#include "std.h"
 inherit MONSTER;
 	object ob;
 

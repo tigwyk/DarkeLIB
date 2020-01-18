@@ -3,9 +3,9 @@
 //      a daemon to handle currenciy inflation
 //      created by Descartes of Borg 931114
 
-#include <security.h>
-#include <save.h>
-#include <clock.h>
+#include "/adm/include/security.h"
+#include "/adm/include/save.h"
+#include "/adm/include/clock.h"
 
 private mapping Currencies;
 int LastInflation;

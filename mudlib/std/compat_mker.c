@@ -1,6 +1,6 @@
 //   Small program to bring find_object stuff up to snuff.
 
-#include <security.h>
+#include "/adm/include/security.h"
 
 
 

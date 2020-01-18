@@ -2,7 +2,7 @@
 //        3rd Room of Dwarf Crypt
 
 #include <std.h>
-#include <under.h>
+#include "under.h"
 inherit ROOM;
 
 object player,*inv;

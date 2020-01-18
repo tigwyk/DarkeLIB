@@ -1,8 +1,8 @@
 // Reincarnation Daemon
-#include <security.h>
-#include <dirs.h>
-#include <rooms.h>
-#include <daemons.h>
+#include "/adm/include/security.h"
+#include "/adm/include/dirs.h"
+#include "/adm/include/rooms.h"
+#include "/adm/include/daemons.h"
 
 int reinc_time;
 int exp_cut;

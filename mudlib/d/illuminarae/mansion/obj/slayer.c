@@ -1,6 +1,6 @@
 // elven slayer
 
-#include <std.h>
+#include "mansion.h"
 inherit WEAPON;
 
 void create() {

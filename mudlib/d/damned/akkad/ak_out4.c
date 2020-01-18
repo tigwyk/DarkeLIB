@@ -6,7 +6,7 @@ void create() {
      set_property("light",3);
      set_property("night light", 2);
      add_exit("/d/damned/akkad/ak_sgate", "north");
-     add_exit("/d/damned/virtual/room_10_10.world","plains");
+     add_exit("/d/damned/virtual/room_5_9.world","plains");
      set("short","Outside the southern gate of Akkad");
      set("long","You are standing just outside the southern gate of Akkad."+
 	 "The town looks very inviting to the weary traveler.  You hear " +

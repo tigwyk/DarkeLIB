@@ -2,9 +2,9 @@
 //    -Diewarzau 1/28/96
 //    DarkeLIB 1.0
 
-#include <security.h>
-#include <dirs.h>
-#include <rooms.h>
+#include "/adm/include/security.h"
+#include "/adm/include/dirs.h"
+#include "/adm/include/rooms.h"
 #define MINERALS ({ "iron", "eog","mithril", "elrodnite", \
         "platnite", "laen", "mabril", "javednite", \
 	"mcgrail", "raysorite", "inniculmoid", "boernerine", \

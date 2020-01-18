@@ -12,13 +12,13 @@
 
 
 
-#include <std.h>
+#include "/adm/include/std.h"
 
-#include <move.h>
+#include "/adm/include/move.h"
 
-#include <daemons.h>
+#include "/adm/include/daemons.h"
 
-#include <dirs.h>
+#include "/adm/include/dirs.h"
 
 
 

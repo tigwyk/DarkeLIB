@@ -1,6 +1,6 @@
 // sechamber
 
-#include <std.h>
+#include "mansion.h"
 
 inherit ROOM;
 

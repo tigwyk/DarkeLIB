@@ -1,6 +1,6 @@
 /* Room coded by Duridian for DarkeMud. */
  
-#include <std.h>
+#include "std.h"
 inherit ROOM;
  
 void create() {

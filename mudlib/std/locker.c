@@ -3,10 +3,10 @@
 //    DarkeLIB 0.1
 //    -Diewarzau 7/29/95
 
-#include <std.h>
-#include <daemons.h>
-#include <move.h>
-#include <dirs.h>
+#include "/adm/include/std.h"
+#include "/adm/include/daemons.h"
+#include "/adm/include/move.h"
+#include "/adm/include/dirs.h"
 
 inherit BAG;
 inherit "/std/locker_logic";

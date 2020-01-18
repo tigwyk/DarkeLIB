@@ -1,6 +1,6 @@
 #define UNDEAD_RACES ({ "skeleton", "zombie", "lich", "vampire", \
           "ghoul", "ghost", "undead", "wraith" })
-#include <clock.h>
+#include "/adm/include/clock.h"
 
 inherit "/std/skills/skill.c";
 

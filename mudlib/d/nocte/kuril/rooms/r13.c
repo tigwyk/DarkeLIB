@@ -2,7 +2,7 @@
 // Darkemud
 
 #include <std.h>
-#include <nevin.h>
+#include "nevin.h"
 inherit "/wizards/nevin/std/kuril_river";
 
 static int THROW;

@@ -5,7 +5,7 @@
  *   CODED BY: SHADOWRAITH                                *
  */
 
-#include <daemons.h>
+#include "/adm/include/daemons.h"
 
 #define FILE_NAME "/www/wholist.html"
 

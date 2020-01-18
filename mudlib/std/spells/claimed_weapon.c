@@ -1,4 +1,4 @@
-#include <clock.h>
+#include "/adm/include/clock.h"
 
 inherit "/std/spells/long_term_spell";
 

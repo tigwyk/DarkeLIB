@@ -1,5 +1,5 @@
 //    Shadow form object.c
-#include <rooms.h>
+#include "/adm/include/rooms.h"
 
 inherit "/std/Object";
 

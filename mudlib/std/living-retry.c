@@ -8,12 +8,12 @@
 // Modified by Geldron 031096 to work with equip/unequip
 
 #pragma optimize
-#include <security.h>
-#include <daemons.h>
-#include <party.h>
-#include <ritual.h>
-#include <dirs.h>
-#include <living.h>
+#include "/adm/include/security.h"
+#include "/adm/include/daemons.h"
+#include "/adm/include/party.h"
+#include "/adm/include/ritual.h"
+#include "/adm/include/dirs.h"
+#include "/adm/include/living.h"
 
 #define TIME_TO_HEAL 12
 #define HEALING_FORMULA (stats["strength"]+stats["constitution"]+stats["charisma"])*2

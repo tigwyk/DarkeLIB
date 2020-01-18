@@ -3,7 +3,7 @@
 //      functions handling room exits
 //      created by Descartes of Borg 18 june 1993
 
-#include <rooms.h>
+#include "/adm/include/rooms.h"
 
 int skip_obvious;
 private mapping destinations;

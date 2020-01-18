@@ -1,5 +1,5 @@
 #include <std.h>
-#include <nevin.h>
+#include "nevin.h"
 inherit "/std/vault";
 
 void init() {
@@ -19,12 +19,12 @@ void reset() {
 			new(MON+"kuril_cit_lw")->move(TO);
 			new(MON+"kuril_cit_lw")->move(TO);
 		}
-		if(!present("merchant")) { 
-			new(MON+"merchant2")->move(TO);
-		}
-		if(!present("cart")) {
-			new(MISC+"cart2")->move(TO);
-		}
+		//if(!present("merchant")) { 
+			//new(MON+"merchant2")->move(TO);
+		//}
+		//if(!present("cart")) {
+			//new(MISC+"cart2")->move(TO);
+		//}
 		if(!present("watchman")) {
 			new(MON+"mp_fighter")->move(TO);
 			new(MON+"mp_fighter")->move(TO);
@@ -76,13 +76,13 @@ void create(){
 	set_close_function("close_door", "17:00:00");
 }
 
-void open_door() {
-	call_other(ROOMS+"candle_shop.c", "open_door");
-}
+//void open_door() {
+	//call_other(ROOMS+"candle_shop.c", "open_door");
+//}
 
-void close_door() {
-	call_other(ROOMS+"candle_shop.c", "close_door");
-}
+//void close_door() {
+	//call_other(ROOMS+"candle_shop.c", "close_door");
+//}
 
 int no_exit() {
 	return 1;

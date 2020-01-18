@@ -1,6 +1,6 @@
-#include <daemons.h> 
-#include <security.h> 
-#include <network.h> 
+#include "/adm/include/daemons.h"
+#include "/adm/include/security.h"
+#include "/adm/include/network.h"
  
 void send_affirmation_a(string host, string port, string de, string a, string msg, string type);
 static private string *build_mudlist(mapping muds);

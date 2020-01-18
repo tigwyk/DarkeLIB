@@ -3,10 +3,10 @@
 // saves HD space wasted when logs get large
 // Written by Thrace (April 30th 1999)
 
-#include <std.h>
-#include <security.h>
-#include <move.h>
-#include <daemons.h>
+#include "/adm/include/std.h"
+#include "/adm/include/security.h"
+#include "/adm/include/move.h"
+#include "/adm/include/daemons.h"
 
 inherit DAEMON;
 

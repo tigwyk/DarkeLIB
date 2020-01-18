@@ -3,11 +3,11 @@
 // (darkemud)
 // Modified by Geldron 031096 to add arena stuff
 
-#include <udp.h>
-#include <daemons.h>
-#include <objects.h>
-#include <security.h>
-#include <ansi.h>
+#include "/adm/include/udp.h"
+#include "/adm/include/daemons.h"
+#include "/adm/include/objects.h"
+#include "/adm/include/security.h"
+#include "/adm/include/ansi.h"
 
 static private mapping channels;
 

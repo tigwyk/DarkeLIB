@@ -5,7 +5,7 @@
  *    Data storage concept by Archimedes@Nightmare
  */
 
-#include <dirs.h>
+#include "/adm/include/dirs.h"
 
 private static mapping __Cmds;
 private static string *__Paths;

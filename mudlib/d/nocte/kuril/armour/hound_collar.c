@@ -2,7 +2,7 @@
 // Darkemud
 
 #include <std.h>
-#include <nevin.h>
+#include "nevin.h"
 inherit ARMOUR;
 
 void create() {

@@ -1,5 +1,5 @@
 #include <std.h>
-#include <nevin.h>
+#include "nevin.h"
 inherit ROOM;
 
 void init() {
@@ -68,7 +68,7 @@ void create(){
 	set_exits( ([
 		"east": ROOMS+"marketplace1",
 		"south": ROOMS+"merchant_road2",
-		"north": ROOMS+"body_shop"
+		//"north": ROOMS+"body_shop"
 	]) );
 }
 

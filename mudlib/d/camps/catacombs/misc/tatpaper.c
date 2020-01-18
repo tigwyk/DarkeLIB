@@ -1,6 +1,6 @@
 /* Tattered piece of paper coded by Duridian for DarkeMud. */
  
-#include <std.h>
+#include "std.h"
 inherit "/std/Object";
  
 object who;

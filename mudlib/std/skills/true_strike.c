@@ -8,7 +8,7 @@
    by Tailwind  7/8/99
 */
  
-#include <clock.h>
+#include "/adm/include/clock.h"
  
 inherit "/std/skills/skill.c";
  

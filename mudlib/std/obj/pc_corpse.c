@@ -1,7 +1,7 @@
 // level hacking put in by Valodin to enable necromancy
 
-#include <std.h>
-#include <move.h>
+#include "/adm/include/std.h"
+#include "/adm/include/move.h"
 
 inherit BAG;
 

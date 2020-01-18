@@ -1,4 +1,4 @@
-#include <party.h>
+#include "/adm/include/party.h"
 
 inherit "/std/spells/spell";
 

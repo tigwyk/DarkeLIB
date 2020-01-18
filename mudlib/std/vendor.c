@@ -4,8 +4,8 @@
 //      created by Descartes of Borg 921024
 //      rewritten by Descartes 931108
 
-#include <std.h>
-#include <money.h>
+#include "/adm/include/std.h"
+#include "/adm/include/money.h"
 
 #define MAX_ITEMS 75
 

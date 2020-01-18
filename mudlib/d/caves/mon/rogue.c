@@ -1,6 +1,6 @@
 /*Drow Rogue coded by Cyric 04/20/99*/
 #include <std.h>
-#include <cyric.h>
+#include "cyric.h"
 inherit MONSTER;
 
 void create()

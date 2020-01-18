@@ -6,8 +6,13 @@ void create() {
   set_property("no scry", 1);
 set_property("no summon", 1);
 	set_property("no teleport",1);
-   add_exit("/d/damned/guilds/tinker/ti_treas", "north");
-   add_exit("/d/damned/guilds/tinker/train_room", "east");
+
+//_-=added below to fix the exits commented out old exits=-_ (jlau)
+  set_exits( ([ "north" : "/d/damned/guilds/tinker/ti_treas",
+	     "east" : "/d/damned/guilds/tinker/train_room" ]));
+
+   //add_exit("/d/damned/guilds/tinker/ti_treas", "north");
+   //add_exit("/d/damned/guilds/tinker/train_room", "east");
    set("short","The Forge Room");
    set("long",
 "This room is very hot with the fires of several forges. "+
@@ -16,11 +21,13 @@ set_property("no summon", 1);
 void reset() {
 object forge;
 ::reset();
+//_-=Fixed forge it was Broken room works NOW! jlau=-_
 if(!present("forge")) {
-forge = new("/wizards/azura1/greater_forge");
+forge = new("/d/excelsior/tinker/greater_forge");
         forge->set_weight(100000000);
         forge->move(this_object());
 }
+
 if(!present("guard")) {
     new("/d/damned/guilds/tinker/t_guard")->move(this_object());
 }

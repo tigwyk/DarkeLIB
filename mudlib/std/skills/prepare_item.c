@@ -1,5 +1,5 @@
-#include <move.h>
-#include <security.h>
+#include "/adm/include/move.h"
+#include "/adm/include/security.h"
 
 inherit "/std/skills/skill.c";
 

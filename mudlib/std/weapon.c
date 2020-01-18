@@ -3,8 +3,8 @@
 // Modified by Geldron 031096 to fix bugs
 // -Diewarzau 3/19/94
 
-#include <config.h>
-#include <std.h>
+#include "/adm/include/config.h"
+#include "/adm/include/std.h"
 
 #define VALID_TYPES ({ "rusted", "cheap", "decent", "fine", "very fine",\
 	"superb", "unsurpassed" })

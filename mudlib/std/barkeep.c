@@ -3,7 +3,7 @@
 //	an inheritable vendor of food and drink
 //	created by Descartes of Borg October 1992
 
-#include <std.h>
+#include "/adm/include/std.h"
 
 inherit MONSTER;
 

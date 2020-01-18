@@ -6,7 +6,7 @@
 //    DarkeLIB 0.1
 //    -Diewarzau 10/25/95
 
-#include <clock.h>
+#include "/adm/include/clock.h"
 
 static int hour;
 static object *rooms;

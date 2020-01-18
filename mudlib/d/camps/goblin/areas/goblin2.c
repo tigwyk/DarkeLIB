@@ -15,13 +15,12 @@ set_exits( ({(ROOMS+"goblin4"), (ROOMS+"settlement")}), ({"north", "east"}));
 void reset() {
 	::reset();
 	if(!present("goblin"))
-{
 new(MON+"goblin.c")->move(this_object());
-new(MON+"goblin.c")->move(this_object());
-new(MON+"goblin.c")->move(this_object());
-new(MON+"goblin_spear.c")->move(this_object());
-new(MON+"goblin_spear.c")->move(this_object());
-new(MON+"goblin_fanatic.c")->move(this_object());
 }
-}
+
+//new(MON+"goblin.c")->move(this_object());
+//new(MON+"goblin.c")->move(this_object());
+//new(MON+"goblin_spear.c")->move(this_object());
+//new(MON+"goblin_spear.c")->move(this_object());
+//new(MON+"goblin_fanatic.c")->move(this_object());
 

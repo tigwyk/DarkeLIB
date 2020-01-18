@@ -1,5 +1,5 @@
-#include <security.h>
-#include <clock.h>
+#include "/adm/include/security.h"
+#include "/adm/include/clock.h"
 
 inherit "/std/skills/skill";
 

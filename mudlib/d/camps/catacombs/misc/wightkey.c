@@ -1,7 +1,7 @@
 /* Wightkey coded by Duridian by DarkeMud.  Opens the chest located
    in ~duridian/catacombs/catac147.    */
  
-#include <std.h>
+#include "std.h"
 inherit "/std/Object";
  
 void create() {

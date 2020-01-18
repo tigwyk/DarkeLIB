@@ -4,11 +4,11 @@
 //    DarkeLIB 0.1
 //    -Diewarzau 11/9/95
 
-#include <daemons.h>
-#include <move.h>
-#include <std.h>
-#include <rooms.h>
-#include <dirs.h>
+#include "/adm/include/daemons.h"
+#include "/adm/include/move.h"
+#include "/adm/include/std.h"
+#include "/adm/include/rooms.h"
+#include "/adm/include/dirs.h"
 
 inherit MONSTER;
 inherit "/std/locker_logic";

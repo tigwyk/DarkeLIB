@@ -3,8 +3,8 @@
 // accessed thru the "inform" command.
 // Diewarzau 3/16/94 (DarkeMUD)
 
-#include <daemons.h>
-#include <objects.h>
+#include "/adm/include/daemons.h"
+#include "/adm/include/objects.h"
 
 private mapping whos_listening;
 

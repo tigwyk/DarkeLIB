@@ -1,7 +1,7 @@
-#include <save.h>
-#include <daemons.h> 
-#include <security.h> 
-#include <network.h>
+#include "/adm/include/save.h"
+#include "/adm/include/daemons.h"
+#include "/adm/include/security.h" 
+#include "/adm/include/network.h"
 
 #define BANNED_MUDS "/daemon/save/banned"
 #define DARKECHATS ({ "land.of.the.chosen", "darkemud", "darkemudtest", "darkprophecy", "dark.prophecy", "darkedomain", "daybreak.ridge" })

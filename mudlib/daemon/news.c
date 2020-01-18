@@ -4,7 +4,7 @@
 //	created by Descartes of Borg 13 february 1993
 //      check added by Pallando, 29 january 1994
 
-#include <news.h>
+#include "/adm/include/news.h"
 
 void read_news();
 void class_news();

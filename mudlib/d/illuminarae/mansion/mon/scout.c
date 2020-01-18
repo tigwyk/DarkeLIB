@@ -1,6 +1,6 @@
 // scout
 
-#include <std.h>
+#include "mansion.h"
 
 inherit MONSTER;
 

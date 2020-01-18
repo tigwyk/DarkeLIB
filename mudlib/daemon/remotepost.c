@@ -1,7 +1,7 @@
-#include <post.h> 
-#include <save.h> 
-#include <security.h>
-#include <daemons.h> 
+#include "/adm/include/post.h"
+#include "/adm/include/save.h"
+#include "/adm/include/security.h"
+#include "/adm/include/daemons.h" 
  
 private mapping __MailQueue; 
 static private mapping __IncomingMail; 

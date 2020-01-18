@@ -4,7 +4,7 @@
    by Duridian
 */
  
-#include <clock.h>
+#include "/adm/include/clock.h"
  
 inherit "/std/skills/skill.c";
  

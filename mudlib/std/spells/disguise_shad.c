@@ -1,4 +1,4 @@
-#include <security.h>
+#include "/adm/include/security.h"
 #define NO_CAP_NAME ({ "/cmds/mortal/_say", \
   "/cmds/mortal/_tell", "/cmds/mortal/_yell", \
   "/cmds/mortal/_reply" })

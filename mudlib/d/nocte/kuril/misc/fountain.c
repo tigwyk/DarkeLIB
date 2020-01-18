@@ -4,7 +4,7 @@
 // Modified from Khojem's vat.c code
 
 #include <move.h>
-#include <fountain.h>
+#include "fountain.h"
 inherit "/std/Object";
 
 static int TELL;

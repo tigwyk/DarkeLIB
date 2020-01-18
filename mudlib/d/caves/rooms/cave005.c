@@ -1,6 +1,6 @@
 
 #include <std.h>
-#include <cyric.h>
+#include "cyric.h"
 inherit "std/room";
 
 void init()

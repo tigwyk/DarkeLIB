@@ -2,7 +2,7 @@
 //        2nd Room of Dwarf Mining/Crypt Zone
 
 #include <std.h>
-#include <under.h>
+#include "under.h"
 inherit TRAP;
 
 string who,name;

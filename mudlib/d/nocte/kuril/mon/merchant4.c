@@ -1,5 +1,5 @@
 #include <std.h>
-#include <nevin.h>
+#include "nevin.h"
 inherit "/std/npc_shop";
 
 void init() {
@@ -25,7 +25,7 @@ create() {
    	set_gender("male");
    	set("race", "gnome");
 	set_languages( ({"common", "grken"}) );
-   	add_money("silver", 100 + random(50));
+   	add_money("silver", 100);
     	set_body_type("human");
 	set_emotes(1, ({
 		"A merchant yells 'Get ya daggahs har!  Daggahs for sale!'"

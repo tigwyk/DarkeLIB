@@ -7,7 +7,7 @@
    file /wizards/duridian/poison/poisonous_plant.c
 */
  
-#include <clock.h>
+#include "/adm/include/clock.h"
 #define PATH "/wizards/duridian/poison/plants/"
  
 inherit "/std/skills/skill.c";

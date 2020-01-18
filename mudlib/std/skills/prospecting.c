@@ -1,4 +1,4 @@
-#include <clock.h>
+#include "/adm/include/clock.h"
 #define MINERALS ({ "iron", "eog","mithril", "elrodnite", \
        "planite", "steel", "laen", "mabril", "javednite", \
         "iysaughton", "davistone", "catoetine" })

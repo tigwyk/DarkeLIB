@@ -13,9 +13,9 @@
 // Modified by Thrace 070499 to fix an eval limit bug.
 // comment
 
-#include <std.h>
-#include <rooms.h>
-#include <move.h>
+#include "/adm/include/std.h"
+#include "/adm/include/rooms.h"
+#include "/adm/include/move.h"
 
 inherit CONTAINER;
 inherit "/std/room/senses";

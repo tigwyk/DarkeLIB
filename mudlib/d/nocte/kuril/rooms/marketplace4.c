@@ -1,5 +1,5 @@
 #include <std.h>
-#include <nevin.h>
+#include "nevin.h"
 inherit "/std/vault";
 
 void reset() {
@@ -12,12 +12,12 @@ void reset() {
 			new(MON+"kuril_cit_lw")->move(TO);
 			new(MON+"kuril_cit_lw")->move(TO);
 		}
-		if(!present("merchant")) {
-			new(MON+"merchant4")->move(TO);
-		}
-		if(!present("cart")) {
-			new(MISC+"cart4")->move(TO);
-		}
+		//if(!present("merchant")) {
+			//new(MON+"merchant4")->move(TO);
+		//}
+		//if(!present("cart")) {
+			//new(MISC+"cart4")->move(TO);
+		//}
 		if(!present("watchman")) {
 			new(MON+"mp_fighter")->move(TO);
 			new(MON+"mp_fighter")->move(TO);

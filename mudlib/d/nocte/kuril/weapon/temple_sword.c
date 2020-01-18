@@ -1,7 +1,7 @@
 // Coder: %^GREEN%^nEv!N%^RESET%^
 // Darkemud
 
-#include <nevin.h>
+#include "nevin.h"
 #define	WC1	4	// impaling
 #define WC2	9	// cutting
 #define	WEIGHT	55

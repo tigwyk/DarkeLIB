@@ -3,9 +3,9 @@
 //    DarkeLIB 0.1
 //    -Diewarzau 7/29/95
 
-#include <std.h>
-#include <daemons.h>
-#include <security.h>
+#include "/adm/include/std.h"
+#include "/adm/include/daemons.h"
+#include "/adm/include/security.h"
 
 inherit ROOM;
 
@@ -20,7 +20,7 @@ void create() {
   ::create();
   set_property("storage room", 1);
   if(!load_status) 
-    call_out("load_lockers", 2);
+    delayed_call("load_lockers", 2);
 
   return;
 }

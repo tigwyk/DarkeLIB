@@ -1,6 +1,6 @@
 /* Rufus Tenderfoot (quest npc) coded by Duridian for DarkeMud. */
  
-#include <std.h>
+#include "std.h"
 inherit MONSTER;
  
 void create() {

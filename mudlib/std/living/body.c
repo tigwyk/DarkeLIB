@@ -7,9 +7,9 @@
 // Modified by Geldron 031096 to work with arena
 // Modified by Geldron 031196 for arena limbs and stuff
 
-#include <std.h>
-#include <daemons.h>
-#include <objects.h>
+#include "/adm/include/std.h"
+#include "/adm/include/daemons.h"
+#include "/adm/include/objects.h"
 #define LIMB_NICKS ([ "arm" : ({ "branch", "tentacle", }), "leg" : ({ "root", "tentacle", }), "hand" : ({ "root", "tentacle", "paw", "pincer", }), "foot" : ({ "root", "tentacle", "paw", }), ])
 
 inherit CONTAINER;

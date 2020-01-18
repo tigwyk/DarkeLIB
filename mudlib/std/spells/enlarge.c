@@ -1,7 +1,7 @@
 // Improved by Excelsior
 // 6-9-96
 
-#include <spell.h>
+#include "/adm/include/spell.h"
 
 inherit "/std/spells/spell";
 

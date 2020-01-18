@@ -1,7 +1,7 @@
 /* Soul of Rufus Tenderfoot coded by Duridian for DarkeMud.  Needed for
    completion of the catacombs quest.  */
  
-#include <std.h>
+#include "std.h"
 inherit "/std/Object";
  
 void create() {

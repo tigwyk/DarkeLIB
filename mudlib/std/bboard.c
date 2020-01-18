@@ -3,10 +3,10 @@
 //	a new, inheritable bulletin board
 //	created by Descartes of Borg 06 march 1993
 
-#include <std.h>
-#include <move.h>
-#include <daemons.h>
-#include <bboard.h>
+#include "/adm/include/std.h"
+#include "/adm/include/move.h"
+#include "/adm/include/daemons.h"
+#include "/adm/include/bboard.h"
 
 inherit OBJECT;
 

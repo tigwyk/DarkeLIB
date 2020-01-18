@@ -1,5 +1,5 @@
-#include <str_fmt.h>
-#include <std.h>
+#include "/adm/include/str_fmt.h"
+#include "/adm/include/std.h"
 inherit "/std/skills/skill.c";
 
 void create() {

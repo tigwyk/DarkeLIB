@@ -142,11 +142,19 @@ add_exit("/d/damned/arena/booths_room", "arena");
       }
     }
   }
-if(x == 12 && y == 12) {
-set("night long", (string)query("night long") + "%^BOLD%^A large "
-"arena can be seen in the distance.%^RESET%^");
-set("day long", (string)query("day long") + "%^BOLD%^A large "
-"arena can be seen in the distance.%^RESET%^");
+if(x == 11 && y == 9) {
+set("night long", (string)query("night long") + "%^BOLD%^"
+"The Town of Vo'sangar.%^RESET%^");
+set("day long", (string)query("day long") + "%^BOLD%^"
+"The Town of Vo'sangar.%^RESET%^");
+add_exit("/d/khojem/port/room/wgate", "town");
+}
+if(x == 5 && y == 9) {
+set("night long", (string)query("night long") + "%^BOLD%^"
+"The City of Akkad.%^RESET%^");
+set("day long", (string)query("day long") + "%^BOLD%^"
+"The Town of Akkad.%^RESET%^");
+add_exit("/d/damned/akkad/ak_out4", "city");
 }
   items_file = get_dir("/d/damned/data/");
   i = sizeof(items_file);

@@ -3,7 +3,7 @@
    10/1/96
 */
  
-#include <clock.h>
+#include "/adm/include/clock.h"
  
 inherit "/std/skills/skill";
  

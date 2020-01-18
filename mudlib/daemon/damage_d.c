@@ -4,9 +4,9 @@
 //	DarkeLIB 0.1
 //	Diewarzau 3/26/94
 
-#include <daemons.h>
-#include <std.h>
-#include <dirs.h>
+#include "/adm/include/daemons.h"
+#include "/adm/include/std.h"
+#include "/adm/include/dirs.h"
 
 class table {
     string table_name;
@@ -286,12 +286,12 @@ string *query_msg(string type, int roll, string names) {
       "critical hit BUG with "+tbl_name+" table.",
       "critical hit BUG with "+tbl_name+" table." });
 }
-
+//   SAYING UNUSED LOCAL VARIABLES furing start of combat on type_c, rolls, my_table
 string *query_result(string type, int roll) {
     string crit_type, type_c, tbl_name;
-    string *rolls;
+    string *rolls; 
     int i, hi, low, f, l, cidx;
-    class table my_table;
+    class table my_table; 
 
     sscanf(type,"%s %s",tbl_name,crit_type);
     cidx = find_table(tbl_name);

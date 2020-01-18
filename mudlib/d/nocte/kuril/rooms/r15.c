@@ -2,7 +2,7 @@
 // Darkemud
 
 #include <std.h>
-#include <nevin.h>
+#include "nevin.h"
 #define OBJ	this_player()->query_objective()
 
 inherit "/wizards/nevin/std/kuril_river";

@@ -4,7 +4,7 @@
 //      necessary to make sure rogues get the bonus of it
 //      created by Descartes of Borg 15 may 1993
 
-#include <std.h>
+#include "/adm/include/std.h"
 
 inherit OBJECT;
 

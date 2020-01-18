@@ -1,5 +1,5 @@
 #include <std.h>
-#include <nevin.h>
+#include "nevin.h"
 inherit MONSTER;
 
 create() {
@@ -16,7 +16,7 @@ create() {
 	);
    	set_gender("male");
    	set("race", "high-man");
-   	add_money("silver", 30 + random(20));
+   	add_money("silver", 30);
     	set_body_type("human");
 	set_emotes(1, ({ "The citizen cast his stick into the water.",
 		"The citizen grumbles about not being able to catch anything.",

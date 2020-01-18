@@ -1,5 +1,5 @@
-#include <std.h>
-#include <daemons.h>
+#include "/adm/include/std.h"
+#include "/adm/include/daemons.h"
 
 inherit OBJECT;
 

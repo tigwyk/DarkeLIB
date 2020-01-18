@@ -1,6 +1,9 @@
 #include <std.h>
-#include <nevin.h>
+#include "nevin.h"
+
 inherit "/std/pier";
+
+
 
 void init() {
 	::init();
@@ -29,7 +32,7 @@ void reset() {
 		if(!present("fisherman")) {
 			new(MON+"fisherman")->move(TO);
 		}
-	}
+	}   
 }
 
 void create(){

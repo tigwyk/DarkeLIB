@@ -6,7 +6,7 @@
 // Moving does not stop spell from continuing
 // need to add the information look up table stuff
 
-#include <security.h>
+#include "/adm/include/security.h"
 inherit "/std/spells/spell";
 
 object incense, dagger, priest, shad;

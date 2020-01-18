@@ -9,12 +9,19 @@ void reset() {
    if (!present("bruno")) {
       new("/d/damned/guilds/tinker/bruno")->move(this_object());
    }
-   if(!present("forge")) {
-    ob = new("/wizards/diewarzau/obj/misc/forge");
+   if(!present("furnace")) {
+    ob = new("/d/excelsior/tinker/furnace");
     ob->set_property("no get", 1);
     ob->move(this_object());
    }
 /*
+(NO FORGE? so removed it and put in furnace room starts working JLAU)
+if(!present("forge")) {
+    ob = new("/d/excelsior/tinker/forge");
+    ob->set_property("no get", 1);
+    ob->move(this_object());
+   }
+
    if(!present("sign"))
    	new("/wizards/excelsior/tinker/tinker_shop_sign")->move(this_object()); 
    return;

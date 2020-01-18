@@ -1,5 +1,5 @@
  
-#include <std.h>
+#include "std.h"
 inherit ROOM;
  
 int spoken_words = 0;

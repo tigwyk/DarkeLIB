@@ -1,4 +1,4 @@
-#include <nevin.h>
+#include "nevin.h"
 inherit "/std/npc_shop";
 
 void create() {
@@ -19,7 +19,7 @@ void create() {
 	set_hp(10000000);
 	set_exp(1000000);
 	set("aggressive", 0);
-	add_money("silver", random(1000));
+	add_money("silver", 1000);
 	set_languages( ({"common", "yin"}) );
 	set("storage room", ROOMS+"corpse_market_storage.c");
 	set("no sell", 1);

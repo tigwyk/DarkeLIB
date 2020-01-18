@@ -7,17 +7,17 @@
 //      Pallando (93-06-17) Removed call to living::setup()
 
 
-#include <config.h>
-#include <rooms.h>
-#include <security.h>
-#include <daemons.h>
-#include <move.h>
-#include <objects.h>
-#include <money.h>
-#include <flags.h>
-#include <user.h>
-#include <dirs.h>
-#include <council.h>
+#include "/adm/include/config.h"
+#include "/adm/include/rooms.h"
+#include "/adm/include/security.h"
+#include "/adm/include/daemons.h"
+#include "/adm/include/move.h"
+#include "/adm/include/objects.h"
+#include "/adm/include/money.h"
+#include "/adm/include/flags.h"
+#include "/adm/include/user.h"
+#include "/adm/include/dirs.h"
+#include "/adm/include/council.h"
 
 inherit "/std/user/more";
 

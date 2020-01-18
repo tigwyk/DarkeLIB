@@ -1,9 +1,9 @@
 #include <std.h>
-#include <nevin.h>
+#include "nevin.h"
 inherit ROOM;
 
 
-/*
+
 void reset() {
 	::reset();
 	if(!present("guard")) {
@@ -25,7 +25,7 @@ void reset() {
 	}
 	if(!present("ghost")) { new(MON+"ghost")->move(TO); }
 }
-*/
+
 
 void create(){
 	::create();

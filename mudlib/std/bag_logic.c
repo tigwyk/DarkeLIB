@@ -5,10 +5,10 @@
 //	written by Descartes of Borg 04 October 1992
 //	lockable functions added 21 October 1992 by Descartes
 
-#include <std.h>
-#include <move.h>
-#include <daemons.h>
-#include <dirs.h>
+#include "/adm/include/std.h"
+#include "/adm/include/move.h"
+#include "/adm/include/daemons.h"
+#include "/adm/include/dirs.h"
 
 inherit CONTAINER;
 

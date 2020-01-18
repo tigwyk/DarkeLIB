@@ -1,4 +1,4 @@
-#include <nevin.h>
+#include "nevin.h"
 inherit "/std/npc_shop";
 
 void create() {
@@ -23,7 +23,7 @@ void create() {
 	set_stats("intelligence", 250);
 	set_class("arch-mage");
 	set("aggressive", 0);
-	add_money("silver", random(3000));
+	add_money("gold", 3000 + random(100));
 	set_languages( ({"common", "yin", "dwarvish"}) );
 	set("storage room", ROOMS+"magic_shop_storage.c");
 	set("no sell", 1);

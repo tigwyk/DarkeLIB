@@ -1,4 +1,4 @@
-#include <move.h>
+#include "/adm/include/move.h"
 
 inherit "/std/skills/long_term";
 

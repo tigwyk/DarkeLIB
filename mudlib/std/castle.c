@@ -8,9 +8,9 @@
 
 
 
-#include <std.h>
+#include "/adm/include/std.h"
 
-#include <dirs.h>
+#include "/adm/include/dirs.h"
 
 
 

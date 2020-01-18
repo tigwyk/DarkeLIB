@@ -4,9 +4,9 @@
 //      created by Descartes of Borg 18 june 1993
 //      modified to save MAJOR memory by Descartes of Borg 930830
 
-#include <move.h>
-#include <config.h>
-#include <rooms.h>
+#include "/adm/include/move.h"
+#include "/adm/include/config.h"
+#include "/adm/include/rooms.h"
 
 object __Search_Obj;
 private mapping __Smells, __Listens, __Searches;

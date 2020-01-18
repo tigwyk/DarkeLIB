@@ -1,7 +1,7 @@
 //      from the Nightmare mudlib
 //      an example workroom for new immortals
 
-#include <std.h>
+#include "/adm/include/std.h"
 
 inherit ROOM;
 

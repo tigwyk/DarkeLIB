@@ -12,9 +12,9 @@
 
 
 
-#include <rooms.h>
+#include "/adm/include/rooms.h"
 
-#include <security.h>
+#include "security.h"
 
 #define ARENA "/std/diewarzau/rooms/gm_arena"
 

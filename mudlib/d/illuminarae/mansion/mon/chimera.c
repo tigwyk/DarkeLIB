@@ -1,6 +1,6 @@
 // chimera
 
-#include <std.h>
+#include "mansion.h"
 inherit MONSTER;
 
 void create() {

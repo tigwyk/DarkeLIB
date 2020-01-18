@@ -2,7 +2,7 @@
 //	an inheritable quest object
 //	written 151092 by Descartes of Borg
 
-#include <std.h>
+#include "/adm/include/std.h"
 
 inherit OBJECT;
 

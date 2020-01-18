@@ -1,6 +1,6 @@
 /* Weapon coded by Duridian for DarkeMud. */
  
-#include <std.h>
+#include "std.h"
 inherit WEAPON;
  
 void create() {

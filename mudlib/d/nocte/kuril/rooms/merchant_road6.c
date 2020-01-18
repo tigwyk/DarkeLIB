@@ -1,11 +1,12 @@
 #include <std.h>
-#include <nevin.h>
+#include "nevin.h"
 inherit ROOM;
 
 void init() {
 	::init();
 	if(TP->chk_temple_mob()) { add_action("no_exit", "west"); }
 }
+
 
 void reset() {
 	object ob;

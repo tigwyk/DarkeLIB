@@ -1,6 +1,6 @@
 // ehall 2
 
-#include <std.h>
+#include "mansion.h"
 
 inherit ROOM;
 

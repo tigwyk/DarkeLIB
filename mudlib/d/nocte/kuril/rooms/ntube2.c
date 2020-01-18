@@ -3,7 +3,7 @@
 // Modified from Khojem's ravine code
 
 #include <std.h>
-#include <nevin.h>
+#include "nevin.h"
 inherit ROOM;
 
 void init() {

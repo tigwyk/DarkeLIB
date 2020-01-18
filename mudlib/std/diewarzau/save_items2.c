@@ -1,10 +1,10 @@
 
 
-#include <security.h>
+#include "/adm/include/security.h"
 
-#include <dirs.h>
+#include "/adm/include/dirs.h"
 
-#include <rooms.h>
+#include "/adm/include/rooms.h"
 
 
 

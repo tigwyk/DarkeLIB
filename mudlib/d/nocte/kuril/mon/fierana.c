@@ -1,4 +1,4 @@
-#include <nevin.h>
+#include "nevin.h"
 inherit "/std/barkeep";
 
 create() {
@@ -13,7 +13,7 @@ create() {
    	set("race", "human");
 	set_max_hp(750);
    	set_hp(750);
-   	add_money("silver", 100 + random(50));
+   	add_money("silver", 100);
    	set_skill("melee",90);
     	set_body_type("human");
     	set_currency("silver");

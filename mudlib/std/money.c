@@ -84,9 +84,9 @@ int add_money(string str, int amount) {
 
 	  coins_ob->move(environment());
 
-	remove_call_out("remove_coins_ob");
+	remove_delayed_call("remove_coins_ob");
 
-	call_out("remove_coins_ob", 2);
+	delayed_call("remove_coins_ob", 2);
 
 	return 0;
 

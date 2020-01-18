@@ -1,6 +1,6 @@
 /* Coffin coded by Duridian for DarkeMud. */
  
-#include <std.h>
+#include "std.h"
 inherit "/std/bag_logic";
  
 void create() {

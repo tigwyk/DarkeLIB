@@ -4,7 +4,7 @@
 
 #include <std.h>
 #include <move.h>
-#include <nevin.h>
+#include "nevin.h"
 
 #define OBJ this_player()->query_objective()
 #define AMOUNT 2

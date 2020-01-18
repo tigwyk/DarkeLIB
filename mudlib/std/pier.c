@@ -7,7 +7,7 @@
 
 #define FISH ([ "mackeral":3, "blue fish":5, "flounder":12, "marlin":20, "swordfish":30 ])
 
-#include <std.h>
+#include "/adm/include/std.h"
 
 inherit ROOM;
 

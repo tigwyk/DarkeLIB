@@ -1,6 +1,6 @@
 // master bed
 
-#include <std.h>
+#include "mansion.h"
 
 inherit OBJECT;
 

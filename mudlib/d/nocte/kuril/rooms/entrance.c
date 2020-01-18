@@ -1,5 +1,5 @@
 #include <std.h>
-#include <nevin.h>
+#include "nevin.h"
 inherit "/std/vault";
 
 void create() {
@@ -46,14 +46,15 @@ void create() {
 	set_exits( ([
 		"north": ROOMS+"guardmans_road4",
 		"south": "/d/damned/guilds/join_rooms/necromancer_join",
-                "west": "/d/daybreak/room/dbns10"
+        "west": "/d/daybreak/room/dbns10"                
 	]) );
+
 	set_listen("walls", "You swear you can hear the voices of people "
 		"moaning and crying...");
 	set_door("iron door", ROOMS+"guardmans_road4", "north",
 		"kuril school of necromancy key");
 	set_open("iron door", 0);
-	set_locked("iron door", 0);
+	set_locked("iron door", 0); 
 }
 
 void look_tapestry() {

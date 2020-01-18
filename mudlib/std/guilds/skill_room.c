@@ -3,7 +3,7 @@
 //    DarkeLIB 0.1
 //    -Diewarzau 8/8/95
 
-#include <std.h>
+#include "/adm/include/std.h"
 
 inherit ROOM;
 

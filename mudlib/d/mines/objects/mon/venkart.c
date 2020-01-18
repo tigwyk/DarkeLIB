@@ -3,7 +3,7 @@
 
 
 #include <std.h>
-#include <under.h>
+#include "under.h"
 inherit MONSTER;
 
 object money,name2,player,player2,*who_attacked,*been_told;

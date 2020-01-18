@@ -1,6 +1,6 @@
 // dead man
 
-#include <std.h>
+#include "mansion.h"
 
 inherit OBJECT;
 

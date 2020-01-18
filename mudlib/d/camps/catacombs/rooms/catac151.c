@@ -1,5 +1,5 @@
  
-#include <std.h>
+#include "std.h"
 inherit ROOM;
  
 int searched = 0;

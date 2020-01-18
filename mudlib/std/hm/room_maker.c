@@ -8,13 +8,13 @@
 
 
 
-#include <std.h>
+#include "/adm/include/std.h"
 
-#include <dirs.h>
+#include "/adm/include/dirs.h"
 
-#include <security.h>
+#include "/adm/include/security.h"
 
-#include <daemons.h>
+#include "/adm/include/daemons.h"
 
 
 

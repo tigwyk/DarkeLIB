@@ -3,7 +3,7 @@
 //      an inheritable sign object
 //      created by Hanse@Nightmare
 
-#include <std.h>
+#include "/adm/include/std.h"
 
 inherit OBJECT;
 

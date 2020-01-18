@@ -4,7 +4,7 @@
 //	motion checks added by Descartes of Borg 12 october 1992
 //	other fixes by Hanse 02 november 1992
  
-#include <std.h>
+#include "/adm/include/std.h"
 
 inherit OBJECT;
  

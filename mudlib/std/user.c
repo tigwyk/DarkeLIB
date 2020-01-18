@@ -13,25 +13,26 @@
 // Modified by Khojem 093096 stop ghosts from seeing room names
 
 
-#include <config.h>
-#include <rooms.h>
-#include <security.h>
-#include <daemons.h>
-#include <move.h>
-#include <objects.h>
-#include <money.h>
-#include <flags.h>
-#include <user.h>
-#include <dirs.h>
-#include <council.h>
+#include "/adm/include/config.h"
+#include "/adm/include/rooms.h"
+#include "/adm/include/security.h"
+#include "/adm/include/daemons.h"
+#include "/adm/include/move.h"
+#include "/adm/include/objects.h"
+#include "/adm/include/money.h"
+#include "/adm/include/flags.h"
+#include "/adm/include/user.h"
+#include "/adm/include/dirs.h"
+#include "/adm/include/council.h"
 // WHY IS THIS AN INCLUDE IF IT HAS A .C EXTENSION?
-#include "/std/user/ansi_convert.c"
+
 #pragma optimize
 #define RESURRECT "/cmds/adm/_resurrect"
 #define LOG_PROPS ({ "old exp", "dev points", "dev point base", "xp mod", "hp advance", "mp advance" })
 
 inherit "/std/user/more";
-
+inherit "/std/user/ansi_convert.c";
+//changed to enherit and moveddown here let's see if this breaks
 #define OVERRIDE_IGNORE_MSG ({ "broadcast", "info", "more", "room_description", "room_exits","smell","listen","write","say", "system", "prompt", "inanimate_item", "living_item"})
 int platinum, gold, electrum, silver, copper;
 

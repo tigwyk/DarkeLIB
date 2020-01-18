@@ -3,9 +3,9 @@
 //	the portable castle dropped by high mortals to create their home
 //	created by Descartes of Borg 30 january 1993
 
-#include <std.h>
-#include <dirs.h>
-#include <daemons.h>
+#include "/adm/include/std.h"
+#include "/adm/include/dirs.h"
+#include "/adm/include/daemons.h'
 
 inherit OBJECT;
 

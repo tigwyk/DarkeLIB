@@ -1,7 +1,7 @@
 //      From Maxwell's Underground mudlib
 //        2nd Room of Dwarf Mining Zone
 
-#include <under.h>
+#include "under.h"
 inherit TRAP;
 
 string who,name;

@@ -8,10 +8,10 @@
 // Updated by Thrace May 30, 1999 to add support for new file sys.
 // Updated by Thrace May 31, 1999 to fix duped item bug.
 
-#include <std.h>
-#include <security.h>
-#include <move.h>
-#include <daemons.h>
+#include "/adm/include/std.h"
+#include "/adm/include/security.h"
+#include "/adm/include/move.h"
+#include "/adm/include/daemons.h"
 
 inherit DAEMON;
 

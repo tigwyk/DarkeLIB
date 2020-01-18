@@ -2,7 +2,7 @@
 //    Gold and Silver Bladed Axe of Montar
 
 #include <move.h>
-#include <under.h>
+#include "under.h"
 inherit "/std/weapon";
  
 void create() {

@@ -28,7 +28,8 @@ void reset() {
   if(!present("philip"))
     new("/d/damned/guilds/cleric/c_guard")->move(this_object());
 // #if 0
-  if(!present("box")) {
+// removed the below lines of code because it was broken JLAU
+ /* if(!present("box")) {
     ob = new("/d/damned/guilds/cleric/safe");
     ob->set_key("cleric donation box key");
     ob->set_lock("locked");
@@ -36,7 +37,7 @@ void reset() {
     ob->set_trap_func("/wizards/diewarzau/obj/misc/trap_func", "gate_trap");
     ob->set_trap_level(30);
     ob->move(this_object());
-  }
+  }*/
 // #endif
   return;
 }

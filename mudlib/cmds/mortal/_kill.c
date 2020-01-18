@@ -4,7 +4,7 @@
 // by Valodin, Feb 13, 1993
 // minor changes by Bohemund, Jan 22, 1993
  
-#include <std.h>
+#include "/adm/include/std.h"
 
 inherit DAEMON;
  
@@ -13,7 +13,7 @@ int help();
 int cmd_kill(string str) {
    object victim;
    int retvalue;   /* return value */
-   int i;
+   //int i;
  
    if(!str) {
       return help();

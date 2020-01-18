@@ -1,6 +1,6 @@
-#include <security.h>
-#include <daemons.h>
-#include <dirs.h>
+#include "/adm/include/security.h"
+#include "/adm/include/daemons.h"
+#include "/adm/include/dirs.h"
 
 #define VOTE_DATA		"/adm/save/votes/"
 #define LEGAL_GUILDS		({ "arch-mage","chaotic-lord","cleric","elementalist","enchanter","fighter","necromancer","nightblade","paladin","sword-mage","thief","tinker","war-priest",})

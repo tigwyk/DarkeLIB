@@ -1,9 +1,9 @@
-#include <daemons.h>
-#include <security.h>
-#include <objects.h>
-#include <clock.h>
-#include <save.h>
-#include <rooms.h>
+#include "/adm/include/daemons.h"
+#include "/adm/include/security.h"
+#include "/adm/include/objects.h"
+#include "/adm/include/clock.h"
+#include "/adm/include/save.h"
+#include "/adm/include/rooms.h"
 
 private int __RebootInterval;
 private mapping __Events;

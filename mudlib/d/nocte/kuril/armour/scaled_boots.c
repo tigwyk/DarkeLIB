@@ -3,7 +3,7 @@
 // Scaled Boots
 // 10/15/96
 
-#include <nevin.h>
+#include "nevin.h"
 inherit "/std/armour";
 
 create() {

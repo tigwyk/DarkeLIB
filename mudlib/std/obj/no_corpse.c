@@ -3,8 +3,8 @@
 // Still under development....hmmm right now it is just a
 // very fast decaying "corpse"
 
-#include <std.h>
-#include <move.h>
+#include "/adm/include/std.h"
+#include "/adm/include/move.h"
 
 inherit BAG;
 

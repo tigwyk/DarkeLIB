@@ -1,6 +1,6 @@
 // dining table e
 
-#include <std.h>
+#include "mansion.h"
 
 inherit OBJECT;
 

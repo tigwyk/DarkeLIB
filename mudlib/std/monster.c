@@ -7,12 +7,12 @@
 //  Modified by Misery 031096 to fix heart beat problem
 
 #pragma optimize
-#include <std.h>
-#include <move.h>
-#include <rooms.h>
-#include <objects.h>
-#include <daemons.h>
-#include <party.h>
+#include "/adm/include/std.h"
+#include "/adm/include/move.h"
+#include "/adm/include/rooms.h"
+#include "/adm/include/objects.h"
+#include "/adm/include/daemons.h"
+#include "/adm/include/party.h"
 #define HEAL_SPELLS ({ "heal", "cure critical wounds", "cure serious wounds", "cure light wounds", "mass heal" })
 
 inherit LIVING;
@@ -387,7 +387,7 @@ void move_around() {
   if(!this_object()) return;
   if(environment(this_object()))
     exits = (string*)environment(this_object())->query_exits();
-  else exits = 0;
+  else return;
   if(exits) command(exits[random(sizeof(exits))]);
 
 }

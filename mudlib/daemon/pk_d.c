@@ -1,9 +1,9 @@
 //      a daemon to keep track of player kills
 //      created by Zortek
 
-#include <objects.h>
-#include <save.h>
-#include <security.h>
+#include "/adm/include/objects.h"
+#include "/adm/include/save.h"
+#include "/adm/include/security.h"
 #define BOUNTY "/d/damned/guilds/join_rooms/nightblade_join"
 mapping *player_kills;
 

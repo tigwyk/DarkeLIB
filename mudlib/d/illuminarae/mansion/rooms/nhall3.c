@@ -1,6 +1,6 @@
 // nhall 3
 
-#include <std.h>
+#include "mansion.h"
 
 inherit ROOM;
 

@@ -4,7 +4,7 @@
 // 10/06/96
 
 #include <std.h>
-#include <nevin.h>
+#include "nevin.h"
 inherit MONSTER;
 
 void init() {

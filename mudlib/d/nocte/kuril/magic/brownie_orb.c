@@ -3,7 +3,7 @@
 
 #include <std.h>
 #include <security.h>
-#include <nevin.h>
+#include "nevin.h"
 inherit OBJECT;
 
 void init() {

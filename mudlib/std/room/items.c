@@ -4,9 +4,9 @@
 //      created by Descartes of Borg 16 june 1993
 //      Modified for v21 4/16/96
 
-#include <config.h>
-#include <daemons.h>
-#include <astronomy.h>
+#include "/adm/include/config.h"
+#include "/adm/include/daemons.h"
+#include "/adm/include/astronomy.h"
 
 #define DEFAULT_MSG "You do not notice that here.\n"
 #define ASTRA (: call_other, ASTRONOMY_D, "la_sky" :)
@@ -21,7 +21,7 @@ void add_item(string str, mixed val);
 void remove_item(string str);
 
 #ifdef __OLD_ROOM_BEHAVIOUR
-#include <old_items.h>
+#include "/adm/include/old_items.h"
 #endif
 
 void create() {

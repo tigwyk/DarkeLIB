@@ -1,7 +1,7 @@
 /* Catacomb chest coded by Duridian for DarkeMud.  Can be unlocked by
    wightkey.c, obtained from the wight at ~duridian/catacomb/catac145. */
  
-#include <std.h>
+#include "std.h"
 inherit "/std/bag_logic";
  
 void create() {

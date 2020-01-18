@@ -7,9 +7,9 @@
  *      modified by Geldron 031396 to fix desting ppl in room's bugs
  */
 
-#include <move.h>
-#include <daemons.h>
-#include <rooms.h>
+#include "/adm/include/move.h"
+#include "/adm/include/daemons.h"
+#include "/adm/include/rooms.h"
 
 static private int no_clean;
 private int encumbrance;

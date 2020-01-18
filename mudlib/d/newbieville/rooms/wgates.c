@@ -1,5 +1,5 @@
 #include "../newbieville.h"
-#include <std.h>
+#include "/adm/include/std.h"
 
 inherit ROOM;
 void create() {

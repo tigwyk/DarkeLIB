@@ -8,8 +8,8 @@
 
 // 3600 = 60 * 60 = number of second in an hour =
 // amount of time after logging out that a user can log in a second character
-#include <save.h>
-#include <security.h>
+#include "/adm/include/save.h"
+#include "/adm/include/security.h"
 
 #define DELAY_PERIOD 3600
 

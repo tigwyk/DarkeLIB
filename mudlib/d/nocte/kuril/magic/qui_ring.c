@@ -4,7 +4,7 @@
 // of them.
 
 #include <std.h>
-#include <nevin.h>
+#include "nevin.h"
 #define OBJ 	this_player()->query_objective()
 
 inherit "/std/armour";

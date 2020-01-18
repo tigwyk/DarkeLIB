@@ -1,5 +1,5 @@
-#include <spell.h>
-#include <daemons.h>
+#include "/adm/include/spell.h"
+#include "/adm/include/daemons.h"
 
 inherit "/std/spells/spell";
 

@@ -1,7 +1,7 @@
-#include <post.h> 
-#include <objects.h>
-#include <security.h> 
-#include <daemons.h> 
+#include "/adm/include/post.h"
+#include "/adm/include/objects.h"
+#include "/adm/include/security.h"
+#include "/adm/include/daemons.h"
  
 private string __Forward; 
 private mapping __MyGroups; 
