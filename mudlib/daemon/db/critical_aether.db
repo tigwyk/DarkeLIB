@@ -20,7 +20,8 @@
 16..24:With energy blazing from $(AP) body, $A $V $T at lightning speed.:charge:DAMAGE 15:CONT_DAMAGE 4 2:STAT_MOD intelligence -40 2
 25..32:$A $V behind $T. The maneuver gets $(AO) a few solid hits.:teleport:DAMAGE 11:STUN 2:SKILL_MOD dodge -50 2
 33..43:$A $V $(APP) weapon into the ground, magically causing $T to go into massive convulsions.:stab:STUN 5:STAT_MOD strength -70 8:CONT_DAMAGE 1 30
-44..46:A massive amount of light is released by $A, causing $T to go blind!::SPECIAL_RESULT /wizards/diewarzau/crits/crit_results blind_me
+44..46:A massive amount of light is released by $A, causing $T to go blind!:charge:DAMAGE 15:CONT_DAMAGE 8 2:STAT_MOD intelligence -40 2
+#TLNY 2020 remove and added DAMAGE ::SPECIAL_RESULT /wizards/diewarzau/crits/crit_results blind_me
 47..54:$T $(VT) momentarily paralyzed by $(AP) magical abilities.:are:STUN 4
 55..60:With god-like ease $A $V loose an energy ball which cripples $T.:let:LIMB_LOSS nonfatal:LIMB_LOSS non_fatal cripple
 61..64:$A $V $T with a powerful inter dimensional attack, severely weakening $(TO).:empower:SPECIAL_RESULT /wizards/excelsior/crits/crit_func lower_max_hp
@@ -34,8 +35,10 @@
 100..100:Bending into a very dramatic pose, $A $V $T with enough energy to severely mutilate $(TO).:blast:LIMB_LOSS non_fatal:LIMB_LOSS non_fatal:LIMB_LOSS non_fatal:LIMB_LOSS non_fatal:LIMB_LOSS non_fatal
 (C):
 1..6:$A $V some small explosions in the distance, but they have little effect on $T.:create:NO_EFFECT
-7..18:$A $V light around $T to make it very bright around $(TO)!:bend:DAMAGE 5:SPECIAL_RESULT /wizards/excelsior/crits/crit_func bright_light
-18..27:$A $V light around $T to make it incredibly dark around $(TO)!:bend:DAMAGE 6:SPECIAL_RESULT /wizards/excelsior/crits/crit_func no_light
+7..18:$A $V light around $T to make it very bright around $(TO)!:bend:DAMAGE 5
+#TLNY 2020 Removed :SPECIAL_RESULT /wizards/excelsior/crits/crit_func bright_light
+18..27:$A $V light around $T to make it incredibly dark around $(TO)!:bend:DAMAGE 6
+#TLNY 2020 Removed :SPECIAL_RESULT /wizards/excelsior/crits/crit_func no_light
 28..36:$A $V $(APP) weapon against the ground, so shaking $T that $(TPP) entire inventory falls to the ground.:pound:DAMAGE 12:SPECIAL_RESULT /wizards/excelsior/crits/crit_func drop_all
 37..45:$A $V reality inside $(TP) brain, severely impairing $(TPP) intelligence.:disturb:STAT_MOD intelligence -100 4:STAT_MOD wisdom -100 4:SKILL_MOD conjuration -100 8
 46..54:Bending reality at $(APP) will, $A $V $T of $(TPP) armour.:rid:SPECIAL_RESULT /wizards/excelsior/crits/crit_func melt_armour
@@ -76,4 +79,5 @@
 81..88:The sudden occurrence of a large temporal disturbance casts large shadows of doubt on $(TP) survival.:remove:STUN 10:DAMAGE 100:SKILL_MOD dodge -50 15
 89..94:$T $(VT) banished to another dimension by $A!!:are:SPECIAL_RESULT /wizards/excelsior/crits/crit_func leave_dimension
 95..96:The sky turns dark and thunder crashes as $A $V $(APP) masterful control of the world to brutally mutilate $T.::use:LIMB_LOSS non_fatal:LIMB_LOSS non_fatal:LIMB_LOSS non_fatal:LIMB_LOSS non_fatal:LIMB_LOSS non_fatal:LIMB_LOSS non_fatal:LIMB_LOSS non_fatal:LIMB_LOSS non_fatal
-97..100:The ground opens up into a large abyss underneath $T at $(AP) will. $T $(VT) to the depths of hell.:fall:KILL:SPECIAL_RESULT /wizards/excelsior/crits/crit_func go_to_hell
+97..100:The ground opens up into a large abyss underneath $T at $(AP) will. $T $(VT) to the depths of hell.::KILL
+##TLNY 2020 Removed :SPECIAL_RESULT /wizards/excelsior/crits/crit_func go_to_hell

@@ -15,22 +15,23 @@ void reset(){
   :: reset();
   set_open("storeroom door",0);
   set_locked("storeroom door",1);
-  "/wizards/khojem/port/shop/ship_store"->set_open("storeroom door",0);
-  "/wizards/khojem/port/shop/ship_store"->set_locked("storeroom door",1);
+  "/d/khojem/port/shop/ship_store"->set_open("storeroom door",0);
+  "/d/khojem/port/shop/ship_store"->set_locked("storeroom door",1);
   add_invis_exit("north");
-  "/wizards/khojem/port/shop/ship_store"->add_invis_exit("north");
+  "/d/khojem/port/shop/ship_store"->add_invis_exit("north");
 }
 
 void create() {
    ::create();
    set_property("indoors",1);
    set_property("light",3);
-   set("short","Vo'Sangor Shipwright");
+//Basic mapping added by Tiny 1/20/2020
+   set("short","   \n    \n   @--0\n    \n   \n Vo'Sangor Shipwright");
    set("long",
      "This is the shop of the Vo'Sangor Shipwright.  Here many fine vessels "+
      "are crafted and their keels layed down.   The interior of this room is hugh.  "
      "Its ceiling is vaulted and the room reaches back quite a ways.  A shipwright "+
-     "must need alot of space to do his work.  Above the counter is a sign."
+     "must need alot of space to do his work.  Above the counter is a sign.\n   \n    \n   @--0\n    \n   \n "
    );
    set_items( ([
      ({ "storeroom door" }) : 
@@ -40,10 +41,10 @@ void create() {
        "The walls are magnificently trussed with large timber that reach up to a "+
        "arched timber frame ceiling."
     ]));
-   add_exit("/wizards/khojem/port/room/s12", "east");
-   add_exit("/wizards/khojem/port/shop/ship_store", "north");
+   add_exit("/d/khojem/port/room/s12", "east");
+   add_exit("/d/khojem/port/shop/ship_store", "north");
    add_invis_exit("north");
-   set_door("storeroom door","/wizards/khojem/port/shop/ship_store",
+   set_door("storeroom door","/d/khojem/port/shop/ship_store",
      "north","key that does not exist");
    set_property("magic hold",70);
    set_lock_level("storeroom door", 22);
@@ -78,7 +79,7 @@ void look_at_door() {
 
 int do_open() {
   remove_invis_exit("north");
-  "/wizards/khojem/port/shop/ship_store"->remove_invis_exit("south");
+  "/d/khojem/port/shop/ship_store"->remove_invis_exit("south");
   write("The storeroom door swings open.\n");
   say(this_player()->query_cap_name()+" opens a storeroom door on the north wall.\n");
   return 1;
@@ -86,7 +87,7 @@ int do_open() {
  
 int do_close() {
   add_invis_exit("north");
-  "/wizards/khojem/port/shop/ship_store"->add_invis_exit("south");
+  "/d/khojem/port/shop/ship_store"->add_invis_exit("south");
   write("A storeroom door is closed.\n");
   say(this_player()->query_cap_name()+" closes a storeroom door.\n");
   return 1;

@@ -1,14 +1,38 @@
-Armour Types
+Metal Armour Types
 -=-=-=-=-=-=
-
-Metal (use blacksmith or forge armour)
+	
+HEAD
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-breast-plate		iron-greaves
-chain-greaves		scale-greaves
-chain-mail		scale-mail
-iron-bracer		gauntlet
 great-helm		chain-coif
+
+TORSO
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+breast-plate		banded-mail
+corslet		        chain-vest
+scale-mail		chain-mail
+
+HANDS
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+gauntlet		chain-glove
+
+ARM
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+plate-bracer		iron-bracer
+	
+LEGS
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+scale-greaves		chain-greaves
+plate-greaves		iron-greaves
+
+FEET
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 metal-boots
+
+SHIELD
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+tower-shield		small-shield
+wall-shield		buckler-shield
+large-shield
 
 Leather/Cloth (use leather craft)
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
@@ -16,4 +40,3 @@ leather-vest		leather-jacket
 leather-pants		leather-glove
 studded-leather-vest	studded-leather-jacket
 studded-leather-pants	studded-leather-glove
-

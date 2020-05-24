@@ -10,11 +10,11 @@ void create() {
     ::create();
     set_property("light", 1);
     set_property("indoors", 0);
-    set("short", "Out on a limb");
+    set("short", "   0\n   | \n   @   \n   | \n   0\nOut on a limb");
     set("long", "The branch is getting narrow here and starting "+
       "to moan under your weight.  You are high above the forest "+
       "floor below you.  A fall from here would hurt.  "+
-      "A branch extents south and north."
+      "A branch extents south and north.   0\n   | \n   @   \n   | \n   0\n"
     );
     add_exit("htree1","north");
     add_exit("wood4","south");
@@ -47,13 +47,13 @@ int go_south(){
   if(this_player()->query_flying()){
     write("Your flight capability allows you to escape from a fall.\n"+
       "You gently sail down to the forest floor.\n");
-    tell_room("/wizards/khojem/new/room/wood4",
+    tell_room("/d/khojem/new/room/wood4",
       this_player()->query_cap_name()+" gently sails down from the tree above you.\n");
     return 1;
   }
   this_player()->add_hp(-50);
   write("After a short fall you hit the forest floor and land in a heap.\n");
-  tell_room("/wizards/khojem/new/room/wood4",
+  tell_room("/d/khojem/new/room/wood4",
     this_player()->query_cap_name()+" falls from above and "+
      "elegantly lands flat on his face beside you.\n");
   return 1;

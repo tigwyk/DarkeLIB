@@ -18,15 +18,15 @@ mixed cmd_observe(string str){
  if(!str){
   room = environment(this_player());
   path = file_name(room);
-  grid = allocate(90);
+  grid = allocate(100);
   if(sscanf(path,"/d/damned/virtual/room_%d_%d.world",Bx,By)){                 
     yline = (By-4);
     if(yline < 0)
-       yline = 80 + yline;
+       yline = 100 + yline;
     targets = ({});    
      loop = 0;
      while(loop <= 9){
-         if(yline == 80)
+         if(yline == 100)
             yline = 0;
          ypos = 0;
          xline = (Bx-4);
@@ -34,10 +34,10 @@ mixed cmd_observe(string str){
          skill_level = (this_player()->query_skill("perception"));
          while(ypos <= 9){ 
            if(xline < 0)
-            xline = 40 + xline;
-           if(xline == 40)
+            xline = 100 + xline;
+           if(xline == 100)
             xline = 0;
-              if( (xline >=0 && xline <=40 )&&(yline >= 0 && yline <= 80)){
+              if( (xline >=0 && xline <=100 )&&(yline >= 0 && yline <= 100)){
                 room = find_object_or_load("/d/damned/virtual/room_"+
                        xline+"_"+yline+".world");
                 inv = all_inventory(room);
@@ -46,37 +46,41 @@ mixed cmd_observe(string str){
                 exits = room->query_exits();
                 if(landtype == 1){
                    //Water Room
-                    grid[yline][ypos] = "%^BLUE%^#";
+                    grid[yline][ypos] = "%^B_BLUE%^#%^RESET%^";
                 }
                 if(landtype == 0){
                    //Land Room
                     desc = explode(room->query_short()," ");
                     while(grid[yline][ypos] == 0){
                      if(member_array("forest",desc) != -1)                       
-                       grid[yline][ypos] = "%^BOLD%^%^GREEN%^F%^RESET%^";     
+                       grid[yline][ypos] ="%^GREEN%^F%^RESET%^";     
                      if(member_array("coast",desc) != -1)                       
-                       grid[yline][ypos] = "%^B_WHITE%^%^BLUE%^C%^RESET%^";
+                       grid[yline][ypos] ="%^B_BLUE%^C%^RESET%^";
                      if(member_array("tundra",desc) != -1)                       
-                       grid[yline][ypos] = "%^WHITE%^T%^RESET%^";
+                       grid[yline][ypos] ="%^WHITE%^T%^RESET%^";
                      if(member_array("plains",desc) != -1)                       
-                       grid[yline][ypos] = "%^B_GREEN%^%^ORANGE%^P%^RESET%^";
+                       grid[yline][ypos] ="%^WHITE%^P%^RESET%^";
                      if(member_array("hills",desc) != -1)                       
-                       grid[yline][ypos] = "%^B_GREEN%^%^BLACK%^H%^RESET%^";
+                       grid[yline][ypos] ="%^RED%^H%^RESET%^";
                      if(member_array("mountains",desc) != -1)                       
-                       grid[yline][ypos] = "%^BOLD%^M%^RESET%^";
+                       grid[yline][ypos] ="%^B_RED%^M%^RESET%^";
                      if(member_array("desert",desc) != -1)                       
-                       grid[yline][ypos] = "%^B_WHITE%^%^ORANGE%^D%^RESET%^";
+                       grid[yline][ypos] ="%^B_YELLOW%^D%^RESET%^";
                      if(member_array("jungle",desc) != -1)                       
-                      grid[yline][ypos] = "%^MAGENTA%^J%^RESET%^";
+                      grid[yline][ypos] ="%^GREEN%^J%^RESET%^";
                      if(member_array("swamp",desc) != -1)                       
-                      grid[yline][ypos] = "%^GREEN%^S%^RESET%^";
+                      grid[yline][ypos] ="%^B_GREEN%^S%^RESET%^";
+                     if(member_array("city",desc) != -1)                       
+                      grid[yline][ypos] ="%^B_GREEN%^O%^RESET%^";
+                     if(member_array("area",desc) != -1)                       
+                      grid[yline][ypos] ="%^B_MAGENTA%^A%^RESET%^";
                      if(grid[yline][ypos] == 0)
                         grid[yline][ypos] = "?";
                     }
                 }
                 //Check to see if Player room
                 if(yline == By && ypos == 4 )
-                    grid[yline][ypos] = "%^ORANGE%^U";                  
+                    grid[yline][ypos] = "%^ORANGE%^@%^RESET%^";                  
               }
               ypos = ypos + 1;
               xline = xline + 1;
@@ -135,30 +139,32 @@ mixed cmd_observe(string str){
    }
    z = By - 1;
    if(skill_level < 1){ 
+       while(loop < 5 ){
       if(z < 0)
-        z = 80 + z;
-      if(z >= 80)
-        z = z - 80;
-      while(loop < 3 ){
-        write("    "+grid[z][3]+" "+grid[z][4]+
-            " "+grid[z][5]);
-        z = z + 1;
-        if(z == 80)
+        z = 100 + z;
+      if(z >= 100)
+        z = z - 100;
+      write(""+grid[z-1][1]+""+grid[z-1][2]+""+
+            grid[z-1][3]+""+grid[z-1][4]+""+grid[z-1][5]+""+grid[z-1][6]+
+            ""+grid[z-1][7]);
+      z = z + 1;
+      if(z == 100)
          z = 0;
-        loop = loop + 1;
-      }
+      loop = loop + 1;
+    }
    }
-   write("\n %^BOLD%^%^GREEN%^F%^RESET%^ = Forest  "
-          "     : %^B_WHITE%^%^BLUE%^C%^RESET%^ = Coast\n"
-          " %^WHITE%^T%^RESET%^ = Tundra  "
-          "     : %^BOLD%^M%^RESET%^ = Mountains\n"
-          " %^B_GREEN%^%^BLACK%^H%^RESET%^ = Hills   "
-          "     : %^B_GREEN%^%^ORANGE%^P%^RESET%^ = Plains\n"
-          " %^GREEN%^S%^RESET%^ = Swamp   "
-          "     : %^MAGENTA%^J%^RESET%^ = Jungle\n"
-          " %^B_WHITE%^%^ORANGE%^D%^RESET%^ = Desert  "
-          "     : %^BLUE%^#%^WHITE%^ = Water\n"
-          " %^ORANGE%^U %^WHITE%^= Your current Position\n");
+    z = By - 3;
+   //write("\n %^GREEN%^F%^RESET%^ = Forest  "
+      //    "     : %^BLUE%^C%^RESET%^ = Coast\n"
+      //    " %^WHITE%^T%^RESET%^ = Tundra  "
+      //    "     : %^RED%^M%^RESET%^ = Mountains\n"
+      //    " %^B_GREEN%^%^BLACK%^H%^RESET%^ = Hills   "
+      //    "     : %^B_GREEN%^%^ORANGE%^P%^RESET%^ = Plains\n"
+      //    " %^GREEN%^S%^RESET%^ = Swamp   "
+      //    "     : %^MAGENTA%^J%^RESET%^ = Jungle\n"
+      //    " %^B_WHITE%^%^ORANGE%^D%^RESET%^ = Desert  "
+      //    "     : %^BLUE%^#%^WHITE%^ = Water\n"
+      //    " %^ORANGE%^@ %^WHITE%^= Your current Position\n");
   }
   else
     write("You are not located on the World Map.");

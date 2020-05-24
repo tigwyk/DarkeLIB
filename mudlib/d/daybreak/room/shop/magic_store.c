@@ -85,6 +85,10 @@ void reset() {
     ob = new("/std/diewarzau/obj/misc/power_stone");
     ob->set_max(100);
     ob->move(this_object());
+    new("/std/diewarzau/obj/misc/power_stone")->move(this_object());
+    ob = new("/std/diewarzau/obj/misc/power_stone");
+    ob->set_max(500);
+    ob->move(this_object());
     new("/std/diewarzau/obj/misc/spell_scroll")->move(this_object());
     new("/std/diewarzau/obj/misc/small_vial")->move(this_object());    
   }

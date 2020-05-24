@@ -446,6 +446,8 @@ int calculate_healing() {
 	    say(query_cap_name() + " "+msg);
 	}
     }
+//TLNY Removed thrist and hunger tickers till fix internvals 2020
+/*
     if(query_stuffed()) {
 	healing["stuffed"]--;
 	if(healing["stuffed"] < 0) healing["stuffed"] = 0;
@@ -454,6 +456,7 @@ int calculate_healing() {
 	healing["quenched"]--;
 	if(healing["quenched"] < 0) healing["quenched"] = 0;
     }
+*/
     if(query_poisoning() > 0) add_poisoning(-1);
       if(query_potion_healing() > 0) add_potion_healing(-1);
     return query_intox()+query_stuffed()+query_quenched();

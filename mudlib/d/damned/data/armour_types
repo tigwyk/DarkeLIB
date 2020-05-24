@@ -315,11 +315,11 @@ id:::
 type:::
 "body armour"
 limbs:::
-({"torso"})
+({"torso", "right arm", "left arm"})
 short:::
 "A chain mail"
 long:::
-"This armour is made of many small chain links covering the torso."
+"This armour is made of many small chain links covering the torso and arms."
 weight:::
 180
 value:::
@@ -1608,24 +1608,78 @@ limbs:::
 short:::
 "A pair of iron greaves"
 long:::
-"these are bugged, you shouldn't have them."
+"These greaves are fashioned of dense iron and are worn on the legs."
 weight:::
 250
 value:::
-210
+230
+ac:::
+40
+ac:::
+5;"fire"
+ac:::
+5;"cold"
+ac:::
+1;"plasma"
+ac:::
+40;"strike"
+ac:::
+1;"vacuum"
+ac:::
+1;"electricity"
+ac:::
+1;"depression"
+ac:::
+1;"disruption"
+ac:::
+1;"stress"
+ac:::
+1;"holy"
+ac:::
+1;"time"
+ac:::
+1;"aether"
 
 (iron-bracer):
 id:::
 ({ "bracer", "iron bracer" })
 type:::
-"pants"
+"bracer"
 limbs:::
-({ "right arm", "left arm" })
+({ ({ "right arm", "left arm" }) })
 short:::
-"An iron bracer"
+"A iron bracer"
 long:::
-"these are bugged, you shouldn't have them."
+"This bracer is crafted of metal and worn on the arm."
 weight:::
-150
+35
 value:::
-100
+50
+ac:::
+40
+ac:::
+5;"fire"
+ac:::
+5;"cold"
+ac:::
+3;"plasma"
+ac:::
+35;"strike"
+ac:::
+45;"impact"
+ac:::
+1;"vacuum"
+ac:::
+1;"electricity"
+ac:::
+1;"depression"
+ac:::
+1;"disruption"
+ac:::
+1;"stress"
+ac:::
+1;"holy"
+ac:::
+1;"time"
+ac:::
+1;"aether"

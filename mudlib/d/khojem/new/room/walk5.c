@@ -20,16 +20,16 @@ void create() {
     ::create();
     set_property("light", 2);
     set_property("indoors", 0);
-    set("short", "A suspended walkway");
+    set("short", "   \n   l \n0--@--0\n    \n   \nA suspended walkway");
     set("long", "You are high above the forest floor on a swinging "+
       "rope bridge.  The bridge serves as a walkway between "+
       "trees.  Each tree has its own platform and the walkways "+
       "link the platforms together to form a small village above "+
-      "the forest floor."  
+      "the forest floor.\n   \n   l \n0--@--0\n    \n   \n"  
     );
     add_exit("walk4","east");
     add_exit("plat4","west");
-    add_exit("/wizards/khojem/new/room/annex1","ladder");
+    add_exit("/d/khojem/new/room/annex1","ladder");
     add_pre_exit_function("ladder","go_ladder");
     set_items(([
         "village" : "Many small huts are built into the trees around you.",
@@ -55,7 +55,7 @@ them.",
 everywhere.");
     set_listen("default", "You hear the occasional sound of birds
 singing.");
-    new("/wizards/khojem/new/obj/sign")->move(this_object());
+    new("/d/khojem/new/obj/sign")->move(this_object());
 }
 
 int go_ladder() {

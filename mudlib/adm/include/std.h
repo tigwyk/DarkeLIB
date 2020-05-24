@@ -21,5 +21,5 @@
 #define GUILD "/std/guild"
 #define SHADOW "/std/spells/shadows/shadow"
 
-#define DAMAGE_TYPES ({ "crushing", "cutting", "impaling", "fire", "impact", "electricity", "acid", "plasma","vacuum", "cold", "depression", "time", "disruption", "holy","aether", "stress", "strike", "infernal" })
+#define DAMAGE_TYPES ({ "crushing", "cutting", "impaling", "fire", "impact", "electricity", "acid", "plasma","vacuum", "cold", "depression", "time", "disruption", "holy","aether", "stress", "strike", "infernal", "light" })
 

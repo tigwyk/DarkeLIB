@@ -40,7 +40,8 @@ int cmd_protection(string str) {
       tmp += "%^RESET%^%^BLUE%^|%^RESET%^ ";
       if(ac <= 1) idx = 0;
       else {
-        idx = 1 + ac / 20;
+        idx = 1 + ac / 40;
+//TLNY 2020 changed ac / 20 to 40
         //if(ac > 50) {
         //  ac -= 50;
        //   idx -= (ac/8) - (ac/20);
@@ -76,7 +77,8 @@ int cmd_protection(string str) {
       tmp += "%^RESET%^%^BLUE%^|%^RESET%^ ";
       if(p_ac <= 1) idx = 0;
       else {
-        idx = 1 + p_ac / 20;
+        idx = 1 + p_ac / 40;
+//TLNY 2020 changed ac / 20 to 40
        // if(p_ac > 50) {
        //   p_ac -= 50;
        //   idx -= (p_ac/8) - (p_ac/20);
@@ -90,7 +92,8 @@ int cmd_protection(string str) {
       tmp += "%^RESET%^%^BLUE%^|%^RESET%^ ";
       if(ac <= 1) idx = 0;
       else {
-        idx = 1 + ac / 20;
+        idx = 1 + ac / 40;
+//TLNY 2020 changed ac / 20 to 40
   //      if(ac > 40) {
     //      ac -= 40;
      //     idx -= (ac/6) - (ac/17);

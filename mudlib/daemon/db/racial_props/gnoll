@@ -1,4 +1,5 @@
 melee damage:::(["crushing":5])
+corpse eating:::1
 extra hp regen:::20
-natural ac:::4
-xp mod:::45
+natural ac:::5
+xp mod:::50

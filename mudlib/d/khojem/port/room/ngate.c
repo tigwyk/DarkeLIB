@@ -18,8 +18,8 @@ void init() {
 void reset() {
     ::reset();
     if(!present("gatekeeper")) {
-      new("/wizards/khojem/port/mon/gatekeeper")->move(this_object());
-      new("/wizards/khojem/port/mon/gatekeeper")->move(this_object());
+      new("/d/khojem/port/mon/gatekeeper")->move(this_object());
+      new("/d/khojem/port/mon/gatekeeper")->move(this_object());
     }
 }
 
@@ -28,12 +28,13 @@ void create() {
     set_property("light", 2);
     set_property("night light",2);
     set_property("indoors", 1);
-    set("short", "The north gate");
+//Basic mapping added by Tiny 1/19/2020
+    set("short", "   \n   W \n   @--0\n   | \n   0\nThe north gate");
     set("day long",
       "An arched gateway, made from roughly-hewned stone, forms a small "+
       "alcove that protects the town's gatekeepers during their long duty "+
       "tour.  A dirt road extends to the south and the rest of the port town "+
-      "of Vo'Sangor can be seen.  A brass sign is securely fastened to the wall."
+      "of Vo'Sangor can be seen.  A brass sign is securely fastened to the wall.\n   \n   W \n   @--0\n   | \n   0\n"
    );
     set("night long",
       "An arched gateway, made from roughly-hewned stone, forms a small "+
@@ -43,8 +44,8 @@ void create() {
     );
     add_exit("/d/damned/virtual/room_11_9.world","north");
     set_pre_exit_functions(({"north"}),({"exit_city"}));
-    add_exit("/wizards/khojem/port/room/constable","east");
-    add_exit("/wizards/khojem/port/room/s06","south");
+    add_exit("/d/khojem/port/room/constable","east");
+    add_exit("/d/khojem/port/room/s06","south");
     set_items(([
      ({ "arch","gateway" }) :
         "The stones of the arch are massive and superbly crafted.\n",

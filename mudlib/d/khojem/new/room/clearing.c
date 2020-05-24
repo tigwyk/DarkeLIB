@@ -29,11 +29,11 @@ void create() {
     search_count=0;
     set_property("light", 3);
     set_property("indoors", 0);
-    set("short", "Clearing");
+    set("short", "   \n    \n0--@--0\n   | \n   0\nClearing");
     set("long", "You suddenly find yourself in a small clearing surrounded "+
       "by a dense forest.  A thick, waist-high yellowed wild grass fills "+
       "the clearing.  Exit into the forest is impossible, but trails "+
-      "cut pathways through the forest out of the clearing."
+      "cut pathways through the forest out of the clearing.\n   \n    \n0--@--0\n   | \n   0\n"
     );
     add_exit("trail1","east");
     add_exit("trail3","west");
@@ -54,9 +54,9 @@ void create() {
     set_smell("default", "The smell of rotting corpses is very strong.");
     set_listen("default", "You hear a battle raging.");
     set_search("default",(: this_object(),"do_search" :));
-    new("/wizards/khojem/new/mon/elf_warrior")->move(this_object());
-    new("/wizards/khojem/new/mon/orc_warrior")->move(this_object());
-    new("/wizards/khojem/new/obj/sign")->move(this_object());
+    new("/d/khojem/new/mon/elf_warrior")->move(this_object());
+    new("/d/khojem/new/mon/orc_warrior")->move(this_object());
+    new("/d/khojem/new/obj/sign")->move(this_object());
 }
 
 int read_sign(string str){

@@ -55,12 +55,15 @@ int block_exit() {
      write("The Guard says in Common: Only paladins may pass.");
     return 1;
   }
-  inv = filter_array(all_inventory(this_player()), "locker_filter",
+//TLNY2020 removed code
+/*  
+inv = filter_array(all_inventory(this_player()), "locker_filter",
         this_object());
   if(sizeof(inv)) {
     write("The Guard says in Common: We do not allow storage devices in here.");
     return 1;
   }
+*/
  join_room = find_object_or_load("/d/damned/guilds/join_rooms/paladin_join");
   p_name = (string)this_player()->query_name();
   if(member_array("treasury restrict", (string *)join_room->

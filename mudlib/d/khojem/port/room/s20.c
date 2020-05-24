@@ -17,10 +17,10 @@ void init() {
 void reset(){
   set_open("teal door",0);
   set_locked("teal door",1);
-  "/wizards/khojem/port/room/e1"->set_open("teal door",0);
-  "/wizards/khojem/port/room/e1"->set_locked("teal door",1);
+  "/d/khojem/port/room/e1"->set_open("teal door",0);
+  "/d/khojem/port/room/e1"->set_locked("teal door",1);
   add_invis_exit("northeast");
-  "/wizards/khojem/port/room/e1"->add_invis_exit("southwest");
+  "/d/khojem/port/room/e1"->add_invis_exit("southwest");
 }
 
 void create() {
@@ -28,17 +28,18 @@ void create() {
     set_property("light", 3);
     set_property("night light",2);
     set_property("indoors", 0);
-    set("short", "Noble Street");
+//Basic mapping added by Tiny 1/19/2020
+    set("short", "   \n     \n0--@   \n   | \n   0\nNoble Street");
     set("long", "Noble Street extends west and south.  "+
       "The street's dry dirt sends up small swirls of dust with every "+
       "footstep.  Here the street turns and a large mansion is seen to "+
-      "the northeast."
+      "the northeast.\n   \n     \n0--@   \n   | \n   0\n"
     );
-    add_exit("/wizards/khojem/port/room/s18","west");
-    add_exit("/wizards/khojem/port/room/s21","south");
-    add_exit("/wizards/khojem/port/room/e1","northeast");
+    add_exit("/d/khojem/port/room/s18","west");
+    add_exit("/d/khojem/port/room/s21","south");
+    add_exit("/d/khojem/port/room/e1","northeast");
     add_invis_exit("northeast");
-    set_door("teal door","/wizards/khojem/port/room/e1","northeast","sangor key");
+    set_door("teal door","/d/khojem/port/room/e1","northeast","sangor key");
     set_property("magic hold",80);
     set_lock_level("teal door", 15);
     set_open("teal door",0);
@@ -73,7 +74,7 @@ void look_at_teal_door() {
 
 int do_teal_open() {
   remove_invis_exit("northeast");
-  "/wizards/khojem/port/room/e1"->remove_invis_exit("southwest");
+  "/d/khojem/port/room/e1"->remove_invis_exit("southwest");
   write("The teal door easily swings open.\n");
   say(this_player()->query_cap_name()+" opens a teal door to the northeast.\n");
   return 1;
@@ -81,7 +82,7 @@ int do_teal_open() {
  
 int do_teal_close() {
   add_invis_exit("south");
-  "/wizards/khojem/port/room/e1"->add_invis_exit("northeast");
+  "/d/khojem/port/room/e1"->add_invis_exit("northeast");
   write("A teal door is slammed shut.\n");
   say(this_player()->query_cap_name()+" slams a teal door shut.\n");
   return 1;

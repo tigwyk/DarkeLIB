@@ -79,8 +79,11 @@ void finish_work(object from, object at) {
   wc["crushing"] += skill / 4 + 2;
   if(!wc["impaling"]) wc["impaling"] = 0;
   wc["impaling"] += skill / 4 + 2;
+//TLNY 2020 technically magic AC added at a lower value
   if(!wc["impact"]) wc["impact"] = 0;
-  wc["impact"] += skill / 4 + 2;
+  wc["impact"] += skill / 2 + 1;
+ if(!wc["strike"]) wc["strike"] = 0;
+  wc["strike"] += skill / 2 + 1;
   wc_keys = keys(wc);
   i = sizeof(wc_keys);
   while(i--)

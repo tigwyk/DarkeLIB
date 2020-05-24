@@ -10,29 +10,29 @@ void reset(){
   object mon;
   ::reset();
   if(!present("merchant")) 
-    new("/wizards/khojem/new/mon/elf_merchant")->move(this_object());
+    new("/d/khojem/new/mon/elf_merchant")->move(this_object());
   if(!present("rock"))
-    new("/wizards/khojem/new/obj/rock")->move(this_object());
+    new("/d/khojem/new/obj/rock")->move(this_object());
 }  
 
 void create() {
     ::create();
     set_property("light", 3);
     set_property("indoors", 0);
-    set("short", "A wooded path");
+    set("short", "   0\n   | \n   @   \n   o \n   \nA wooded path");
     set("day long", "You are on a north/south path.  The trees grow "+
       "all around, but allow a great deal of sunlight through the "+
       "leaves and branches.  It is really pleasant here.  Off to the "+
       "side you see a few squirrels scampering about.  The trail "+
-      "extents north from here.  A large rock is to the trail's side."
+      "extents north from here.  A large rock is to the trail's side.\n   0\n   | \n   @   \n   o \n   \n"
     );
     set("night long", "You are on a north/south path.  The trees grow "+
       "all around, but allow much of the night's light through the "+
       "leaves and branches.  It is really pleasant here.  Off to the "+
       "side you see a few squirrels scampering about.  The trail "+
-      "extents north from here.  A large rock is to the trail's side."
+      "extents north from here.  A large rock is to the trail's side.\n   0\n   | \n   @   \n   o \n   \n"
     ); 
-    add_exit("/wizards/khojem/new/room/path2","north");
+    add_exit("/d/khojem/new/room/path2","north");
     add_exit("/d/damned/virtual/room_13_16.world","out");
     set_items(([
      ({ "squirrel","squirrels" }) :

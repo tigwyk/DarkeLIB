@@ -48,7 +48,8 @@
 11..15:$A $V a stinging thrust into $(TP) side.:deliver:DAMAGE 9:STUN 1
 16..20:$A $V forward to stick $T in the gut.:leap:DAMAGE 6:STUN 1:SKILL_MOD parry -20 1
 21..35:$A $V into $T, ripping flesh from $(TP) bones.:tear:DAMAGE 8:STUN 1
-36..45:$A $V $T wickedly, leaving a bloody wound above $(TPP) groin.:stab:CONT_DAMAGE 3 4:SKILL_MOD dodge -15 4:STAT_MOD strength -15 4
+36..45:$A $V $T wickedly, leaving a bloody wound above $(TPP) groin.:stab:CONT_DAMAGE 3 4:SKILL_MOD dodge -15 4
+#TLNY2020 removed:STAT_MOD strength -15 4
 46..50:$A $V $T with a surprise thrust to the lower torso.:injure:DAMAGE 9:STUN 2
 51..55:$A $V $T just below the chest, drawing much blood.:stab:DAMAGE 13:STUN 2
 56..60:$A $V $(TP) upper leg most painfully!:pierce:DAMAGE 5:CONT_DAMAGE 4 2:STUN 2:SKILL_MOD dodge -15 8
@@ -73,7 +74,8 @@
 51..55:$A $V $T in the chest with a forceful thrust!:wound:DAMAGE 10:STUN 1:CONT_DAMAGE 3 7:SKILL_MOD attack -15 7:SKILL_MOD block -15 7
 56..60:$A $V $T nastily in the thigh, making $(TPP) knees weak.:puncture:DAMAGE 12:STUN 1:SKILL_MOD parry -75 1
 61..65:$A $V $(TP) forearm, biting bone and leaving grave wounds!:pierce:DAMAGE 6:CONT_DAMAGE 4 2:STUN 2:SKILL_MOD parry -10 2:SKILL_MOD defense -50 2:SKILL_MOD attack -50 5
-66..67:$A $V $T in the head!!! $(TPP) skull nearly splits in half!:shaft:DAMAGE 36:STUN 9:SKILL_MOD parry -100 9:STAT_MOD intelligence -75 9:CONT_DAMAGE 21 9
+66..67:$A $V $T in the head!!! $(TPP) skull nearly splits in half!:shaft:DAMAGE 36:STUN 9:SKILL_MOD parry -100 9:CONT_DAMAGE 21 9
+#TLNY2020 removed:STAT_MOD intelligence -75 9
 68..72:$A $V hard into $(TP) shoulder, spinning $(TPP) around dizzily.:strike:DAMAGE 7:STUN 2:SKILL_MOD parry -20 7:SKILL_MOD attack -20 7
 73..75:$A $V $T wickedly in the lower leg, spilling blood and broken cartilage on the ground.:strike:DAMAGE 12:STUN 2:SKILL_MOD parry -50 2:SKILL_MOD dodge -50 4
 76..80:$A $V powerfully through $(TP) shoulder, driving $(TO) to step back in pain, gripping the bleeding, lifeless member.:pierce:LIMB_LOSS arm cripple:STUN 6:CONT_DAMAGE 6 6:DAMAGE 3
@@ -88,7 +90,8 @@
 11..15:$A painfully $V into $(TP) gut!:pierce:DAMAGE 11:STUN 2:SKILL_MOD parry -80 1
 16..20:$A $V $(APP) attack deep into $(TP) hip!:thrust:DAMAGE 13:STUN 1:SKILL_MOD dodge -30 5:SKILL_MOD attack -15 3
 21..35:$A $V $(APP) attack forcefully between $(TP) ribs, piercing $(TPP) organs!:thrust:DAMAGE 21:STUN 2:SKILL_MOD parry -25 4:SKILL_MOD block -25 4:CONT_DAMAGE 5 6
-36..45:$A $V $T square in the belly, opening a terrible wound that pours blood and entrails!!:drill:STUN 3:DAMAGE 8:CONT_DAMAGE 8 5:STAT_MOD strength -20 7
+36..45:$A $V $T square in the belly, opening a terrible wound that pours blood and entrails!!:drill:STUN 3:DAMAGE 8:CONT_DAMAGE 8 5
+#TLNY2020 removed:STAT_MOD strength -20 7
 46..55:$A $V into $(TP) arm, puncturing arteries and splitting bones! The arm hangs limp at the side of the terrified $T!:pierce:LIMB_LOSS arm cripple:CONT_DAMAGE 3 11:STUN 4
 56..65:$A $V ruthlessly straight through $(TP) leg, sending $(TO) to the ground, curling in flowing blood!:stab:LIMB_LOSS leg cripple:CONT_DAMAGE 6 7:STUN 6:SKILL_MOD parry -50 6
 66..67:$A $V upon $T, driving $(APP) attack brutally through $(TP) vital organs!!:dive:KILL

@@ -1,26 +1,28 @@
 #include "/d/damned/virtual/virtual_table.h"
 #define ARMOUR ({\
 "breast-plate", \
-"corslet", \
-"chain-coif", \
-"scale-greaves", \
-"scale-mail", \
 "chain-greaves", \
 "chain-mail", \
+"iron-bracer",\
 "great-helm", \
+"metal-boots", \
+"iron-greaves", \
+"scale-greaves", \
+"scale-mail", \
+"gauntlet", \
+"chain-coif", \
+"corslet", \
+"chain-glove", \
 "tower-shield", \
 "wall-shield", \
 "large-shield", \
 "small-shield", \
 "buckler-shield", \
-"gauntlet", \
-"chain-glove", \
-"metal-boots", \
 "plate-bracer", \
 "plate-greaves", \
 "banded-mail", \
-"taces", \
-"metal-visor" })
+"chain-vest", \
+ })
 
 inherit "/std/skills/long_term.c";
 

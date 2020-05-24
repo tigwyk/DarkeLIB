@@ -18,7 +18,7 @@ int check_mobs() {
 }
 
 int my_mob_filter(object mob) {
-  if(base_name(mob) == "/wizards/khojem/port/mon/peon")  
+  if(base_name(mob) == "/d/khojem/port/mon/peon")  
     return 1;                                        
   return 0;
 }
@@ -26,7 +26,7 @@ int my_mob_filter(object mob) {
 void reset(){
   if(!present("peon")) {
     if(check_mobs()<5)
-      new("/wizards/khojem/port/mon/peon")->move(this_object());
+      new("/d/khojem/port/mon/peon")->move(this_object());
   }
 }
 
@@ -43,16 +43,17 @@ void create() {
     set_property("light", 3);
     set_property("night light",2);
     set_property("indoors", 0);
-    set("short", "Wharf Street");
+//Basic mapping added by Tiny 1/19/2020
+    set("short", "   0\n   | \n0--@   \n   | \n   0\nWharf Street");
     set("long","Wharf Street extends north and south.  "+
       "The harbor is just to the east.  "+
       "A tall tower is far off to the north.  "+
       "The wooden boards beneath your feet creak with every footstep.  "+
-      "Some sort of shop is to the west.  A sign is above the open doorway."
+      "Some sort of shop is to the west.  A sign is above the open doorway.\n   0\n   | \n0--@   \n   | \n   0\n"
     );
-    add_exit("/wizards/khojem/port/shop/shipwright","west");
-    add_exit("/wizards/khojem/port/room/s11","north");
-    add_exit("/wizards/khojem/port/room/s13","south");
+    add_exit("/d/khojem/port/shop/shipwright","west");
+    add_exit("/d/khojem/port/room/s11","north");
+    add_exit("/d/khojem/port/room/s13","south");
     set_items(([
      ({ "shop","doorway" }) :
         "A broad doorway serves as an entrance to a place of business.  "+

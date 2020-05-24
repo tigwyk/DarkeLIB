@@ -12,13 +12,13 @@ void reset() {
     ::reset();
   search_flag = 0;
   if(!present("worker")) {
-    new("/wizards/khojem/port/mon/worker2")->move(this_object());
-    new("/wizards/khojem/port/mon/worker2")->move(this_object());
+    new("/d/khojem/port/mon/worker2")->move(this_object());
+    new("/d/khojem/port/mon/worker2")->move(this_object());
   }
   if(check_mobs()<5) {
-    new("/wizards/khojem/port/mon/worker1")->move(this_object());
-    new("/wizards/khojem/port/mon/worker1")->move(this_object());
-    new("/wizards/khojem/port/mon/worker1")->move(this_object());
+    new("/d/khojem/port/mon/worker1")->move(this_object());
+    new("/d/khojem/port/mon/worker1")->move(this_object());
+    new("/d/khojem/port/mon/worker1")->move(this_object());
   }
 }    
 
@@ -27,14 +27,15 @@ void create() {
     set_property("light", 1);
     set_property("night light",0);
     set_property("indoors", 1);
-    set("short", "Warehouse on the Wharf");
+//Basic mapping added by Tiny 1/20/2020
+    set("short", "   \n    \n   @--0\n    \n   \nWarehouse on the Wharf");
     set("long","This is a dark warehouse.  Here items unloaded from merchant "+
       "vessels can be stored until a caravan is provisioned to move the "+
       "items inland.  Since the ships are unloading night and day, this "+
       "warehouse can stay very busy.  Many crates and boxes are stacked "+
-      "here for storage."
+      "here for storage.\n   \n    \n   @--0\n    \n   \n"
     );
-    add_exit("/wizards/khojem/port/room/s13","east");
+    add_exit("/d/khojem/port/room/s13","east");
     set_items(([
      ({ "warehouse" }) :
         "It looks like an old, weather-ravaged wooden warehouse.",
@@ -129,7 +130,7 @@ int check_mobs() {
 }
 
 int my_mob_filter(object mob) {
-  if(base_name(mob) == "/wizards/khojem/port/mon/worker1")  
+  if(base_name(mob) == "/d/khojem/port/mon/worker1")  
     return 1;                                        
   return 0;
 }

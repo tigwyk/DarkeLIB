@@ -20,17 +20,17 @@ void create() {
     set_property("light", 3);
     set_property("night light",2);
     set_property("indoors", 0);
-    set("short", "Dock Street");
+    set("short", "   0\n   | \n0--@--0\n   P \n   \nDock Street");
     set("long","Dock Street extends east and west.  "+
       "The harbor is just to the south.  "+
       "A schooner is berthed just to the south and a plank leads off to it.  "+
       "The wooden boards beneath your feet creak with every footstep.  "+
-      "Loud laughter emits from a shop to the north."
+      "Loud laughter emits from a shop to the north.\n   0\n   | \n0--@--0\n   P \n   \n"
     );
-    add_exit("/wizards/khojem/port/shop/pub","north");
-    add_exit("/wizards/khojem/port/room/s23","west");
-    add_exit("/wizards/khojem/port/room/s25","east");
-    add_exit("/wizards/khojem/port/room/ship1","plank");
+    add_exit("/d/khojem/port/shop/pub","north");
+    add_exit("/d/khojem/port/room/s23","west");
+    add_exit("/d/khojem/port/room/s25","east");
+    add_exit("/d/khojem/port/room/ship1","plank");
     set_items(([
      ({ "sign" }) :
         "It is an old, weather-beaten sign.  Try reading it.",

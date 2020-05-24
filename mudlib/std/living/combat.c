@@ -493,7 +493,7 @@ if((int)attackers[0]->query_max_internal_encumbrance() <= 0)
 		switch(random(10)) {
 		case 0..1:
                     if (spec_com > 10) break;
-		    message("my_combat", "%^RED%^%^BOLD%^- Living Special combat:%^RESET%^ Extra attack!",
+		    message("my_combat", "%^RED%^%^BOLD%^- Special combat:%^RESET%^ Extra attack!",
 		      me);
                     spec_com++;
                     num_attacks++;
@@ -501,14 +501,14 @@ if((int)attackers[0]->query_max_internal_encumbrance() <= 0)
 		    break;
 		case 2..6:
 		default:
-		    message("my_combat", "%^RED%^%^BOLD%^- Living Special combat:%^RESET%^ Extra damage!",
+		    message("my_combat", "%^RED%^%^BOLD%^- Special combat:%^RESET%^ Extra damage!",
 		      me);
 		    if(mapp(damage))
 			damage = map_mapping(damage, (: ($3 + $2) :), 20 +
 			  skill-99 + random(skill-99));
 		    break;
 		case 7..8:
-		    message("my_combat", "%^RED%^%^BOLD%^-Living Special combat:%^RESET%^ Extra critical!",
+		    message("my_combat", "%^RED%^%^BOLD%^-Special combat:%^RESET%^ Extra critical!",
 		      me);
 		    if(mapp(damage))
 			criticals += map_array(keys(damage), (: $1 + $2 :), " B");

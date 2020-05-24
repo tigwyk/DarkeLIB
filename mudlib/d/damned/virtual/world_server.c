@@ -10,6 +10,7 @@
 #include <daemons.h>
 #include <std.h>
 
+
 inherit ROOM;
 inherit "/std/virtual/compile";
 
@@ -68,6 +69,12 @@ add_exit("/d/damned/arena/booths_room", "arena");
     set("short", "A murky swamp");
     set_smell("default", "The air is heavy with the stench of decay.");
     set_smell("gas", (: call_other, this_object(), "gas_func" :));
+    break;
+ case "O":
+    set("short", "A city");
+    break;
+ case "A":
+    set("short", "A area");
     break;
   case "T":
     set("short", "A freezing tundra");
@@ -142,20 +149,27 @@ add_exit("/d/damned/arena/booths_room", "arena");
       }
     }
   }
+
+/* Removed and placed in proper location to reference /d/damned/data/world_items.db
+//City of VO Tiny
 if(x == 11 && y == 9) {
 set("night long", (string)query("night long") + "%^BOLD%^"
-"The Town of Vo'sangar.%^RESET%^");
+"The City of Vo'sangar.%^RESET%^");
 set("day long", (string)query("day long") + "%^BOLD%^"
-"The Town of Vo'sangar.%^RESET%^");
-add_exit("/d/khojem/port/room/wgate", "town");
+"The City of Vo'sangar.%^RESET%^");
+add_exit("/d/khojem/port/room/wgate", "city");
 }
+
+//CITY OF AKKAD Tiny
 if(x == 5 && y == 9) {
 set("night long", (string)query("night long") + "%^BOLD%^"
 "The City of Akkad.%^RESET%^");
 set("day long", (string)query("day long") + "%^BOLD%^"
-"The Town of Akkad.%^RESET%^");
+"The City of Akkad.%^RESET%^");
 add_exit("/d/damned/akkad/ak_out4", "city");
 }
+*/
+
   items_file = get_dir("/d/damned/data/");
   i = sizeof(items_file);
   minerals = ([]);
@@ -203,6 +217,10 @@ string get_xtra_long(int *x, int *y) {
 string terrain_name(string letter) {
   letter = capitalize(letter);
   switch(letter) {
+  case "A":
+    return "a area";
+  case "O":
+    return "a city";
   case "F":
     return "a stately forest";
   case "J":
@@ -325,6 +343,19 @@ string get_day_long(string terrain, int z) {
     descs[2] = "You push some vines aside as you wade through the swamp.  You proceed at a cautious pace "+
       "since the gas is so thick, you can hardly see your hand in front of your face.\n";
     break;
+case "O":
+    descs[0] = "You here the busy streets of a city here.  "+
+      "Your excitment rises as you smell fresh bread cooking.  In the distance, you see the city walls in the distance.\n";
+    descs[1] = "You walk carefully along the walls of the city.\n";
+    descs[2] = "You walk carefully along the walls of the city.\n";
+    break;
+case "A":
+    descs[0] = "You come close to a dungeon and here the grunts of monsters neaby  "+
+      "Your excitment rises as you smell the flesh of rotted corpses."+  
+"In the distance, you see blood stained banners.\n";
+    descs[1] = "You walk carefully along the enetrance of the area.\n";
+    descs[2] = "You walk carefully along the enetrance of the area.\n";
+    break;
   case "T":
     descs[0] = "You feel you should have packed an extra jacket as you trudge through the deep snow here.  "+
       "Your breath forms ice crystals as you exhale.  In the distance, you see huge mountains of ice "+
@@ -418,6 +449,14 @@ string get_night_long(string terrain, int z) {
     return "The swamp is not the best place to be at night.  The swamp gas floats over the murky waters almost "+
       "as if it were alive.  Your only companion in this dark morass is the sound of the water as it is "+
 	"parted by your stride.\n";
+case "O":
+    return "If you thought this place was cold during the day, you had another thing coming.  As far as you "+
+      "can see, which isn't very, the city is cold, flat, and unrelenting.  Your shivers of cold are surpassed "+
+	"only by the loneliness you feel.\n";
+case "A":
+    return "If you thought this place was cold during the day, you had another thing coming.  As far as you "+
+      "can see, which isn't very, the area is cold, flat, and unrelenting.  Your shivers of cold are surpassed "+
+	"only by the loneliness you feel.\n";
   case "T":
     return "If you thought this place was cold during the day, you had another thing coming.  As far as you "+
       "can see, which isn't very, the snow is cold, flat, and unrelenting.  Your shivers of cold are surpassed "+
@@ -505,16 +544,3 @@ void clone_monster(string terrain) {
     mon->move(this_object());
   return;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

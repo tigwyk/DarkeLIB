@@ -9,10 +9,13 @@
 51..60:A crackling blast of plasma from $(AP) attack strikes $T.::STUN 1:DAMAGE 23
 61..65:$A $V a powerful blow to $T with $(APP) plasma attack.:deliver:STUN 1:SKILL_MOD parry -100 1:DAMAGE 23
 66..66:$(AP) powerful plasma blast shatters $(TP) arm, rendering it useless.::DAMAGE 38:LIMB_LOSS arm cripple:STUN 3:SKILL_MOD parry -100 3
-67..70:Plasma from $(AP) attack strikes $T in the back.::DAMAGE 16:STAT_MOD dexterity -5 10:STUN 1:SKILL_MOD parry -100 1
+67..70:Plasma from $(AP) attack strikes $T in the back.::DAMAGE 16:STUN 1:SKILL_MOD parry -100 1
+#TLNY2020 removed:STAT_MOD dexterity -5 10
 71..80:$A $V a weak plasma strike to $(TP) abdomen.:deliver:DAMAGE 31:STUN 3:SKILL_MOD parry -100 1:SKILL_MOD block -100 1
-81..90:$T $(VT) knocked down by the brutality of $(AP) plasma blast.:are:STUN 2:STAT_MOD dexterity -50 10:DAMAGE 23
-91..95:$(AP) plamsa attack crushes $(TP) hip.::STUN 3:STAT_MOD dexterity -50 10:DAMAGE 38
+81..90:$T $(VT) knocked down by the brutality of $(AP) plasma blast.:are:STUN 2:DAMAGE 23
+#TLNY2020 removed:STAT_MOD dexterity -50 10
+91..95:$(AP) plamsa attack crushes $(TP) hip.::STUN 3:DAMAGE 38
+#TLNY2020 removed:STAT_MOD dexterity -50 10
 96..99:$(AP) plasma strike severely burns $(TP) head and neck.::DAMAGE 38:STUN 10
 100..100:$A $V a powerful plasma strike to $(TP) head, severely injuring $(TO).:deliver:DAMAGE 46:STUN 12:SKILL_MOD parry -100 6:SKILL_MOD block -100 6
 (B):
@@ -23,11 +26,14 @@
 31..40:$T $(VT) blasted backward by the force of $(AP) plasma attack.:are:DAMAGE 14:STUN 2
 41..50:$A $V $T with the strength of $(APP) plasma attack.:stagger:CONT_DAMAGE 2 6:DAMAGE 23:STUN 1
 51..60:$A $V a plasma blast to $(TP) back, spinning $(TO) about.:deliver:CONT_DAMAGE 3 5:DAMAGE 23:SPECIAL_RESULT /wizards/diewarzau/crits/crit_results torso_no_armour
-61..65:$(AP) plasma attack badly burns $T.::CONT_DAMAGE 3 6:DAMAGE 23:STUN 1:SKILL_MOD parry -100 1:STAT_MOD dexterity -5 10
+61..65:$(AP) plasma attack badly burns $T.::CONT_DAMAGE 3 6:DAMAGE 23:STUN 1:SKILL_MOD parry -100 1
+#TLNY2020 removed:STAT_MOD dexterity -5 10
 66..66:Plasma from $(AP) attack shatters $(TP) shoulder, setting that portion of his body aflame!::CONT_DAMAGE 7 5:DAMAGE 31:STUN 3:LIMB_LOSS arm cripple
-67..70:$A $V a solid plasma strike to $(TP) back.:deliver:DAMAGE 22:STUN 1:SKILL_MOD parry -100 1:STAT_MOD dexterity -5 10
+67..70:$A $V a solid plasma strike to $(TP) back.:deliver:DAMAGE 22:STUN 1:SKILL_MOD parry -100 1
+#TLNY2020 removed:STAT_MOD dexterity -5 10
 71..80:$(AP) plasma blast strikes $T on $(TPP) feet, toppling $(TO).::STUN 2:SKILL_MOD parry -100 2:SKILL_MOD block -100 2:CONT_DAMAGE 4 5:DAMAGE 23
-81..90:$A $V a fierce plasma strike to $(TP) calf, boiling flesh and muscle.:deliver:STUN 3:SKILL_MOD attack -50 10:STAT_MOD dexterity -50 10:DAMAGE 38
+81..90:$A $V a fierce plasma strike to $(TP) calf, boiling flesh and muscle.:deliver:STUN 3:SKILL_MOD attack -50 10:DAMAGE 38
+#TLNY2020 removed:STAT_MOD dexterity -50 10
 91..95:$(AP) attack strikes $T in the temple, severely burning the side of $(TPP) face and robbing $(TO) of hair.::DAMAGE 46:STUN 8:SKILL_MOD parry -60 8:SKILL_MOD block -60 8
 96..99:$(AP) plasma blast burns $(TP) face and fills $(TPP) lungs with smoke.::DAMAGE 46:STUN 12:SKILL_MOD parry -100 12
 100..100:$A $V severe third degree burns on most of $(TP) body with $(APP) attack.:cause:DAMAGE 61:SKILL_MOD attack -100 10
@@ -36,8 +42,10 @@
 6..10::::DAMAGE 5
 11..20:$T $(VT) unbalanced by $(AP) plasma attack.:are:DAMAGE 8:STUN 1
 21..30:Plasma from $(AP) attack crackles with the energy of heat and electricity as it strikes $T.::DAMAGE 13:STUN 1:SKILL_MOD parry -100 1:SKILL_MOD block -100 1
-31..40:$T $(VT) under the impact of $(AP) plasma blast.:stagger:DAMAGE 23:CONT_DAMAGE 2 7:STAT_MOD dexterity -80 1
-41..50:$(TP) flesh sizzles as plasma from $(AP) attack strikes $(TO).::DAMAGE 23:STUN 1:STAT_MOD dexterity -100 1
+31..40:$T $(VT) under the impact of $(AP) plasma blast.:stagger:DAMAGE 23:CONT_DAMAGE 2 7
+#TLNY2020 removed:STAT_MOD dexterity -80 1
+41..50:$(TP) flesh sizzles as plasma from $(AP) attack strikes $(TO).::DAMAGE 23:STUN 1
+#TLNY2020 removed:STAT_MOD dexterity -100 1
 51..60:$T $(VT) thrown violently back as plasma from $(AP) attack strikes $(TO).:are:STUN 2:DAMAGE 31
 61..65:Plasma from $(AP) attack strikes $T in the leg, setting it aflame!::STUN 2:DAMAGE 23:SPECIAL_RESULT /wizards/diewarzau/crits/crit_results leg_no_armour
 66..66:$A $V a fierce plasma strike to $(TP) chest, rending both of $(TPP) arms!:deliver:LIMB_LOSS arm cripple:LIMB_LOSS arm cripple:STUN 3:SKILL_MOD attack -90 10
@@ -60,7 +68,8 @@
 67..70:$A $V a focused plasma attack to the center of $(TP) chest, knocking $(TO) to the ground.:deliver:STUN 2:SKILL_MOD parry -100 2:DAMAGE 30
 71..80:The force of $(AP) plasma blast breaks $(TP) arm!::LIMB_LOSS arm cripple:STUN 2:DAMAGE 20:SKILL_MOD attack -30 10
 81..90:$(AP) plasma blast strikes $T in the gut.  $(TN) $(VT) up blood and other inappropriate secretions.:cough:STUN 4:DAMAGE 40
-91..95:$(TP) jaw is DESTROYED as $(AP) plasma blast impacts $(TPP) face.  Red hot sparks and bone fragments shoot in all directions!::DAMAGE 70:STUN 3:STAT_MOD intelligence -50 10:SKILL_MOD parry -80 3:STAT_MOD dexterity -60 5
+91..95:$(TP) jaw is DESTROYED as $(AP) plasma blast impacts $(TPP) face.  Red hot sparks and bone fragments shoot in all directions!::DAMAGE 70:STUN 3:SKILL_MOD parry -80 3
+#TLNY2020 removed:STAT_MOD intelligence -50 10:STAT_MOD dexterity -60 5
 96..99:$T $V severe internal burns while inhaling white-hot plasma from $(AP) attack!:receive:CONT_DAMAGE 8 10:DAMAGE 30:STUN 2
 100..100:A brilliant ball of electric plasma from $(AP) attack impacts $T squarely in the abdomen.  $(TN) $V violently, showering steaming viscera on all present.:explode:KILL
 (E):

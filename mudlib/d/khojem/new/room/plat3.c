@@ -9,17 +9,17 @@ inherit ROOM;
 void reset(){
   ::reset();
   if(!present("guard") && random(2))
-    new("/wizards/khojem/new/mon/elf_guard")->move(this_object());
+    new("/d/khojem/new/mon/elf_guard")->move(this_object());
 }  
 
 void create() {
     ::create();
     set_property("light", 2);
     set_property("indoors", 0);
-    set("short", "A wooded platform");
+    set("short", "   0\n   | \n0--@--0\n   | \n   0\nA wooded platform");
     set("long", "High-up in a tree a wooden platform is lashed together.  "+
       "Small huts are east and west from here.  A much larger hut is to the "+
-      "north.  The forest floor is far below."
+      "north.  The forest floor is far below.\n   0\n   | \n0--@--0\n   | \n   0\n"
     );
     add_exit("hut5","west");
     add_exit("hut4","east");

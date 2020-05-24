@@ -5,6 +5,7 @@ void create() {
    set_property("indoors",1);
    set_property("light",3);
    add_exit("/d/damned/guilds/tinker/forge_room", "south");
+   add_exit("/d/damned/guilds/tinker/special_room", "north");
    set("short","The Tinker Treasury");
    set("long",
   "This room is somewhat of a closet. To the south is a much "+

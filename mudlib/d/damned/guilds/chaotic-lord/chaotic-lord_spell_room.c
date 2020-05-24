@@ -51,6 +51,8 @@ void create() {
   add_spell("essence blade");
   add_spell("soultaker blade");
   add_spell("demonic rebirth");
+//ADD per question TLNY2020
+  add_spell("fury of marghuul", 11);
     return;
 }
 

@@ -123,6 +123,8 @@ void inc_work_time() {
     remove();
     return;
   }
+//TLNY 2020 remove interrupt during combat for long term
+/*
   if(who_working->query_current_attacker() != 0) {
      message("my_action", "%^BOLD%^%^CYAN%^You interrupt your work.",
 	  who_working);
@@ -133,7 +135,7 @@ void inc_work_time() {
      remove();
      return;
   }
-
+*/
   time_to_go -= 67;
   working_on->set_property("progress "+skill_name+"_"+worker_name,
 			   query_time_spent(working_on) + 67);
@@ -156,7 +158,8 @@ void inc_work_time() {
   message("info", work_message, who_working);
   message("info", "Time left: "+sprintf("%d:%02d:%02d",time_to_go/3600,
           (time_to_go%3600)/60,time_to_go%60), who_working);
-// who_working->add_exp(((who_working->query_level())*(3*skill_level))+random(skill_level));
+// Re-added long term EXP TLNY 2020
+ who_working->add_exp(((who_working->query_level())*(3*skill_level))+random(skill_level));
 // LT EXP GONE FOR BETA, BYE BYE, Thrace June 20, 1999
   call_out("inc_work_time", (time_to_go > 67)?67:time_to_go);
   return;

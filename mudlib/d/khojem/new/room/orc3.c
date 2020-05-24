@@ -20,8 +20,8 @@ void init() {
 void reset() {
 	::reset();
     if (!present("half-orc guard" , this_object()) ) {
-        new("/wizards/khojem/new/mon/orc_guard")->move(this_object());
-        new("/wizards/khojem/new/mon/orc_guard")->move(this_object());	  
+        new("/d/khojem/new/mon/orc_guard")->move(this_object());
+        new("/d/khojem/new/mon/orc_guard")->move(this_object());	  
     }
 }
 
@@ -29,12 +29,12 @@ void create() {
     ::create();
     set_property("light", 3);
     set_property("indoors", 1);
-    set("short", "Central Meeting Chamber");
+    set("short", "   0\n   | \n0--@--0\n   p \n   0\nCentral Meeting Chamber");
     set("long", "Suddenly you emerge from the narrow passage to a "+
       "large, well-lit chamber.  The chamber is a large oval-shaped "+
       "cavern with a huge pit in the center.  This chamber "+
       "serves as a central meeting area for the cave-dwelling "+
-      "Half-Orc clan."
+      "Half-Orc clan.\n   0\n   | \n0--@--0\n   p \n   0\n"
     );
     add_exit("orc2","north");
     add_exit("orc4","west");

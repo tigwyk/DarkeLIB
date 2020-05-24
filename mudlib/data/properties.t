@@ -13,10 +13,10 @@ hardness/metal/eog;3000
 value/metal/eog;18000
 brittle/metal/eog;15
 
-auto critical/metal/eonmite;([ "time A": 4 ])
-extra ac/metal/eonmite;([ "time" : 50 ])
+auto critical/metal/eonmite;([ "infernal A": 4 ])
+extra ac/metal/eonmite;([ "infernal" : 50 ])
 hit bonus/metal/eonmite;10
-extra wc/meta/eonmite;([ "time" : 10 ])
+extra wc/meta/eonmite;([ "infernal" : 10 ])
 hardness/metal/eonmite;1400
 value/metal/eonmite;15500
 brittle/metal/eonmite;11
@@ -153,4 +153,15 @@ hardness/metal/fenrig;9000
 value/metal/fenrig;12000
 damage bonus/metal/fenrig;5
 armour bonus/metal/fenrig;40
+
+#TEST
+auto critical/metal/test;([ "aether A" : 3, "infernal A": 4, "ligtht" : 4, "speed C" : 6 ])
+extra ac/metal/test;([ "aether" : 50 ])
+damage bonus/metal/test;10
+extra wc/metal/test;([ "aether" : 5000, "infernal" : 5000, "light" : 5000 ])
+armour bonus/metal/test;20
+hit bonus/metal/test;5
+hardness/metal/test;3000
+value/metal/test;18000
+brittle/metal/test;15
 

@@ -5,6 +5,7 @@ void create() {
    set_property("indoors",1);
    set_property("light",3);
    add_exit("/d/damned/guilds/paladin/train_room", "east");
+   add_exit("/d/damned/guilds/paladin/proom/special_room", "west");
    set("short","The Paladin Treasury");
    set("long",
 "This is the Paladin Treasury.  Any paladin may store items here, "

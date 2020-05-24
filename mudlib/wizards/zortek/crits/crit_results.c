@@ -221,7 +221,7 @@ void hoards_of_hell(object from, object to) {
     }
 
     if(i >= 6) {
-      ob = new("/wizards/zortek/pet/noble_pet");
+      ob = new("/wizards/zortek/pet/devilish_noble");
       ob->move(environment(to));
       if(from->is_pet() && from->query_owner())
         ob->set_owner((string)from->query_owner());

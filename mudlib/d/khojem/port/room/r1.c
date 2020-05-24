@@ -18,7 +18,7 @@ int check_mobs() {
 }
 
 int my_mob_filter(object mob) {
-  if(base_name(mob) == "/wizards/khojem/port/mon/peon")  
+  if(base_name(mob) == "/d/khojem/port/mon/peon")  
     return 1;                                        
   return 0;
 }
@@ -27,7 +27,7 @@ void reset(){
   ::reset();
   if(!present("peon")) {
     if(check_mobs()<5)
-      new("/wizards/khojem/port/mon/peon")->move(this_object());
+      new("/d/khojem/port/mon/peon")->move(this_object());
   }
 }
 
@@ -44,17 +44,18 @@ void create() {
     set_property("light", 2);
     set_property("night light",1);
     set_property("indoors", 0);
-    set("short", "Box Canyon");
+//Basic mapping added by Tiny 1/19/202
+    set("short", "  \n     \n   @--0\n    \n   \nBox Canyon");
     set("long", "Noble Street terminates here at a small box-like canyon.  "+
       "The ground is dry dirt that sends up small swirls of dust with every "+
       "footstep.  The great north and west walls of Vo'Sangor connects to a massive "+
       "escarpment.  The escarpment towers above you.  "+
-      "Its sheer face makes climbing it very difficult."
+      "Its sheer face makes climbing it very difficult.\n  \n     \n   @--0\n    \n   \n"
     );
-    add_exit("/wizards/khojem/port/room/r2","up");
+    add_exit("/d/khojem/port/room/r2","up");
     add_invis_exit("up");
     set_pre_exit_functions(({ "up" }),({"do_go"}));
-    add_exit("/wizards/khojem/port/room/s06","east");
+    add_exit("/d/khojem/port/room/s06","east");
     set_items(([
      ({ "street","dirt street","Noble Street","noble street" }) :
         "Its a dusty little road.",
@@ -64,7 +65,7 @@ void create() {
     ]));
     set_smell("default", "The smell of the sea fills the air.");
     set_listen("default", "The noise of a busy town surrounds you.");
-    new("/wizards/khojem/port/obj/fountain2")->move(this_object());
+    new("/d/khojem/port/obj/fountain2")->move(this_object());
 
 }
 

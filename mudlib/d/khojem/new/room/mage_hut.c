@@ -18,17 +18,17 @@ void init() {
 void reset() {
     ::reset();
    if(!present("mage"))
-      new("/wizards/khojem/new/mon/mage")->move(this_object());
+      new("/d/khojem/new/mon/mage")->move(this_object());
 }
 
 void create() {
     ::create();
     set_property("light", 2);
     set_property("indoors", 1);
-    set("short", "A small, domed hut");
+    set("short", "   0\n   | \n   @   \n     \n    \nA small, domed hut");
     set("long", "This is a small, one-room hut with a domed, thatched roof.  "+
       "Other than some bedding in the corner the room is void of any "+
-      "furnishings.  The planked wood floor is sweeped clean."  
+      "furnishings.  The planked wood floor is sweeped clean.\n   0\n   | \n   @   \n     \n    \n"  
     );
     add_exit("plat4","north");
     set_items(([

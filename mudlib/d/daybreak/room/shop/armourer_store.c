@@ -4,6 +4,8 @@
 #define LEG_ARMOUR ({ "chain-greaves", "iron-greaves", "scale-greaves", "leather-pants", "studded-leather-pants" })
 #define HEAD_ARMOUR ({ "great-helm", "chain-coif" })
 #define SHIELDS ({ "large-shield", "buckler-shield", "small-shield" })
+#define FEET_ARMOUR ({ "metal-boots" })
+#define ARM_ARMOUR ({ "plate-bracer", "iron-bracer" })
 
 inherit "/std/vault";
 
@@ -85,9 +87,17 @@ void clone_once() {
   ob = new("/d/damned/virtual/"+
       LEG_ARMOUR[random(sizeof(LEG_ARMOUR))]
       + ".armour");
+ ob->move(this_object());
+ ob = new("/d/damned/virtual/"+
+      FEET_ARMOUR[random(sizeof(FEET_ARMOUR))]
+      + ".armour");
   ob->move(this_object());
   ob = new("/d/damned/virtual/"+
       HEAD_ARMOUR[random(sizeof(HEAD_ARMOUR))]
+      + ".armour");
+ ob->move(this_object());
+  ob = new("/d/damned/virtual/"+
+      ARM_ARMOUR[random(sizeof(ARM_ARMOUR))]
       + ".armour");
   ob->move(this_object());
   ob = new("/d/damned/virtual/"+

@@ -3,16 +3,20 @@ Valid weapon types
 
 Metal (use blacksmith or forge weapon)
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-long-sword	short-sword
-bastard-sword	two-handed-sword
-morning-star   broad-sword
-scimitar
-
+bastard-sword       rapier
+broad-sword         scimitar
+dagger              short-sword
+knife               stiletto
+long-sword          two-handed-sword
+spiked-gauntlet     footman's-mace
+      
 Metal and wood (use blacksmith or forge weapon AND carpentry)
 -=-=-=-=-=-=-=-=-=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-war-hammer	footman's-mace
-footman's-flail	halberd
-glaive
+battle-axe          halberd             morning-star
+footman's-flail     hammer              shod-staff
+glaive              hand-axe            spear
+greate-axe          military-fork       trident
+war-hammer          military-pick       war-hammer
 
 Carpentry
 -=-=-=-=-

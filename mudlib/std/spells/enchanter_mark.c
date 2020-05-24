@@ -13,7 +13,7 @@ void create() {
     set_property("moon","luna");
     set_property("caster message","You begin carve your markings into the item.");
     set_property("target message","");
-    set_property("observer message","$C begins to enchant a weapon.");
+    set_property("observer message","$C begins to enchant a item.");
     set_property("spell type",({ }));
     set_property("target type", "any");
     set_property("must be present", 1);
@@ -57,7 +57,7 @@ void spell_func(object caster, object at, int power, string args, int flag)
   ids=at->query_id();
   id=ids[0];
   at->set_property("new desc", args+" {"+id+"}");
-  set_work_message("You enchant the weapon.");
+  set_work_message("You enchant the item.");
   time = 1200/power;
 
   mod = 30+2*props["spell level"];

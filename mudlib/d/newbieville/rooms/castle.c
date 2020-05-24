@@ -35,4 +35,14 @@ TEXT
     set("long", "This is the Castle of Lord Tailwind. You see a bulletin board in the center of the room, a staircase leading upwards, and nothing else.");
     add_exit(ROOMS+"upperfloor", "up");
     add_exit(ROOMS+"townsquare", "out");
+
+call_out("load_rooms", 1);
+}
+
+int no_exit() { return 1; }
+
+
+void load_rooms() {
+	find_object_or_load("/d/newbieville/rooms/upperfloor");
+	find_object_or_load("/d/newbieville/rooms/upperfloor2");
 }

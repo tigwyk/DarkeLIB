@@ -9,23 +9,23 @@ inherit ROOM;
 void reset(){
   ::reset();
   if(!present("child")) 
-    new("/wizards/khojem/new/mon/child")->move(this_object());
-    new("/wizards/khojem/new/mon/child")->move(this_object());
-    new("/wizards/khojem/new/mon/child")->move(this_object());
-    new("/wizards/khojem/new/mon/child")->move(this_object());
-    new("/wizards/khojem/new/mon/child")->move(this_object());
+    new("/d/khojem/new/mon/child")->move(this_object());
+    new("/d/khojem/new/mon/child")->move(this_object());
+    new("/d/khojem/new/mon/child")->move(this_object());
+    new("/d/khojem/new/mon/child")->move(this_object());
+    new("/d/khojem/new/mon/child")->move(this_object());
 }  
 
 void create() {
     ::create();
     set_property("light", 2);
     set_property("indoors", 1);
-    set("short", "A nursery");
+    set("short", "   0\n   | \n   @   \n     \n    \nA nursery");
     set("long", "You are in a small nursery for the elven children.  "+
       "The hut is well maintained and several small chairs and desks "+
-      "are arranged here."
+      "are arranged here.\n   0\n   | \n   @   \n     \n    \n"
     );
-    add_exit("/wizards/khojem/new/room/annex6","north");
+    add_exit("/d/khojem/new/room/annex6","north");
     set_items(([
      ({ "hut","room", "nursery" }) :
         "The nursery is a small hut with clean floors.  Large windows allow  "+

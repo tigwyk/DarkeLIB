@@ -10,11 +10,11 @@ void create() {
     ::create();
     set_property("light", 1);
     set_property("indoors", 0);
-    set("short", "Out on a limb");
+    set("short", "    \n     \n   @   \n   | \n   0\nOut on a limb");
     set("long", "The branch is getting narrow here and starting "+
       "to moan under your weight.  You are very high above the forest "+
       "floor below you.  A fall from here would kill you.  "+
-      "The tree's branch extends southward."
+      "The tree's branch extends southward.\n    \n     \n   @   \n   | \n   0\n"
     );
     add_exit("htree2","south");
     set_items(([
@@ -33,5 +33,5 @@ void create() {
     );
     set_listen("default", "The silence around you is deafening.  "+
       "Occasionally, you hear the sound of battle from a ways off.");
-    new("/wizards/khojem/new/mon/rogue")->move(this_object());
+    new("/d/khojem/new/mon/rogue")->move(this_object());
 }

@@ -1,7 +1,8 @@
 (A):
 0..5:$A $V to do anything at all to $T.:fail:NO_EFFECT
 6..20:$A lightly $V $T:tap:DAMAGE 1
-21..35:$A $V a good one in on $T:get:DAMAGE 2:STAT_MOD strength -5 20
+21..35:$A $V a good one in on $T:get:DAMAGE 2
+#TLNY2020 removed:STAT_MOD strength -5 20
 36..45:$A $V a minor wound on $(TP) calf.:inflict:CONT_DAMAGE 1 5
 46..50:$A $V a blow to $(TP) back.:deliver:DAMAGE 2:SKILL_MOD parry -30 2
 51..55:$A deftly $V a blow to $(TP) chest, drawing blood.:deliver:DAMAGE 2:SKILL_MOD parry -25 2:CONT_DAMAGE 2 5

@@ -23,7 +23,7 @@ void create() {
     set_property("target type", "living");
     set_property("prereq", "shadow form");
     set_property("must be present",1);
-    set_property("duration", 340);
+    set_property("duration", 300);
     return;
 }
 

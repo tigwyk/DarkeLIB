@@ -10,7 +10,7 @@
 # body type: the file to look for body type in
 #
 high-man:0:9999:5:right hand;left hand:10:10:0:0:0:10:human
-gnoll:3:8800:4:right hand;left hand:0:0:0:0:0:0:human
+gnoll:3:8800:4:right hand;left hand:10:10:-10:-10:0:-10:human
 hill-giant:0:14999:6:right hand;left hand:25:20:-5:-10:-5:-5:human
 storm-giant:0:16999:6:right hand;left hand:35:30:0:0:-7:-10:human
 pech:3:9999:4:right hand;left hand:15:15:0:-5:-5:-10:human
@@ -39,8 +39,15 @@ sprite:2:4999:4:right hand;left hand:-20:-10:5:0:30:10:sprite
 sylph:2:6500:4:right hand;left hand:-15:-5:15:0:5:15:sprite
 ent:0:10999:2:first branch;second branch;third branch;fourth branch:5:10:5:15:-10:0:ent
 thranx:0:9999:3:first hand;second hand;third hand;fourth hand:10:0:10:5:5:-5:thranx
-minotaur:3:11500:5:right hand;left hand:20:20:0:-20:0:-20:human
 grey-elf:3:9999:5:right hand;left hand:5:5:5:0:10:0:human
 aquatic-elf:3:9999:5:right hand;left hand:5:5:5:0:10:10:human
 dryad:0:7999:5:right hand;left hand:-5:5:0:5:10:10:sprite
 centaur:1:11500:5:right hand;left hand:0:10:0:10:20:0:centaur
+#NEW races by TLNY
+dinjinni:0:9999:5:right hand;left hand:5:5:5:0:10:5:efreet
+efreet:0:9999:5:right hand;left hand:10:10:5:5:15:0:efreet
+north-man:0:9999:5:left hand;right hand:10:5:0:-5:0:0:human
+minotaur:3:11500:5:right hand;left hand:20:20:0:-20:0:-20:human
+blood-elf:3:9999:4:right hand;left hand:0:0:15:15:20:15:human
+blood-elf:3:9999:4:right hand;left hand:0:0:15:15:20:15:human
+china-man:0:9999:4:right hand;left hand:5:0:0:0:10:5:human

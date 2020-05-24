@@ -62,7 +62,8 @@
 1..5:$A $V $T hard.:strike:DAMAGE 2
 6..10:$A wickedly $V $T.:smack:DAMAGE 4
 11..15:$A $V $T with a strong, fast blow.:hurt:DAMAGE 5:STUN 1:SKILL_MOD parry -10 1
-16..20:$(AP) nasty blow causes minor fractures of $(TP) ribs.::DAMAGE 5:SKILL_MOD dodge -5 3:STAT_MOD strength -25 5:STAT_MOD dexterity -20 5
+16..20:$(AP) nasty blow causes minor fractures of $(TP) ribs.::DAMAGE 5:SKILL_MOD dodge -5 3
+#TLNY2020 removed:STAT_MOD strength -25 5:STAT_MOD dexterity -20 5
 21..35:$A $V a powerful blow to $(TP) side. OUCH!:strike:DAMAGE 4:STUN 1:SKILL_MOD parry -100 1
 36..45:$A ruthlessly $V $(TP) lower body!:smack:DAMAGE 10:SKILL_MOD attack -30 4:SKILL_MOD parry -10 4:SKILL_MOD block -10 4
 46..50:$A $V $T with a crushing blow to $(TPP) back!:strike:DAMAGE 10:STUN 1:SKILL_MOD parry -60 1

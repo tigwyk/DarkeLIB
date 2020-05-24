@@ -9,19 +9,19 @@ inherit ROOM;
 void reset() {
 	::reset();
     if (!present("half-orc bodyguard" , this_object()) )
-      new("/wizards/khojem/new/mon/orc_bodyguard")->move(this_object());
+      new("/d/khojem/new/mon/orc_bodyguard")->move(this_object());
     if (!present("half-orc chief" , this_object()) )
-      new("/wizards/khojem/new/mon/orc_chief")->move(this_object());
+      new("/d/khojem/new/mon/orc_chief")->move(this_object());
 }
 
 void create() {
     ::create();
     set_property("light", 2);
     set_property("indoors", 1);
-    set("short", "Half-Orc Chief's Chamber");
+    set("short", "   \n    \n0--@   \n    \n   \nHalf-Orc Chief's Chamber");
     set("long", "You are in the Half-Orc Chief's Chamber.  "+
       "From here the chief makes his plans against the Wood-Elves.  "+
-      "A small fire burns here for light and warmth in the dank cave."
+      "A small fire burns here for light and warmth in the dank cave.\n   \n    \n0--@   \n    \n   \n"
     );
     add_exit("orc9","west");
     set_items(([

@@ -2,16 +2,19 @@
 (A):
 1..5:$A $V mildly with infernal power.:glow:NO_EFFECT
 6..10:$T $(VT) that infernal chant can be heard as $(AP) attack hits $(TO).:swear:NO_EFFECT
-11..20:An infernal mist seems to surround $A as $(AN) $V $T with great force.:attack:DAMAGE 10:SPECIAL_RESULT /wizards/zortek/crits/crit_results increase_str
+11..20:An infernal mist seems to surround $A as $(AN) $V $T with great force.:attack:DAMAGE 10
+#TLNY 2020 removed missing code:SPECIAL_RESULT /wizards/zortek/crits/crit_results increase_str
 21..30:$T $(VT) tossed aside by the brutal power of $(AP) attack.:are:DAMAGE 4:SPECIAL_RESULT /wizards/zortek/crits/crit_results impact_A_crit
 31..40:The infernal power of $(AP) attack causes $(AO) to be engulfed in a devilish haze.::SKILL_MOD attack -50 4:SPECIAL_RESULT /wizards/zortek/crits/crit_results increase_ac
 41..50:$T $(VT) enchanted by $(AP) mezmerizing combat dance.:are:STUN 4
-51..60:$(AP) soul-less wail gates in an infernal imp to corrupt $T, so that $A may play more trecherously.::STUN 2:SKILL_MOD attack -70 4:SKILL_MOD parry -70 10:SKILL_MOD dodge -70 4:STAT_MOD dexterity -50 4
+51..60:$(AP) soul-less wail gates in an infernal imp to corrupt $T, so that $A may play more trecherously.::STUN 2:SKILL_MOD attack -70 4:SKILL_MOD parry -70 10:SKILL_MOD dodge -70 4
+#TLNY2020 removed:STAT_MOD dexterity -50 4
 61..65:$(AP) strike is directed by an infernal force, pounding $T with exacting measure.::DAMAGE 10:STUN 1:SPECIAL_RESULT /wizards/zortek/crits/crit_results strike_A_crit
 66..66:Infernal forces resulting from $(AP) attack envelop $T, levitate $(TO) in the air, and drop $(TO)!::SPECIAL_RESULT /wizards/zortek/crits/crit_results impact_crit
-67..70:$(AP) fury channels infernal forces which intensify future attacks.::SPECIAL_RESULT /wizards/zortek/crits/crit_results raise_weapon_1
+67..70:$(AP) fury channels infernal forces which intensify future attacks.::SPECIAL_RESULT /wizards/zortek/crits/crit_results raise_weapon1
 71..80:$T $(VT) struck violently by $(AP) devilish attack.:are:DAMAGE 25:STUN 2
-81..90:$(AP) utters an infernal curse causing $T to quiver violently as all muscle control is momentarly lost.::STUN 2:DAMAGE 15:STAT_MOD dexterity -40 8
+81..90:$(AP) utters an infernal curse causing $T to quiver violently as all muscle control is momentarly lost.::STUN 2:DAMAGE 15
+#TLNY2020 removed:STAT_MOD dexterity -40 8
 91..95:$A $V driven to attack $T again by infernal fury.:are:DAMAGE 20:SKILL_MOD parry -40 4:SPECIAL_RESULT /wizards/zortek/crits/crit_results extra_a_hbeat
 96..99:Infernal forces commanded by $(AP) attack and blast $T a great distance backward.::DAMAGE 25:STUN 3:SKILL_MOD parry -50 5:SKILL_MOD dodge -50 5:SPECIAL_RESULT /wizards/zortek/crits/crit_results impact_crit
 100..100:A impish creature is gated by $(AP) command, and it proceeds to attack $T!::DAMAGE 10:STUN 2:SKILL_MOD attack -50 5:SKILL_MOD parry -50 5:SPECIAL_RESULT /wizards/zortek/crits/crit_results summon_impish_creature1
@@ -25,7 +28,8 @@
 51..60:$(AP) infernal rage summons a small flaming bolt to strike $T.:DAMAGE 40:SPECIAL_RESULT /wizards/zortek/crits/crit_results fire_crit
 61..65:$(AP) attack is controlled by infernal power, and $T $(VT) casually blasted to the ground, cracking a few ribs.:are:DAMAGE 25:CONT_DAMAGE 5 4:STUN 3:SKILL_MOD parry -50 8:SKILL_MOD parry -40 3
 66..66:$(AP) carnal rage gains the attention of the lower planes, and a duet of impish creatures join in the dance on $(AP) behalf!:SPECIAL_RESULT /wizards/zortek/crits/crit_results summon_impish_creature2:SPECIAL_RESULT /wizards/zortek/crits/crit_results summon_impish_creature2
-67..70:$(AP) attack is enhanced with infernal strength, and $(AN) $V $T!:crush:DAMAGE 50:STUN 4:CONT_DAMAGE 7 5:SKILL_MOD attack -90 4:SKILL_MOD dodge -30 10:STAT_MOD -20 5
+67..70:$(AP) attack is enhanced with infernal strength, and $(AN) $V $T!:crush:DAMAGE 50:STUN 4:CONT_DAMAGE 7 5:SKILL_MOD attack -90 4:SKILL_MOD dodge -30 10
+#TLNY2020 removed:STAT_MOD -20 5
 71..80:$(APP) corrupting efforts seen in hell, $A $V channeled additional strength!:are:DAMAGE 50:SPECIAL_RESULT /wizards/zortek/crits/crit_results raise_weapon2
 81..90:$A $V unholy power to gate in an impish creature whilst pummeling on $T.:channel:SPECIAL_RESULT /wizards/zortek/crits/crit_results summon_impish_creature2:DAMAGE 30
 91..95:$A $V $(TP) arm the force of corruption, leaving it in a useless state!:blast:LIMB_LOSS arm cripple:STUN 3
@@ -33,7 +37,8 @@
 100..100:To $(AP) suprise...a flaming gate opens and an Erines Devil appears to fight along side $A in $(APP) combat!::SPECIAL_RESULT /wizards/zortek/crits/crit_results summon_erines_devil
 (C):
 1..5:$A $V of corruption.:reek:DAMAGE 5
-6..10:$A $V power of the damned, allowing $(AO) to attack with insidious efficiency.:channel:DAMAGE 10:SPECIAL_RESULT /wizards/zortek/crits/crit_results raise_weapon2:STAT_MOD dexterity -25 5:SKILL_MOD block -50
+6..10:$A $V power of the damned, allowing $(AO) to attack with insidious efficiency.:channel:DAMAGE 10:SPECIAL_RESULT /wizards/zortek/crits/crit_results raise_weapon2:SKILL_MOD block -50
+#TLNY2020 removed:STAT_MOD dexterity -25 5
 11..20:$A $V to go into a frenzy momentarily, attacking repeatedly!:seem:SPECIAL_RESULT /wizards/zortek/crits/crit_results extra_a_hbeat:SPECIAL_RESULT /wizards/zortek/crits/crit_results extra_a_hbeat
 21..30:$(AP) fury channels the 'Pain of Damnation', which causes screams of agony to come from $T!::CONT_DAMAGE 7 15:STUN 1:SKILL_MOD dodge -50 5:SKILL_MOD parry -50 5
 31..40:An impish creature gates in to mosh with $A in battle.::SPECIAL_RESULT /wizards/zortek/crits/crit_results summon_impish_creature2
@@ -43,7 +48,8 @@
 66..66:Two hellspawn...an Erines Devil, and an impish creature, gate in to destroy $A!::SPECIAL_RESULT /wizards/zortek/crits/crit_results summon_impish_creature:SPECIAL_RESULT /wizards/zortek/crits/crit_results summon_erines_devil
 67..70:$(AP) blow blasts $T in the leg, with a force is so great that $(TPP) leg is crippled!::LIMB_LOSS leg cripple:STUN 2:CONT_DAMAGE 15 5
 71..80:$T $(VT) blasted back by $(AP) raving assault.:are:DAMAGE 50:SPECIAL_RESULT /wizards/zortek/crits/crit_results impact_crit:STUN 4:SKILL_MOD parry -70 5
-81..90:$T $(VT) blood boil as flames caress $(TO) intestines from $(AP) 'Bowel Fire' curse!:feel:DAMAGE 20:CONT_DAMAGE 10 8:STAT_MOD constitution -25 8
+81..90:$T $(VT) blood boil as flames caress $(TO) intestines from $(AP) 'Bowel Fire' curse!:feel:DAMAGE 20:CONT_DAMAGE 10 8
+#TLNY2020 removed:STAT_MOD constitution -25 8
 91..95:$T $(VT) as the flesh and muscle of $(TPP) arms quickly decays to dust and are rendered useless.:watch:LIMB_LOSS arm cripple:LIMB_LOSS arm cripple:STUN 5:SKILL_MOD parry -80 10:CONT_DAMAGE 6 8
 96..99:$T $(VT) sickened painfully by a black mist from $(AP) attack, which causes $(TO) to retch violently.:are:DAMAGE 40:STUN 5:CONT_DAMAGE 10 6:SKILL_MOD parry -50 5
 100..100:A regal Devilish Noble arises from a circle of blue flame and engages $T in the 'Dance of Damnation'!!!::SPECIAL_RESULT /wizards/zortek/crits/crit_results summon_devilish_noble

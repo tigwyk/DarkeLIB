@@ -16,7 +16,7 @@ int check_mobs() {
 }
 
 int my_mob_filter(object mob) {
-  if(base_name(mob) == "/wizards/khojem/port/mon/peon")  
+  if(base_name(mob) == "/d/khojem/port/mon/peon")  
     return 1;                                        
   return 0;
 }
@@ -25,7 +25,7 @@ void reset(){
   ::reset();
   if(!present("peon")) {
     if(check_mobs()<5)
-      new("/wizards/khojem/port/mon/peon")->move(this_object());
+      new("/d/khojem/port/mon/peon")->move(this_object());
   }
 }
 
@@ -34,15 +34,15 @@ void create() {
     set_property("light", 3);
     set_property("night light",2);
     set_property("indoors", 0);
-    set("short", "Vo'Sangor Square");
+    set("short", "   0 0\n   |/ \n   @--0\n     \n    \nVo'Sangor Square");
     set("long", "Vo'Sangor Square is the merchant place of all DarkeMud. "+
       "Here all may purchase the fine goods brought in at this town's seaport.  "+
       "Of course, with all rare items they come with a cost.  A tall tower is "+
-      "to the northeast."  
+      "to the northeast.\n   0 0\n   |/ \n   @--0\n     \n    \n"  
     );
-    add_exit("/wizards/khojem/port/room/s04","north");
-    add_exit("/wizards/khojem/port/room/s10","east");
-    add_exit("/wizards/khojem/port/room/s09","northeast");
+    add_exit("/d/khojem/port/room/s04","north");
+    add_exit("/d/khojem/port/room/s10","east");
+    add_exit("/d/khojem/port/room/s09","northeast");
     set_items(([
      ({ "square","merchant square" }) :
         "Its a dusty opening in the center of town.",

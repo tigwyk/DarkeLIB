@@ -13,19 +13,19 @@ void reset(){
   coin_flip=random(2);
   if(!present("scout"))
     if(coin_flip) 
-      new("/wizards/khojem/new/mon/elf_scout")->move(this_object());
+      new("/d/khojem/new/mon/elf_scout")->move(this_object());
     else
-      new("/wizards/khojem/new/mon/orc_scout")->move(this_object());
+      new("/d/khojem/new/mon/orc_scout")->move(this_object());
 }  
 
 void create() {
     ::create();
     set_property("light", 1);
     set_property("indoors", 0);
-    set("short", "A dark path intersection");
+    set("short", "   0\n   | \n0--@--0\n   | \n   0\nA dark path intersection");
     set("long", "You follow the path to another intersection.  "+
       "The trees grow close all around and shroud most of the light "+
-      "from above.  The frequently used path splits here."
+      "from above.  The frequently used path splits here.\n   0\n   | \n0--@--0\n   | \n   0\n"
     );
     add_exit("path6","north");
     add_exit("path3","east");

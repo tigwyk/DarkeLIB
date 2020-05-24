@@ -64,6 +64,8 @@ if(i <= 9) {
 		ob = new("/wizards/excelsior/tinker/scale");
 		ob->move(this_object());
       }
+
+
   }
   return;
 }

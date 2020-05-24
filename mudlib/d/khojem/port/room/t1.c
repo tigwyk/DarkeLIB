@@ -9,16 +9,17 @@ void create() {
     set_property("light", -1);
     set_property("night light",-2);
     set_property("indoors", 1);
-    set("short", "Mage's Keep");
+//Basic mapping added by Tiny 1/19/2020
+    set("short", "   0\n   u \n   @--0\n     \n    \nMage's Keep");
     set("long", "This is the base of a large, circular stone tower.  A lighted "+
       "shop is to the east.  A dark"
       "spiral, stone staircase leads upwards.  The arched gateway to the city "+
-      "is just towards the north."
+      "is just towards the north.\n   0\n   u \n   @--0\n     \n    \n"
     );
-    add_exit("/wizards/khojem/port/room/t2","up");
-    add_exit("/wizards/khojem/port/room/wgate","north");
-    add_exit("/wizards/khojem/port/shop/zalrag_shop","east");
-    set_door("east door", "/wizards/khojem/port/shop/zalrag_shop", "east",
+    add_exit("/d/khojem/port/room/t2","up");
+    add_exit("/d/khojem/port/room/wgate","north");
+    add_exit("/d/khojem/port/shop/zalrag_shop","east");
+    set_door("east door", "/d/khojem/port/shop/zalrag_shop", "east",
       "a non-existent key");
 	set_open("east door", 1);
     set_locked("east door", 0);
@@ -45,12 +46,12 @@ void create() {
     set_listen("default", "It is quiet here.");
 }
 void close_door() {
-  call_other("/wizards/khojem/port/shop/zalrag_shop", "close_door");
+  call_other("/d/khojem/port/shop/zalrag_shop", "close_door");
   return;
 }
 
 void open_door() {
-  call_other("/wizards/khojem/port/shop/zalrag_shop", "open_door");
+  call_other("/d/khojem/port/shop/zalrag_shop", "open_door");
   return;
 }
 

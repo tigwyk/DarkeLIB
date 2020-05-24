@@ -17,7 +17,7 @@ int check_mobs() {
 }
 
 int my_mob_filter(object mob) {
-  if(base_name(mob) == "/wizards/khojem/port/mon/constable")  
+  if(base_name(mob) == "/d/khojem/port/mon/constable")  
     return 1;                                        
   return 0;
 }
@@ -26,7 +26,7 @@ void reset(){
   ::reset();
   if(!present("constable")) {
     if(check_mobs()<4)
-      new("/wizards/khojem/port/mon/constable")->move(this_object());
+      new("/d/khojem/port/mon/constable")->move(this_object());
   }
 }
 
@@ -35,7 +35,8 @@ void create() {
     ::create();
     set_property("light", 3);
     set_property("indoors", 1);
-    set("short", "The constabulary");
+//Basic mapping added by Tiny 1/20/2020
+    set("short", "\n   \n     \n0--@   \n    \n   \nThe constabulary");
     set("long",
       "The quiet port town of Vo'Sangor can thank the members of the constabulary "+
       "for their contribution in keeping this a peaceful haven in a world of "+
@@ -43,9 +44,9 @@ void create() {
       "prevention and justice system that is unrivaled anywhere in the lands "+
       "of DarkeMud.  Its cells are always empty because criminals far and wide "+
       "know of this constabulary's legend of tracking down and punishing those "+
-      "who transgress the laws of Vo'Sangor. "
+      "who transgress the laws of Vo'Sangor.\n   \n     \n0--@   \n    \n   \n "
    );
-    add_exit("/wizards/khojem/port/room/ngate","west");
+    add_exit("/d/khojem/port/room/ngate","west");
     set_smell("default", "The smell of the sea fills the air.");
     set_listen("default", "The noise of a busy town can be heard outside.");
     
@@ -54,7 +55,7 @@ void create() {
     ob->set_id( ({ "board", "crime board" }) );
     ob->set_board_id("criminals");
     ob->set_max_posts(50);
-    ob->set_location("/wizards/khojem/port/room/constable");
+    ob->set_location("/d/khojem/port/room/constable");
     ob->set("short", "Vo'Sangor Constabulatory Board");
     ob->set("long", "Post your criminals here!\n");
     set_property("no steal", 1);

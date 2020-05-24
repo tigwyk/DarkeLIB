@@ -10,7 +10,7 @@ void create() {
 		"their purpose and nothing more."
 	);
 	set_weight(80);
-	set_type("pants");
+	set_type("cloth pants");
 	set_limbs( ({"right leg", "left leg" }) );
 	set_ac(3);
 	set_value(20);

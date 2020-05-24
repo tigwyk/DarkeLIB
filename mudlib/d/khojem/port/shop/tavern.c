@@ -14,16 +14,17 @@ void init() {
 void reset() {
   ::reset();
     if(!present("sparkey")) 
-      new("/wizards/khojem/port/shop/sparkey")->move(this_object());
+      new("/d/khojem/port/shop/sparkey")->move(this_object());
     if(!present("merchant"))
-      new("/wizards/khojem/port/shop/merchant")->move(this_object());
+      new("/d/khojem/port/shop/merchant")->move(this_object());
 }
 
 void create() {
     ::create();
     set_property("light", 2);
     set_property("indoors", 1);
-    set("short", "Sparkey's Sailor's Pleasure");
+//Basic mapping added by Tiny 1/20/2020
+    set("short", "   \n    \n   @--0\n    \n   \nSparkey's Sailor's Pleasure");
     set("long",
 	"This is One-eyed Sparkey's Sailor's Pleasure Tavern.  It is world renown "+
 	"for its fine drinks and food.  Sparkey keeps a fine establishment.  His "+
@@ -31,7 +32,7 @@ void create() {
 	"The service bar is made from finely crafted teak.   The tables and chairs "+
 	"made of oak and neatly arranged for your seating pleasure.  Many seafarers "+
 	"and local residents can be seen dining here.  A sign above the bar lists "+
-	"the menu."
+	"the menu.\n   \n    \n   @--0\n    \n   \n"
 	);
     set_items(([
      ({ "pub", "alehouse", "bar", "tavern", "sparkey's" }) :
@@ -47,7 +48,7 @@ void create() {
 	 ({ "harbor", "dock", "wharf" }) :
 	    "The harbor and dock are just to the east."
 	]));
-    add_exit("/wizards/khojem/port/room/s11","east");
+    add_exit("/d/khojem/port/room/s11","east");
     set_smell("default", "You smell the salt air from the harbor towards the east.");
 }
 

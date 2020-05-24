@@ -82,7 +82,7 @@ void clone_once() {
   for(j=1; j <= 3; j++) {
     i = random(sizeof(WEAPONS));
     ob = new(sprintf("/d/damned/virtual/%s_%d.weapon", WEAPONS[i],
-                     (random(3)+1+(random(9)/6)+random(9)/7+random(9)/8)));
+                     (random(3)+1+(random(9)/6)+random(9)/7+random(9)/8+random(12)/11)));
     ob->move(this_object());
   }
   return;

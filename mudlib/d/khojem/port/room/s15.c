@@ -18,16 +18,16 @@ void init() {
 void reset(){
   set_open("yellow door",0);
   set_locked("yellow door",0);
-  "/wizards/khojem/port/room/hou4"->set_open("yellow door",0);
-  "/wizards/khojem/port/room/hou4"->set_locked("yellow door",0);
+  "/d/khojem/port/room/hou4"->set_open("yellow door",0);
+  "/d/khojem/port/room/hou4"->set_locked("yellow door",0);
   add_invis_exit("north");
-  "/wizards/khojem/port/room/hou4"->add_invis_exit("south");
+  "/d/khojem/port/room/hou4"->add_invis_exit("south");
   set_open("acqua door",0);
   set_locked("acqua door",0);
-  "/wizards/khojem/port/room/hou5"->set_open("acqua door",0);
-  "/wizards/khojem/port/room/hou5"->set_locked("acqua door",0);
+  "/d/khojem/port/room/hou5"->set_open("acqua door",0);
+  "/d/khojem/port/room/hou5"->set_locked("acqua door",0);
   add_invis_exit("south");
-  "/wizards/khojem/port/room/hou5"->add_invis_exit("north");
+  "/d/khojem/port/room/hou5"->add_invis_exit("north");
 }
 
 void create() {
@@ -35,23 +35,24 @@ void create() {
     set_property("light", 3);
     set_property("night light",2);
     set_property("indoors", 0);
-    set("short", "Dock Street");
+//Basic mapping added by Tiny 1/19/2020
+    set("short", "   \n    \n0--@--0\n    \n   \n Dock Street");
     set("long", "Noble Street extends eastward.  Its dry, dirt road sends up "+
       "small swirls of dust with every footstep.  Small houses line the "+
-      "causeway north and south."
+      "causeway north and south.\n   \n    \n0--@--0\n    \n   \n "
     );
-    add_exit("/wizards/khojem/port/room/s06","west");
-    add_exit("/wizards/khojem/port/room/s18","east");
-    add_exit("/wizards/khojem/port/room/hou4","north");
-    add_exit("/wizards/khojem/port/room/hou5","south");
+    add_exit("/d/khojem/port/room/s06","west");
+    add_exit("/d/khojem/port/room/s18","east");
+    add_exit("/d/khojem/port/room/hou4","north");
+    add_exit("/d/khojem/port/room/hou5","south");
     add_invis_exit("north");
-    set_door("yellow door","/wizards/khojem/port/room/hou4","north",0);
+    set_door("yellow door","/d/khojem/port/room/hou4","north",0);
     set_open("yellow door",0);
     set_locked("yellow door",0);
     set_func("yellow door","open","do_yellow_open");
     set_func("yellow door","close","do_yellow_close");
     add_invis_exit("south");
-    set_door("acqua door","/wizards/khojem/port/room/hou5","south",0);
+    set_door("acqua door","/d/khojem/port/room/hou5","south",0);
     set_open("acqua door",0);
     set_locked("acqua door",0);
     set_func("acqua door","open","do_acqua_open");
@@ -82,7 +83,7 @@ void look_at_yellow_door() {
 
 int do_yellow_open() {
   remove_invis_exit("north");
-  "/wizards/khojem/port/room/hou4"->remove_invis_exit("south");
+  "/d/khojem/port/room/hou4"->remove_invis_exit("south");
   write("The yellow door easily swings open.\n");
   say(this_player()->query_cap_name()+" opens a yellow door to the north.\n");
   return 1;
@@ -90,7 +91,7 @@ int do_yellow_open() {
  
 int do_yellow_close() {
   add_invis_exit("north");
-  "/wizards/khojem/port/room/hou4"->add_invis_exit("south");
+  "/d/khojem/port/room/hou4"->add_invis_exit("south");
   write("A yellow door is slammed shut.\n");
   say(this_player()->query_cap_name()+" slams a yellow door shut.\n");
   return 1;
@@ -106,7 +107,7 @@ void look_at_acqua_door() {
 
 int do_acqua_open() {
   remove_invis_exit("south");
-  "/wizards/khojem/port/room/hou5"->remove_invis_exit("north");
+  "/d/khojem/port/room/hou5"->remove_invis_exit("north");
   write("The acqua door easily swings open.\n");
   say(this_player()->query_cap_name()+" opens a acqua door to the south.\n");
   return 1;
@@ -114,7 +115,7 @@ int do_acqua_open() {
  
 int do_acqua_close() {
   add_invis_exit("south");
-  "/wizards/khojem/port/room/hou5"->add_invis_exit("north");
+  "/d/khojem/port/room/hou5"->add_invis_exit("north");
   write("A acqua door is slammed shut.\n");
   say(this_player()->query_cap_name()+" slams a acqua door shut.\n");
   return 1;

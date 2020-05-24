@@ -10,10 +10,10 @@ void reset(){
   if(query_open("stone door")) {
     set_open("stone door",0);
     set_locked("stone door",1);
-    "/wizards/khojem/new/room/troom"->set_open("stone door",0);
-    "/wizards/khojem/new/room/troom"->set_locked("stone door",1);
+    "/d/khojem/new/room/troom"->set_open("stone door",0);
+    "/d/khojem/new/room/troom"->set_locked("stone door",1);
     add_invis_exit("north");
-    "/wizards/khojem/new/room/troom"->add_invis_exit("south");
+    "/d/khojem/new/room/troom"->add_invis_exit("south");
   }   
 }
 
@@ -21,16 +21,16 @@ void create() {
     ::create();
     set_property("light", 1);
     set_property("indoors", 1);
-    set("short", "An underground passage");
+    set("short", "   \n    \n0--@--0\n    \n   \nAn underground passage");
     set("long", "You are in an underground passage.  Dirt walls "+ 
       "surround the small passage and the dirt floor is hard and "+
-      "smooth from repeated use."
+      "smooth from repeated use.\n   \n    \n0--@--0\n    \n   \n"
     );
     add_exit("orc3","west");
     add_exit("orc8","east");
     add_exit("troom","north");
     add_invis_exit("north");
-    set_door("stone door","/wizards/khojem/new/room/troom","north","chieftain's key");
+    set_door("stone door","/d/khojem/new/room/troom","north","chieftain's key");
     set_open("stone door",0);
     set_locked("stone door",1);
     set_func("stone door","open","do_open");
@@ -62,7 +62,7 @@ void look_at_door() {
 
 int do_open() {
   remove_invis_exit("north");
-  "/wizards/khojem/new/room/troom"->remove_invis_exit("south");
+  "/d/khojem/new/room/troom"->remove_invis_exit("south");
   write("With considerable effort you manage to open the door.\n"+
     "The stone door's hinges moan and creak as the door opens.\n");
   say(this_player()->query_cap_name()+" leans and pushes against the "+
@@ -72,7 +72,7 @@ int do_open() {
  
 int do_close() {
   add_invis_exit("north");
-  "/wizards/khojem/new/room/troom"->add_invis_exit("south");
+  "/d/khojem/new/room/troom"->add_invis_exit("south");
   write("The weight of the stone door makes it difficult to close.\n"+
     "It creaks and moans but finally slams shut with a hollow rumble.\n");
   say(this_player()->query_cap_name()+" struggles against the weight "+
