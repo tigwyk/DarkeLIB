@@ -11,8 +11,8 @@ create() {
     ::create();
    set_name("Miner");
    set_id( ({ "dwarf","miner","sweeper","worker" }) );
-   set_short("A dwarf worker");
-   set_level(20);
+   set_short("[25]dwarf worker");
+   set_level(25);
    set("long", "This Miner is in charge of making sure the tracks "
    "stay clear of rubble and dust. He looks very dedicated.");
    set_gender("male");
@@ -20,7 +20,7 @@ create() {
    set_alignment(0);
    set_wielding_limbs( ({"right hand","left hand"}) );
    set_body_type("human");
-   set_exp(400000);
+   //set_exp(400000);
    set_overall_ac(25);
    set_emotes(10,
      ({ "The miner sweeps some debris off the track.",

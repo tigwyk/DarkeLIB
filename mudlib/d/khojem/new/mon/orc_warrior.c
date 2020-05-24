@@ -21,8 +21,13 @@ create() {
     set_id( ({ "warrior","orc", "half-orc warrior"}) );
     zlevel=random(2)+2;
     zskill=8*zlevel;
-    set_level(zlevel);
-    set_short("half-orc warrior");
+if (zlevel == 2) set_short("[2]half-orc warrior");
+else
+if (zlevel == 3) set_short("[3]half-orc warrior");
+else
+if (zlevel == 4) set_short("[4]half-orc warrior");
+else set_short("[5]half-orc warrior");
+	set_level(zlevel);
     set_long("The half-orc warrior is bruising for a wood-elf." 
       );
     set("race", "half-orc");

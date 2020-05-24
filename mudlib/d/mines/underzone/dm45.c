@@ -15,13 +15,16 @@ void create() {
     set("short",
 "You are standing on a small outcrop next to the roaring waterfall. "
 "A long rope bridge extends to the other side of the river.");
-    set("long",
-"You are now standing on a small ledge next to the waterfall. The noise "
-"here is almost unbearable. There is a huge waterwheel turning below you. "
-"The falling water is pushing the rotating paddles.\n"
-"Further to the west, on the other side of the river, is a large stone "
-"building. A long rope bridge extends across the water.\n"
-    );
+    set("long",@ext 
+You are now standing on a small ledge next to the waterfall. The noise 
+here is almost unbearable. There is a huge waterwheel turning below you. 
+The falling water is pushing the rotating paddles.
+Further to the west, on the other side of the river, is a large stone 
+building. A long rope bridge extends across the water.  
+        up   
+ 0--@
+        down    
+ext);
     set_exits( ({ UNDER+"dm46",UNDER+"dm49",UNDER+"dm48" }),
       ({ "up", "west","down" })
     );

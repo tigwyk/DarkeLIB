@@ -13,6 +13,14 @@ create() {
   ::create();
     zlevel = 9 + random(2);
 	set_overall_ac((zlevel-2));
+if (zlevel == 9) set_short("[9]sailor");
+else 
+if (zlevel == 10) set_short("[10]sailor");
+else
+if (zlevel == 11) set_short("[11]sailor");
+else
+if (zlevel == 12) set_short("[12]sailor");
+else set_short("[13]sailor");
     set_level(zlevel);
     set_exp(20000 + random(8000));
     zlevel = random(4);
@@ -24,7 +32,6 @@ create() {
       default : set_name("another sailor"); break;
     }
     set_id( ({ "sailor", "mob" }) );
-    set_short("sailor");
     set_long("The skin of the sailor's face has been roughened by "+
       "years of exposure to sun and sea."
       );

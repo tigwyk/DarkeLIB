@@ -13,13 +13,18 @@ void create() {
     set("short", "You are standing in a large room inside the stone "
     "building. The polished wood floor is cluttered with assorted "
     "tools and gears.");
-    set("long", 
-       "You are standing in a large room inside the stone building. The "
-    "polished wooden floor is covered with assorted piles of tools and "
-    "gears.\nIn the center of the room is a large column with two meshed "
-    "gears. There is another set of gears on the wall that is attached "
-    "to a pulley and a steel cable. It looks as though the miners are "
-    "using the waterwheel to move the mine carts through the mine.\n");
+    set("long",@ext 
+       You are standing in a large room inside the stone building. The 
+    polished wooden floor is covered with assorted piles of tools and 
+    gears.\nIn the center of the room is a large column with two meshed 
+    gears. There is another set of gears on the wall that is attached 
+    to a pulley and a steel cable. It looks as though the miners are 
+    using the waterwheel to move the mine carts through the mine.
+       
+        door   
+    @
+        staircase  
+ext);
     set_exits( ({ UNDER+"dm51",UNDER+"dm54"}),
       ({ "door","staircase" })
        );

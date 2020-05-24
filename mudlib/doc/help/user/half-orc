@@ -5,17 +5,32 @@
 for anything other than common fighting.
 
 
-SUMMARY:
+-=-=-=- Stat Bonuses -=-=-=- 
+Strength:           +10
+Constitution:       +10
+Intelligence:       -5
+Wisdom:             -5
+Dexterity:          ---
+Charisma:           -5 
+  
+-=-=-=-=-=- Abilities -=-=-=-=-=-     
+Body Size:         Medium             
+HP Regen:          Normal                
+MP Regen:          Normal               
+Natural Weapons:   Crushing Hands     
+Sight:             Normal
+         
++------ Special Abilities ------+     
+Corpse Eating  
++-------------------------------+     
 
-Dex: Avg           Str: High            Con: High
-Int: Below Ag      Wis: Below Avg       Char: Below Avg
+-=-=-=-=-= Skills =-=-=-=-=-
+None
 
-Sight: Avg
-HP Regen: Nil
-SP Regen: Nil
-Natural Weaponry: Standard (Above Avg)
-Natural Armour: Nil
-Ambidextry: Nil 
-Innate spells/skills: Nil
-Exp Modifier: High
+-=-=-=-=-= Spells =-=-=-=-=-
+None
+
+    +-----------------Experience Gain Rates-----------------+
+    |                         Good                          |
+    +-------------------------------------------------------+
 

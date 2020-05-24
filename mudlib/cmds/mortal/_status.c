@@ -21,7 +21,10 @@ int cmd_status(string arg) {
             case 26..50: mind = "slightly fuzzy"; break;
             case 51..75: mind = "clouded"; break;
             case 76..89: mind = "very fuzzy"; break;
-            case 90..110: mind = "%^MAGENTA%^full of facts%^RESET%^"; break;
+            case 90..98: mind = "%^MAGENTA%^full of facts%^RESET%^"; break;
+            case 99..110: mind = "%^GREEN%^OVER FOF%^RESET%^"; break;
+            case 111..200: mind = "%^RED%^OVER FOF%^RESET%^"; break;
+            case 201..1100: mind = "%^WHITE%^OVER FOF%^RESET%^"; break;
             default: mind = "clear"; break;
             }
  if(!arg) {
@@ -37,7 +40,8 @@ int cmd_status(string arg) {
   } else if(lower_case(arg) == "off") {
 	this_player()->setenv("SCORE", "off");
         write("Hp/mp report is OFF.");
-  } else write("Unknown arguement: "+ arg);
+  }   
+  else write("Unknown arguement: "+ arg);
   return 1;
 }
  

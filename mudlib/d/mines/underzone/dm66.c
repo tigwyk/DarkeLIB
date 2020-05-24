@@ -11,14 +11,17 @@ void create() {
     set_property("indoors", 1);
     set("short", "You are standing in a large chamber. A tunnel "
 "leads to the east and there are chambers to the north and west.");
-    set("long", 
-"You are standing in a large chamber somewhere in the "
-"Under'Drin Mining Complex. The walls have deep cuts where the miners "
-"have dug out the valuable gems and minerals. There are several piles "
-"of dust and broken shards of gems. \n" 
-"Another chamber is to the north, the entrance to the chamber is "
-"blocked by a set of strong steel bars.The tracks wraps into another "
-"chamber to the south and leads into tunnel to the east.");
+    set("long",@ext 
+You are standing in a large chamber somewhere in the 
+Under'Drin Mining Complex. The walls have deep cuts where the miners 
+have dug out the valuable gems and minerals. There are several piles 
+of dust and broken shards of gems. 
+Another chamber is to the north, the entrance to the chamber is 
+blocked by a set of strong steel bars.The tracks wraps into another 
+chamber to the south and leads into tunnel to the east.
+   
+    @--0
+ext);
      set_exits( ({ UNDER+"dm65", }),
       ({ "east" })
       );

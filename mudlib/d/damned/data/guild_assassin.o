@@ -1,0 +1,14 @@
+#/d/damned/guilds/join_rooms/assassin_join.c
+props (["base mp regen":4,"guild mods":(["dexterity":7,"intelligence":7,]),"base hp regen":4,"light":-1,"mp advance":23,"hp advance":21,"indoors":1,])
+__Smells ([])
+__Listens ([])
+__Searches ([])
+destinations (["north":"/d/damned/guilds/assassin/rooms/foyer_room","south":"/d/daybreak/room/db_slum",])
+invis_exits ([])
+pre_exit_func ([])
+post_exit_func ([])
+tracks ({})
+__Items (["blue moon":0,"sky":0,"ankh":0,"moon":0,"red moon":0,"green moon":0,"warzau":0,"sun":0,"luna":0,"moons":0,])
+guild_list (["bamcam":(["status":"member",]),"modes":(["status":"member",]),])
+banish ([])
+master "hawpun"

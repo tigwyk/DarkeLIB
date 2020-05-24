@@ -10,9 +10,15 @@ void create() {
 	set_property("light",1);
 	set_property("indoors",0);
 	set("short","By some shops");
-	set("long","You are in a small alcove off of town square. To your northwest "+
-		"is a grocery market, and to your northeast is some sort of magic shop. "+
-		"They are both worth checking out. To your southeast is town square.");
+	set("long",@ext You are in a small alcove off of town square. To your northwest 
+		is a grocery market, and to your northeast is some sort of magic shop. 
+		They are both worth checking out. To your southeast is town square.
+  0   0  
+   \ /   
+    @
+     \
+      0
+ext);
 	set_items( (["magic shop":"Northeast. Worth a look inside.",
 		"grocery market":"East. Check it out.",
 		"alcove":"That's where ya are!",

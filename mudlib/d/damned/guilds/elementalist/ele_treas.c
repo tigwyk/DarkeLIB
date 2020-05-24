@@ -13,5 +13,12 @@ void create() {
 "lockers and chests that lie about. All around you see magical items, "
 "and weapons that aid the elementalists. You can borrow them, but please "
 "put them back.\n\nMAKE SURE you close a chest after using it!\n");
+
+if (!present("rune")) {
+	new ("/std/diewarzau/obj/misc/h_rune") ->move(this_object());
+	 }
+if (!present("locker")) {
+	new("/std/diewarzau/obj/misc/storage_locker")->move(this_object());
+	}
 }
 

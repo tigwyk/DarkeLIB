@@ -493,30 +493,30 @@ if((int)attackers[0]->query_max_internal_encumbrance() <= 0)
 		switch(random(10)) {
 		case 0..1:
                     if (spec_com > 10) break;
-		    message("my_combat", "%^RED%^%^BOLD%^- Special combat:%^RESET%^ Extra attack!",
-		      me);
+		    //message("my_combat", "%^RED%^%^BOLD%^- Special combat:%^RESET%^ Extra attack!",
+		     // me);
                     spec_com++;
                     num_attacks++;
 		    if(current) weapons += ({ current });
 		    break;
 		case 2..6:
 		default:
-		    message("my_combat", "%^RED%^%^BOLD%^- Special combat:%^RESET%^ Extra damage!",
-		      me);
+		   // message("my_combat", "%^RED%^%^BOLD%^- Special combat:%^RESET%^ Extra damage!",
+		      //me);
 		    if(mapp(damage))
 			damage = map_mapping(damage, (: ($3 + $2) :), 20 +
 			  skill-99 + random(skill-99));
 		    break;
 		case 7..8:
-		    message("my_combat", "%^RED%^%^BOLD%^-Special combat:%^RESET%^ Extra critical!",
-		      me);
+		   // message("my_combat", "%^RED%^%^BOLD%^-Special combat:%^RESET%^ Extra critical!",
+		      //me);
 		    if(mapp(damage))
 			criticals += map_array(keys(damage), (: $1 + $2 :), " B");
 		    break;
 		case 9..9:
                     if (spec_com > 5) break;
-		    message("my_combat", "%^RED%^%^BOLD%^- Living Special combat:%^RESET%^ 2 extra attacks!",
-		      me);
+		    //message("my_combat", "%^RED%^%^BOLD%^- Living Special combat:%^RESET%^ 2 extra attacks!",
+		      //me);
                     spec_com++;
 		    num_attacks += 2;
 		    if(current)
@@ -711,7 +711,8 @@ private void do_criticals(string *criticals) {
     if(dur < 0) continue;
     criticals[i] = sprintf("%s %s",what2, CRIT_TYPES[dur]);
     roll = random(100)+1;
-/* no more devs no more trace
+
+ /*no more devs no more trace
     if(random(100) < (roll / 5)*(dur+1) && !me->buffer_full()&&
        me->at_max_exp() && ((int)attackers[0]->query_hp() > 5)) me->add_dev(1);
     if((string)me->getenv("TRACE") == "on" && wizardp(me))

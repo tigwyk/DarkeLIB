@@ -32,7 +32,9 @@ this_player());
 void spell_func(object caster, object at, int power, string args, int flag) {
   object ob;
 
+
   ob = new("/std/spells/shadows/light_shad");
+
   switch(args) {
   case "low":
     ob->set_light(flag?-4:1);
@@ -49,6 +51,9 @@ void spell_func(object caster, object at, int power, string args, int flag) {
     break;
   }
   ob->start_shadow(caster, props["duration"],
-                   "A light spell expires.");
+                  "A light spell expires.");
+
   return;
+
 }
+

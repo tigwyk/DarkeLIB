@@ -47,7 +47,7 @@ void create() {
   add_skill("two handed blunt", 1);
   add_skill("flail", 1, 1);
   add_skill("two handed flail", 1, 1);
-  add_skill("two handed blade", 5, 1);
+  add_skill("two handed blade", 1, 1);
   add_skill("offhand training", 10, 1);
   add_skill("dual attack", 17, 1);
   add_skill("concentrate",3);

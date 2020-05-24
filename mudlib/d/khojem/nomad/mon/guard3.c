@@ -14,7 +14,7 @@ create() {
     set_name("nomad guard");
     set_id( ({ "nomad guard", "guard" }) );
     set_level(7);
-    set_short("nomad guard");
+    set_short("[7]nomad guard");
     set_long("The nomad guard is one of the nameless high-man who help "+
       "protect this small camp.  He is devoted to keeping the peace."
       );

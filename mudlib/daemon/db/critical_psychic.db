@@ -1,3 +1,4 @@
+#CRIT Psychic
 (A):
 1..5:$(AP) attack was impressive but nothing to write home about.::DAMAGE 5
 6..11:$A $V gutteral, vibrating shout at $T:emit:DAMAGE 10:CONT_DAMAGE 1 10
@@ -74,7 +75,7 @@
 100..100:$A $V the air with both hands...suddenly $(TP) torso begins to split from the groin to the chest...stretched and torn pieces of genetalia drip the gore spilling from the body cavity.:grip:LIMB_LOSS torso:KILL
 (E):
 1..5:$A begins to chant in a dramatic fashion but it does nothing but cause $T to take pause.::STUN 5
-6..11:$A cluches $(APP) crotch and points at $T...and then laughs insanely about the long term effects of CROTCH ROT.::CONTINUAL_DAMAGE 2 50
+6..11:$A cluches $(APP) crotch and points at $T...and then laughs insanely about the long term effects of CROTCH ROT.::CONT_DAMAGE 2 50
 #TLNY2020 remove:STAT_MOD dexterity -25 50:STAT_MOD strength -25 50:STAT_MOD charisma -75 50
 12..18:$A $V $T with an unbelievable flurry of attacks...too bad $T believed them to be real!:baffle:STUN 9:SKILL_MOD attack -55 5:SKILL_MOD melee -55 5:SPECIAL_RESULT /wizards/zortek/crits/psy_results rob_money
 #TLNY2020 removed:STAT_MOD dexterity -60 3

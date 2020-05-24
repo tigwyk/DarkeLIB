@@ -19,14 +19,17 @@ void create() {
 	set_property("light",1);
 	set_property("indoors",1);
 	set("short","A home in the sewers");
-	set("long","You have met some very eccentric people in your life before, "+
-		"but this one may beat them all. Apparently you are in the workroom "+
-		"of some kind of rock nut. "+
-	"Against the far wall there appears to be "+ 
-		"some sort of bed, so you know someone has actually made a home for them"+
-	"selves in the sewers. It is made of rocks and doesn't look very comfortable. "+
-	"You boggle that someone would live in this dank, dark sewers with a bunch "+
-	"of rocks.");
+	set("long",@ext You have met some very eccentric people in your life before, 
+		but this one may beat them all. Apparently you are in the workroom 
+		of some kind of rock nut. 
+	Against the far wall there appears to be 
+		some sort of bed, so you know someone has actually made a home for them
+	selves in the sewers. It is made of rocks and doesn't look very comfortable. 
+	You boggle that someone would live in this dank, dark sewers with a bunch 
+	of rocks.
+
+   @--0
+ext);
 	set_items( (["rocks":"They can be found most anywhere you look when outside. "+
 		"They are characterized by there hardness and their source: the planet "+
 		"itself.",

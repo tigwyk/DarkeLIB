@@ -25,10 +25,10 @@ void create() {
 	set_body_type("human");
 	set_level(15);
 	switch(random(4)) {
-		case 0: var = "A wandering spirit"; break;
-		case 1: var = "A ghastly ghost"; break;
-		case 2:	var = "A evil looking ghost"; break;
-		case 3: var = "A screaming ghost"; break;
+		case 0: var = "[15]A wandering spirit"; break;
+		case 1: var = "[15]A ghastly ghost"; break;
+		case 2:	var = "[15]A evil looking ghost"; break;
+		case 3: var = "[1]5A screaming ghost"; break;
 	}
 	this_object()->set("short", var);
 	set_long(

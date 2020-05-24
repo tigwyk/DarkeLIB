@@ -14,19 +14,25 @@ void create() {
 	set_property("light",0);
 	set_property("indoors",0);
 	set("short","A dark alleyway");
-	set("day long","This is a dark alley way in the city. It is not "+
-		"the kind of place you'd want to be at night. And yet, "+
-		"you have the strange feeling that it is your destiny "+
-		"to be here. There is a bunch of trash lying around. "+
-		"Despite all this, something seems to be emitting a large "+
-		"amount of magic, and sinister magic at that.");
-	set("night long","You walk into the dark alleyway and wonder "+
-		"if it is safe to be here at night. However, a strange "+
-		"feeling tells you that it is your destiny to be here. "+
-		"Not one to stand in the way of destiny, you look around "+
-		"and see lots of trash. Yuck. Despite all this, something "+
-		"seems to be emitting a large "+
-		"amount of magic, and a dark magic at that.");
+	set("day long",@ext This is a dark alley way in the city. It is not 
+		the kind of place you'd want to be at night. And yet, 
+		you have the strange feeling that it is your destiny 
+		to be here. There is a bunch of trash lying around. 
+		Despite all this, something seems to be emitting a large 
+		amount of magic, and sinister magic at that.
+
+0--@
+ext);
+	set("night long",@ext You walk into the dark alleyway and wonder 
+		if it is safe to be here at night. However, a strange 
+		feeling tells you that it is your destiny to be here. 
+		Not one to stand in the way of destiny, you look around 
+		and see lots of trash. Yuck. Despite all this, something 
+		seems to be emitting a large 
+		amount of magic, and a dark magic at that.
+
+0--@
+ext);
 	set_smell("default","There is a stench of trash in the air.");
 	set_listen("default","You hear the sounds of rats going about "+
 		"their rat business.");

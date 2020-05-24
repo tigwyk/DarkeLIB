@@ -10,7 +10,7 @@ void create() {
   set_carry(0);
   set_save(1);
   set_level(1);
-  set_short("slavering wolf");
+  set_short("[1]slavering wolf");
   set_long("This intelligent looking animal stares right back at you.");
   set_aggr_status(0);
   return;

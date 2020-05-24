@@ -13,14 +13,18 @@ void create() {
 	set_property("light",3);
 	set_property("indoors",1);
 	set("short","The entrance to the building");
-	set("long","You are at the entrance to a very large building, in fact "+
-		"the largest building in New Faerie Dust. This building stretches "+
-		"hundreds and hundreds of feet into the air, a mammoth monument to "+
-		"the building savvy of NFD. To commend this success of architecture, "+
-		"there is a plaque set in the northern wall. There is a door leading "+
-		"to another room north, and to the east your current room continues. It appears "+
-		"there is a long line stretching in this direction, perhaps it would "+
-		"be wise to take your place in it.");
+	set("long",@ext You are at the entrance to a very large building, in fact 
+		the largest building in New Faerie Dust. This building stretches 
+		hundreds and hundreds of feet into the air, a mammoth monument to 
+		the building savvy of NFD. To commend this success of architecture, 
+		there is a plaque set in the northern wall. There is a door leading 
+		to another room north, and to the east your current room continues. It appears 
+		there is a long line stretching in this direction, perhaps it would 
+		be wise to take your place in it.
+    0   
+    |   
+ 0--@--0
+ext);
 	set_items((["plaque":
 "%^ORANGE%^%^BOLD%^The New Faerie Dust Renaissance Tower%^RESET%^\n"+  
 "        A monument to the stars\n"+

@@ -9,25 +9,25 @@ void create() {
 	set_id( "zombie" );
 	set("race", "undead");
 	set_body_type("human");
-	set_level(random(5) + 1);
+	set_level(6);
 	switch(random(17)) {
-		case 0: var = "A rotting zombie"; break;
-		case 1: var = "A half decayed zombie"; break;
-		case 2: var = "A scavenging zombie"; break;
-		case 3: var = "A pale zombie"; break;
-		case 4: var = "A disease infested zombie"; break;
-		case 5: var = "A charred zombie"; break;
-		case 6: var = "A wandering zombie"; break;
-		case 7: var = "A pox ridden zombie"; break;
-		case 8: var = "A puss-oozing zombie"; break;
-		case 9: var = "A parched skinned zombie"; break;
-		case 10: var = "A long-limbed zombie"; break;
-		case 11: var = "A hairy zombie"; break;
-		case 12: var = "A foul smelling zombie"; break;
-		case 13: var = "A retched zombie"; break;
-		case 14: var = "A crazed zombie"; break;
-		case 15: var = "A flesh eating zombie"; break;
-		case 16: var = "A monstrous zombie"; break;
+		case 0: var = "[6]A rotting zombie"; break;
+		case 1: var = "[6]A half decayed zombie"; break;
+		case 2: var = "[6]A scavenging zombie"; break;
+		case 3: var = "[6]A pale zombie"; break;
+		case 4: var = "[6]A disease infested zombie"; break;
+		case 5: var = "[6]A charred zombie"; break;
+		case 6: var = "[6]A wandering zombie"; break;
+		case 7: var = "[6]A pox ridden zombie"; break;
+		case 8: var = "[6]A puss-oozing zombie"; break;
+		case 9: var = "[6]A parched skinned zombie"; break;
+		case 10: var = "[6]A long-limbed zombie"; break;
+		case 11: var = "[6]A hairy zombie"; break;
+		case 12: var = "[6]A foul smelling zombie"; break;
+		case 13: var = "[6]A retched zombie"; break;
+		case 14: var = "[6]A crazed zombie"; break;
+		case 15: var = "[6]A flesh eating zombie"; break;
+		case 16: var = "[6]A monstrous zombie"; break;
 	}
 	this_object()->set("short", var);
 	set_long(

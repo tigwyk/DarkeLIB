@@ -10,14 +10,18 @@ void create() {
    set_property("light", 0);
    set_property("indoors", 1);
    set("short", "You are standing at the top of a long stairway.");
-   set("long", 
-    "You are standing at the top of a long stairway. The staircase "
-    "stretchs down several hundred feet before connecting to a lower "
-    "tunnel. The stone steps glisten slightly as the light, from several "
-    "torches mounted along the stairway, reflects off the pooling water. "
-    "Evidently the combination of damp air and the water trickling down "
-    "the walls keeps the stairs fairly wet.\n" 
-    "There is a large door to the west.");
+   set("long",@ext 
+    You are standing at the top of a long stairway. The staircase 
+    stretchs down several hundred feet before connecting to a lower 
+    tunnel. The stone steps glisten slightly as the light, from several 
+    torches mounted along the stairway, reflects off the pooling water. 
+    Evidently the combination of damp air and the water trickling down 
+    the walls keeps the stairs fairly wet.
+    There is a large door to the west.
+  
+    @--0
+door        
+ext);
    set_exits( ({ UNDER+"dm10", UNDER+"dm12" }),
       ({ "door", "east" }));
    set_items( ([

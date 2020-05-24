@@ -14,7 +14,7 @@ void create() {
     set_name("evil faerie");
     set_id( ({ "evil faerie","faerie" }) );
     set_level(7);
-    set_short("evil faerie");
+    set_short("[7]evil faerie");
     set_long("The ghostly-looking winged, sprint moves very quickly.  "+
       "It is constantly fluttering about and whirls circles around you." 
       );

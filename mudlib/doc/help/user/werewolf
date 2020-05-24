@@ -14,17 +14,35 @@ desired and in aiding the transformation when it is desired.
 Wearcreatures also have a natural resistance to non-magic weapons.
 
 
-SUMMARY:
+-=-=-=- Stat Bonuses -=-=-=- 
+Strength:           +10
+Constitution:       +10
+Intelligence:       -5
+Wisdom:             -5
+Dexterity:          +5
+Charisma:           --- 
+  
+-=-=-=-=-=- Abilities -=-=-=-=-=-     
+Body Size:         Normal             
+HP Regen:          Very Good                
+MP Regen:          Normal               
+Natural Weapons:   Crushing Hands     
+Sight:             Above Avg
+         
++------ Special Abilities ------+     
+Shapeshifting on ankh moon  
+Stats Mod and hand damage changes on Shapeshift
+Natrual Physical Resistances
+Weakness Silver
++-------------------------------+     
 
-Dex: Above Avg       Str: High          Con: High 
-Int: Below Avg       Wis: Below Avg     Char: Avg
+-=-=-=-=-= Skills =-=-=-=-=-
+Control Change         +  5%
 
-Sight: Above Avg
-HP Regen: SICK
-SP Regen: Nil
-Natural Weaponry: Standard (Above Avg)
-Natural Armour: Nil
-Ambidextry: Nil
-Innate spells/skills: One Skill
-Exp Modifier: Below Avg
-Lycanthrope: On Blue Moon
+-=-=-=-=-= Spells =-=-=-=-=-
+None
+
+    +-----------------Experience Gain Rates-----------------+
+    |                    Below Average                      |
+    +-------------------------------------------------------+
+

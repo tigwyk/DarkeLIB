@@ -10,10 +10,10 @@ void create() {
 	set_name("poltergeist");
 	set("id",({"poltergeist","ghost","undead"}));
 	set("undead",1);
-	set("short","A fun loving poltergeist");
+	set("short","[18]fun loving poltergeist");
 	set("long","This poltergeist currently has manifested itself as the generic "+
 		"ghost, but could return to its poltergeisting hijinks at any time.");
-	set_level(14);
+	set_level(18);
 	set("race","undead");
 	set_gender("neuter");
 	set_body_type("sphere");

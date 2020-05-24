@@ -21,8 +21,8 @@ void create() {
 	::create();
 	set_name("police man");
 	set("id",({"police man","man","police"}) );
-	set_level( 8 );
-	set("short","A uniformed police man");
+	set_level( 10 );
+	set("short","[10]uniformed police man");
 	set("long","This is one of New Faerie Dust's finest. He is standing here "+
 		"doing his job. NFD is a bit ahead of its time in that it has created a special "+ 
 	"armed force to try and control the cities rampant crime. "+

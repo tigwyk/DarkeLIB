@@ -11,13 +11,19 @@ void create() {
     set_property("light", 0);
     set_property("indoors", 1);
     set("short", "You are standing in an underground room");
-    set("long", 
-"You are standing in a large connection chamber. The strong stone walls "
-"stretch to the west and east, pitted and scraped from years of abuse. The "
-"dirty floor is covered with gravel and clumps of straw. "
-"A passage leads off to to the east.\nA large mine track has been built here. "
-"It leads into the northern tunnel and extend southwest toward another "
-"part of the chamber.");
+    set("long",@ext 
+You are standing in a large connection chamber. The strong stone walls 
+stretch to the west and east, pitted and scraped from years of abuse. The 
+dirty floor is covered with gravel and clumps of straw. 
+A passage leads off to to the east.\nA large mine track has been built here. 
+It leads into the northern tunnel and extend southwest toward another 
+part of the chamber.
+    0   
+    |   
+ 0--@--0
+   /|\
+  0 0 0
+ext);
     set_exits( ({ UNDER+"dm8",UNDER+"dm9c",UNDER+"dm9a",UNDER+"dm9d",
         UNDER+"dm9e",UNDER+"dm9f" }),
       ({ "north", "east","west","southwest","south","southeast" }) );

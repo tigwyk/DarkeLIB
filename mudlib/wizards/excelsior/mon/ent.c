@@ -9,15 +9,15 @@ void create() {
 	::create();
 	set_name("teloll");
 	set("id",({"ent","teloll"}) );
-	set_level( 10 );
-	set("short","Teloll, the wise old ent");
+	set_level( 15 );
+	set("short","[15]Teloll, the wise old ent");
 	set("long","Teloll is perhaps the oldest creature living in New Faerie "+
 		"Dust. He has much to tell, and may be able to answer some of your "+
 		"questions concerning New Faerie Dust. Type 'say teloll, help'.");
 	set("race","ent");
 	set_gender("male");
 	set_body_type("ent");
-	set_overall_ac( 6 );
+	set_overall_ac( 15 );
 	set_combat_chance( 80 );
 	add_spell( "power word, stun","$A" );
 	add_spell( "power word, blind","$A" );

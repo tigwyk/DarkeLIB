@@ -2,7 +2,7 @@
            =-=-=-=-=-=-=-=- Wraith -=-=-=-=-=-=
 
 	Wraiths are one of the few sentient races populating the realms 
-of Darkemud which did not arise from the porgenitors' experiments or the 
+of DayBreak which did not arise from the porgenitors' experiments or the 
 progenitors themselves.  They are a quasi-undead race, arising from an 
 undead spirit inhabiting a living body.  Their souls become merged, and 
 the recipient body is drawn partially into the ethereal plane, allowing 
@@ -12,18 +12,36 @@ have been assimilated well into society, and find themselves in a variety
 of roles.  
 
 
-SUMMARY:
+-=-=-=- Stat Bonuses -=-=-=- 
+Strength:           ---
+Constitution:       ---
+Intelligence:       +10
+Wisdom:             ---
+Dexterity:          +10
+Charisma:           -15 
+  
+-=-=-=-=-=- Abilities -=-=-=-=-=-     
+Body Size:         Shorter then Normal             
+HP Regen:          Above Avg                
+MP Regen:          High               
+Natural Weapons:   Freezing Hands     
+Sight:             Night Vision
+         
++------ Special Abilities ------+     
+Natrual AC High (Etherial Body)     
+Weakness (Holy, Electricity, Plasma) 
++-------------------------------+     
 
-Dex: High            Str: Avg             Con: Avg
-Int: High            Wis: Avg             Char: Very Low
+-=-=-=-=-= Skills =-=-=-=-=-
+stealth                +  10%
+necromancy             +  10%
+Illusionism            +  10%
 
-Sight: Above Avg
-HP Regen: Above Avg
-SP Regen: High
-Natural Weaponry: Cold Touch
-Natural Armour: Nil
-Ambidextry: Nil
-Innate spells/skills: High
-Exp Modifier: Below Avg
+-=-=-=-=-= Spells =-=-=-=-=-
+drain life             *  1
+Darkness               *  1
 
+    +-----------------Experience Gain Rates-----------------+
+    |                    Below Average                      |
+    +-------------------------------------------------------+
 

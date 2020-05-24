@@ -10,19 +10,35 @@ of black with silver trim.  They are ambitious to the end.  On rare
 occasions Drow have been known to repent their evil ways and lean
 towards a more philanthropic view of life. 
 
+-=-=-=- Stat Bonuses -=-=-=- 
+Strength:           ---
+Constitution:       -5
+Intelligence:       +15
+Wisdom:             +5
+Dexterity:          +15
+Charisma:           -20 
+  
+-=-=-=-=-=- Abilities -=-=-=-=-=-     
+Body Size:         Medium             
+HP Regen:          Normal                
+MP Regen:          High               
+Natural Weapons:   Crushing Hands     
+Sight:             Dark Vision
+         
++------ Special Abilities ------+     
+Ambidexterity     
+Magic Resistance  
++-------------------------------+     
 
-SUMMARY:
+-=-=-=-=-= Skills =-=-=-=-=-
+             None
 
-Dex: Very High       Str: Avg           Con: Below Avg  
-Int: High            Wis: Above Avg     Char: Very Low
+-=-=-=-=-= Spells =-=-=-=-=-
+Levitation             *  1
+Faerie fire            *  1
+Darkness               *  1
 
-Sight: Dark Vision
-HP Regen: Nil
-SP Regen: High
-Natural Weaponry: Standard (Above Avg)
-Natural Armour: Nil
-Ambidextry: Yes
-Innate spells/skills: Both
-Magic Resistance: High
-Exp Modifier: Low 
+    +-----------------Experience Gain Rates-----------------+
+    |                    Below Average                      |
+    +-------------------------------------------------------+
 

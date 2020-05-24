@@ -17,11 +17,17 @@ void create() {
  set_property("indoors",1);
 	set("short","Backstage by the curtain controls");
 	bag = new("/wizards/excelsior/obj/curtain_obj");
-	set("long","This is the backstage area on the left side of "+
-		"the stage. This is where all the ropes and pulleys are that "+
-		"control the curtains of the stage, which is located to the "+
-		"east. There are many tools, a ladder, costumes, and props "+
-		"lying around. What an interesting place!");
+	set("long",@ext This is the backstage area on the left side of 
+		the stage. This is where all the ropes and pulleys are that 
+		control the curtains of the stage, which is located to the 
+		east. There are many tools, a ladder, costumes, and props 
+		lying around. What an interesting place!
+      0  
+     /   
+    @--0
+     \
+      0
+ext);
 	set_items( (["stage":"To the east my child.","tools":
 		"You notice a mop, a hammer, a wrench set and a rubber chicken "+
 		"at first glance.","chicken":"Used to cheer up the repair man "+

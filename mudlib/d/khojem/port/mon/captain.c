@@ -33,7 +33,7 @@ create() {
     set_id( ({ "captain", "sailor" }) );
     set_level(22);
     set_exp(350000);
-    set_short("captain");
+    set_short("[22]captain");
     set_long("The captain is youthful and appears to be a good fighting man.  "+
       "He is well liked by his men and runs a taut ship."
       );

@@ -8,36 +8,48 @@ void create() {
    set_property("indoors",0);
    set_property("light",1);
    set("short", "An intersection");
-   set("day long", "You have come to another intersection of "+
-      "complex and intertwining roads.  You wonder if people "+
-      "ever get lost forever in this city.  Hmmm. Quite boggling, "+
-      "really.  Here are the things you boggle at: 1) The fact that "+
-      "people might leave their homes and never come back. 2) "+
-      "the immense size of this place. You are dwarfed "+
-      "(no offense to dwarfs) by this city.  High above "+
-      "you see a bridge that connects two towers.  It looks much "+
-      "nicer up there,  for they get natural daylight.  Down here in the "+
-      "depths of this 'wonderful' city (at least that is what the legends "+
-      "said) the only light is from street lamps,  even now, during the "+
-      "day.  You make a mental note to boggle at that too.  To the west "+
-      "is the town square,  while to the northeast you see another "+
-      "almost identical intersection.  A dark alley is to the east. "+
-      "To the south you see a road.  Boggle.");
-   set("night long", "You have come to another intersection of "+
-      "complex and intertwining roads.  You wonder if people "+
-      "ever get lost forever in this city.  Hmmm. Quite boggling, "+
-      "really.  Here are the things you boggle at: 1) The fact that "+
-      "people might leave their homes and never come back. 2) "+
-      "the immense size of this place. You are dwarfed "+
-      "(no offense to dwarfs) by this city!  High above "+
-      "you see a bridge that connects two towers.  It looks much "+
-      "nicer up there,  for they get natural daylight.  Down here in the "+
-      "depths of this 'wonderful' city (at least that is what the legends "+
-      "said) the only light is from street lamps,  even during the day.  You "+
-      "make a mental note to boggle at that too.  To the west "+
-      "is the town square,  while to the northeast you see another "+
-      "almost identical intersection.  A dark alley is to the east. "+
-      "To the south you see a road. Boggle.");
+   set("day long", @ext You have come to another intersection of 
+      complex and intertwining roads.  You wonder if people 
+      ever get lost forever in this city.  Hmmm. Quite boggling, 
+      really.  Here are the things you boggle at: 1) The fact that 
+      people might leave their homes and never come back. 2) 
+      the immense size of this place. You are dwarfed 
+      (no offense to dwarfs) by this city.  High above 
+      you see a bridge that connects two towers.  It looks much 
+      nicer up there,  for they get natural daylight.  Down here in the 
+      depths of this 'wonderful' city (at least that is what the legends 
+      said) the only light is from street lamps,  even now, during the 
+      day.  You make a mental note to boggle at that too.  To the west 
+      is the town square,  while to the northeast you see another 
+      almost identical intersection.  A dark alley is to the east. 
+      To the south you see a road.  Boggle.
+      0 
+     /  
+ 0--@--0
+    |
+    0
+ext);
+   set("night long", @ext You have come to another intersection of 
+      complex and intertwining roads.  You wonder if people 
+      ever get lost forever in this city.  Hmmm. Quite boggling, 
+      really.  Here are the things you boggle at: 1) The fact that 
+      people might leave their homes and never come back. 2) 
+      the immense size of this place. You are dwarfed 
+      (no offense to dwarfs) by this city!  High above 
+      you see a bridge that connects two towers.  It looks much 
+      nicer up there,  for they get natural daylight.  Down here in the 
+      depths of this 'wonderful' city (at least that is what the legends 
+      said) the only light is from street lamps,  even during the day.  You 
+      make a mental note to boggle at that too.  To the west 
+      is the town square,  while to the northeast you see another 
+      almost identical intersection.  A dark alley is to the east. 
+      To the south you see a road. Boggle.
+      0 
+     /  
+ 0--@--0
+    |
+    0
+ext);
    set_items( (["buildings":"They are quite massive.","intersection":
             "You are in one,  there is one to the northeast,  and you guess "+
             "the town square to the west is an intersection too.","alley":

@@ -1,5 +1,5 @@
 #include <std.h>
-#include <nevin.h>
+#include "nevin.h"
 
 inherit ROOM;
 
@@ -9,11 +9,15 @@ void create() {
 	set_property("light", 1);
 	set_property("no castle", 1);
 	set("short", "North Canyon Wall");
-	set("long",
-		"The canyon wall continues to the west and to the east.  "
-		"On the ground you notice some very large white plants.  "
-		"Is that the wind or are those plants moving?"
-	);
+	set("long",@ext
+		The canyon wall continues to the west and to the east.  
+		On the ground you notice some very large white plants.  
+		Is that the wind or are those plants moving?
+
+ 0--@--0
+    |
+    0	
+ext);
 	set_listen("default", "You hear only the wind and your heavy breathing...strange that there are no animals here....");
 	set_items( ([
 		"plants": "You wonder what on earth these plants could eat.",

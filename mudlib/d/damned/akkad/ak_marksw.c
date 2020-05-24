@@ -12,11 +12,17 @@ void create() {
 set_property("no attack", 1);
 set_property("no spell", 1);
     set("short","   0\n   | \n0--@--0\n   | \n   0\nSouthwest corner of Market Square");
-    set("long","You are standing on the southwest corner of Market Square. "+
-	"There are shops to the south and west of you.  The noisy salesmen "+
-	"are promising you special deals.  Yeah, I got your special deals " +
-	"RIGHT HERE! \n   0\n   | \n0--@--0\n   | \n   0\n\n" +
-	"There are two signs here. ");
+    set("long",@ext You are standing on the southwest corner of Market Square.
+	There are shops to the south and west of you.  The noisy salesmen
+	are promising you special deals.  Yeah, I got your special deals 
+	RIGHT HERE! 
+    0   
+    |   
+ Q--@--0
+    |
+    S
+	There are two signs here. 
+ext);
     add_item("sign 2", "This sign points west.\n\n"
 "******************\n"
 "  The Quest Shop\n"

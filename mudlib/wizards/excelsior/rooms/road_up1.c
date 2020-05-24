@@ -9,12 +9,16 @@ void create() {
 	set_property("light",1);
 	set_property("night light",1);
 	set("short","A road headed up");
-	set("long","Here the road you are following becomes a ramp which "+
-	"spirals up to the next level of the city. This allows carts and "+
-	"big items to make the climb to greater heights. After the sights "+
-	"of this level, you can't wait to see what lies ahead. Many people "+
-	"use this road to travel back and forth between levels, as they are "+
-	"doing now. To the east is a intersection.");
+	set("long",@ext Here the road you are following becomes a ramp which 
+	spirals up to the next level of the city. This allows carts and 
+	big items to make the climb to greater heights. After the sights 
+	of this level, you can't wait to see what lies ahead. Many people 
+	use this road to travel back and forth between levels, as they are 
+	doing now. To the east is a intersection.
+       
+     up   
+    @--0
+ext);
 	set_items( (["people":"Traveling about the city they are.","road":
 	"It becomes a ramp.","ramp":"It spirals up to the next levels of "+
 	"the city."]) );

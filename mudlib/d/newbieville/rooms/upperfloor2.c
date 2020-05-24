@@ -1,6 +1,10 @@
 //#include "../newbieville.h"
 #include <daybreak.h>
 #include <std.h>
+#include <rooms.h>
+#include <security.h>
+
+
 #define WEAPONS ({ "long-sword", "short-sword", "bastard-sword", \
   "two-handed-sword", "halberd", "glaive", "dagger", "footman's-mace", \
   "footman's-flail", "quarter-staff", "great-axe", "hand-axe", \
@@ -13,7 +17,6 @@
 
 inherit "/std/vault";
 
-void clone_once();
 
 //inherit ROOM;
 void create() {
@@ -22,8 +25,9 @@ void create() {
     set_property("light", 4);
     set_property("indoors", 1);
     set("short", "Upper Level of The Castle of Tailwind");
-    set("long", "This is the upper floor of the castle. All the walls are made of glass, making it a giant window allowing you a marvelous view on the town below. You see before you scatter many pieces of leather armour left bt other adventures.");
+    set("long", "This is the upper floor of the castle. You see before you scattered many pieces of leather armour left by other adventures.\n%^B_RED%^If you are a new player you should wait and%^YELLOW%^read sign%^RESET%^%^RESET%^\nAfter you gather the armour and other supplies\n%^BOLD%^%^RED%^you should go%^YELLOW%^up or 'u' for short%^RESET%^%^RESET%^\n\n you can also%^YELLOW%^'look sign'%^RESET%^for further directions");
     add_exit("/d/newbieville/rooms/upperfloor", "down");
+    add_exit("/d/newbieville/rooms/upperfloor3", "up");
 set_items((["window" :
 "You peer down.
   #     B: Bar
@@ -32,74 +36,73 @@ set_items((["window" :
  G#W    G: General Store
   #     T: Town Square/Castle
 "]));
+set_items( (["sign": (: call_other, this_object(), "read_sign" :)]) );
 return;
 }
+
+int read_sign() {
+string msg;
+
+  msg =
+"This sign is to help you get all items and equip\n"
+"-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n"
+"If this room is empty wait 10 secounds in this room it will respawn\n\n"
+"You can type%^YELLOW%^'get (item)'%^RESET%^to pick up a item\n\n"
+"Once you have a item you can type%^YELLOW%^'equip'%^RESET%^or wear armour in a certain limb such as right hand or left hand for gloves\n\n"
+"You can also type%^YELLOW%^'get all'%^RESET%^ to gather all the items in the room\n\n"
+"for better light as a new player you can type%^YELLOW%^'light lantern'%^RESET%^ to provide you a better light sorce during the night. Be aware it only has so much fuel before you need more oil to refuel it.\n\n"
+"You also have rations for food type%^YELLOW%^'get ration from pack'%^RESET%^to get the food from the pack and type%^YELLOW%^'eat ration'%^RESET%^to consume it\n\n"
+"If this room is Empty and does not have any items in it wait for it to respawn or message a Wizard or Arche with%^YELLOW%^who%^RESET%^ then type%^YELLOW%^tell (person) msg%^RESET%^\n\n"
+
+"You can also type%^YELLOW%^help newbie%^RESET%^and read the helpfile while you wait";
+  this_player()->more(explode(msg, "\n"));
+return 1;
+}
+
+void init() {
+  ::init();
+  add_action("read_it", "read");
+  call_out("reset",10,this_player());
+  return;
+}
+
+int read_it(string str) {
+   if(str == "sign") {
+      read_sign();
+   return 1;
+   }
+   return 0;
+} 
+
 void reset() {
-  object *inv, *tmp;
-int i, max;
-
-  ::reset();
-max = -1 * sizeof(all_inventory(this_object()))/3 + 1;
-  if(sizeof(inv = all_inventory(this_object())) > 1) {
-    tmp = ({});
-    for(i = 1;i < sizeof(inv); i++) if(!living(inv[i])) tmp += ({ inv[i]
-});
-    call_out("remove_all", 5, tmp);
-  } else
-  if(max >= 1) {
-    for(i = 1;i <= max;i++)
-      call_out("clone_once", i*2);
-  }
-  return;
-}
-
-void remove_all(object *inv) {
-  int i;
-
-  i = sizeof(inv);
-  while(i--) if(inv[i] && environment(inv[i]) == this_object())
-inv[i]->remove();
-  return;
-}
-
-void finish_deliver(object bob) {
-  if(bob)
-    message("info", "Dakkon says in Common: It's all here now.",
-            environment(bob));
-  return;
-}
-
-void clone_once() {
-  object ob;
-  int i;
-
-  seteuid(getuid());
-for(i=1;i <=1; i++) {
-   ob = new("/std/diewarzau/obj/misc/rations_pack");
-      ob->set_rations(5, 1);
-  if(i <= 1) {
-   ob = new("/std/diewarzau/obj/misc/rations_pack");
-     ob->set_rations(5, 1);
-  ob->move(this_object());
-    ob = new("/d/damned/virtual/studded-leather-glove.armour");
+      object ob;
+if(!present("pack"))
+ob = new("/std/diewarzau/obj/misc/rations_pack");
+ob->set_rations(5, 1);
+ob->move(this_object());
+if(!present("chain coif"))
+ob = new("/d/damned/virtual/chain-coif.armour");
     ob->move(this_object());
-    ob = new("/d/damned/virtual/chain-coif.armour");
+if(!present("leather vest"))
+ob = new("/d/damned/virtual/leather-vest.armour");
     ob->move(this_object());
-    ob = new("/d/damned/virtual/leather-vest.armour");
-    ob->move(this_object());
+if(!present("iron bracer"))
     ob = new("/d/damned/virtual/iron-bracer.armour");
     ob->move(this_object());
     ob = new("/d/damned/virtual/iron-bracer.armour");
     ob->move(this_object());
+if(!present("padded glove"))
     ob = new("/d/damned/virtual/padded-glove.armour");
     ob->move(this_object());
     ob = new("/d/damned/virtual/padded-glove.armour");
     ob->move(this_object());
+if(!present("leather pants"))
     ob = new("/d/damned/virtual/leather-pants.armour");
     ob->move(this_object());
+if(!present("leather boots"))
     ob = new("/d/damned/virtual/leather-boots.armour");
     ob->move(this_object());
-  }
+if(!present("lantern"))
+    ob = new("/std/obj/lantern");
+    ob->move(this_object());
 }
-  return;
-}  

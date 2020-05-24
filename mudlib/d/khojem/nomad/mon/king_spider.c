@@ -14,7 +14,7 @@ create() {
     set_name("king sand spider");
     set_id( ({ "king sand spider","sand spider", "spider" }) );
     set_level(11);
-    set_short("king sand spider");
+    set_short("[11]king sand spider");
     set_long("The king sand spider is a huge spider.  Its body is a darke black "+
       "and has a hard, smooth surface.  The shell is smooth yet reflects no "+
       "light.  It has "+

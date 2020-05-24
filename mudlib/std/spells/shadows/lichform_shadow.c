@@ -33,8 +33,8 @@ mixed query_property(string what) {
 
   if(what == "melee damage") {
     tmp = (mapping)next_shadow()->query_property("melee damage");
-    if(tmp) return tmp + ([ "cold" : pow * 6 ]);
-    else return ([ "cold" : pow*6 ]);
+    if(tmp) return tmp + ([ "unholy" : pow * 4 ]);
+    else return ([ "unholy" : pow*4 ]);
   }
   return next_shadow()->query_property(what);
 }

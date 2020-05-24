@@ -617,10 +617,14 @@ varargs static void heart_beat(int recurs_flag) {
 	save_player(query_name());
 	autosave = player_age + 500;
     }
+    if(sizeof(query_attackers()) && getenv("SCORE") == "on")
+	message("my_combat",""+"%^BOLD%^%^RED%^"+sprintf("hp: %d/%d", query_hp(), query_max_hp()) +"%^BOLD%^%^CYAN%^"+ sprintf("mp: %d/%d", query_mp(), query_max_mp()), this_object());
+/* //old code replaced by TLNY2020 with new code above ^
     if(sizeof(query_attackers()) && getenv("SCORE") != "off")
 	message("my_combat", sprintf("hp: %d (%d)  mp: %d (%d)",
 	    query_hp(), query_max_hp(), query_mp(), 
 	    query_max_mp()), this_object());
+*/
     if(stringp(props["lycanthrope moon"]) && !this_object()->
       query("in creation")) {
 	tod = (string)EVENTS_D->query_time_of_day();

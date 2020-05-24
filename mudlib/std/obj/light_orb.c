@@ -1,8 +1,10 @@
- 
 /* Glowing orb cloned by the conjuring light spell.
    See /bin/user/_light.c for more info.
    By Valodin, Jan 15, 1993
 */
+//  Khojem
+//  I just turned the damn think on.
+//  light_orb.c
  
 inherit "/std/Object";
  
@@ -31,6 +33,7 @@ set_creator(object ob)
   creator = ob;
 }
  
+
 light(int level, int time)
 {
   light_level = level;
@@ -38,7 +41,6 @@ light(int level, int time)
   environment(this_object())->set_property("light", level);
   call_out("dim", time);
 }
- 
  
 int extinguish(string str)
 {
@@ -77,11 +79,13 @@ dim()
       /*  in a person */
     {
       tell_room(environment(environment(this_object())), "The orb that " +
-                capitalize((string)environment(this_object())->query_name()) +
+               
+capitalize((string)environment(this_object())->query_name()) +
                 " is carrying winks out of existence.\n",
                 environment(this_object()));
       tell_object(environment(this_object()),
-                  "The orb that you are carrying winks out of existence.\n");
+                  "The orb that you are carrying winks out of
+existence.\n");
     }
     remove();
   }
@@ -96,7 +100,9 @@ dim()
     {
       tell_room(environment(environment(this_object())),
                 "The glow of the orb that " +
-                capitalize((string)environment(this_object())->query_name()) +
+               
+
+capitalize((string)environment(this_object())->query_name()) +
                 " is carrying weakens slightly.\n",
                 environment(this_object()));
       tell_object(environment(this_object()),
@@ -118,6 +124,7 @@ int move(mixed dest)
     x = ::move(dest);
     if(environment(this_object()))
       {
+
 	environment(this_object())->set_property("light", light_level);
       }
     return x;
@@ -133,10 +140,12 @@ int remove() {
  
 int darken(){
    if(this_player() != creator)
-   {notify_fail("Only the creator of an orb can attenuate its brilliance\n");
+   {notify_fail("Only the creator of an orb can attenuate its
+brilliance\n");
     return 0;}
    
    remove_call_out("dim");
    dim(); 
    return 1;
 }
+

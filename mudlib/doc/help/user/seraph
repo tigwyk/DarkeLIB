@@ -15,17 +15,34 @@ in the various realms of the world, usually selecting the professions of
 paladin or priest.
 
 
-SUMMARY:
+-=-=-=- Stat Bonuses -=-=-=- 
+Strength:           +10
+Constitution:       +10
+Intelligence:       +10
+Wisdom:             +15
+Dexterity:          +5
+Charisma:           +25 
+  
+-=-=-=-=-=- Abilities -=-=-=-=-=-     
+Body Size:         Medium             
+HP Regen:          Above vg                
+MP Regen:          High               
+Natural Weapons:   Crushing Holy Hands     
+Sight:             Above Avg
+         
++------ Special Abilities ------+     
+Resistance to Holy
+Weakness to Disrutpion  
++-------------------------------+     
 
-Dex: Above Avg       Str: High           Con: High
-Int: High            Wis: Very High      Char: Very High
+-=-=-=-=-= Skills =-=-=-=-=-
+prayer                 +  5%
 
-Sight: Above Avg
-HP Regen: Above Avg
-SP Regen: High
-Natural Weaponry: Standard/Holy Damage (Above Avg)
-Natural Armour: Nil
-Ambidextry: Nil
-Innate spells/skills: Both
-Exp Modifier: Very Low
+-=-=-=-=-= Spells =-=-=-=-=-
+holy word              *  1
+cure light wounds      *  1
+
+    +-----------------Experience Gain Rates-----------------+
+    |                       Very Low                        |
+    +-------------------------------------------------------+
 

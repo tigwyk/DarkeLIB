@@ -4,7 +4,7 @@ void create() {
 	::create();
 	set_name("holy badge");
 	set("id", ({"holy", "holy badge", "badge"}) );
-	set("short", "A holy bade");
+	set("short", "A holy badge");
 	set("long",
 		"Special badge that can be worn on the chest.  "
 	);

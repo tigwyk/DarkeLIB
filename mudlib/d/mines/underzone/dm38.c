@@ -13,12 +13,16 @@ void create() {
     set_property("indoors", 1);
     set("short", "You are standing in a small chamber. A large silver "
               "altar is in the center of the room.");
-    set("long", 
-"You are standing in a small chamber. The solid stone walls climb up "
-"and meet in the center of the ceiling to form a dome. The dominate "
-"object in the room is a large silver altar in the center of the chamber. "
-"Several assorted vases and statues are in small shelves recessed in "
-"the solid stone.\n");
+    set("long",@ext 
+You are standing in a small chamber. The solid stone walls climb up 
+and meet in the center of the ceiling to form a dome. The dominate 
+object in the room is a large silver altar in the center of the chamber. 
+Several assorted vases and statues are in small shelves recessed in 
+the solid stone.
+      0  
+     /   
+    @
+ext);
     x = 1;
     set_exits( ({ UNDER+"dm35"}),
     ({ "northeast" }));

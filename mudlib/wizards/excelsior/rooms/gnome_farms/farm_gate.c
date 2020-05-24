@@ -25,13 +25,17 @@ void create() {
 	set_property("light",1);
 	set_property("indoors",0);
 	set("short","At a strange gate");
-	set("long","This is a strange place indeed. You are in a small, dark, deadend "+
-		"alleyway with brick walls. Compared to much of the rest of this city's "+
-		"alleys it is suprisingly clean. To the northwest there is an "+
-		"overcrowded slum, but there is almost no one here except a few guards. "+
-		"Behind the guards is a large iron gate of some sort. It looks practically "+
-		"impenatrable. Whatever is behind that gate however must surely be "+
-		"fabulous to require such security.");
+	set("long",@ext This is a strange place indeed. You are in a small, dark, deadend 
+		alleyway with brick walls. Compared to much of the rest of this city's 
+		alleys it is suprisingly clean. To the northwest there is an 
+		overcrowded slum, but there is almost no one here except a few guards. 
+		Behind the guards is a large iron gate of some sort. It looks practically 
+		impenatrable. Whatever is behind that gate however must surely be 
+		fabulous to require such security.
+  0 
+   \
+ 0--@
+ext);
 	set_items((["gate":(: call_other,this_object(),"look_at_gate":),
 		"walls":"They are brick"]));
 	set_exits( (["northwest":"/wizards/excelsior/rooms/gnome_farms/alley2",

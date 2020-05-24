@@ -13,6 +13,14 @@ create() {
   ::create();
     zlevel = 12 + random(2);
 	set_overall_ac((zlevel-2));
+if (zlevel == 12) set_short("[12]marine");
+else 
+if (zlevel == 13) set_short("[13]marine");
+else
+if (zlevel == 14) set_short("[14]marine");
+else
+if (zlevel == 15) set_short("[15]marine");
+else set_short("[11]marine");
     set_level(zlevel);
     zlevel = random(4);
     switch(zlevel) {
@@ -23,7 +31,6 @@ create() {
       default : set_name("another marine"); break;
     }
     set_id( ({ "marine", "mob" }) );
-    set_short("marine");
     set_long("The marine looks like he ready to tangle."
       );
     set("race", "storm-giant");

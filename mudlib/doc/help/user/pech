@@ -6,15 +6,35 @@ and feet are excellent for bracing and employing tools to work stone.
 They have pale, yellowish skin and red or reddish brown hair.  Their 
 flesh is nearly as hard as granite.  They have large eyes with no pupils.
 
-Dex: Below Avg    Str: High          Con: High
-Int: Avg          Wis: Below Avg     Char: Below Avg
+-=-=-=- Stat Bonuses -=-=-=- 
+Strength:           +15
+Constitution:       +15
+Intelligence:       ---
+Wisdom:             -5
+Dexterity:          -5
+Charisma:           -10 
+  
+-=-=-=-=-=- Abilities -=-=-=-=-=-     
+Body Size:         Medium             
+HP Regen:          Above Avg                
+MP Regen:          Normal               
+Natural Weapons:   Impact Hands     
+Sight:             Dark Vision
+         
++------ Special Abilities ------+     
+Natrual AC (Rock Skin)  
+Resistance to Impact
++-------------------------------+     
 
-Sight: Dark Vision
-Hp Regen: Above Avg
-Sp Regen: Nil
-Natural Weaponry: Earth attacks
-Natural Armour: Very High
-Ambidexterity: No
-Innate spells/skills: High
-Exp Modifier: Low
-Physical Resistance: Above Avg
+-=-=-=-=-= Skills =-=-=-=-=-
+Elementalism           +  10%
+Earth Lore             +  10%
+Prospecting            +  10%
+
+-=-=-=-=-= Spells =-=-=-=-=-
+None
+
+    +-----------------Experience Gain Rates-----------------+
+    |                           Low                         |
+    +-------------------------------------------------------+
+

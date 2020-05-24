@@ -10,15 +10,38 @@ and songs are lovely.  A nereid always carries a little white
 shawl, either in its hands or over head and shoulders, and is 
 lightly clad in white and gold. 
 
-Dex: Above Avg     Str: Low          Con: Below Avg
-Int: High          Wis: Above Avg    Char: High
+-=-=-=- Stat Bonuses -=-=-=- 
+Strength:           -10
+Constitution:       -5
+Intelligence:       +10
+Wisdom:             +5
+Dexterity:          +5
+Charisma:           +15 
+  
+-=-=-=-=-=- Abilities -=-=-=-=-=-     
+Body Size:         Below Avg             
+HP Regen:          High                
+MP Regen:          High               
+Natural Weapons:   Cold Hands     
+Sight:             Dark Vision
+         
++------ Special Abilities ------+          
+High Magic Resistance
+Resistance to Cold
+Weakness Fire  
++-------------------------------+     
 
-Sight: Avg
-Hp Regen: Above Avg 
-SP Regen: Above Avg 
-Natural Weaponry: water attack
-Natural Armour: Nil
-Ambidexterity: No
-Innate spells/skills: High
-Exp modifier: Below Avg
-Magic Resistance: High
+-=-=-=-=-= Skills =-=-=-=-=-
+Elementalism           +  10%
+Water lore             +   5%
+Swimming               + 100%
+
+-=-=-=-=-= Spells =-=-=-=-=-
+elemental shield       *  1
+lesser elemental bolt  *  1
+
+
+    +-----------------Experience Gain Rates-----------------+
+    |                    Below Average                      |
+    +-------------------------------------------------------+
+

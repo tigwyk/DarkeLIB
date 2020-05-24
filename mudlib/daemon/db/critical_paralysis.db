@@ -4,7 +4,6 @@
 #       weapon poison.  See /wizards/duridian/poison/
 #
 # Duridian   6/5/96
- 
 (A):
 0..97:::NO_EFFECT
 98..99:Poison from $(AP) weapon causes $T to be temporarily paralyzed!::STUN 1

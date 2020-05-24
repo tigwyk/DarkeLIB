@@ -11,13 +11,17 @@ void create() {
     set_property("indoors", 1);
     set("short","The tunnel begins to bend to the southwest here. It "
 "appears that it is leading deeper underground.");
-    set("long", 
-"The tunnel begins to bend to the southwest here. It appears that it "
-"is leading deeper underground. The track begins to slope down and the "
-"tunnel size has expanded. You notice large piles of granite dust along "
-"the side of the tracks. The miners must have to sweep the dust off the "
-"tracks so the carts can roll over them." 
-       );
+    set("long",@ext 
+The tunnel begins to bend to the southwest here. It appears that it 
+is leading deeper underground. The track begins to slope down and the 
+tunnel size has expanded. You notice large piles of granite dust along 
+the side of the tracks. The miners must have to sweep the dust off the 
+tracks so the carts can roll over them.      
+       
+    @
+   / \
+  0   0      
+ext);
     set_exits( ({ UNDER+"dm3",UNDER+"dm5" }),
       ({ "southeast","southwest" })
     );

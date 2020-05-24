@@ -46,18 +46,21 @@ void create() {
     set_property("light",1);
     set_property("indoors",1);
     set("short","A sight of commotion");
-    set("long","Here a large group of people have assembled. You cannot "+
-      "see what is the center of their attention, but you guess it is "+
-      "something violent. As you push and shove to get a good view you "+
-      "trip on something. After making sure the nail you broke is ok you "+
-      "look to see what it is- a corpse! A young elf notices your interest "+
-      "and explains 'He's the tax collector. He came in to evict some "+
-      "thranx who's papers were not in order from the city, and the "+
-      "guy just went on a rampage.' You wonder why someone would not "+
-      "want to leave this city. When you turn to ask the young elf, he is gone. "+
-      "You become even more puzzled when you realize that he never said a "+
-      "word, but instead communicated to you telepathically. You shrug it "+
-      "off and decide to see what you can do to help.");
+    set("long",@ext Here a large group of people have assembled. You cannot 
+      see what is the center of their attention, but you guess it is 
+      something violent. As you push and shove to get a good view you 
+      trip on something. After making sure the nail you broke is ok you 
+      look to see what it is- a corpse! A young elf notices your interest 
+      and explains 'He's the tax collector. He came in to evict some 
+      thranx who's papers were not in order from the city, and the 
+      guy just went on a rampage.' You wonder why someone would not 
+      want to leave this city. When you turn to ask the young elf, he is gone. 
+      You become even more puzzled when you realize that he never said a 
+      word, but instead communicated to you telepathically. You shrug it 
+      off and decide to see what you can do to help.
+
+ 0--@--0
+ext);
     set_items( ([ ({"group","people"}):"They seem to be watching a thranx "+
       "beat the pulp out of fellow nonhumans.","nail":"Great, you broke "+
       "it! And you haven't seen a descent manicurist the whole time you've "+

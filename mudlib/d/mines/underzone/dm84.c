@@ -14,12 +14,16 @@ void create() {
     set_property("indoors", 1);
     set("short", "You are standing in a large chamber somewhere in the "
 "Mining Complex.");
-    set("long", 
-"You are standing in a large chamber somewhere in the Mining "
-"Complex. There are large piles of rocks everywhere. This must be "
-"section of the mine where the Dwarves are currently working.\nThe "
-"low ceiling looks fairly stable here, providing just enough "
-"clearance for a miner to work comfortably.");
+    set("long",@ext 
+You are standing in a large chamber somewhere in the Mining 
+Complex. There are large piles of rocks everywhere. This must be 
+section of the mine where the Dwarves are currently working. The 
+low ceiling looks fairly stable here, providing just enough 
+clearance for a miner to work comfortably.
+  
+    @
+        tunnel    
+ext);
     set_exits( ({ UNDER+"dm83"}),
       ({ "tunnel" }) );
 

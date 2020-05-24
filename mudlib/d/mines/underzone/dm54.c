@@ -12,11 +12,15 @@ void create() {
     set_property("indoors", 1);
     set("short", "You are standing in a small office. The room is cluttered"
     "with papers and boxes of trash.");
-    set("long", 
-       "You are standing in a small office. The room is cluttered "
-    "with papers and boxes of trash. Scattered among them are books on "
-    "mining.\nIn the center of the room is a large oak desk.\nOn the "
-    "back wall is a large framed picture.\n");
+    set("long",@ext 
+       You are standing in a small office. The room is cluttered 
+    with papers and boxes of trash. Scattered among them are books on 
+    mining.\nIn the center of the room is a large oak desk. On the 
+    back wall is a large framed picture.
+   
+    @
+        staircase   
+ext);
     set_exits( ({ UNDER+"dm53"}),
       ({ "staircase" })
        );

@@ -120,7 +120,7 @@ int cmd_reincarnate(string str) {
 
   who->reset_max_exp();
 
-  who->move_player("/d/standard/setter", 0);
+  who->move_player("/d/standard/setterreinc", 0);
 
   log_file("reincarnate", sprintf("%s gave a lvl/2 reinc to %s on %s.\n", (string)previous_object()->query_name(), who->query_name(), ctime(time())));
 

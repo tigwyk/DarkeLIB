@@ -11,10 +11,13 @@ void create() {
     set_property("indoors", 1);
     set("short", "You are standing in an underground room somewhere "
 "in the mining complex. A mine track drops out of sight to the west.");
-    set("long", 
-"You are standing at the begining of a small tunnel that stretches to "
-"east. There is a large mine track here that lowers out of site to "
-"the west.");
+    set("long",@ext 
+You are standing at the begining of a small tunnel that stretches to 
+east. There is a large mine track here that lowers out of site to 
+the west.
+ 
+    @--0
+ext);
     set_exits( ({ UNDER+"dm81"}),
       ({ "east" })
     );

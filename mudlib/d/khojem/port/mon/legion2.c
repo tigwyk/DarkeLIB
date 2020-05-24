@@ -16,10 +16,19 @@ create() {
     set_name("legionnaire");
     set_id( ({ "legionnaire", "guard", "legion" }) );
     zlevel = 16 + random(5);
+if (zlevel == 16) set_short("[16]legionnaire");
+else 
+if (zlevel == 17) set_short("[17]legionnaire");
+else
+if (zlevel == 18) set_short("[18]legionnaire");
+else
+if (zlevel == 19) set_short("[19]legionnaire");
+else
+if (zlevel == 20) set_short("[20]legionnaire");
+else set_short("[21]legionnaire");
     set_level(zlevel);
     zlevel = 200000 + (5000*zlevel);
     set_exp(zlevel);
-    set_short("legionnaire");
     set_long("A massive, stone faced legionnaire stands glaring down at you."
       );
     set("race", "storm-giant");

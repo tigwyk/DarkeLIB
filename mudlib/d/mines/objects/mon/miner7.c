@@ -12,15 +12,15 @@ void create() {
     ::create();
    set_name("Miner");
    set_id( ({ "Miner","dwarf","miner" }) );
-   set_short("A soaking wet Miner");
-   set_level(20);
+   set_short("[25]soaking wet Miner");
+   set_level(25);
    set_max_hp(2500);
    set_hp(2500);
    set("long", "This Miner is totally drenched! He looks like he jumped "
        "in a river or something.");
    set_gender("male");
    set("race", "dwarf");
-   set_exp(400000);
+   //set_exp(400000);
    set_alignment(0);
    set_wielding_limbs( ({"right hand","left hand"}) );
    set_body_type("human");

@@ -8,29 +8,41 @@ void create() {
    set_property("indoors",0);
    set_property("light",1);
    set("short","Entrance to the NFDMH");
-   set("day long","You stand in a small court with a fountain "+
-      "that families "+
-      "from the area have turned into a bath. There is a hospital employee "+
-      "here trying hopelessly to shoo away the happy bathers, who have no "+
-      "water for themselves in their own rooms.  This court serves as the "+
-      "entry to the New Faerie Dust Municipal Hospital,  or NFDMH. It "+
-      "is a bit more open in this area and light shines down from above, "+
-      "penetrating the deep dark shadows the humungous buildings cast "+
-      "in a chaotic phantasmagoria of light.  To the southeast is the "+
-      "large hospital itself, and if you look to the northwest you see a "+
-      "extremely large building that stretches up above the clouds. You "+
-      "do not see any way in this building from here.");
-   set("night long","At night here in the hospital court you are "+
-      "practically squashed several times by the horse drawn carts "+
-      "that serve as ambulances in this large urban spectacular. You can "+
-      "see the benefits of modern technology in ambulances, but being as "+
-      "they have yet to been invented we don't know how. You are appalled "+
-      "by the wounded victims that come here only to be turned away in "+
-      "favor of the wounded victims who actually have money. Though the "+
-      "hospital "+
-      "is supposed to be a free city service, you can see they have their "+
-      "priorities straight. Not a few nurses are getting rich off selecting the "+
-      "order of patient care through bribes.");
+   set("day long",@ext You stand in a small court with a fountain 
+      that families 
+      from the area have turned into a bath. There is a hospital employee 
+      here trying hopelessly to shoo away the happy bathers, who have no 
+      water for themselves in their own rooms.  This court serves as the 
+      entry to the New Faerie Dust Municipal Hospital,  or NFDMH. It 
+      is a bit more open in this area and light shines down from above, 
+      penetrating the deep dark shadows the humungous buildings cast 
+      in a chaotic phantasmagoria of light.  To the southeast is the 
+      large hospital itself, and if you look to the northwest you see a 
+      extremely large building that stretches up above the clouds. You 
+      do not see any way in this building from here.
+    0   
+    |   
+ 0--@
+     \
+      0
+ext);
+   set("night long",@ext At night here in the hospital court you are 
+      practically squashed several times by the horse drawn carts 
+      that serve as ambulances in this large urban spectacular. You can 
+      see the benefits of modern technology in ambulances, but being as 
+      they have yet to been invented we don't know how. You are appalled 
+      by the wounded victims that come here only to be turned away in 
+      favor of the wounded victims who actually have money. Though the 
+      hospital 
+      is supposed to be a free city service, you can see they have their 
+      priorities straight. Not a few nurses are getting rich off selecting the 
+      order of patient care through bribes.
+    0   
+    |   
+ 0--@
+     \
+      0
+ext);
    
    set_items( (["court":"It serves as the entrance to the hospital.",
 		"buildings":"The biggest one is to your northwest.",

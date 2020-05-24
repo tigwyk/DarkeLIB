@@ -1,5 +1,5 @@
 #include <std.h>
-#include <nevin.h>
+#include "nevin.h">
 
 inherit MONSTER;
 
@@ -8,7 +8,7 @@ create() {
 	set_name("skeleton");
 	set("id", ({ "skeleton", "_skeleton3" }) );
         set_level(2);
-	set("short", "A skeleton howls silently at you.");
+	set("short", "[2]A skeleton howls silently at you.");
 	set("long", "Its vacant gaze tell you that there's no talking your way out of this.");
 	set("race", "skeleton");
 	set_body_type("human");

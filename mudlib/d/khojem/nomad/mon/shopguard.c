@@ -14,8 +14,16 @@ create() {
     set_name("shopguard");
     set_id( ({ "shopguard", "guard" }) );
     zlevel = 12 + random(4);
-    set_level(zlevel);
-    set_short("shopguard");
+
+if (zlevel == 12) set_short("[12]shopguard");
+else 
+if (zlevel == 13) set_short("[13]shopguard");
+else
+if (zlevel == 14) set_short("[14]shopguard");
+else
+if (zlevel == 15) set_short("[15]shopguard");
+else set_short("[16]shopguard");
+	set_level(zlevel);
     set_long("This man was hired by the local merchants to protect the merchants "+
       "from thieves and vandals.  Looks like they must do a fair job since the "+
       "merchants appear well off and healthy."

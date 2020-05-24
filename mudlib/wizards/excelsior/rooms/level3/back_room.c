@@ -14,13 +14,17 @@ void create() {
 	set_property("indoors",1);
 	set_property("light",-2);
 	set("short","In a condemned building");
-	set("long","You are in a old deserted room. The cob webs in here "+
-		"are so thick you can barely see 2 feet in front of you. You have "+
-		"a very bad feeling something really bad is going to happen. "+
-		"You see a small speck of "+
-		"light through the cobwebs to your west. To your north is the exit "+
-		"out of here. You better leave quickly, you here a loud breathing "+
-		"noise very close by!");
+	set("long",@ext You are in a old deserted room. The cob webs in here 
+		are so thick you can barely see 2 feet in front of you. You have 
+		a very bad feeling something really bad is going to happen. 
+		You see a small speck of 
+		light through the cobwebs to your west. To your north is the exit 
+		out of here. You better leave quickly, you here a loud breathing 
+		noise very close by!
+    0   
+    |   
+ 0--@
+ext);
 	set_smell("default","You smell rotting wood and flesh.");
 	set_listen("default","You hear the sound of loud breather very very nearby.");
 	set_listen("breathing","It's right behind you!");

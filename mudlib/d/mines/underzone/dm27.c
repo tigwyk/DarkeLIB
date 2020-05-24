@@ -11,13 +11,16 @@ void create() {
     set_property("indoors", 1);
     set("short", "You are crouched in a small tunnel that stretches under "
          "the breakdown pile.");
-    set("long", 
-"You are crawling in a small tunnel that stretches under the "
-"breakdown. The passage slopes down further to the east and "
-"rises into a larger opening above. There are several pieces "
-"of moldy wood laying in the crawlway. The pieces disentergrate into "
-"splinters whenever you touch them."
-        );
+    set("long",@ext 
+You are crawling in a small tunnel that stretches under the 
+breakdown. The passage slopes down further to the east and 
+rises into a larger opening above. There are several pieces 
+of moldy wood laying in the crawlway. The pieces disentergrate into 
+splinters whenever you touch them.
+       up
+    @
+       down         
+ext);
     set_exits( ({ UNDER+"dm26",UNDER+"dm28" }),
       ({ "up", "down" })
     );

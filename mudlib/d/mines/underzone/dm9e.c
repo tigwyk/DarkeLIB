@@ -11,12 +11,17 @@ void create() {
     set_property("light", 2);
     set_property("indoors", 1);
     set("short", "You are standing in an underground room");
-    set("long", 
-"You are standing in a large connection chamber. You can see the walls "
-"of the chamber in the distance. There is a large amount of dust "
-"floating through the air. It slowly floats down only to be pushed back up "
-"by the faint winds blowing through the room. " 
-       );
+    set("long",@ext 
+You are standing in a large connection chamber. You can see the walls 
+of the chamber in the distance. There is a large amount of dust 
+floating through the air. It slowly floats down only to be pushed back up 
+by the faint winds blowing through the room. 
+  0 0 0  
+   \|/    
+ 0--@--0
+   /|\  
+  0 0 0       
+ext);
     set_exits( ({ UNDER+"dm9a",UNDER+"dm9b",UNDER+"dm9c",UNDER+"dm9d",
        UNDER+"dm9f",UNDER+"dm9i",UNDER+"dm9h",UNDER+"dm9g"}),
       ({ "northwest","north","northeast","west","east","southeast","south",

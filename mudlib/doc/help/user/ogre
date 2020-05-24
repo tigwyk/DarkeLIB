@@ -12,18 +12,30 @@ for the more satisfying sensation of knuckle against tender
 flesh and bone.
 
 
+-=-=-=- Stat Bonuses -=-=-=- 
+Strength:           +15
+Constitution:       +15
+Intelligence:       -10
+Wisdom:             -5
+Dexterity:          -5
+Charisma:           -15 
+  
+-=-=-=-=-=- Abilities -=-=-=-=-=-     
+Body Size:         Big             
+HP Regen:          Above Avg                
+MP Regen:          Normal               
+Natural Weapons:   Large Crushing Hands     
+Sight:             Normal
+         
++------ Special Abilities ------+     
+Natrual AC (Touch Skin)
++-------------------------------+     
 
-SUMMARY:
+-=-=-=-=-= Skills =-=-=-=-=-
+None
+-=-=-=-=-= Spells =-=-=-=-=-
+None
 
-Dex: Below Avg       Str: Very High        Con: High 
-Int: Low             Wis: Below Avg        Char: Very Low
-
-Sight: Below Avg
-HP Regen: Above Avg
-SP Regen: Nil
-Natural Weaponry: Standard (High)
-Natural Armour: Tough Skin (Above Avg)
-Ambidextry: Nil
-Innate spells/skills: Nil
-Exp Modifier: Nil
-
+    +-----------------Experience Gain Rates-----------------+
+    |                        Normal                         |
+    +-------------------------------------------------------+

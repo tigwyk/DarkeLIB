@@ -104,7 +104,7 @@ hardness/metal/javednite;1630
 value/metal/javednite;7300
 brittle/metal/javednite;4
 
-auto critical/metal/davistone;([ "weapon-break C" : 50 ])
+#auto critical/metal/davistone;([ "weapon-break C" : 50 ])
 damage bonus/metal/davistone;6
 hardness/metal/davistone;1750
 value/metal/davistone;6000
@@ -155,13 +155,35 @@ damage bonus/metal/fenrig;5
 armour bonus/metal/fenrig;40
 
 #TEST
-auto critical/metal/test;([ "aether A" : 3, "infernal A": 4, "ligtht" : 4, "speed C" : 6 ])
-extra ac/metal/test;([ "aether" : 50 ])
+auto critical/metal/test;([ "unholy A": 3 ])
+extra ac/metal/test;([ "unholy" : 50 ])
 damage bonus/metal/test;10
-extra wc/metal/test;([ "aether" : 5000, "infernal" : 5000, "light" : 5000 ])
+extra wc/metal/test;([ "unholy" : 5000 ])
 armour bonus/metal/test;20
 hit bonus/metal/test;5
 hardness/metal/test;3000
 value/metal/test;18000
 brittle/metal/test;15
+
+#TEST 2
+auto critical/metal/alpha;([ "alpha A" : 3])
+extra ac/metal/alpha;([ "alpha" : 50 ])
+damage bonus/metal/alpha;10
+extra wc/metal/alpha;([ "alpha" : 5000 ])
+armour bonus/metal/alpha;20
+hit bonus/metal/alpha;5
+hardness/metal/alpha;3000
+value/metal/alpha;18000
+brittle/metal/alpha;15
+
+#Elemental Summon crits
+auto critical/metal/meteorite;([ "z1 A" : 3])
+extra ac/metal/meteorite;([ "z1" : 30 ])
+damage bonus/meteorite/alpha;10
+extra wc/metal/meteorite;([ "z1" : 10 ])
+armour bonus/metal/meteorite;10
+hit bonus/metal/meteorite;5
+hardness/metal/meteorite;3000
+value/metal/meteorite;18000
+#brittle/metal/meteorite;15
 

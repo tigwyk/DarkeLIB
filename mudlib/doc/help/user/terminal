@@ -1,7 +1,7 @@
-The DarkeMUD Mudlib supports several different sets of escape sequences
+The Daybreak Mudlib supports several different sets of escape sequences
 for maximum compatibility with the various terminal emulations out there.
 Most terminal emulations (vt100) for example either use the full ansi
-escape sequences or the sequences for bolding.  DarkeMUD supports the
+escape sequences or the sequences for bolding.  DayBreak supports the
 following escape sequence protocols:
 
 ansi

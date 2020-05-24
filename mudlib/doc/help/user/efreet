@@ -12,16 +12,36 @@ prefer to cast their potent fire magic at any enemies they
 have.  They tend to have few enemies, for those who stand against
 them do not usually live long.
 
-SUMMARY:
+-=-=-=- Stat Bonuses -=-=-=- 
+Strength:           +10
+Constitution:       +10
+Intelligence:       +5
+Wisdom:             +5
+Dexterity:          +15
+Charisma:           --- 
+  
+-=-=-=-=-=- Abilities -=-=-=-=-=-     
+Body Size:         Medium             
+HP Regen:          Above Avg                
+MP Regen:          Above Avg               
+Natural Weapons:   Fire Hands     
+Sight:             Normal
+         
++------ Special Abilities ------+     
+Flying
+Magic Resistance
+Natrual AC
+Fire resistant
+Weakness Cold
++-------------------------------+     
 
-Str: Above Avg      Con: Above Avg       Int: Above Avg   
-Wis: Above Avg      Dex: Above Avg       Char: Avg 
+-=-=-=-=-= Skills =-=-=-=-=-
+Fire Lore              +  20%
+elementalism           +  10%
 
-No Legs
-HP Regen: Above Avg
-SP Regen: High
-Natural Weaponry: fire (high)
-Natural Armour: Nil
-Innate spells/skills: Both
-Magic Resistance: High
-Exp Modifier: Very Low 
+-=-=-=-=-= Spells =-=-=-=-=-
+lesser elemental bolt  *  1
+
+    +-----------------Experience Gain Rates-----------------+
+    |                          Low                          |
+    +-------------------------------------------------------+

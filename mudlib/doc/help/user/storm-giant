@@ -6,18 +6,31 @@ height of humans.  They possess immense strength, but are not
 very agile.  Storm Giants are not only big and strong, but they 
 are intelligent and many cast spells.
 
+-=-=-=- Stat Bonuses -=-=-=- 
+Strength:           +35
+Constitution:       +30
+Intelligence:       ---
+Wisdom:             ---
+Dexterity:          -7
+Charisma:           -10 
+  
+-=-=-=-=-=- Abilities -=-=-=-=-=-     
+Body Size:         Giant             
+HP Regen:          Above Avg                
+MP Regen:          Normal               
+Natural Weapons:   Huge Crushing, Electricity Hands     
+Sight:             Normal
+         
++------ Special Abilities ------+     
+Natrual AC (Touch Skin)
++-------------------------------+     
 
-SUMMARY:
+-=-=-=-=-= Skills =-=-=-=-=-
+None
 
-Dex: Below Avg       Str: SICK!        Con: SICK! 
-Int: Avg             Wis: Avg          Char: Below Avg
+-=-=-=-=-= Spells =-=-=-=-=-
+None
 
-Sight: Avg 
-HP Regen: Above Avg
-SP Regen: Nil
-Natural Weaponry: Standard (Very High)
-Natural Armour: Tough Skin (Above Avg)
-Ambidextry: Nil 
-Innate spells/skills: Nil
-Exp Modifier: Very low
-
+    +-----------------Experience Gain Rates-----------------+
+    |                    Very Low                           |
+    +-------------------------------------------------------+

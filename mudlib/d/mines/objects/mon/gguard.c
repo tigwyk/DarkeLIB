@@ -11,7 +11,7 @@ create() {
     ::create();
    set_name("dravack");
    set_id( ({ "guardian","guard","dwarf","dravack" }) );
-   set_short("Dravack the guardian of the gold altar");
+   set_short("[35]Dravack the guardian of the gold altar");
    set_level(35);
    set("long", " Dravack stands before you. His presence radiates power "
    "and spreads fear into your very soul. As you look into his burning "

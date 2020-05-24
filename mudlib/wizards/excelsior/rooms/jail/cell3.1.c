@@ -21,8 +21,13 @@ void create() {
 	set_property("indoors",1);
 	set_property("no castle",1);
 	set("short","In a prison cell");
-	set("long","You are in a tiny prison cell. It is very empty. You'd hate to be "+
-		"a prisoner here.");
+	set("long",@ext You are in a tiny prison cell. It is very empty. You'd hate to be 
+		a prisoner here.
+
+    @
+    |
+    0
+ext);
 	set_items(([
 		({"cell door","door","cell"}):"It is made out of bars that guards can "+
 			"see right through."]));

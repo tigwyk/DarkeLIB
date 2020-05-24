@@ -8,10 +8,13 @@ void create() {
 	set_property("light",1);
 	set_property("indoors",0);
 	set("short","A dead end");
-	set("long","The road you were following comes to a rather abrupt "+
-	"stop. Homeless have set up quite a camp here, but you "+
-	"choose to ignore them and look around. You can't believe "+
-	"that the road would just end. The east wall looks peculiar.");
+	set("long",@ext The road you were following comes to a rather abrupt 
+	stop. Homeless have set up quite a camp here, but you 
+	choose to ignore them and look around. You can't believe 
+	that the road would just end. The east wall looks peculiar.
+
+ 0--@
+ext);
 	set_items( (["wall":"You can't believe that the road would just end "+
 	"here. Perhaps you could 'search' the wall?","homeless":"They are "+
 	"minding their own business- shoudn't you too?",

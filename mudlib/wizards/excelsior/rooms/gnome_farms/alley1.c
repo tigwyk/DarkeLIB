@@ -45,24 +45,30 @@ void create() {
 	set_property("light",0);
 	set_property("indoors",0);
 	set("short","In a dark alleyway");
-	set("day long","You are now in a long dark alleyway. All around you are "+
-		"homeless people practically lying in their own waist. You slowly "+
-		"approach one old human who isn't moving who you discover to your "+
-		"own squimish horror is dead. You decide you'd better move along "+
-		"quickly, because this area of town is no doubt crime infested. "+
-		"To your south is an old abondoned apartment building that "+
-		"has been condemned. And yet, children run in and out of it. You wonder "+
-		"if they know who their parents are. You would not want to be here at "+
-		"night. You have heared criminals are much more active at that time.");
-	set("night long","You are now in a long dark alleyway. All around you are "+
-		"homeless people practically lying in the own waist. You slowly "+
-		"approach one old human who isn't moving who you discover to your "+
-		"own squimish horror is dead. You decide you'd better move along "+
-		"quickly, because this area of town is no doubt crime infested. "+
-		"To your south is an old abondoned apartment building that "+
-		"has been condemned. Inside you see several children sleeping. You wonder "+
-		"if they know who their parents are. To bad you decided to come here at "+
-		"night. You have heared criminals are much more active at this time.");
+	set("day long",@ext You are now in a long dark alleyway. All around you are 
+		homeless people practically lying in their own waist. You slowly 
+		approach one old human who isn't moving who you discover to your 
+		own squimish horror is dead. You decide you'd better move along 
+		quickly, because this area of town is no doubt crime infested. 
+		To your south is an old abondoned apartment building that 
+		has been condemned. And yet, children run in and out of it. You wonder 
+		if they know who their parents are. You would not want to be here at 
+		night. You have heared criminals are much more active at that time.
+
+ 0--@--0
+ext);
+	set("night long",@ext You are now in a long dark alleyway. All around you are 
+		homeless people practically lying in the own waist. You slowly 
+		approach one old human who isn't moving who you discover to your
+		own squimish horror is dead. You decide you'd better move along
+		quickly, because this area of town is no doubt crime infested.
+		To your south is an old abondoned apartment building that
+		has been condemned. Inside you see several children sleeping. You wonder
+		if they know who their parents are. To bad you decided to come here at
+		night. You have heared criminals are much more active at this time.
+
+ 0--@--0
+ext);
 	set_items( (["children":"They are either orphans, run aways, or their parents "+
 		"don't watch them that great. They will probably grow up to be criminals "+
 		"of some sort. If only you could help them now. To bad you are to selfish "+

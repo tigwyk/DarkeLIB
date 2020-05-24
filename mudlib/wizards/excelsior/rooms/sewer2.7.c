@@ -7,11 +7,17 @@ void create() {
 	set_property("light",-2);
 	set_property("indoors",1);
 	set("short","A massive intersection");
-	set("long","Here the sewer tunnels that could easily be called "+
-		"a maze widen up into an intersection of amazing proportions. "+
-		"There are several ways to go from here, but you can't help "+
-		"thinking that this place looks familiar- like you've been here "+
-		"before.");
+	set("long",@ext Here the sewer tunnels that could easily be called 
+		a maze widen up into an intersection of amazing proportions. 
+		There are several ways to go from here, but you can't help 
+		thinking that this place looks familiar- like you've been here 
+		before.
+    0   
+    |   
+ 0--@--0
+     \
+      0
+ext);
 	set_items( (["tunnels":"Pick a direction."]) );
 	set_smell( "default","You smell the sewer smell.");
 	set_exits( (["east":"/wizards/excelsior/rooms/sewer2.8",

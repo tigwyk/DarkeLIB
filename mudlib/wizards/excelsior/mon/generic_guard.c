@@ -9,15 +9,15 @@ void create() {
 	::create();
 	set_name("guard");
 	set("id",({"guard","a guard"}) );
-	set_level( 12 );
+	set_level( 14 );
 	set_gender("male");
-	set("short","A guard at his post");
+	set("short","[14]guard at his post");
 	set("long","It appears that though the New Faerie Dust Government "+
 		"has taken the position that all non-humans are inferior, they are "+
 		"not below standing on guard duty for various places.");
 	set("race","oger");
 	set_body_type("human");
-	set_overall_ac(3);
+	set_overall_ac(11);
 	set_skill("melee",55);
 	set_skill("blade",60);
 	set_skill("two handed polearm",61);
@@ -58,7 +58,7 @@ void reset() {
 		new("/wizards/excelsior/weapons/short_sword")->move(this_object());
 	if (spear && !present("spear",this_object()))
 		new("/wizards/excelsior/weapons/spear")->move(this_object());
-	if (query_money("copper") < 100) set_money("copper",780);
+	if (query_money("silver") < 100) set_money("silver",780);
 	force_me("wield spear in right hand and left hand");
 	force_me("wield sword in right hand");
 	force_me("wear helmet");

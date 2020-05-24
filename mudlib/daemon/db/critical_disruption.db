@@ -61,7 +61,7 @@
 21..30:$(AP) attack disrupts $(TP) upper leg.::DAMAGE 15:STUN 3:SKILL_MOD parry -100 3
 31..40:$A $V a wound to $(TP) groin!  I hate it when that happens!:inflict:STUN 7:SKILL_MOD parry -100 4:SKILL_MOD block -100 4:DAMAGE 15
 41..50:$A $V $(TP) lower back, temporarily paralyzing $(TO).:disrupt:STUN 20:SKILL_MOD parry -100 20:SKILL_MOD dodge -100 20:SKILL_MOD block -100 20:DAMAGE 20
-51..60:$(AP) disrupting attack causes a blast in $(TP) upper leg.:CONT_DAMAGE 7 5
+51..60:$(AP) disrupting attack causes a blast in $(TP) upper leg.::CONT_DAMAGE 7 5
 #TLNY2020 removed:STAT_MOD dexterity -90 6
 61..65:$(TP) forearm is destroyed!::LIMB_LOSS arm cripple:CONT_DAMAGE 7 5:STUN 5
 66..66:$A $V a mighty disruptive blast to $(TP) face, destroying $(TPP) eyes, ears, and throat.:deliver:KILL
@@ -90,4 +90,3 @@
 91..95:$(AP) disrupting blast causes pressure to build in $(TP) body.  Suddenly, $(TPP) arms pop off and fly in opposing directions!::LIMB_LOSS arm:LIMB_LOSS arm:STUN 10
 96..99:$(AP) blast strikes $(TP) chest, exploding it violently, and causing rib fragments to rain upon all bystanders.::KILL
 100..100:$A mercilessly $V $T, rending his body into innumerable small pieces which float to the ground gently.:disrupt:KILL
-

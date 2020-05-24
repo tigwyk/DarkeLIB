@@ -13,8 +13,17 @@ create() {
     set_name("street hawker");
     set_id( ({ "street hawker","hawker", "elf" }) );
     zlevel=(random(3)+2);
-    set_level(zlevel);
-    set_short("street hawker");
+if (zlevel == 3) set_short("[3]street hawker");
+else 
+if (zlevel == 4) set_short("[4]street hawker");
+else
+if (zlevel == 5) set_short("[5]street hawker");
+else
+if (zlevel == 6) set_short("[6]street hawker");
+else
+if (zlevel == 7) set_short("[7]street hawker");
+else set_short("[8]street hawker");
+	set_level(zlevel); 
     set_long("The wood-elf hawker is here trying to encourage people to "+
       "buy the goods at the nearby shop." 
       );

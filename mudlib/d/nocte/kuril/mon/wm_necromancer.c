@@ -6,19 +6,42 @@ void create(){
 	string var, var2;
 	string poss, sub;
 	object ob;
-	int HPBASE, LEV;
+	int HPBASE, LEV,zlevel;
 
 	HPBASE = 20;
 
 	::create();
 	set_name("watchman");
 	set("id", ({"watchman", "kuril city watchman" }) );
-	set_level(13 + random(5));
-	switch(random(2)) {
+	
+zlevel=(12+random(5));
+if (zlevel == 16) set_short("[16]A dark robed watchman");
+else 
+if (zlevel == 15) set_short("[15]A pale faced watchman");
+else
+if (zlevel == 14) set_short("[14]A hollow eyed watchman");
+else
+if (zlevel == 13) set_short("[13]A silent watchman");
+else
+if (zlevel == 12) set_short("[12]A white knuckled watchman");
+else set_short("[17]A vigilant watchman");
+	set_level(zlevel);
+
+set_long("Dedicated to the protection of the School "
+				"of Necromancy, these dark robed watchman "
+				"of Kuril are really agents of the School "
+				"of Magic.  They do not care for the citizens "
+				"or the affairs of the nobles of this city, "
+				"their only concern in life, and some in "
+				"death, is to please their masters.");
+
+switch(random(2)) {
 		case 0: var = "female"; break;
 		case 1: var = "male"; break;
 	}
-	this_object()->set_gender(var);
+
+this_object()->set_gender(var);
+/*
 	poss = (string)this_object()->query_possessive();
 	sub = (string)this_object()->query_subjective();
 	switch(random(5)) {
@@ -70,6 +93,7 @@ void create(){
 	}
 	this_object()->set("short", var);
 	this_object()->set("long", var2);
+*/
 	switch(random(11)) {
 		case 0: var = "werebear"; break;
 		case 1: var = "vulfen"; break;

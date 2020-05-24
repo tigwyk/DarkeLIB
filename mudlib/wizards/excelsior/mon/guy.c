@@ -8,15 +8,15 @@ void create() {
 	::create();
 	set_name("cashier");
 	set("id",({"guy","cashier","snack bar cashier"}));
-	set_level( 3 );
-	set("short","A young snack bar cashier");
+	set_level( 10 );
+	set("short","[10]young snack bar cashier");
 	set("long","This is a young cashier here to help you with your "+
 	"junk food needs. She points at a sign listing items they have "+
 	"available. She couldn't be more then 13.");
 	set("race","human");
 	set_gender("female");
 	set_body_type("human");
-	set_overall_ac( 3 );
+	set_overall_ac( 11 );
 	set_menu( ({"popcorn","candy","soda","champaign"}),
 		({"food","food","soft drink","alcoholic"}),
 		({ 35,3,20,25}) );

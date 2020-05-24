@@ -587,6 +587,8 @@ void set_remove(mixed val) {
     if(!functionp(val) && !stringp(val) && !pointerp(val)) return;
 
     armour_static["unwear"] = val;
+    //armour_static["remove"] = val;
+
 
 }
 

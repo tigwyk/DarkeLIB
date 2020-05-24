@@ -9,7 +9,7 @@ void create() {
 	set_name("water fowl");
 	set("id", ({"bird", "fowl", "duck", "water fowl"}));
 	set_level(1);
-	set("short", "A water fowl");
+	set("short", "[1]A water fowl");
 	set("long",
 		"Living along the shores of the river, these water fowls "
 		"swim about eating and staying away from strange creatures "

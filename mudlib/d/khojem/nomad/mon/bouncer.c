@@ -14,8 +14,17 @@ create() {
     set_name("bouncer");
     set_id( ({ "bouncer", "guard" }) );
     zlevel = 14 + random(4);
-    set_level(zlevel);
-    set_short("bouncer");
+if (zlevel == 14) set_short("[14]bouncer");
+else 
+if (zlevel == 15) set_short("[15]bouncer");
+else
+if (zlevel == 16) set_short("[16]bouncer");
+else
+if (zlevel == 17) set_short("[17]bouncer");
+
+else set_short("[18]bouncer");
+	set_level(zlevel);
+
     set_long("This man was hired by Babba to keep peace in his establishment.  "+
       "Between the thieves looking for easy money and the fights he stays busy.  "
       );

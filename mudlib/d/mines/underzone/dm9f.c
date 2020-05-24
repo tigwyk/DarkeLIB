@@ -10,11 +10,17 @@ void create() {
     set_property("light", 0);
     set_property("indoors", 1);
     set("short", "You are standing in an underground room");
-    set("long", 
-"You are standing in a large connection chamber. The solid stone walls "
-"stretch to the north and south here.\nA small alcove is to the west, "
-"framed by serveral thick support beams. The beams are fitted to the "
-"rock wall with bolts that must be the size of a dwarf's hand.");
+    set("long",@ext 
+You are standing in a large connection chamber. The solid stone walls 
+stretch to the north and south here.\nA small alcove is to the west, 
+framed by serveral thick support beams. The beams are fitted to the 
+rock wall with bolts that must be the size of a dwarf's hand.
+  0 0   
+   \|   
+ 0--@
+   /|  alcove 
+  0 0 
+ext);
     set_exits( ({ UNDER+"dm9b",UNDER+"dm9c",UNDER+"dm9e",UNDER+"dm9h"
                ,UNDER+"dm9i",UNDER+"dm10" }),
       ({ "northwest","north","west","southwest","south","alcove" }));

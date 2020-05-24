@@ -71,21 +71,21 @@ void create() {
 	set_property("no castle",1);
 	set_property("no mine",1);
 	set("short","Advancing to the next level");
-	set("long","You have climbed a ramp to the next level of the city. To your
-"+
-		"south the path you came up on goes down in this direction. Looking "+
-		"around, what you hoped would be a scenic and more pleasant atmosphere "+
-		"is just as dirty and poverty stricken as anywhere. All around are
-beggars "+
-		"begging and bothering passerbys. As you walk you try to avoid making eye
-"+
-		"contact with them, but several hit you up anyway. Finally you lose your
-"+
-		"patients and smack the next beggar to approach in the face. The beggars
-seem "+
-		"to leave you alone after this. You aristocratic bastard. Looking around,
-"+
-		"you notice you are at the entrance to some sort of open air market.");
+	set("long",@ext You have climbed a ramp to the next level of the city. To your
+		south the path you came up on goes down in this direction. Looking 
+		around, what you hoped would be a scenic and more pleasant atmosphere 
+		is just as dirty and poverty stricken as anywhere. All around are beggars 
+        begging and bothering passerbys. As you walk you try to avoid making eye
+		contact with them, but several hit you up anyway. Finally you lose your
+		patients and smack the next beggar to approach in the face. The beggars seem 
+		to leave you alone after this. You aristocratic bastard. Looking around,
+		you notice you are at the entrance to some sort of open air market.
+  0    
+   \   
+    @--0
+    |
+    0
+ext);
 	set_items( (["ramp":"It is to your south. It goes down. Funny, when you
 came "+
 			"up it it was going the other way. Weird.",

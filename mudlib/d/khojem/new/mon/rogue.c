@@ -12,7 +12,7 @@ create() {
     set_name("half-orc rogue");
     set_id( ({ "half-orc rogue", "rogue" }) );
     set_level(4);
-    set_short("rogue");
+    set_short("[4]rogue");
     set_long("The shadowy rogue looks frightful in this dim light." 
       );
     set("race", "half-orc");

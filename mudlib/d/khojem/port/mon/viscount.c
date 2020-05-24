@@ -14,7 +14,7 @@ create() {
     set_id( ({ "viscount", "viscount of vo'sangor" }) );
     set_level(21);
     set_exp(120000);
-    set_short("Viscount of Vo'Sangor");
+    set_short("[21]Viscount of Vo'Sangor");
     set_long("The Viscount of Vo'Sangor tends to the daily "
       "workings of running a city."
     );

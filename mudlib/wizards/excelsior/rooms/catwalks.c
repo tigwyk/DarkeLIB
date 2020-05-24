@@ -7,10 +7,15 @@ void create() {
 	set_property("light",1);
 	set_property("indoors",1);
 	set("short","On the catwalk");
-	set("long","You have climbed up onto the catwalks above the stage. "+
-		"Here theatre employess can adjust lights and fix curtains. "+
-		"The catwalks continue to the east, or you can return to stage "+
-		"level by going down.");
+	set("long",@ext You have climbed up onto the catwalks above the stage. 
+		Here theatre employess can adjust lights and fix curtains. 
+		The catwalks continue to the east, or you can return to stage 
+		level by going down.
+
+    @--0
+      
+    down    
+ext);
 	set_items((["lights":"They are all over. You wonder how they are "+
 		"powered."
 ,

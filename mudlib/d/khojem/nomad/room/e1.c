@@ -48,7 +48,7 @@ void create() {
       "a struggle as you wade through the cold sand.  Sand dunes are "+
       "all around you."
     );
-    add_exit("/d/damned/virtual/room_21_12.world","east");
+    add_exit("/d/damned/virtual/room_50_25.world","east");
     add_exit("/d/khojem/nomad/room/d11","west");
     add_exit("/d/khojem/nomad/room/oasis","southwest");
     set_items(([

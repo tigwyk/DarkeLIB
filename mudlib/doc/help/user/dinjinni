@@ -21,16 +21,35 @@ able to accomplish tremendous feats of skill within the air.
 It is said that a Dinjinni is also resistant to the affects of
 hostile magic, but that is only speculation at this point.
 
-SUMMARY:
+-=-=-=- Stat Bonuses -=-=-=- 
+Strength:           +5
+Constitution:       +5
+Intelligence:       +5
+Wisdom:             ---
+Dexterity:          +10
+Charisma:           +5 
+  
+-=-=-=-=-=- Abilities -=-=-=-=-=-     
+Body Size:         Medium             
+HP Regen:          Above Avg                
+MP Regen:          Above Avg               
+Natural Weapons:   (Vacuum Hands)     
+Sight:             Normal
+         
++------ Special Abilities ------+     
+Flying
+Natural AC
+Weakness Fire 
+Resistance Cold
++-------------------------------+     
 
-Str: Above Avg      Con: Above Avg       Int: Above Avg   
-Wis: Avg            Dex: Above Avg       Char: Above Avg 
+-=-=-=-=-= Skills =-=-=-=-=-
+Air lore               +  20%
+Elementalism           +  10%
 
-No Legs
-HP Regen: Above Avg
-SP Regen: High
-Natural Weaponry: vacuum (high)
-Natural Armour: Nil
-Innate spells/skills: Both
-Magic Resistance: High
-Exp Modifier: Very Low 
+-=-=-=-=-= Spells =-=-=-=-=-
+lesser elemental bolt  *  1
+
+    +-----------------Experience Gain Rates-----------------+
+    |                    Below Average                      |
+    +-------------------------------------------------------+

@@ -11,10 +11,15 @@ void create() {
     set_property("indoors", 1);
     set("short", "You are standing in a long stone corridor. "
 "The corridor leads to the north and the south.\n");
-    set("long", 
-"You are standing in a long stone corridor. The walls are made of solid "
-"blocks of stone. Some of the ancient blocks have cracked over the ages, "
-"but the structure of the temple still looks strong.\n");
+    set("long",@ext 
+You are standing in a long stone corridor. The walls are made of solid 
+blocks of stone. Some of the ancient blocks have cracked over the ages, 
+but the structure of the temple still looks strong.
+   
+    @
+    |
+    0
+ext);
     set_exits( ({ UNDER+"dm34" }),({ "south" }));
     set_items( ([
        "blocks" : "The huge blocks must weigh several tons."]) );

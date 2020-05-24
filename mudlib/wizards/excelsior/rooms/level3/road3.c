@@ -9,9 +9,15 @@ void create() {
 	set_property("no mine",1);
 	set_property("no castle",1);
 	set("short","At the shoe stand");
-	set("long","At this part of the open air market a kind old man has "+
-		"set up a shoe shop. Perhaps you should take a look a closer look! "+
-		"The market continues to both the north and the south.");
+	set("long",@ext At this part of the open air market a kind old man has 
+		set up a shoe shop. Perhaps you should take a look a closer look! 
+		The market continues to both the north and the south.
+    0   
+    |   
+    @
+    |
+    0
+ext);
 	set_items(([({"shoe shop","shop"}):"This shops deals in various footwear "+
 			"and repair!",
 		"market":"It is quite busy, there are people everywhere!"]));

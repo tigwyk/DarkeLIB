@@ -20,10 +20,16 @@ void create() {
 	set_property("light",3);
 	set_property("night light",1);
 	set("short","By the cells");
-	set("long","There are prison cells to your north and your south. If you "+
-		"have the keys you can open them, but you are not sure you want to meet "+
-		"the prisoners inside. To unlock a cell, type 'unlock cell # with key'. "+
-		"Because there are 2 cells here, # should be 1 or 2.");
+	set("long",@ext There are prison cells to your north and your south. If you 
+		have the keys you can open them, but you are not sure you want to meet 
+		the prisoners inside. To unlock a cell, type 'unlock cell # with key'. 
+		Because there are 2 cells here, # should be 1 or 2.
+    0   
+    |   
+ 0--@--0
+    |
+    0
+ext);
 	set_items((["cell 1":"You wonder who kept in it.",
 		"cell 2":"You wonder who is kept in it."]));
 	set_exits((["north":"/wizards/excelsior/rooms/jail/cell2.1",

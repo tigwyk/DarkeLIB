@@ -9,12 +9,16 @@ void create() {
 	set_property("light",0);
 	set_property("indoors",1);
 	set("short","Behind the stage");
-	set("long","You have managed to find your way behind the stage of the "+
-		"New Faerie Dust Theatre company. There is not much in the way of "+
-		"stuff back here because the stage crew and actors need to use this "+
-		"portion of the back stage area to travel from one side of the theatre to "+
-		"to the other very quickly without being seen. To the north are several "+
-		"dressing rooms used by the stars of the theatre.");
+	set("long",@ext You have managed to find your way behind the stage of the 
+		New Faerie Dust Theatre company. There is not much in the way of 
+		stuff back here because the stage crew and actors need to use this 
+		portion of the back stage area to travel from one side of the theatre to 
+		to the other very quickly without being seen. To the north are several 
+		dressing rooms used by the stars of the theatre.
+    0   
+    |   
+ 0--@--0
+ext);
 	set_items( (["dressing rooms":"They are to the north.",
 		"crew":"None are here right now.",
 		"actors":"You see no actos in the vicinity."]) );

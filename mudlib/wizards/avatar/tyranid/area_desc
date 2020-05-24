@@ -1,0 +1,62 @@
+Area:                Tyranid Hive
+
+Wizard:              Avatar
+
+Description:         The files in the tyranid directory give a basic 
+                     explanation of what Tyranids are, along with a map
+                     (though it doesn't show the 43 up/down passages that
+                     connect the various levels) and a list of the Tyranid
+                     types (showing their level and the map key room type 
+                     they can be found in).
+
+                     Note that the more powerful Tyranids are nonstandard
+                     monsters and have some unusual abilities including
+                     multiple attacks per round (in some cases as many as
+                     5 or 6), invisibility, special armour (makes them
+                     completely immune to damage 25%-40% of the time) and 
+                     the ability to produce automatic criticals (impaling,
+                     plasma, constriction and/or aether depending on the
+                     specific creature in question.  Also a few cast 
+                     standard spells.
+
+Pathname:            /wizards/avatar/tyranid
+
+World Map Location:  08x 34y
+                     "A huge structure is dimly visible through the mist"
+                     "hive"
+
+Area Entry:          /wizards/avatar/tyranid/rooms/entry.c
+
+Mobs:                Many.  See above comments and tyranid_list for details.
+                     They are in /wizards/avatar/tyranid/mon
+
+Quest:               None at this time...maybe later.
+
+Future Plans:        None to speak of...may add in special rooms scattered
+                     throughout the body that feature some of the more
+                     rare/obscure Tyranids (spore mines, biovores, flesh
+                     borers, gene stealer mages, hormagants, and such) or
+                     add more atmosphere.
+
+Weapons:             Tyranids use living creatures as weapons, so they come
+                     in only one condition (5 - superb) and never get dull
+                     as the creature's natural healing process repairs the
+                     wear.  I could put in an actual "regeneration" process
+                     that would slowly repair the weapons if preferable.
+
+                     With the exception of the Spinefist wielded by the
+                     Hive Tyrant, the weapons aren't much to write home 
+                     about.  Oh yeah, they're made of chitin.  Its a dummy
+                     material, but its appropriate for them.  Weapons are
+                     in /wizards/avatar/tyranid/obj
+
+Armour:              Only one piece of armour, its not very good but is in
+                     /wizards/avatar/tyranid/obj
+
+Added Notes:         As some of the creatures are substantially more deadly
+                     than "standard" monsters of their level, I have made
+                     them worth more in exp.
+                     Also, you can pick up food and water in the stomach of
+                     the hive if you pay attention to the long descriptions.
+                     This is only possible in two specific rooms out of the
+                     45 in the stomach area.

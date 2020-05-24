@@ -11,11 +11,14 @@ void create() {
     set_property("indoors", 1);
     set("short", "You are standing in a large chamber. In the center of "
 "the chamber is a large stone tomb.");
-    set("long", "You are standing in a large stone chamber. The walls are "
-"covered with the same ancient script as the other tomb room you were "
-"in earlier. Dominating the center of the chamber is a large stone tomb. "
-"Against the walls are several large metal pots that must have been used to "
-"light the room.");
+    set("long", @ext You are standing in a large stone chamber. The walls are 
+covered with the same ancient script as the other tomb room you were 
+in earlier. Dominating the center of the chamber is a large stone tomb. 
+Against the walls are several large metal pots that must have been used to 
+light the room.
+  
+ 0--@
+ext);
     set_exits( ({ UNDER+"dmc6"}),
       ({ "west" }));
     set_items( ([

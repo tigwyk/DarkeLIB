@@ -16,7 +16,7 @@ create() {
     set_name("nomad captain");
     set_id( ({ "nomad captain", "captain", "guard" }) );
     set_level(10);
-    set_short("nomad captain");
+    set_short("[10]nomad captain");
     set_long("The nomad captain of the guard is a tall, dark haired high-man.  "+
       "He is bearded and appears to be a good fighter.  You can see he is well "+
       "liked by his men."

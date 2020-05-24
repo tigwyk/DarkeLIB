@@ -12,7 +12,7 @@ void create() {
     ::create();
    set_name("bart");
    set_id( ({ "bart","foreman","Foreman" }) );
-   set_short("Bart the Dwarf Mine Foreman");
+   set_short("[30]Bart the Dwarf Mine Foreman");
    set_level(30);
    set("long", "Bart is obviously a high ranked dwarf. He spends most of "
 "his time buried behind paperwork though. Besides paper pushing he is also "

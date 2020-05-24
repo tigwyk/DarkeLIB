@@ -24,7 +24,7 @@ void create() {
   ::create();
   set_name("cobra");
   set_id( ({ "cobra", "snake", "king cobra" }) );
-  set_short("A king cobra");
+  set_short("[12]king cobra");
   set_long("The king cobra is pissed that you woke him up.");
   set("race", "serpent");
    set_property("melee damage", ([ "impaling" : 20 ]));

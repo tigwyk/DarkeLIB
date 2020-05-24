@@ -27,7 +27,7 @@ void create() {
 
 void info() {
 message("help",
-"This spell binds a demon to your weapon, increasing damage.  "
+"This spell binds a greater demon to your weapon, increasing damage.  "
 "This spell must be cast at a lesser demon which has been summoned and controlled "
 "by you.\n"
 "Syntax: cast *<pow> greater demon sword at <demon> with <weapon>\n"

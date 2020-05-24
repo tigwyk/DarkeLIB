@@ -23,8 +23,8 @@ void create() {
    ::create();
    set_name("clown");
    set("id",({"clown","a poor clown","poor clown","a clown"}) );
-   set_level(4);
-   set("short","A poor clown");
+   set_level(10);
+   set("short","[10]poor clown");
    set("long",
 	"This is a pathetic clown who looks to be very down on his "
 	"luck. You put aside your immense clownophobia and decide "
@@ -32,7 +32,7 @@ void create() {
    set("race","human");
    set_gender("male");
    set_body_type("human");
-   set_overall_ac(3);
+   set_overall_ac(10);
    set_languages( ({"common"}) );
 	set_emotes(30, ({"The clown moans.","The clown mopes about "+
 		"looking depressed.","The clown groans.","The clown wallows "+

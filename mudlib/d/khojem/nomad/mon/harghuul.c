@@ -14,7 +14,7 @@ create() {
     set_name("harghuul");
     set_id( ({ "harghuul", "guardian" }) );
     set_level(15);
-    set_short("Harghuul");
+    set_short("[15]Harghuul");
     set_long("Harghuul, the Guardian stands here.  This sword-demon is the "+
       "guardian of the Darke Temple of the Order of the Blessed Return.  "+
       "He stands close to eight feet in height and looms menacingly."

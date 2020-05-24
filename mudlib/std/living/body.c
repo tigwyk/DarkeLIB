@@ -135,7 +135,7 @@ void add_hp(int x) {
     0, which might happen (dunno maybe the guy had a new char). */
 
 //TLNY2020 changed code to -100 as 0 broke exp
-if(player_data["general"]["hp"] < -250) {
+if(player_data["general"]["hp"] < -100) {
     this_object()->die();
     return;
 }

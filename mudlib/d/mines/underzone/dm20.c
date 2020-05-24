@@ -11,15 +11,20 @@ void create() {
     set_property("indoors", 1);
     set("short", "You are standing on a sandy beach next to an underground "
                  "river.");
-    set("long", 
-"You are standing on a sandy beach next to an underground river. The " 
-"murky water flows out from underneath a large wall, pouring into a "
-"large pool. The water flows by the beach and enters a tunnel heading "
-"downstream. The beach is littered with debris from the river. Piles of "
-"branches and moldy leaves are everwhere. The area looks like no one "
-"has been here recently. There is a passage leading to the north, "
-"between two large boulders.\n"    
-       );
+    set("long",@ext 
+You are standing on a sandy beach next to an underground river. The 
+murky water flows out from underneath a large wall, pouring into a 
+large pool. The water flows by the beach and enters a tunnel heading 
+downstream. The beach is littered with debris from the river. Piles of 
+branches and moldy leaves are everwhere. The area looks like no one 
+has been here recently. There is a passage leading to the north, 
+between two large boulders.  
+    0
+    |  
+    @
+        river
+             
+ext);
     set_exits( ({ UNDER+"dm19", UNDER+"dm21" }),
       ({ "river", "north" })
     );

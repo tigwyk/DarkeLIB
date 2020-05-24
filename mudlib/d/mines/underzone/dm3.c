@@ -11,14 +11,19 @@ void create() {
     set_property("light",0);
     set_property("indoors", 1);
     set("short", "You are standing in a small mining tunnel.");
-    set("long", 
-"You are standing in a small tunnel. A set of mining cart tracks "
-"takes up most of the floor space. You find that you can walk on a "
-"small path that runs along the side of the track's crossbeams. The "
-"walls are becoming rougher in texture. The miners evidently didn't "
-"spend a lot of time carefully digging the tunnel. Every so often a "
-"sharp rock catches onto your clothing." 
-       );
+    set("long",@ext 
+You are standing in a small tunnel. A set of mining cart tracks 
+takes up most of the floor space. You find that you can walk on a 
+small path that runs along the side of the track's crossbeams. The 
+walls are becoming rougher in texture. The miners evidently didn't 
+spend a lot of time carefully digging the tunnel. Every so often a 
+sharp rock catches onto your clothing.
+  0    
+   \   
+ 0--@
+     \
+      0      
+ext);
     set_exits( ({ UNDER+"dm2",UNDER+"dm4",UNDER+"dm67" }),
       ({ "southeast", "northwest","west" })
     );

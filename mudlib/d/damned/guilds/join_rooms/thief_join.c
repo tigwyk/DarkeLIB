@@ -38,7 +38,9 @@ void create() {
   set_property("guild mods", ([ "dexterity" :  10, "charisma" : 10 ]) );
 //Misc Code
   new("d/damned/guilds/join_rooms/tcan")->move(this_object());
-  set_related_guilds(({ "nightblade", "fighter" }));
+    set_related_guilds(({ "tinker",  "assassin", "nightblade", }));
+    set_hated_guilds(({ "cleric", "war-priest", "paladin" }));
+    set_odd_guilds(({ "arch-mage", "elementalist", "enchanter", "necromancer", "nethermancer", "elemental-mage", "chaotic-lord", "sword-mage", "dark-paladin", }));
   this_object()->reset();
   return;
 }

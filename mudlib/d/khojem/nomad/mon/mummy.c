@@ -14,7 +14,7 @@ create() {
     set_name("mummy");
     set_id( ({ "mummy","mummy" }) );
     set_level(12);
-    set_short("mummy");
+    set_short("[12]mummy");
     set_long("Your presence has disturbed the mummy from its long rest.  "+
       "The mummy stirs and moves stiffly as he engages in combat with you.  "+
       "His advance is relentless.  Years of dust are stirred from his "+

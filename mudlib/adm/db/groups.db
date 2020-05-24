@@ -16,25 +16,25 @@
 #
 # (superuser) group: Defines the general operations personnel
 # that perform the day to day global support or emergency recovery
-(god): tiny mud
-(admin): tiny mud
-(superuser): tiny mud
+(god): tiny tlny test bob
+(admin): tiny tlny test bob
+(superuser): tiny tlny test thraeq honspron
 #
 # (assist) group: Defines people who require Arch-Wizard access
 # in the performance of bug hunting and/or specific functionality 
-(siteadmin): tiny
+(siteadmin): tlny
 (assist): noone
 #
 # (arch) group: Defines the combined resources of (superuser) and
 # the (assist) personnel.  Plans are expected to change this to
 # contain (admin) and (assist) eventually to further isolate SU
-(arch): (superuser) (assist) noone
+(arch): (superuser) (assist) rhasper schroom
 #
 # (approval) group: To be honest, this is pretty much unused at this
 # time and its functionality in the future is uncertain.
 # ZNOTE: Approval removal in favor of mentor expansion unless
 # this is a good place to put your QC personnel?
-(approval): tiny
+(approval): parnell
 #
 # DANGER: add people to (mudlib) with extreem care, people in this
 # group _potentially_ could su themselves

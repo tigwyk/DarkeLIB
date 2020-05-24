@@ -51,7 +51,7 @@ void create() {
     add_exit("/d/khojem/nomad/room/d7","southwest");
     add_exit("/d/khojem/nomad/room/d8","west");
     add_exit("/d/khojem/nomad/room/d9","northwest");
-    set_search("sand",(: call_other, this_object(),"do_search" :));
+    //set_search("sand",(: call_other, this_object(),"do_search" :));
     set_items(([
      ({ "sand","sand dunes","dunes" }) :
         "The high sand dunes block your view to the horizon.\n",

@@ -12,15 +12,36 @@ The lower torso is that of a large snake, with orange coloring
 shading to dull red at the tail end.  The entire body is covered with
 wispy appendages that appear to burn but are never consumed.
 
-Dex: Below Avg     Str: High          Con: High
-Int: Above Avg     Wis: Below Avg     Char: Low
+-=-=-=- Stat Bonuses -=-=-=- 
+Strength:           +10
+Constitution:       +10
+Intelligence:       +5
+Wisdom:             -5
+Dexterity:          -5
+Charisma:           -10 
+  
+-=-=-=-=-=- Abilities -=-=-=-=-=-     
+Body Size:         Medium             
+HP Regen:          Above Avg                
+MP Regen:          Above Avg               
+Natural Weapons:   Fire Hands     
+Sight:             Normal
+         
++------ Special Abilities ------+     
+Low Magic Resistance    
+Natrual AC (Fire Skin)
+Reistance to Fire
+Weakness to Cold  
++-------------------------------+     
 
-Sight: Avg
-Hp Regen: Above Avg
-Sp Regen: Above Avg
-Natural Weaponry: Fire Damage 
-Natural Armour: Above Avg
-Ambidexterity: No
-Innate spells/skills: High
-Exp Modifier: Low
-Magic Resistance: Avg
+-=-=-=-=-= Skills =-=-=-=-=-
+elementalism           +  10%
+fire lore              +  10%
+
+-=-=-=-=-= Spells =-=-=-=-=-
+lesser elemental bolt  *  1
+
+    +-----------------Experience Gain Rates-----------------+
+    |                    Below Average                      |
+    +-------------------------------------------------------+
+

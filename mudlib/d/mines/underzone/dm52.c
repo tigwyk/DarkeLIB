@@ -10,9 +10,14 @@ void create() {
     ::create();
     set_property("light", 0);
     set_property("indoors", 1);
-    set("long", "You are standing in a large chamber. Huge wooden shelves "
-"line the walls, filled with assorted mining supplies. You can see long "
-"cobwebs hanging down from the ceiling.\n"); 
+    set("long", @ext You are standing in a large chamber. Huge wooden shelves 
+line the walls, filled with assorted mining supplies. You can see long 
+cobwebs hanging down from the ceiling.
+   
+    @
+    |
+    0
+ext); 
     set("short", 
 "You are standing in a small supply room. Large shelves line the walls.\n");
     set_exits( ({ UNDER+"dm65" 

@@ -9,17 +9,32 @@ bloodthirst deprive them of human respect and liking.  Their own
 armament of fangs and claws is often supplemented by weapons.  
 
 
-SUMMARY:
+-=-=-=- Stat Bonuses -=-=-=- 
+Strength:           +10
+Constitution:       +10
+Intelligence:       -5
+Wisdom:             ---
+Dexterity:          +5
+Charisma:           -10 
+  
+-=-=-=-=-=- Abilities -=-=-=-=-=-     
+Body Size:         Medium             
+HP Regen:          Above Avg                
+MP Regen:          Normal               
+Natural Weapons:   Sharp Claws     
+Sight:             Just Above Normal
+         
++------ Special Abilities ------+     
+Natrual AC (Hide Skin)  
++-------------------------------+     
 
-Dex: Above Avg       Str: High        Con: High
-Int: Below Avg       Wis: Avg         Char: Low
+-=-=-=-=-= Skills =-=-=-=-=-
+None
 
-Sight: Night Vision
-HP Regen: High
-SP Regen: Nil
-Natural Weaponry: Claws (Above Avg)
-Natural Armour: Tough Skin (Above Avg)
-Ambidextry: Nil
-Innate spells/skills: Nil
-Exp Modifier: Below Avg
+-=-=-=-=-= Spells =-=-=-=-=-
+None
+
+    +-----------------Experience Gain Rates-----------------+
+    |                    Below Average                      |
+    +-------------------------------------------------------+
 

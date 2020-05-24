@@ -12,8 +12,8 @@ create() {
     set_name("sand urchin");
     set_id( ({ "sand urchin","urchin" }) );
     mod = random(3);
-    set_level(5+mod);
-    set_short("sand urchin");
+    set_level(5);
+    set_short("[5]sand urchin");
     set_long("The sand urchin rests here deeply rooted in the sand.  "+
       "The urchin is a plant-like creature with long, spiny thorns that "+
       "bristle and quake as you approach it."

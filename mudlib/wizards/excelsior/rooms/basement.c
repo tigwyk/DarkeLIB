@@ -21,12 +21,17 @@ void create() {
 	set_property("light",1);
 	set_property("indoors",1);
 	set("short","In theatre storage");
-	set("long","You have found your way into the old theatre prop warehouse. "+
-		"Scattered about are backdrops, fake walls, torn curtains, beds, "+
-		"tables, chairs, and all sorts of other neat stuff! If only "+
-		"you had time to search through it all! Well, actually you "+
-		"DO have time! As you think this to yourself happily, you realize "+
-		"that it looks as though something lives here...");
+	set("long",@ext You have found your way into the old theatre prop warehouse. 
+		Scattered about are backdrops, fake walls, torn curtains, beds, 
+		tables, chairs, and all sorts of other neat stuff! If only 
+		you had time to search through it all! Well, actually you 
+		DO have time! As you think this to yourself happily, you realize 
+		that it looks as though something lives here...     
+      
+    @
+    |
+    0
+ext);
 	set_items( (["props":"All kind of neat stuff lies around for you to search "+
 				"through."]) );
 	set_exits( (["south":"/wizards/excelsior/rooms/backstage_under"]) );

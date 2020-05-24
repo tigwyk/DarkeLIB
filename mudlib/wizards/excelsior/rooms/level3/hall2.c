@@ -9,13 +9,16 @@ void create() {
 	set_property("light",1);
 	set_property("indoors",1);
 	set("short","The hallway continues");
-	set("long","The light in the hallway continues to grow as you proceed west. "+
-		"To the west there appears to be some sort of party going on. Wtf! "+
-		"The dust on the floor has not been disturbed by anyone for years. In "+
-		"places it is over 2 inches thick. How could anyone get back there to "+
-		"have a party! As you ponder this, you notice the walls of this "+
-		"section of the hallway are completely vandalized. You should "+
-		"probably take a closer look at this.");
+	set("long",@ext The light in the hallway continues to grow as you proceed west. 
+		To the west there appears to be some sort of party going on. Wtf! 
+		The dust on the floor has not been disturbed by anyone for years. In 
+		places it is over 2 inches thick. How could anyone get back there to 
+		have a party! As you ponder this, you notice the walls of this 
+		section of the hallway are completely vandalized. You should 
+		probably take a closer look at this.
+
+ 0--@--0
+ext);
 	set_items((["walls":"They are tagged everywhere in multiple languages. "+
 		"You are able to pick out a triangle in a circle- the symbol "+
 		"of the Black Order. The Black Order is a legendary guild of "+

@@ -11,15 +11,15 @@ void create() {
 	::create();
 	set_name("guard");
 	set("id",({"guard","a guard","spear guard"}) );
-	set_level(8);
+	set_level(10);
 	set_gender("male");
-	set("short","A guard at his post");
+	set("short","[10]guard at his post");
 	set("long","It appears that though the New Faerie Dust Government "+
 		"has taken the position that all non-humans are inferior, they are "+
 		"not below standing on guard duty for various places.");
 	set("race","storm giant");
 	set_body_type("human");
-	set_overall_ac(3);
+	set_overall_ac(11);
 	set_skill("melee",55);
 	set_skill("blade",60);
 	set_skill("two handed polearm",61);

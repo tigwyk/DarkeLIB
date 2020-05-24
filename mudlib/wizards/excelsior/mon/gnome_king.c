@@ -10,16 +10,16 @@ void reset() {
 	::reset();
 	if(!present("boots")) make_me_boots();
 	if(!present("medallion")) make_me_medallion();
-	if(query_money("copper") < 3000)
-		set_money("copper",5500);
+	if(query_money("silver") < 3000)
+		set_money("silver",5500);
 }
 
 void create() {
 	::create();
 	set_name("absalom");
 	set("id",({"gnome","a gnome","gnome king","the gnome king","absalom"}));
-	set_level(16);
-	set("short","Absalom the gnome king");
+	set_level(20);
+	set("short","[20]Absalom the gnome king");
 	set("long","This character looks as though he is incharge of these farms. "+
 		"The evil that has created the misery here is a gnome himself? Satan "+
 		"works in twisted ways! Maybe you could find out more by asking him "+

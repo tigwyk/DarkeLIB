@@ -28,7 +28,9 @@ new("d/damned/guilds/join_rooms/tcan")->move(this_object());
    add_exit("/d/damned/guilds/chaotic-lord/chaotic-lord_train_room", "west");
   add_exit("/d/damned/guilds/chaotic-lord/chaotic-lord_spell_room", "east");
 
-  set_related_guilds(( {"necromancer"} ));
+  set_related_guilds(({ "sword-mage", "dark-paladin", }));
+    set_hated_guilds(({ "cleric", "war-priest", "paladin",  }));
+    set_odd_guilds(({ "nightblade", "assassin" }));
 
   set("guildmaster", "/d/damned/guilds/chaotic-lord/chaotic-lord_gm");
   //  The guildmaster is automatically cloned if no pc guildmaster is

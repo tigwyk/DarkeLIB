@@ -1,0 +1,152 @@
+GUIDELINES FOR CREATING AREA/CITIES/VILLAGES/QUESTS
+
+  I.  Newly coded areas
+    a. They all start with a summary file that indicates:
+         1)who will be working on it
+         2)aproximate date of completion
+         3)the name and size of the area
+         4)the theme/culture of the area
+         5)pc and npc races that will be represented in it
+         6)the lvl and profession of said races
+         7)quest info
+         8)special item info
+	9)Maximum Money per reset.
+         *side note is that in an area a player can travel alone,
+          if he is not considered and enemy/food by the inhabitants,
+          otherwise they should be in a party to survive.
+
+    b. Second an number map with a key should be in the dir with
+       the area name.
+
+    c. Third the directory structure should be created.
+
+       dir                         files
+       /wizards/amel/gobo          gobo_summary
+                                   gobo_map
+       /wizards/amel/gobo/rooms    all room files
+       /wizards/amel/gobo/mon      all monster files
+       /wizards/amel/gobo/items    all items that are in the area
+
+*note you do not need armour and weapon dirs, all items of this
+        type should be made with the virtual servers.. for an example
+        you can look at /wizards/amel/gobo/mon/gobo_chief.c or
+        /doc/build/weapons/virtual_weapons_tutorial
+
+    d.  A list of mobs and items should be posted in the respective dirs
+        FIRST, so the assisting members can begin helping immediately.  The
+        Guiding wiz can then chain rooms together with just the basic stuff
+        (desc's, number of monsters, light smell, sounds) and annotate
+        functions to be added to it by the other wizzes, who should trouble
+        shoot each others rooms and point out coding errors in not only the
+        functions but the basic rooms as well.
+
+    e.  If you can't start at all, read help ed and/or ask someone patient
+        how to use ed.. or ftp if you know how to do that.  Once you can
+        use the editor read the help build docs, and look at room examples
+        and try to build a basic room.  If you cannot do all the functions
+        you would like to use, ASK YOUR CABAL members for help.. in fact
+        they should be working on the area WITH you.  Only one person can
+        set the vision for an area.. all others should suggest but not
+        demand enhancements to it.  Of course the person who is guiding
+        an area should be rotated around the group as each area is
+        completed, so that everybody has a chance to see their area
+        put in.
+
+    f.  For those who are having difficulty above and beyond here is
+        how I started after all of the above.  Capture a room file.
+        started after all of the above.  capture a room file with the zmud
+        with the zmud editor, paste to your text editor you are going
+        to work with, modify the file, paste back to the zmud editor,
+        in your zmud window open a file with ed, select insert mode,
+        click to zmud editor and send all to mud, then save the file.
+
+Specifics for area coding
+1.  Room Descriptions
+	a.  If it is an outside area a day and night description should be 
+		coded
+	b.  Different mobs might be located in certain areas pertaining 
+		to the time of day.
+		1.  i.e. More guards posted at night.
+	c.  Room descrips should not describe mobs in the rooms.  
+		These mobs might not be in the room at all times.
+	d.  Stock rooms are acceptible but only if done right.  Please 
+		change all stock rooms around at least a little.  Modify
+		it, add somthing to it, make it different.
+2.  Object Description:
+a.  In Object Description make sure the description does not 
+	describe the mob holding it in any way.
+b.  Weapons and Armours should be from the virtual database.  
+	Modify these when nessecary.  If you feel a weapon
+	or armour type needs to be added mail me imediately,
+	and I will add it.
+3.  Mobs:
+	a.  In long descriptions, only describe the mob itself, not it’s 
+		item or the room it is in.
+	b.  Do not be afraid to code many different mobs for your area.
+		If you plan on using one standard mob, please make
+		many variable.  ie.e Weapons, Armours, Level, etc.
+	c.  All mobs should have a purpose.  A bunch of Orcs
+		wandering around an area is not creative.  It 
+		is best to have every mob have a pupose.
+		1.  Example:  For a dwarven area, 3-5 guards, 1 great
+			thane or leader, 1 advisor, 2 thane guards,
+			1 Master Weaponsmith, 2 Weaponsmith 
+			assistants, 1 Master armourer, 2 armourer
+			assistants, 1 gem Cutter, 10 miners, 1 mining
+			Chief, 1 head cook, Etc.
+		ii.  If you are having difficulty with this tell me
+			and I'll help you with this.  It's fun. =)
+	d.  All areas should include a wide variety of mobs with a wide 
+		of Levels.  It makes little sense to make an area where
+		it is selective to one range of levels.  Societies do 
+		not function this way.  Take for example the Dwarven
+		community above.  This is how I would set it up.
+		The Great Thane is an old wizened Dwarf, level 25.
+		The Advisor is a crafty one, who has been around the
+		block, level 17.  The Master Weaponsmith is a new 
+		master, the old one just died, level 14.  The Master
+		Armourer is a wizened old Armourer who is truly a 
+		Master of his art, Level 28 Tinker.  The Assitants for
+		the Weaponsmith are also up and coming, level 10 and 8.
+		The Armourers assistants are well versed, and have come
+		to study under the master, level 16, and 19.  The miners
+		are all grunt workers, level 7.  The Mining Chief however
+		is a seasoned warrior, level 15.  Etc.  
+	You can see how there can be a wide range of levels in the area.
+2.  Histories:  (For a really boring and long explanation of this check out
+/wizards/klarr/guidelines)
+	a.  Every are should have a history.  Each history should include at 
+		least two parts:
+		1.  Give a brief explination of how the area began.
+			 How or why is the area there?  Who or what 
+			founded/created the area? Etc.
+		2.  Give a brief explination of the area now.
+			What is the political makeup of the area?  Do 
+			they have relations with anyone outside the 
+			area?  Etc.
+	b.  Some areas might have guilds, quests, or races in them.  If so a 
+		brief history of the Guild, Quest, or Race should also be
+		written using much of the same technique as above.
+	c.  When making a history, please make sure it complies with 
+		/doc/history/world_history.
+
+IV.  Coding Snippets
+  A.  All areas MUST have a .h file so they can be moved easily
+
+  B.  The virtual weapons and armour should be used at all times, this
+  does Not limit your creativity as these weapons just come from the
+
+  C.  All code should have proper indentation and spacing to make it
+  readable.
+
+  D.  Good clear internal documentation of complex functions
+
+  E.  We are planning to expand the master weapons list a great deal.  Try
+  and stay away from using way to many swords.  Anything but swords, 
+  they just get used to much.
+
+  F.  Please follow the guidelines in the build help, simple things like
+  every noun in the room should have an item desc, and anything of 
+  interest should be able to be taken.  Mobs should not have unthematic 
+  attacks, or out of wack skills.
+

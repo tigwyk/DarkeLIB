@@ -34,7 +34,9 @@ void create() {
   set_property("light", -1);
   set_property("indoors", 1);
   new("d/damned/guilds/join_rooms/tcan")->move(this_object());
-  set_related_guilds(({ "thief", "arch-mage" }));
+  set_related_guilds(({ "assassin", "thief", "dark-paladin", }));
+    set_hated_guilds(({ "cleric", "war-priest", "paladin",  }));
+    set_odd_guilds(({ "arch-mage", "elementalist", "enchanter", }));
   set("short", "The Nightblade's Guild Joining Room");
   set("long", 
   "This is the anteroom of the dreaded Nightblade Guild.  The shadows "

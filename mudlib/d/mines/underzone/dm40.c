@@ -11,14 +11,19 @@ void create() {
     set_property("indoors", 1);
     set("short", "You are standing in a small chamber. In the center "
 "of the chamber is a large gold altar.");
-   set("long", 
-"You are standing in a small chamber at the end of the north "
-"corridor. In the center of the room is a large altar. Beutiful "
-"murals of the dwarven forests are painted on the walls of the "
-"chamber. Carved into the floor are several strange looking "
-"geometric shapes.\n"
-"Along the wall are several burn marks. It appears that a great "
-"battle may have occured here involving strong sorcery.\n");
+   set("long",@ext 
+You are standing in a small chamber at the end of the north 
+corridor. In the center of the room is a large altar. Beutiful 
+murals of the dwarven forests are painted on the walls of the 
+chamber. Carved into the floor are several strange looking 
+geometric shapes.
+Along the wall are several burn marks. It appears that a great 
+battle may have occured here involving strong sorcery.
+  
+    @
+    |
+    0
+ext);
     set_exits( ({ UNDER+"dm37"}),
       ({ "south" }));
     set_items( ([

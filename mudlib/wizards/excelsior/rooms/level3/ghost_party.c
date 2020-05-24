@@ -30,15 +30,18 @@ void create() {
 	set_property("indoors",1);
 	set_property("light",3);
 	set("short","A haunted party");
-	set("long","You now realize what the source of the voices was. "+
-		"The room  contains dozens of ghosts, spiritual "+
-		"apparitions, ghouls and other undead creatures. The ones that "+
-		"are solid in form are wearing various tattered clothing, and most "+
-		"bear the symbol of a triangle circumscribed by a circle. At first "+
-		"you feel fear, but you soon realize they are not paying the slightest "+
-		"attention to you and are much more interested in having a good time. "+
-		"The room is well lit but you see no light source. At the far end "+
-		"of the room is a throne. There is a small chest next to it.");
+	set("long",@ext You now realize what the source of the voices was. 
+		The room  contains dozens of ghosts, spiritual 
+		apparitions, ghouls and other undead creatures. The ones that 
+		are solid in form are wearing various tattered clothing, and most 
+		bear the symbol of a triangle circumscribed by a circle. At first 
+		you feel fear, but you soon realize they are not paying the slightest 
+		attention to you and are much more interested in having a good time. 
+		The room is well lit but you see no light source. At the far end 
+		of the room is a throne. There is a small chest next to it.
+
+    @--0
+ext);
 	set_items(([({"ghosts","spiritual apparitions","ghouls","undead creatures"}):
 			"They are intent on having a good party and aren't paying attention "+
 			"to you at all.",

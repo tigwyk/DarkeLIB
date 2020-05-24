@@ -10,7 +10,7 @@ void create() {
 	set_name("booga boo");
 	set("id",({"boo","booga","slug","booga boo"}) );
 	set_level( 10 );
-	set("short","A slimy booga boo");
+	set("short","[10]slimy booga boo");
 	set("long","This radioactive slug creature has nothing better to do "+
 		"then slime around and kill things.");
 	set("race","slug");

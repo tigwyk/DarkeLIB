@@ -1,5 +1,5 @@
 #include <std.h>
-#include <nevin.h>
+#include "nevin.h"
 
 inherit MONSTER;
 
@@ -8,7 +8,7 @@ void create(){
 	set_name("a ghoul");
 	set_id( ({"ghoul", "grounds ghoul"}) );
 	set_level(5);
-	set("short", "With blood encrusted nails, a ghoul rakes the air before you.");
+	set("short", "[5]A ghoul rakes the air before you.");
 	set("long",
 		"Through a voiceless mouth, the ghoul cries in anger at it's undead state.  Stumbling toward you, is seeks to destroy anything living."
 	);

@@ -9,17 +9,33 @@ elementals and to nymphs, perhaps originating as a cross between
 nymphs and aerial servants.  Sylphs can speak common and their own 
 musical language. 
 
-Dex: Above Avg         Str: Low          Con: Below Avg
-Int: High              Wis: Avg          Char: High
+-=-=-=- Stat Bonuses -=-=-=- 
+Strength:           -15
+Constitution:       -5
+Intelligence:       +15
+Wisdom:             ---
+Dexterity:          +5
+Charisma:           +15 
+  
+-=-=-=-=-=- Abilities -=-=-=-=-=-     
+Body Size:         Tiny             
+HP Regen:          Above Avg                
+MP Regen:          High               
+Natural Weapons:   Tiny Vacuum Hands     
+Sight:             Above Avg
+         
++------ Special Abilities ------+     
+    Magic Resistance  
++-------------------------------+     
 
-Sight: Avg
-Hp Regen: Above Avg
-Sp Regen: High
-Natural Weaponry: Air attacks
-Natural Armour: Nil
-Ambidexterity: Nil
-Innate spells/skills: High 
-Exp Modifier: Below Avg
-Magic Resistance: High
+-=-=-=-=-= Skills =-=-=-=-=-
+elementalism           +  10%
+air lore               +  10%
 
+-=-=-=-=-= Spells =-=-=-=-=-
+elemental shield       *  1
+
+    +-----------------Experience Gain Rates-----------------+
+    |                    Below Average                      |
+    +-------------------------------------------------------+
 

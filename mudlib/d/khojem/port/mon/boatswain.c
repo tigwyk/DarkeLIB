@@ -33,7 +33,7 @@ create() {
     set_id( ({ "boatswain", "sailor" }) );
     set_level(21);
     set_exp(200000);
-    set_short("boatswain");
+    set_short("[21]boatswain");
     set_long("The boatswain looks like a rugged veteran sailor.  He is "+
       "responsibile for the care and maintenance of the vessel."
       );

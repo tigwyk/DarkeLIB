@@ -14,15 +14,26 @@ void init() {
 void create(){
 	string var;
 	object ob;
-	int HPBASE, LEV;
+	int HPBASE, LEV,zlevel;
 
 	HPBASE = 100;
 
 	::create();
 	set_name("watchman");
 	set("id", ({"watchman", "kuril city watchman" }) );
-	set_level(12 + random(5));
-	set("short", "A city watchman");
+zlevel=(12+random(5));
+if (zlevel == 16) set_short("[16]A city watchman");
+else 
+if (zlevel == 15) set_short("[15]A city watchman");
+else
+if (zlevel == 14) set_short("[14]A city watchman");
+else
+if (zlevel == 13) set_short("[13]A city watchman");
+else
+if (zlevel == 12) set_short("[12]A city watchman");
+else set_short("[17]A city watchman");
+	set_level(zlevel);
+
 	set("long",
 		"The elite of the city guard, the watchmen of Kuril are "
 		"dedicated to following the orders of their superiors."

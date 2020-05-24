@@ -12,9 +12,13 @@ void create() {
     set("short", "You are standing on a spiral staircase below the tomb. "
        "The slippery steps wrap around a tall stone column next to you, "
        "slowly winding down to the floor.");
-    set("long", "You are standing on a spiral staircase that winds down "
-       "below you. The slick steps are covered with dark mold and pieces "
-       "of rotten material. You almost lose you balance several times.");
+    set("long", @ext You are standing on a spiral staircase that winds down 
+       below you. The slick steps are covered with dark mold and pieces 
+       of rotten material. You almost lose you balance several times.
+  
+    @
+        down    
+ext);
     set_exits( ({ UNDER+"dmc2"}),({ "down" }));
     set_items( ([
 "pots" : "The large pots are still filled with a foul smelling liquid."]));

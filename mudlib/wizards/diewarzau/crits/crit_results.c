@@ -89,19 +89,11 @@ void impact_crit(object from, object to) {
 void increase_ac(object from, object to) {
 
   object ob;
-
-
-
   seteuid(getuid());
-
   ob = new("/std/spells/shadows/ac_shadow");
-
   ob->set_shad_ac(10 + random(10));
-
   ob->set_expire_message("The holy aura about you dissipates.");
-
   ob->start_shadow(from, 40);
-
   return;
 
 }
@@ -158,31 +150,34 @@ void raise_weapon2(object from, object to) {
 
 }
 
+void fire_crit(object from, object to) {
+  string crit;
+
+  crit = sprintf("fire %s", ({ "B", "C", "D" })[random(3)]);
+  do_critical(from, to, ({ crit }) );
+  return;
+}
 
 
 void electricity_crit(object from, object to) {
-
   string crit;
 
-
-
   crit = sprintf("electricity %s", ({ "B", "C", "D" })[random(3)]);
-
   do_critical(from, to, ({ crit }) );
-
   return;
 
 }
 
-
+void fire_A_crit(object from, object to) {
+  do_critical(from, to, ({ "fire A" }) );
+  return;
+}
 
 void impact_A_crit(object from, object to) {
-
   do_critical(from, to, ({ "impact A" }) );
-
   return;
-
 }
+
 
 
 
@@ -403,11 +398,9 @@ void extra_a_hbeat(object from, object to) {
 
 
 void extra_attack(object me, object you) {
-
+message("info","%^YELLOW%^Crit you attack again%^RESET%^", (me));
   me->continue_attack();
-
   return;
-
 }
 
 
@@ -968,5 +961,36 @@ void do_janitor(mixed *arg) {
 
 }
 
+//TLNY2020 TEST Create
 
+void increase_str_holy(object from, object to) {
+
+  object ob;
+  message("info","%^YELLOW%^You are blessed with Holy Strength temporarily%^RESET%^", (from));
+  seteuid(getuid());
+  ob = new("/std/spells/shadows/stat_shadow_new");
+  ob->set_stat("strength");
+  ob->set_mod(1 + random(10));
+  ob->set_expire_message("%^YELLOW%^Your Holy Strength Fades.%^RESET%^");
+  ob->start_shadow(from, 40);
+  return;
+}
+
+//void increase_str(object from, object to) {
+void increase_str(object from,object to) {
+	object mon;
+	seteuid(getuid());
+	mon = new("/wizards/excelsior/crits/greater_unworldly");
+	mon->move(environment(to));
+	mon->set_owner((string)from->query_name());
+	mon->kill_ob(to,0);
+    call_out("remove_pet",50 +random(50),mon);
+}
+
+void remove_pet(object ob) {
+	message("info",(string)ob->query_short()+" suddenly dissapears.",
+		 environment(ob));
+	ob->remove();
+}
+//END
 

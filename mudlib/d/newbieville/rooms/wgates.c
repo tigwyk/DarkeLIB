@@ -8,7 +8,12 @@ void create() {
     set_property("light", 3);
     set_property("indoors", 0);
     set("short", "   \n    \np   @--0\n    \n   \nWest Gates.");
-    set("long", "These are the western gates leading out from Newbieville. To the east is Shadow Road, which will take you to Town Square if you follow it.\n   \n    \np   @--0\n    \n   \n");
+    set("long",@ext These are the western gates leading out from Newbieville. To the east is Shadow Road, which will take you to Town Square if you follow it.
+
+plains--@--0
+
+
+ext);
     add_exit(ROOMS+"shadowroad", "east");
     add_exit("/d/damned/virtual/room_10_10.world", "plains");
 }

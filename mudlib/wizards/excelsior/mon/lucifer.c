@@ -17,8 +17,8 @@ void create() {
 	::create();
 	set_name("lucifer");
 	set("id",({"rhinocerous","lucifer"}));
-	set_level(21);
-	set("short","Lucifer the rhinocerous");
+	set_level(24);
+	set("short","[24]Lucifer the rhinocerous");
 	set("concentrate",1);
 	set("long","This creature is an evil incarnate. Though his body "+
 		"is humanoid, he has the head of a rhinocerous and the tough "+

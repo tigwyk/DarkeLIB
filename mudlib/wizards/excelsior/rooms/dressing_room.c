@@ -21,10 +21,13 @@ void create() {
 	set_property("light",3);
 	set_property("indoors",1);
 	set("short","A dressing room");
-	set("long","You are in the dressing room of a crazy actoress who apparently "+
-		"locked herself in her room. The actoress's makeup and other feminine items "+
-		"are recklessly thrown about the room. The mirror is smashed. To the east "+
-		"is the other dressing room. On the north wall there is an open window.");
+	set("long",@ext You are in the dressing room of a crazy actoress who apparently 
+		locked herself in her room. The actoress's makeup and other feminine items 
+		are recklessly thrown about the room. The mirror is smashed. To the east 
+		is the other dressing room. On the north wall there is an open window.
+
+    @--0
+ext);
 	set_items( (["makeup":"'What a waste of money' you think.",
 		"mirror":"With the mirror smashed you look even uglier then normal.",
 		"dressing room":"It is accross the hallway to the east.",

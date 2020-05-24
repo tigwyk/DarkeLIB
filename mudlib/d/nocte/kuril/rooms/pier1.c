@@ -81,7 +81,7 @@ string listen_default() {
 		return "Sea gulls cry out as they circle in the air.";
 	}
 }
-
+/*
 void night_time() {
 	add_item("ship", "On it's side are written the words: The Sea Hag  "  
 		"It is not too far out, perhaps you could jump to it.");
@@ -94,3 +94,4 @@ void day_time() {
 		"fisherman slowly letting out their nets and then pulling them "
 		"back in.");
 }
+*/

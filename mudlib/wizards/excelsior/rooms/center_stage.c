@@ -49,19 +49,29 @@ void create() {
 	set_property("light",3);
 	set_property("indoors",1);
 	set("short","Center stage");
-	set("day long","This is center stage. If it were night everyone in "+
-	"audience to your south would be looking at you. You do your little "+
-	"comedy routine for the rats you know are out there. You are "+
-	"being bombarded with light from all sides. It is very bright. You "+
-	"wonder how the city could produce so much power in this day and age. The "+
-	"stage floor looks a bit odd to you.");
-	set("night long","You have pranced out onto center stage. Everyone "+
-	"is looking at you. This reminds you of a dream you had once where you "+
-	"got up in front of a ton of people and realized you were naked. "+
-"Hopefully you aren't naked now, or people will think you are crazy. "+
-	"With all the light shining on you, you barely notice that he stage "+
-	"floor seems a bit odd. You can't comprehend where the city gets this light, all you "+ 
-	"have ever known are those good 'ol fashioned torches.");
+	set("day long",@ext This is center stage. If it were night everyone in 
+	audience to your south would be looking at you. You do your little 
+	comedy routine for the rats you know are out there. You are 
+	being bombarded with light from all sides. It is very bright. You 
+	wonder how the city could produce so much power in this day and age. The 
+	stage floor looks a bit odd to you.
+
+    @--0
+    
+    down
+ext);
+	set("night long",@ext You have pranced out onto center stage. Everyone 
+	is looking at you. This reminds you of a dream you had once where you 
+	got up in front of a ton of people and realized you were naked. 
+    Hopefully you aren't naked now, or people will think you are crazy. 
+	With all the light shining on you, you barely notice that he stage 
+	floor seems a bit odd. You can't comprehend where the city gets this light, all you  
+	have ever known are those good 'ol fashioned torches.
+
+    @--0
+    
+    down
+ext);
 	set_items( (["lights":"They a very bright.","floor":"Hmm. It is a "+
 	"bit bumpy at some places. Perhaps you should search it.","door":
 	"Try going 'down' through the trap door."]) );

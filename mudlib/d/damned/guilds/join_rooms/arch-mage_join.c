@@ -23,7 +23,9 @@ void create() {
 "room to the south.\n");
   //  The "\n" is important at the end of the long desc.
 
-      set_related_guilds(( {"necromancer","elementalist","enchanter"}));
+      set_related_guilds(({ "sword-mage", "elemental-mage", "elementalist" }));
+    //set_hated_guilds(({ "" }));
+    set_odd_guilds(({ "fighter", "thief", "tinker",  "cleric", "war-priest", "paladin", "assassin", "nightblade", "dark-paladin", "chaotic-lord" }));
 
   set_exits( ([ 
               "north" : "/d/daybreak/room/dblw5",

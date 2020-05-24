@@ -31,17 +31,18 @@ int cmd_skills(string str) {
     list = ({});
     for(i=0;i<sizeof(skills);i++) {
 	if(str == "base")
-	    list += ({ sprintf("%-20s %3d%1s (%s%d)", skills[i],
+	    list += ({ sprintf("%-24s %3d%1s (%s%d)             ", skills[i],
 		(int)this_player()->query_base_skill(skills[i]),"%",
 		((int)this_player()->query_skill_bonus(skills[i]) >= 0)? "+":"",
 		(int)this_player()->query_skill_bonus(skills[i])) });
 	else
-		list += ({ sprintf("%-20s %3d%1s  ", skills[i],
+		list += ({ sprintf("%-24s %3d%1s             ", skills[i],
 		(int)this_player()->query_skill(skills[i]),"%") });
     }
     message("info", "%^BOLD%^Your skills are:%^RESET%^\n%^BLUE%^%^BOLD%^"+
       repeat_string("-", 65),
         this_player());
+    //this_player()->more(explode(format_page(list, 2),"\n"));
     this_player()->more(explode(format_page(list, 2),"\n"));
     return 1;
 }

@@ -11,7 +11,7 @@ void reset() {
 		ob->set("long","This a work boss. He hires people for the day mostly "+
 			"on the basis of who bribed him how much. He is very big and "+
 			"looks rather mean as well.");
-		ob->set("short","The work boss");
+		ob->set("short","[14]The work boss");
 		ob->set("aggressive",0);
 		ob->set("id",({"ogre","work boss","boss"}));
 		ob->move(this_object());
@@ -23,16 +23,24 @@ void create() {
 	set_property("light",3);
 	set_property("indoors",0);
 	set("short","The entrance to a factory");
-	set("night long","Directly to your north is the entrance to a factory. "+
-		"You have no idea what they make there. This is the spot where "+
-		"people line up daily, hoping to get a job. The factory hires on a "+
-		"daily basis, providing no job security or benefits. There would "+
-		"be crowds here right now fighting gfor a job, but it is night.");
-	set("day long","The crowds here fighting for a job are unbearable. "+
-		"The work bosses stand here calling out names and selecting people "+
-		"for the daily work detail. Most of the time to get a job you have "+
-		"to bribe the work boss or be on the good side with the corporation. "+
-		"There are no unions. Unions are illegal.");
+	set("night long",@ext Directly to your north is the entrance to a factory. 
+		You have no idea what they make there. This is the spot where 
+		people line up daily, hoping to get a job. The factory hires on a 
+		daily basis, providing no job security or benefits. There would 
+		be crowds here right now fighting gfor a job, but it is night.
+    0   
+    |   
+ 0--@
+ext);
+	set("day long",@ext The crowds here fighting for a job are unbearable. 
+		The work bosses stand here calling out names and selecting people 
+		for the daily work detail. Most of the time to get a job you have 
+		to bribe the work boss or be on the good side with the corporation. 
+		There are no unions. Unions are illegal.
+    0   
+    |   
+ 0--@
+ext);
 	set_items((["crowds":"They all want work.",
 		"work bosses":"Generally big and ugly.",
 		"factory":"It is to your north.",

@@ -15,18 +15,33 @@ the aural sounds that comprise of the languages of most other
 species.
 
 
-SUMMARY:
+-=-=-=- Stat Bonuses -=-=-=- 
+Strength:           +10
+Constitution:       ---
+Intelligence:       +10
+Wisdom:             +5
+Dexterity:          +5
+Charisma:           -5 
+  
+-=-=-=-=-=- Abilities -=-=-=-=-=-     
+Body Size:         Medium             
+HP Regen:          Above Avg                
+MP Regen:          Normal               
+Natural Weapons:   Claws     
+Sight:             Normal
+         
++------ Special Abilities ------+     
+4 Arms (Wielding Hands)     
+Natrual AC (Excoskeleton)  
++-------------------------------+     
 
-Dex: Above Avg       Str: High           Con: Avg 
-Int: High            Wis: Above Avg      Char: Below Avg
+-=-=-=-=-= Skills =-=-=-=-=-
+None
 
-Sight: Avg
-HP Regen: Nil
-SP Regen: Nil
-Natural Weaponry: Above Avg
-Natural Armour: High
-Ambidextry: Nil
-Innate spells/skills: Nil
-Exp Modifier: Below Avg
-Arms: 4
+-=-=-=-=-= Spells =-=-=-=-=-
+None
+
+    +-----------------Experience Gain Rates-----------------+
+    |                    Below Average                      |
+    +-------------------------------------------------------+
 

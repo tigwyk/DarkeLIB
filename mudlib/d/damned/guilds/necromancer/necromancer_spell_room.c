@@ -50,7 +50,7 @@ In the middle of this rooms sits a large tome titled, The Grim Grimoire.  The to
   add_spell("transport undead");
   add_spell("undead dimension");
   add_spell("freeze skin");
-  add_spell("shadow form");
+  //TLNY2020 removed broken add_spell("shadow form");
   add_spell("hex", 2);
   add_spell("embalm corpse", 2);
   return;

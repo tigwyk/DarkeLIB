@@ -13,7 +13,7 @@ create() {
     set_id( ({ "legionnaire", "guard", "legion" }) );
     set_level(17);
     set_exp(200000);
-    set_short("legionnaire");
+    set_short("[17]legionnaire");
     set_long("A massive, stone faced legionnaire guards the mansion "+
       "from intruders."
       );

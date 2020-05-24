@@ -8,11 +8,19 @@ inherit MONSTER;
 
 create() {
   object money;
+int zlevel;
   ::create();
     set_name("half-orc guard");
     set_id( ({ "guard","orc", "half-orc guard"}) );
-    set_level(random(2)+2);
-    set_short("half-orc guard");
+    zlevel =(random(2)+2);
+
+if (zlevel == 2) set_short("[2]half-orc guard");
+else
+if (zlevel == 3) set_short("[3]half-orc guard");
+else
+if (zlevel == 4) set_short("[4]half-orc guard");
+else set_short("[5]half-orc guard");
+	set_level(zlevel);
     set_long("The half-orc guard is sleeping soundly." 
       );
     set("race", "half-orc");

@@ -12,7 +12,7 @@ void create() {
   ::create();
   set_name("pit viper");
   set_id( ({ "pit viper", "viper", "snake" }) );
-  set_short("a pit viper");
+  set_short("[8]pit viper");
   set_long("It is a huge, hooded pit viper.  Its truck is a thick as a "+
     "storm-giant's upper arm!");
   set("race", "serpent");

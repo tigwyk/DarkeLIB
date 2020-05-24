@@ -6,21 +6,32 @@ constitution.  They are well-suited, it seems, to just about any line of
 work, and they are touted as some of the quickest learners of skill in 
 the land.
 
+-=-=-=- Stat Bonuses -=-=-=- 
+Strength:           +10
+Constitution:       +10
+Intelligence:       ---
+Wisdom:             ---
+Dexterity:          ---
+Charisma:           +10 
+  
+-=-=-=-=-=- Abilities -=-=-=-=-=-     
+Body Size:         Medium             
+HP Regen:          Normal                
+MP Regen:          Normal               
+Natural Weapons:   Crushing Hands     
+Sight:             Normal
+         
++------ Special Abilities ------+     
+Training Bonus  
++-------------------------------+     
 
-SUMMARY:
+-=-=-=-=-= Skills =-=-=-=-=-
+None
 
-Dex: Avg          Str: High	       Con: High
-Int: Avg          Wis: Avg             Char: Avg
+-=-=-=-=-= Spells =-=-=-=-=-
+None
 
-HP Regen: Avg
-SP Regen: Avg
-Natural Weaponry: Nil
-Natural Armour: Nil
-Ambidextry: Nil
-Innate spells/skills: Nil
-Exp Modifier: Nil
-SPECIAL:  High-men tend to learn skills at a rate higher than most
-other races.  Therefore the development cost of ALL SKILLS AND SPELLS
-is reduced by 2 for high men.
-
+    +-----------------Experience Gain Rates-----------------+
+    |                        Normal                         |
+    +-------------------------------------------------------+
 

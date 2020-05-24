@@ -24,42 +24,34 @@ void create()
     return;
 }
 
-void info()
-{
+void info(){
     message("help",
       "This spell imbues your weapon temporarily with the power to stop foes from moving, fighting, or casting!\n",
       this_player());
 }
 
-void spell_func(object caster, object at, int power, string args, int flag)
-{
+void spell_func(object caster, object at, int power, string args, int flag){
     object ob;
 
-    if(!at->is_weapon())
-    {
+    if(!at->is_weapon()){
 	message("info", "You must cast this spell at a weapon.", caster);
 	caster->add_mp(props["mp cost"]);
 	remove();
 	return;
     }
     ob = new("/std/spells/shadows/weapon_shadow");
-    if(check_stack(at,ob))
-    {
-	message("info",
-	  "%^YELLOW%^Your weapon crackles with stunning energy.%^RESET%^",
+    if(check_stack(at,ob)){
+	message("info", "%^YELLOW%^Your weapon crackles with stunning energy.%^RESET%^",
 	  caster);
 	ob->set_extra_wc(([ "impaling" : 5*power ]));
 	ob->set_auto_crits((["stun B" : 4*power ] )); 
-    ob->start_shadow(at,props["duration"],
-      "%^YELLOW%^The energy fades from your weapon abruptly.%^RESET%^"
-    );
-}
-else
-{
+    ob->start_shadow(at,props["duration"],"%^YELLOW%^The energy fades from your weapon abruptly.%^RESET%^");
+	}
+	else{
     message("info","Your weapon may not receive another stun blade "+
       "at this time.",caster);
     ob->external_destruct(ob);
-}
+	}
 remove();
 return;
 }

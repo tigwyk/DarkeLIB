@@ -54,7 +54,7 @@ void create() {
 		"rusted chains sqeak softly.  On the ground are runes.  "
 		"They connect toward a fountain to the east.  To the east "
 		"a cheap gate has been put up to keep out the residents of "
-		"the Lower Ward.\n   0\n   | \n0--@--0\n    \n   \n"
+		"the Lower Ward.\n    \n     \n0--@--0\n    \n   \n"
 	);
 	set_items( ([
 		"shop": "From here you can see many fine books waiting to " +
@@ -67,7 +67,7 @@ void create() {
 		"door": (: call_other, TO, "look_door" :)
 	]) );
 	set_exits( ([
-		"north": ROOMS+"book_binder",
+		//"north": ROOMS+"book_binder",
 		"east": ROOMS+"fountain_square",
 		"west": ROOMS+"marketplace2"
 	]) );

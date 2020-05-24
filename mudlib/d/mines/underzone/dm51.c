@@ -13,11 +13,13 @@ void create() {
 "large stone building is to the west of you. The thick walls stretch above "
 "you."
      );
-    set("long", 
-"You are standing on the west side of the river. A large stone building "
-"is here. Its stone walls stretch up above you, broken only by a few "
-"lighted windows."
-       );
+    set("long",@ext  
+You are standing on the west side of the river. A large stone building 
+is here. Its stone walls stretch up above you, broken only by a few 
+lighted windows.
+        door
+    @--0       
+ext);
     set_exits( ({ UNDER+"dm49",UNDER+"dm53" 
      }),
       ({ "east","door" })

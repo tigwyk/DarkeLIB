@@ -20,16 +20,20 @@ void create() {
    set_property("indoors",1);
    set_property("light",3);
    set("short","Inside the hospital");
-   set("long","You are in the entry hall of the hospital, and it is "+
-	"clear that unaithorized personnel go no further. "+
-   "You realize that the city is quite ahead of its times with this "+
-	"insitution designed to help cure the needy and sick with "+
-	"the latest in herbal developments. "+
-      "Doctors and employees scurry this way and that, "+
-      "fighting a losing battle against disease and injuries in this city. "+
-      "Though you try your hardest, you can't get anyones attention. "+
-      "The exit is back to the northwest. There is a door here that no "+
-      "one seems to be guarding. Hmmm.");
+   set("long",@ext You are in the entry hall of the hospital, and it is 
+	clear that unaithorized personnel go no further. 
+   You realize that the city is quite ahead of its times with this 
+	insitution designed to help cure the needy and sick with 
+	the latest in herbal developments. 
+      Doctors and employees scurry this way and that, 
+      fighting a losing battle against disease and injuries in this city. 
+      Though you try your hardest, you can't get anyones attention. 
+      The exit is back to the northwest. There is a door here that no 
+      one seems to be guarding. Hmmm.
+  0    
+   \  
+    @
+ext);
    set_items( ([ "hall":"It is rather big, and all anyone who is not a "+
 	    "patient or an employee sees.","desk":"A large desk that is inset "+
 	    "in the wall. No one is there.",({"doctors","employees"}):"You can't "+

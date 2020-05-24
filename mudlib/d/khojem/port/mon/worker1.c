@@ -27,8 +27,14 @@ create() {
       case 8:zlevel=5;break;
       case 9:zlevel=5;break;
     }
+if (zlevel == 3) set_short("[3]worker");
+else 
+if (zlevel == 4) set_short("[4]worker");
+else
+if (zlevel == 5) set_short("[5]worker");
+else set_short("[6]worker");
     set_level(zlevel);
-    set_short("worker");
+
     set_long("The dock worker is going about his tasks." 
       );
     set("race", "half-elf");

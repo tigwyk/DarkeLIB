@@ -18,8 +18,8 @@ void create() {
 	::create();
 	set_name("phantom");
 	set("id",({"the phantom","phantom","man"}) );
-	set_level( 15 );
-	set("short","The phantom stage director");
+	set_level( 21 );
+	set("short","[21]The phantom stage director");
 	set("long","This is theatre companies missing stage director. He has given "+
 		"up his job as an operator of the theatre to become a mysterious "+
 		"masked phantom. He could be considered 'the phantom of the operator.' "+
@@ -30,7 +30,7 @@ void create() {
 	set_gender("male");
 	set_body_type("human");
 	set_skill("melee",70);
-	set_overall_ac( 5 );
+	set_overall_ac( 15 );
 	set_skill("elementalism",73);
 	set_skill("chaos lore",71);
 	set_skill("prayer",30);

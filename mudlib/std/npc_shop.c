@@ -10,7 +10,7 @@
 #include <std.h>
 #include <move.h>
 #include <daemons.h>
-#define CURRS ({ "gold", "silver", "copper" })
+#define CURRS ({  "gold", "silver", "copper" })
 
 inherit MONSTER;
 

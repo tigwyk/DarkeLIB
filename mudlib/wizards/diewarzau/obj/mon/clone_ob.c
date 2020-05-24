@@ -1,12 +1,8 @@
 #include <std.h>
 
-#define STATS ({ "dexterity", "intelligence", "constitution", \
+#define STATS ({ "dexterity", "intelligence", "constitution", "charisma", "wisdom", "strength" })
 
-  "charisma", "wisdom", "strength" })
-
-#define NO_CMD ({ "spells", "skills", "who", "alias", "unalias", "nickname", \
-
-  "unnickname", "specialize", "train", "advance" })
+#define NO_CMD ({ "spells", "skills", "who", "alias", "unalias", "nickname", "unnickname", "specialize", "train", "advance" })
 
 
 

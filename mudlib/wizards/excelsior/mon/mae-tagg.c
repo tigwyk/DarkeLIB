@@ -10,8 +10,8 @@ void create() {
 	::create();
 	set_name("mae-tagg");
 	set("id",({"mae-tagg","man","prisoner"}));
-	set_level(6);
-	set("short","Mae-tagg the revolutionary");
+	set_level(10);
+	set("short","[10]Mae-tagg the revolutionary");
 	set("long","This is mae-tagg the revolutionary. He looks like he "+
 		"needs some help. Perhaps if you told him you would 'help' him "+
 		"he would tell you more.");

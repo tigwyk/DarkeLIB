@@ -13,13 +13,17 @@ void create() {
 	set_property("light",3);
 	set_property("indoors",1);
 	set("short","The crowd is getting restless");
-	set("long","You continue to stand in line waiting to proceed to the "+
-		"next room. Wondering what you are in line for, you ask someone "+
-		"nearby who replies it is the line to see a government representative. "+
-		"You wonder why anyone would want to do that. As the crowd stands in "+
-		"line it becomes more and more restless. It has become apparent that "+
-		"there is some kind of a comotion to the north. However, you'll just "+
-		"have to wait for the line to progress enough to see for yourself.");
+	set("long",@ext You continue to stand in line waiting to proceed to the 
+		next room. Wondering what you are in line for, you ask someone 
+		nearby who replies it is the line to see a government representative. 
+		You wonder why anyone would want to do that. As the crowd stands in 
+		line it becomes more and more restless. It has become apparent that 
+		there is some kind of a comotion to the north. However, you'll just 
+		have to wait for the line to progress enough to see for yourself.
+    0   
+    |   
+ 0--@
+ext);
 	set_items((["line":"You are standing in it, and you have been for quite a while",
 		"someone":"You asked this person what you were in line for.",
 		"crowd":"The people standing in line etc.",

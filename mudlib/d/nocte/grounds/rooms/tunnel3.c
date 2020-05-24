@@ -1,5 +1,5 @@
 #include <std.h>
-#include <nevin.h>
+#include "nevin.h"
 
 inherit ROOM;
 
@@ -9,11 +9,15 @@ void create() {
 	set_property("light", -3);
 	set_property("no castle", 1);
 	set("short", "Inside the Tunnel");
-	set("long",
-		"It sure is cold in here!  Rubbing your hands together doesn't "
-		"seem to do anything though....  The cave continues to the "
-		"south."
-	);
+	set("long",@ext
+		It sure is cold in here!  Rubbing your hands together doesn't 
+		seem to do anything though....  The cave continues to the 
+		south.
+
+ 0--@
+    |
+    0	
+ext);
 	set_listen("default", "You hear your teeth begin to chatter.");
 	set_exits( ([
 		"west": ROOMS+"tunnel2.c",

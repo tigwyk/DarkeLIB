@@ -10,20 +10,32 @@ void create() {
 	set_property("night light",2);
 	set_property("indoors",1);
 	set("short","Inside the theatre");
-	set("day long","At day it is rather dark in here as the company "+
-	"can't afford to keep the lights on 24 hours a day- and being as "
-	"people come here during the night, that is when they choose to turn "+
-	"on the juice. You have heard stories of the giant generators of New "+
-	"Faerie Dust, and how with magic and brute force they can produce a "+
-	"massive amount of power. You suppose however that the officials "+
-      " of the city choose to use most of this power on the richer "+
-	"levels- because here most of the light you have seen has come "+
-	"from torches and other less amazing sources.");
-	set("night long","There are so many people here it is hard to move. "+
-	"You really don't see how this place could be doing badly- business "+
-	"is booming. The area is well lit and full of action. To the north "+
-	"is the theatre itsself, to the west is a snack bar, and to the "+
-	"east is a lounge of some kind. You wonder what is playing tonight.");
+	set("day long",@ext At day it is rather dark in here as the company 
+	can't afford to keep the lights on 24 hours a day- and being as
+	people come here during the night, that is when they choose to turn 
+	on the juice. You have heard stories of the giant generators of New 
+	Faerie Dust, and how with magic and brute force they can produce a 
+	massive amount of power. You suppose however that the officials 
+      of the city choose to use most of this power on the richer 
+	levels- because here most of the light you have seen has come 
+	from torches and other less amazing sources.
+    0   
+    |   
+ 0--@--0
+    |
+    0
+ext);
+	set("night long",@ext There are so many people here it is hard to move. 
+	You really don't see how this place could be doing badly- business 
+	is booming. The area is well lit and full of action. To the north 
+	is the theatre itsself, to the west is a snack bar, and to the 
+	east is a lounge of some kind. You wonder what is playing tonight.
+    0   
+    |   
+ 0--@--0
+    |
+    0
+ext);
 	set_items( (["theatre":"It is what Americans call a theater. "+
 	"\"What's America?\" you think."]));
 	set_exits( (["north":"/wizards/excelsior/rooms/seats","south":

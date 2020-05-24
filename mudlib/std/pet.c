@@ -268,6 +268,11 @@ void directed_message(object from, string mesg) {
     this_object()->force_me(lower_case(tmp1));
     return;
   }
+  if(parse_command(mesg, environment(), " 'equip' / 'take' %s", tmp1)) {
+    if(!Pet_data["carry"]) return;
+    this_object()->force_me("equip "+tmp1);
+    return;
+  }
   if(parse_command(mesg, environment(), " 'get' / 'take' %s", tmp1)) {
     if(!Pet_data["carry"]) return;
     this_object()->force_me("get "+tmp1);
@@ -420,7 +425,8 @@ void directed_message(object from, string mesg) {
     if(Pet_data["carry"]) tmp1 +=
 "give <what> to <who> These commands allow the monster to carry items\n"+
 "get <item>           for the owner.  This can be useful for \n"+
-"drop <item>          especially heavy items.\n";
+"drop <item>          especially heavy items.\n"+
+"equip                you can also allow them to equip \n";
     if(Pet_data["save"]) tmp1 +=
 "save                 Saves the monster.  It will stay past reboots, but\n"+
 "                     this only works in rooms which also save items, \n"+

@@ -1,0 +1,15 @@
+#/d/damned/guilds/join_rooms/elemental-mage_join.c
+props (["base mp regen":12,"guild mods":(["intelligence":10,]),"base hp regen":2,"light":2,"mp advance":45,"hp advance":5,"indoors":1,])
+__Smells ([])
+__Listens ([])
+__Searches ([])
+destinations (["south":"/d/damned/guilds/elemental-mage/skill_room","north":"/d/daybreak/room/dbvl3",])
+invis_exits ([])
+pre_exit_func ([])
+post_exit_func ([])
+tracks ({})
+__Items (["items":"They are very valuable, but well protected.","magi":"Several of them wear ornate robes and jewelry.","blue moon":,"sky":,"ankh":,"moon":,"red moon":,"sun":,"warzau":,"green moon":,"moons":,"luna":,])
+guild_list ([])
+banish ([])
+master "terylian"
+

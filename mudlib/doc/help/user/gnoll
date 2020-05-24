@@ -18,15 +18,33 @@ to be grinning.  Most are very wary when around a Gnoll for they
 have a bad reputation of being incredibly violent, though this
 is not always the case.
 
-SUMMARY:
+-=-=-=- Stat Bonuses -=-=-=- 
+Strength:           +10
+Constitution:       +10
+Intelligence:       -10
+Wisdom:             -10
+Dexterity:          ---
+Charisma:           -10 
+  
+-=-=-=-=-=- Abilities -=-=-=-=-=-     
+Body Size:         Shorter then Normal             
+HP Regen:          Above Avg                
+MP Regen:          Normal               
+Natural Weapons:   Crushing Hands     
+Sight:             Dark Vision
+         
++------ Special Abilities ------+     
+Corpse Eating
+Natural AC (Hide Skin)  
++-------------------------------+     
 
-Dex: Avg        Str: Above Avg      Con: Above Avg 
-Int: Low       Wis: Low           Char: Below Avg
+-=-=-=-=-= Skills =-=-=-=-=-
+None
 
-HP Regen: Above Avg
-SP Regen: Nil
-Natural Weaponry: Standard
-Natural Armour: Hide Armour
-Ambidextry: Nil
-Innate spells/skills: Corpse easting
-Exp Modifier: High
+-=-=-=-=-= Spells =-=-=-=-=-
+None
+
+    +-----------------Experience Gain Rates-----------------+
+    |                        Good                           |
+    +-------------------------------------------------------+
+

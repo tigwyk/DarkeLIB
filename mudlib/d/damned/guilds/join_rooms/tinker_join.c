@@ -15,7 +15,9 @@ void create() {
   ::create();
   set_property("light", 2);
   set_property("indoors", 1);
-  set_related_guilds(({ "fighter", "enchanter" }));
+  set_related_guilds(({ "fighter", "thief", "enchanter" }));
+    //set_hated_guilds(({ "" }));
+    set_odd_guilds(({ "arch-mage", "elementalist", "necromancer", "nethermancer", "elemental-mage", "sword-mage", }));
   set("short", "Guild of Tinkers, Hall of Craftsmen");
   set("long", @TEXT
   

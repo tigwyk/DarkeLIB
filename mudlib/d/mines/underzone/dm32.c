@@ -12,14 +12,17 @@ void create() {
     set("short","You are crawling in a small connection tunnel. A small "
 "opening leads to a chamber to the east and the tunnel continues for "
 "several more feet to the west.");
-    set("long", 
-"You are crawling in a small connection tunnel. A small opening "
-"leads to a chamber to the east and the tunnel continues for "
-"several more feet to the west. The sides of the tunnel look like "
-"they were carved out recently. There are no formations along "
-"the floor and there is still a fair amount of dust from when "
-"the walls were chipped away."
-        );
+    set("long",@ext 
+You are crawling in a small connection tunnel. A small opening 
+leads to a chamber to the east and the tunnel continues for 
+several more feet to the west. The sides of the tunnel look like 
+they were carved out recently. There are no formations along 
+the floor and there is still a fair amount of dust from when 
+the walls were chipped away.
+       
+       hole   
+ 0--@        
+ext);
     set_exits( ({ UNDER+"dm31",UNDER+"dm33" }),
       ({ "hole", "west" })
     );

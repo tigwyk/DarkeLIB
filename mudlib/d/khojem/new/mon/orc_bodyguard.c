@@ -12,7 +12,7 @@ create() {
     set_name("half-orc bodyguard");
     set_id( ({ "bodyguard","orc", "half-orc bodyguard", "guard" }) );
     set_level(5);
-    set_short("half-orc bodyguard");
+    set_short("[5]half-orc bodyguard");
     set_long("The half-orc bodyguard protects the chief." 
       );
     set("race", "half-orc");

@@ -28,11 +28,11 @@ void create() {
 	::create();
 	set_name("man");
 	set("id",({"pie man","man","pie","man pie"}));
-	set_level(8);
-	set("short","The pie man");
+	set_level(10);
+	set("short","[10]The pie man");
 	set("long","This is the pie man. He makes his living selling pies. If you "+
-		"want to but a pie, type 'buy pie'. They cost 200 copper each. He "+
-		"will only except copper. There are no refunds and no credit.");
+		"want to but a pie, type 'buy pie'. They cost 200 silver each. He "+
+		"will only except silver. There are no refunds and no credit.");
 	set("race","human");
 	set_gender("male");
 	set_body_type("human");
@@ -50,7 +50,7 @@ void create() {
 	set_languages( ({"middle-english","yin","dwarvish","serra","common"}) );
 	set_wimpy(60);
 	make_me_apron();
-	add_money("copper",500);
+	add_money("silver",500);
 }
 
 void init() {
@@ -64,11 +64,11 @@ int buy(string str) {
 		notify_fail("Buy whay?\n");
 		return 0;
 	}
-	if((int)this_player()->query_money("copper") < 200) {
-		notify_fail("You do not have 200 copper to buy the pie with!\n");
+	if((int)this_player()->query_money("silver") < 200) {
+		notify_fail("You do not have 200 silver to buy the pie with!\n");
 		return 0;
 	}
-	this_player()->add_money("copper",-200);
+	this_player()->add_money("silver",-200);
 	write("You buy a pie. Yum.");
 	message("other_action",this_player()->query_cap_name()+" buys a delicious "+
 		"pie. You want one too.",environment(),({this_player()}));

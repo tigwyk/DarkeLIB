@@ -19,7 +19,7 @@ create() {
     set_overall_ac(22);
     set_max_hp(2500);
     set_hp(2500);
-    set_short("Nutnux");
+    set_short("[20]Nutnux");
     set_long("Nutnux is a high-man employed in the profession of mercenary. "+
       "He looks like a formitable foe and one not to be tangled with."
       );

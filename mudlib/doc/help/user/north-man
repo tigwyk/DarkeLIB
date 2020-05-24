@@ -23,18 +23,33 @@ these areas).  Most North Men learn very quickly compared to the
 other races of the land, and though it is uncommon you will find
 them scattered among the many guilds and professions of Darke.
 
-SUMMARY:
+-=-=-=- Stat Bonuses -=-=-=- 
+Strength:           +10
+Constitution:       +5
+Intelligence:       ---
+Wisdom:             -5
+Dexterity:          ---
+Charisma:           --- 
+  
+-=-=-=-=-=- Abilities -=-=-=-=-=-     
+Body Size:         Medium             
+HP Regen:          Normal                
+MP Regen:          Normal               
+Natural Weapons:   Crushing Hands     
+Sight:             Normal
+         
++------ Special Abilities ------+     
+High Resistance to Cold 
+Training Bonus
++-------------------------------+     
 
-Str: Above Avg      Con: Above Avg       Int: Avg   
-Wis: Below Avg      Dex: Avg             Char: Avg 
+-=-=-=-=-= Skills =-=-=-=-=-
+None
 
+-=-=-=-=-= Spells =-=-=-=-=-
+None
 
-Natural Weaponry: Standard
-Natural Armour: Nil
-Innate spells/skills: Nil
-Exp Modifier: Above Avg
-Magic Resistance: High (cold)
+    +-----------------Experience Gain Rates-----------------+
+    |                          Avg                          |
+    +-------------------------------------------------------+
 
-SPECIAL:  North-men tend to learn skills at a rate higher than most
-other races.  Therefore the development cost of ALL SKILLS AND SPELLS
-is reduced by 2 for high men.

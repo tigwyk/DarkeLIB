@@ -11,9 +11,14 @@ void create() {
     set_property("indoors", 1);
     set("short",
 "You are standing at the nothern end of the loader room.");
-    set("long",
-"You are now standing at the northern end of the loader room."
-    );
+    set("long",@ext
+You are now standing at the northern end of the loader room.
+    0   
+    |  
+    @
+    |
+    0    
+ext);
     set_exits( ({ "/wizards/maxwell/underzone/dme", 
 "/wizards/maxwell/underzone/dm2" }),
       ({ "south", "north" })

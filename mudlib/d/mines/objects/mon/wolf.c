@@ -13,12 +13,12 @@ create() {
     ::create();
    set_name("grey wolf");
    set_id( ({ "wolf"}) );
-   set_short("A large grey wolf");
-   set_level(20);
+   set_short("[25]large grey wolf");
+   set_level(25);
    set("long", "The grey wolf looks very strong.");
    set_gender("male");
    set("race", "wolf");
-   set_exp(400000);
+   //set_exp(400000);
    set_alignment(0);
    set_wielding_limbs( ({"right hand","left hand"}) );
    set_body_type("quadruped");

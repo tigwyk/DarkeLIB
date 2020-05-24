@@ -13,13 +13,16 @@ void create() {
     set_property("indoors", 1);
     set("short", "You are floating in the river  on the edge of a huge "
         "waterfall.");
-    set("long", 
-"You are floating in the river next the edge of a huge waterfall. "
-"Thousands of gallons of water are flowing by you, trying to push you off "
-"over the falls.\n" 
-"You can't see what is at the base of the waterfall, but there is a small "
-"path that leads down along the side.\n " 
-       );
+    set("long",@ext 
+You are floating in the river next the edge of a huge waterfall. 
+Thousands of gallons of water are flowing by you, trying to push you off 
+over the falls.
+You can't see what is at the base of the waterfall, but there is a small 
+path that leads down along the side.   
+        upstream   
+    @    path
+        downstream          
+ext);
     set_exits( ({ UNDER+"dm16",UNDER+"dm45",UNDER+"dm47" }),
       ({ "upstream","path","downstream" })
        );

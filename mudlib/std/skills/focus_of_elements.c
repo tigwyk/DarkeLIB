@@ -45,6 +45,13 @@ void skill_func(object from, object at, string arg) {
     remove();
     return;
   }
+// heh, ummm yeah, trade is an elemental lore (TM April 2K)
+if(lower_case(arg)=="trade"){
+message("info", "%^YELLOW%^That's not an elemental lore, what are you dumb?", from);
+remove();
+return;
+}
+
   arg = lower_case(arg);
   if(!from->query_skill(arg+" lore")) {
     message("info", "You must choose an element for which you have a lore "
@@ -104,6 +111,7 @@ void reduce_bonus(object from, string arg) {
   if((sk_bonus - 5) <= 0) {
     from->add_skill_bonus(arg, -1 * sk_bonus);
     from->set("focus of elements", 0);
+    write("Your focus of elements disappears.\n");
     remove();
     return;
   }

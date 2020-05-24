@@ -11,8 +11,12 @@ void create() {
     set_property("indoors", 1);
     set("short", "You are in a musty burial chamber. In front of you is "
 "a large stone burial altar.");
-    set("long", "You are standing in a musty burial chamber. Long cobwebs "
-"hang down in front of you. There is a stone burial altar here.");
+    set("long", @ext You are standing in a musty burial chamber. Long cobwebs 
+hang down in front of you. There is a stone burial altar here.
+    0   
+    |   
+    @
+ext);
     set_exits( ({ UNDER+"dmc6"}),
       ({ "north" }));
     set_items( ([

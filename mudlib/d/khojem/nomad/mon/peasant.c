@@ -27,8 +27,16 @@ create() {
       case 8:zlevel=7;break;
       case 9:zlevel=8;break;
     }
-    set_level(zlevel);
-    set_short("nomad peasant");
+if (zlevel == 5) set_short("[5]nomad peasant");
+else 
+if (zlevel == 6) set_short("[6]nomad peasant");
+else
+if (zlevel == 7) set_short("[7]nomad peasant");
+else
+if (zlevel == 8) set_short("[8]nomad peasant");
+
+else set_short("[9]nomad peasant");
+	set_level(zlevel);
     set_long("The nomad peasant is out tending to the daily chores." 
       );
     set("race", "high-man");

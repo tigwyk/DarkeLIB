@@ -23,8 +23,12 @@ void create() {
 	set_property("light",3);
 	set_property("night light",1);
 	set("short","The cells continue");
-	set("long","There is one last cell to your north. If you "+
-		"have the keys you can open it.");
+	set("long",@ext There is one last cell to your north. If you 
+		have the keys you can open it.
+    0   
+    |   
+ 0--@
+ext);
 	set_items((["cell":"You wonder who is kept in it.",
 		]));
 	set_exits((["north":"/wizards/excelsior/rooms/jail/cell4.1",

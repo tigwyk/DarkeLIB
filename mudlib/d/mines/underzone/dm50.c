@@ -12,11 +12,14 @@ void create() {
     set("short", "You are standing in a small room somewhere in the mine "
 "complex. There is a single mine track that begins here and runs through "
 "a hole in the wall in front of you.");
-    set("long", 
-"You are standing in a small carved room somewhere in the mine complex. "
-"The dirty room is filled with debris and broken pieces of ore and rocks. "
-"A single mine track begins here and runs out of the room through a hole " 
-"in the wall in front of you. Above the hole is an old sign.\n");
+    set("long",@ext 
+You are standing in a small carved room somewhere in the mine complex. 
+The dirty room is filled with debris and broken pieces of ore and rocks. 
+A single mine track begins here and runs out of the room through a hole 
+in the wall in front of you. Above the hole is an old sign.
+
+    @    passage
+ext);
     set_exits( ({ UNDER+"dm68e" }),
       ({ "passage" })
        );

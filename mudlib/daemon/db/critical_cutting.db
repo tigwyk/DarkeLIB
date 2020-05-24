@@ -1,3 +1,4 @@
+#CRIT CUTTING
 (A):
 0..5:$A $V to do anything at all to $T.:fail:NO_EFFECT
 6..20:$A lightly $V $T:tap:DAMAGE 1

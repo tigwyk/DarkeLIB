@@ -20,15 +20,15 @@ void create() {
 ::create();
 set_name("thranx");
 set("id",({"thranx","a thranx","a rampaging thranx"}) );
-set_level( 6 );
-set("short","a rampaging thranx");
+set_level( 10 );
+set("short","[10]rampaging thranx");
 set("long","This thranx is angry because he is being forced out of "+
 "New Faerie Dust. He's already killed 1 and wounded countless others. "+
 "Perhaps you should intervene..oh, wait, you already have! Human lover!");
 set("race","thranx");
 set_gender("male" );
 set_body_type("thranx");
-set_overall_ac( 8 );
+set_overall_ac( 11 );
 set_property("magic resistance",24);
 set_max_hp( 200 );
 set_hp( 200 );

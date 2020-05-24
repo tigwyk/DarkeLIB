@@ -7,19 +7,22 @@ create() {
 set_property("light",1);
 set_property("indoors",1);
 set("short","Tunnel Entrance");
-set("long","Here the street enters a large tunnel. On top of the "+
-"tunnel is another street. You see no where up from here and guess "+
-"it was built that way because you are, after all, in the outcast "+
-"quarter and you suppose the humans above want nothing to do with this "+
-"place. Deeper inside the tunnel you see little because it is very "+
-"dark. A few torches are lit along the walls but most of them are out. "+
-"You think that if you ran this city you would fire the torch lighter "+
-"guy. But then you think that lighting torches is the only source of "+
-"income that guy must have for 5 children, a wife, and a grandma- and "+
-"then there's the rent. Aye! Some panhandling orcs are here, "+
-"but being as you have better things to spend your money on you pretend "+ 
-"not to see them. There seems to be a bit of a commotion off to the "+
-"west. You notice a sign here attached to the tunnel wall.");
+set("long",@ext Here the street enters a large tunnel. On top of the 
+tunnel is another street. You see no where up from here and guess 
+it was built that way because you are, after all, in the outcast 
+quarter and you suppose the humans above want nothing to do with this 
+place. Deeper inside the tunnel you see little because it is very 
+dark. A few torches are lit along the walls but most of them are out. 
+You think that if you ran this city you would fire the torch lighter 
+guy. But then you think that lighting torches is the only source of 
+income that guy must have for 5 children, a wife, and a grandma- and 
+then there's the rent. Aye! Some panhandling orcs are here, 
+but being as you have better things to spend your money on you pretend 
+not to see them. There seems to be a bit of a commotion off to the 
+west. You notice a sign here attached to the tunnel wall.
+
+ 0--@--0
+ext);
 set_items( (["orcs":"Don't look at them! You're pretending you don't "+
 "see them, remember? If they notice you looking at them your guilt may "+
 "force you to spare them some change!","tunnel":"You're in it, bub.",

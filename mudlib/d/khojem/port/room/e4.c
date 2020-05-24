@@ -26,7 +26,7 @@ void create() {
     );
     add_exit("/d/khojem/port/room/e1","up");
     add_exit("/d/khojem/port/room/e7","east");
-    set_door("brass door","/d/khojem/port/room/e7","east","earl_vault_key");
+    set_door("brass door","/d/khojem/port/room/e7","east","earl_desk_key");
     set_property("magic hold",80);
     set_open("brass door",0);
     set_locked("brass door",1);

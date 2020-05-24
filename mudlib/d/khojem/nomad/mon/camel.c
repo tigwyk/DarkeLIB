@@ -13,7 +13,7 @@ create() {
     set_name("camel");
     set_id( ({ "camel" }) );
     set_level(7);
-    set_short("smelly camel");
+    set_short("[7]smelly camel");
     if(random(2))
       set_long("A large one-hump camel.  Its hair is matted with clots of dried "+
         "manure.");

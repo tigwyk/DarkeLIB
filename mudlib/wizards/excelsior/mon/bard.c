@@ -14,8 +14,8 @@ void create() {
 	::create();
 	set_name("bard");
 	set("id",({"bard","falsath"}));
-	set_level(2);
-	set("short","Falsath the bard");
+	set_level(10);
+	set("short","[10]Falsath the bard");
 	set("long","This is Falsath the bard. If you have a music paper you would like "+
 		"him to examine, you can 'show' him the the '<music paper>'. If you "+
 		"just want to talk, you can tell him to 'talk'.")

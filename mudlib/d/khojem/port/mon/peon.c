@@ -13,6 +13,14 @@ create() {
   ::create();
     zlevel = 1 + random(3);
 	set_overall_ac((zlevel+1));
+if (zlevel == 1) set_short("[1]peon");
+else 
+if (zlevel == 2) set_short("[2]peon");
+else
+if (zlevel == 3) set_short("[3]peon");
+else
+if (zlevel == 4) set_short("[4]peon");
+else set_short("[5]peon");
     set_level(zlevel);
     add_money("silver", (zlevel*10)+random(9));
     set_property("melee damage", ([ "crushing" : (zlevel + 2)]));
@@ -25,7 +33,6 @@ create() {
       default : set_name("another peon"); break;
     }
     set_id( ({ "peon", "mob" }) );
-    set_short("peon");
     set_long("The peon appears to be wondering about with no place to go.");
     zlevel = random(4);
     switch(zlevel) {

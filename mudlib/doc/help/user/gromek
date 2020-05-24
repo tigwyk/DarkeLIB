@@ -9,17 +9,32 @@ the magical arts, though most prefer combat.  A very few are able to
 become proficient in both.
 
 
-SUMMARY:
+-=-=-=- Stat Bonuses -=-=-=- 
+Strength:           +15
+Constitution:       +10
+Intelligence:       +5
+Wisdom:             ---
+Dexterity:          ---
+Charisma:           -5 
+  
+-=-=-=-=-=- Abilities -=-=-=-=-=-     
+Body Size:         Large             
+HP Regen:          Above Avg                
+MP Regen:          Above Avg               
+Natural Weapons:   Claws     
+Sight:             Above Avg
+         
++------ Special Abilities ------+     
+Natrual AC (Hide Skin) 
++-------------------------------+     
 
-Dex: Avg          Str: High          Con: High 
-Int: Above Avg    Wis: Below Avg     Char: Below Avg
+-=-=-=-=-= Skills =-=-=-=-=-
+None
 
-Sight: Above Avg
-HP Regen: Above Avg
-SP Regen: Above Avg
-Natural Weaponry: Standard (Above Avg)
-Natural Armour: Hardened Skin (Above Avg)
-Ambidextry: Nil
-Innate spells/skills: Nil
-Exp Modifier: Below Avg
+-=-=-=-=-= Spells =-=-=-=-=-
+None
+
+    +-----------------Experience Gain Rates-----------------+
+    |                    Below Average                      |
+    +-------------------------------------------------------+
 

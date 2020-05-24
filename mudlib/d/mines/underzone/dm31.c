@@ -12,15 +12,18 @@ void create() {
     set_property("indoors", 1);
     set("short", "The tunnel comes to an abupt end here. The ceiling "
 "slopes down until only a small tunnel continues to the south. ");
-    set("long", 
-"The tunnel comes to an abupt end here. The ceiling slopes down "
-"until only a small tunnel continues to the south. "
-"Large formations have grown from the floor and ceiling. Some "
-"of them have connected to form long columns of perfect white "
-"mineral desposits. "
-"Along the lower part of the western wall is a small opening. It "
-"looks like the opening leads into a lower section of the mine."
-        );
+    set("long",@ext 
+The tunnel comes to an abupt end here. The ceiling slopes down 
+until only a small tunnel continues to the south. 
+Large formations have grown from the floor and ceiling. Some 
+of them have connected to form long columns of perfect white 
+mineral desposits. 
+Along the lower part of the western wall is a small opening. It 
+looks like the opening leads into a lower section of the mine.
+    0   
+    |  hole   
+    @       
+ext);
     set_exits( ({ UNDER+"dm30",UNDER+"dm32" }),
       ({ "north", "hole" })
     );

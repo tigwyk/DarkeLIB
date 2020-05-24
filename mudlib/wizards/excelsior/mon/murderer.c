@@ -20,8 +20,8 @@ void create() {
 	::create();
 	set_name("murderer");
 	set("id",({"murderer","devil worshiper"}));
-	set_level(15);
-	set("short","An insane murderer");
+	set_level(18);
+	set("short","[18]insane murderer");
 	set("long","This is an insane murderer who is also a devil worshiper.");
 	set("race","wraith");
 	set_body_type("human");

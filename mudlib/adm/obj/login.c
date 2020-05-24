@@ -306,13 +306,11 @@ static void choose_gender(string str) {
       } 
     __Player->set_gender(str); 
     message("logon", 
-	mud_name() + " only allows one player per person, so each player\n"
-	"must have a unique email address.  It is VERY important that\n"
-	"you supply a valid email, since your passord will be mailed there\n"
+	"Welcome to DayBreak Ridge Reborn\n"
+	"It is VERY important that you supply a valid email\n"
 	"after you create your character!  If you do not have an email\n"
 	"address, you CAN still play, but you must talk to an arch.\n"
-        "You may either login a temp char and immediately contact an arch, or\n"
-	"use the guest account (password: guest) to talk to an arch.\n\n"
+     "You can login as a temp char and immediately contact an arch.\n\n"
         "Email: ", this_object());
     input_to("enter_email"); 
   } 
@@ -326,13 +324,20 @@ static void enter_email(string str) {
         input_to("enter_email"); 
         return; 
       } 
-    if(EMAIL_D->check_dup_email(str, __Name)) {
+
+// TLNY2020 removed duplicate email log out.
+   
+ if(EMAIL_D->check_dup_email(str, __Name)) {
       message("logon", "That email address is already in use.\n"
                        +sprintf("The player using it is: %s", 
         (string)EMAIL_D->query_player(str))+"\n", this_object());
-      internal_remove();
-      return;
+     // internal_remove();
+     __Player->set_email(str); 
+    message("logon", "\n", 
+      this_object()); 
+    input_to("enter_real_name"); 
     }
+
     __Player->set_email(str); 
     message("logon", "\nReal name (optional): ", 
       this_object()); 

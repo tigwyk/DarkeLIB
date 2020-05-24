@@ -11,10 +11,14 @@ void create() {
     set_property("indoors", 1);
     set("short", "You are standing in a long stone passage that leads to "
 "the southwest and the northeast.\n");
-    set("long", "You are standing in a long passage that leads to the "
-"southwest and the northeast. The floor of the passage is cracked and "
-"broken in several places. Many years of errosion has caused major "
-"damage in this area of the temple.\n");
+    set("long", @ext You are standing in a long passage that leads to the 
+southwest and the northeast. The floor of the passage is cracked and 
+broken in several places. Many years of errosion has caused major 
+damage in this area of the temple.
+      0  
+     /   
+    @
+ext);
     set_exits( ({UNDER+"dm34" }),
                ({"northeast" }));
     set_items( ([

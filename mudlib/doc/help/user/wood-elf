@@ -12,18 +12,34 @@ demeanor.  Meditation on the balance of the world and the degree
 of ites harmony with the divine music, a daily ritual that replaces
 sleep, hinders the triumph of evil in most.
 
+-=-=-=- Stat Bonuses -=-=-=- 
+Strength:           ---
+Constitution:       ---
+Intelligence:       +5
+Wisdom:             +5
+Dexterity:          +10
+Charisma:           +5 
+  
+-=-=-=-=-=- Abilities -=-=-=-=-=-     
+Body Size:         Medium             
+HP Regen:          Normal                
+MP Regen:          Above Avg               
+Natural Weapons:   Crushing Hands     
+Sight:             Dark Vision
+         
++------ Special Abilities ------+     
+Ambidexterity   
++-------------------------------+     
 
-SUMMARY:
+-=-=-=-=-= Skills =-=-=-=-=-
+Sorcery                +  5%
+conjuration            +  5%
+woodland stealth       +  5%
 
-Dex: High          Str: Avg        Con: Avg
-Int: Above Avg     Wis: Avg        Char: Above Avg
+-=-=-=-=-= Spells =-=-=-=-=-
+none
 
-Sight: Night Vision
-HP Regen: Nil
-SP Regen: Above Avg
-Natural Weaponry: Above Avg
-Natural Armour: Nil
-Ambidextry: Yes
-Innate spells/skills: Both
-Exp Modifier: Nil
- 
+    +-----------------Experience Gain Rates-----------------+
+    |                    Normal                             |
+    +-------------------------------------------------------+
+

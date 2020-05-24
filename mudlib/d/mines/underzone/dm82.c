@@ -12,12 +12,18 @@ void create() {
     set("short", "You are standing in a cramped side tunnel. The walls "
 "appear to have been mined recently. The floor is "
 "covered with a large amount of straw and other debris.");
-    set("long", 
-"You are standing in a cramped side tunnel somewhere in the Mining "
-"Complex. The cold walls stretch off in front of you, filled with pits "
-"and fresh cracks from the recent mining of the Dwarves.\nYou can see "
-"fresh soot marks on the ceiling here.\nThe floor is "
-"covered with a large amount of straw and other debris\n");
+    set("long",@ext 
+"You are standing in a cramped side tunnel somewhere in the Mining 
+"Complex. The cold walls stretch off in front of you, filled with pits 
+"and fresh cracks from the recent mining of the Dwarves. You can see 
+"fresh soot marks on the ceiling here. The floor is 
+"covered with a large amount of straw and other debris
+    0   
+    |   
+    @
+    |
+    0
+ext);
     set_exits( ({ UNDER+"dm81",UNDER+"dm83"}),
       ({ "south","north" }) );
 //Trap Code Variable

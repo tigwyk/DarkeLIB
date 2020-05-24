@@ -12,7 +12,7 @@ create() {
     set_name("gatekeeper");
     set_id( ({ "gatekeeper", "guard" }) );
     set_level(8);
-    set_short("gatekeeper");
+    set_short("[8]gatekeeper");
     set_long("A bearded gatekeeper stands stone-face at his post."
       );
     set("race", "storm-giant");

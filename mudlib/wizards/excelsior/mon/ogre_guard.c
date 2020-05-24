@@ -21,9 +21,9 @@ void create() {
 	::create();
 	set_name("guard");
 	set("id",({"guard","a guard"}) );
-	set_level( 14 );
+	set_level( 18 );
 	set_gender("male");
-	set("short","An immense ogre guard");
+	set("short","[18]immense ogre guard");
 	set("long","This guard is walking around ON the gnomes "+
 			"stabbing various ones with his spear. He is very ugly and "+
 			"incredibly mean looking.");

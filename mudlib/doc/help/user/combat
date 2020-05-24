@@ -1,7 +1,7 @@
 Combat Docs
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 
-     	Combat in darkeMUD is both entertaining and deadly.  It will 
+     	Combat in DayBreak is both entertaining and deadly.  It will 
 require some getting used to before you can go up against difficult 
 monsters without fear of instant death.  At its most basic level, combat 
 consists of 2 second turns in which every participant in combat gets a
@@ -90,7 +90,7 @@ notice that this is not so rare is you try to attack a particularly
 awesome monster with no armour!
 
 	Basically, the critical hit system is a large part of what makes 
-combat on DarkeMUD so colorful.  There are probably upwards of several 
+combat on DayBreak so colorful.  There are probably upwards of several 
 thousand possible critical hit results with more on the way.  Hopefully, 
 you will find ways of exploiting critical hits to do your bidding, but I 
 haven't figured out how to, so good luck!

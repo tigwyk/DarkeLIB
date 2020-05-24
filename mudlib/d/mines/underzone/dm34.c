@@ -17,11 +17,17 @@ void create() {
     set_property("no attack", 1);
     set_property("no spell", 1);
     set("short", "You are standing in some sort of underground temple.\n");
-    set("long", 
-     "You are standing in some sort of ancient underground temple. The "
-     "walls are covered with huge murals depicting the history of the "
-     "Dwarves. Three corridors lead out of the chamber, each between "
-     "a set of massive stone pillars.\n");
+    set("long",@ext 
+     You are standing in some sort of ancient underground temple. The 
+     walls are covered with huge murals depicting the history of the 
+     Dwarves. Three corridors lead out of the chamber, each between 
+     a set of massive stone pillars.
+    0   
+    |   up   
+    @
+   / \
+  0   0
+ext);
     set_exits( ({ UNDER+"dm44",UNDER+"dm35",UNDER+"dm36",UNDER"dm37" }),
                ({ "up","southwest","southeast","north" }) );
     set_items( ([

@@ -13,7 +13,7 @@ create() {
     set_name("pit boss");
     set_id( ({ "pit boss", "boss", "nomad" }) );
     set_level(16);
-    set_short("pit boss");
+    set_short("[16]pit boss");
     set_long("This bearded nomad operates the roulette table for Babba.  He is lean "+
       "and appears talented at the art of running a gambling table... even though "+
       "he lacks a left arm."

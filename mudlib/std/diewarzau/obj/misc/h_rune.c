@@ -3,7 +3,8 @@ inherit "/std/diewarzau/obj/misc/rune";
 static int hb_on;
 static int heal_status;
 
-int living_filter(object who) { return living(who); }
+int living_filter(object who) {return living(who);}
+//{return (int)who->is_player();}
 
 void create() {
   ::create();
@@ -32,8 +33,9 @@ void heart_beat() {
   if(heal_status > 0)
     return;
     heal_status = 6;
-  inv = filter_array(all_inventory(environment()), "living_filter",
-      this_object());
+    
+  inv = filter_array(all_inventory(environment()), 
+			  "living_filter", this_object());
   if(!inv || !sizeof(inv)) {
     hb_on = 0;
       set_heart_beat(1);
@@ -41,8 +43,14 @@ void heart_beat() {
   }
   i = sizeof(inv);
   while(i--) {
+ //HONSPRON 2020
+  if (inv[i]->query_max_hp() > inv[i]->query_hp() || inv[i]->query_max_mp() > inv[i]->query_mp())
     message("info", "%^CYAN%^%^BOLD%^The rune heals you.", inv[i]);
-    inv[i]->do_healing((int)inv[i]->calculate_healing());
+    inv[i]->do_heal();
+    	if (inv[i]->query_max_hp() > inv[i]->query_hp());
+    		inv[i]->add_hp(100);
+    	if (inv[i]->query_max_mp() > inv[i]->query_mp());
+    		inv[i]->add_mp(100);
   }
   return;
 }

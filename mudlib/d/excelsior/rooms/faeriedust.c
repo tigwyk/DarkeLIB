@@ -53,7 +53,7 @@ set("short","The city entrance");
             "in a city this huge.", "sign": "It is very dirty. You wonder what it " +
             "'read's.." ]) );
 	set_exits((["southwest":"/wizards/excelsior/rooms/square",
-	"leave":"/d/damned/virtual/room_16_20.world"]));
+	"leave":"/d/damned/virtual/room_13_6.world"]));
 	restore_object("/wizards/excelsior/rooms/news");
 	people = ({});
 	reset();

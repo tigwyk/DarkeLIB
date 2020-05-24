@@ -82,39 +82,53 @@ int not_party(object who, object caster) {
     object owner, owner2;
     string cparty;
 
-    if(who == caster) return 0;
-    if(!filter_area(who)) return 0;
+     if(who == caster)
+	return 0;
+    if(!filter_area(who))
+	return 0;
     cparty = (string)PARTY_OB->party_member(caster);
     if(caster->is_player()) {
-      if(who->is_pet() &&
-	 (string)who->query_owner() == (string)caster->query_name())
-	return 0;
-      if(cparty) {
-	if(who->is_player() && (string)PARTY_OB->party_member(who) ==
-	   cparty) return 0;
-	if(who->is_pet() && stringp(who->query_owner()) &&
-	   (owner=find_player((string)who->query_owner()))) {
-	  if((string)PARTY_OB->party_member(owner) ==
-	     (string)PARTY_OB->party_member(caster)) return 0;
+	if(who->is_pet() && (string)who->query_owner() == (string)caster->query_name())
+	    return 0;
+	if(who->is_copy() && who->query_copy_of() == caster->query_true_name())
+	    return 0;
+	if(cparty) {
+	    if(who->is_player() && (string)PARTY_OB->party_member(who) == cparty)
+		return 0;
+	    if(who->is_pet() && stringp(who->query_owner()) && (owner=find_player((string)who->query_owner()))){
+		if((string)PARTY_OB->party_member(owner) == (string)PARTY_OB->party_member(caster))
+		    return 0;
+
+	    }
+	    if(who->is_copy() && stringp(who->query_copy_of()) && (owner=find_player((string)who->query_copy_of())))
+		if((string)PARTY_OB->party_member(owner) == (string)PARTY_OB->party_member(caster))
+		    return 0;
 	}
-      }
     }
-    else if(caster->is_pet()) {
-      if((string)caster->query_owner() == (string)who->query_name())
-	return 0;
-      if(stringp(caster->query_owner()) &&
-	 (owner=find_player((string)caster->query_owner()))) {
-	if(cparty=(string)PARTY_OB->party_member(owner)) {
-	  if(who->is_player() && (string)PARTY_OB->party_member(who) ==
-	     (string)PARTY_OB->party_member(owner)) return 0;
-	  if(who->is_pet() && stringp(who->query_owner()) &&
-	     (owner2=find_player((string)who->query_owner()))) {
-	    if((string)PARTY_OB->party_member(owner) == 
-	       (string)PARTY_OB->party_member(owner2)) return 0;
-	  }
-	}
-      }
+    else
+    if(caster->is_pet()) {
+	if((string)caster->query_owner() == (string)who->query_name())
+	    return 0;
+	if((string)caster->query_owner() == (string)who->query_owner())
+	    return 0;
+	if(member_array((string)who->query_owner(), caster->query_non_aggr()) != -1)
+	    return 0;
+	if(member_array((string)who->query_name(), caster->query_non_aggr()) != -1)
+	    return 0;
+	if(stringp(caster->query_owner()) && (owner=find_player((string)caster->query_owner())))
+	    if(cparty=(string)PARTY_OB->party_member(owner)) {
+		if(who->is_player() && (string)PARTY_OB->party_member(who) == (string)PARTY_OB->party_member(owner))
+		    return 0;
+		if(who->is_pet() && stringp(who->query_owner()) && (owner2=find_player((string)who->query_owner()))) 
+		    if((string)PARTY_OB->party_member(owner) == (string)PARTY_OB->party_member(owner2))
+			return 0;
+	    }
     }
+    if(caster->is_copy() && who->query_true_name() 
+      == caster->query_copy_of())return 0;
+    if(who->is_copy() && caster->query_true_name() 
+      == who->query_copy_of())return 0;
+
     return 1;
 }
 
@@ -349,12 +363,23 @@ void begin_casting(object caster, string arg, int power) {
     if(props["no target"]) xtra_arg = arg;
     else if(sscanf(arg, "%s with %s", target, xtra_arg) != 2)
       target = arg;
-      if(((int)caster->query_spell_level(props["name"]) < power || power == 0) && !props["ritual final"] && !props["ritual spell"] && !props["ritual dud"]) {
+// HONSPRON 2020 (TLNY2020 note this allows arches only to be able to cast any spell at
+// 200 skill level without knowing the spell or skill level. works only with _hotcast 
+//command)
+if(((int)caster->query_spell_level(props["name"]) < power || power == 0) && !props["ritual final"] && !props["ritual spell"] && !props["ritual dud"] && !archp(caster)) {
 	message("info","You do not know that spell at that power level.",
 	    caster);
 	remove();
 	return;
     }
+
+// HONSPRON 2020 (TLNY2020 note this allows arches only to be able to cast any spell at
+// 200 skill level without knowing the spell or skill level. works only with _hotcast 
+//command)
+if(!caster->query_skill(props["skill"]) && !props["ritual final"] && !props["ritual spell"] && !props["ritual dud"] && archp(caster)) {
+        caster->set_skill(props["skill"], 200);
+}
+
 if(!caster->query_skill(props["skill"]) && !props["ritual final"] && !props["ritual spell"] && !props["ritual dud"]) {
 	message("info","You do not know the skill "+props["skill"]+", "
 	    "which is required to cast this spell.",caster);
@@ -471,64 +496,83 @@ void set_element() {
 	case "air":
 	  props["element types"] = ({ "vacuum" });
 	  break;
-	case "cold":
-	  props["element types"] = ({ "cold" });
-	  break;
 	case "water":
 	  props["element types"] = ({ "impact" });
-	  break;
-	case "gravity":
-	  props["element types"] = ({ "stress", "crushing" });
-	  break;
-	default:
-	case "fire":
-	  props["element types"] = ({ "fire", "stress" });
-	  break;
-	case "dark":
-	  props["element types"] = ({ "cold", "depression" });
-	  break;
-	case "inertia":
-	  props["element types"] = ({ "impact", "stress" });
 	  break;
 	case "earth":
 	  props["element types"] = ({ "impact", "crushing" });
 	  break;
-	case "electricity":
-	  props["element types"] = ({ "electricity", "fire", "impact" });
-	  break;
-	case "divine":
-	  props["element types"] = ({ "holy" });
-	  break;
-	case "sinister":
-	  props["element types"] = ({ "vacuum" });
-	  break;
-	case "balance":
-	  props["element types"] = ({ "vacuum", "holy" });
-	  break;
-	case "ice":
-	  props["element types"] = ({ "impact", "cold" });
+	default:
+	case "fire":
+	  props["element types"] = ({ "fire", "stress" });
+	  break;  
+	case "cold":
+	  props["element types"] = ({ "cold" });
 	  break;
 	case "wind":
 	  props["element types"] = ({ "impact", "vacuum" });
 	  break;
+	case "ice":
+	  props["element types"] = ({ "impact", "cold" });
+	  break;
+	case "electricity":
+	  props["element types"] = ({ "electricity", "fire", "impact" });
+	  break;
+	case "inertia":
+	  props["element types"] = ({ "impact", "stress", "crushing" });
+	  break;  
 	case "plasma":
 	  props["element types"] = ({ "plasma", "fire", "electricity" });
 	  break;
 	case "vacid":
 	  props["element types"] = ({ "cold", "stress", "impact" });
 	  break;
-	case "aether":
-	  props["element types"] = ({ "aether", "stress" });
-	  break;
 	case "chaos":
 	  props["element types"] = ({ "stress", "disruption" });
 	  break;
-	case "time":
-	  props["element types"] = ({ "time" , "stress" });
+	case "aether":
+	  props["element types"] = ({ "aether", "stress" });
 	  break;
 	case "nexus":
 	  props["element types"] = ({ "disruption", "aether", "stress" });
 	  break;
+
+		
+	case "gravity":
+	  props["element types"] = ({ "stress", "crushing" });
+	  break;
+	case "dark":
+	  props["element types"] = ({ "cold", "depression" });
+	  break;
+	case "sinister":
+	  props["element types"] = ({ "vacuum" });
+	  break;
+
+	case "divine":
+	  props["element types"] = ({ "holy" });
+	  break;
+	case "balance":
+	  props["element types"] = ({ "vacuum", "holy" });
+	  break;
+	case "time":
+	  props["element types"] = ({ "time" , "stress" });
+	  break;
+/* Need to add for elemental-mage
+stress lore
+strike lore
+Impact Lore
+Infernal Lore
+Vacuum lore
+disruption lore
+Darkness Lore
+Acid Lore
+Radiation Lore
+Holy lore
+Reflection Lore
+Royal Lore
+Sonic Lore
+
+*/
 	}
 	if(props["ele damage"]) {
 	  if(intp(props["ele damage"]))

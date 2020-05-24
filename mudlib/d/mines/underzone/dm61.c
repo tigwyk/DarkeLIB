@@ -10,12 +10,17 @@ void create() {
     set_property("light", 0);
     set_property("indoors", 1);
     set("short", "You are standing in the office of the paymaster.");
-    set("long", 
-"You have entered a small dirty room. The stone walls are covered "
-"with hundreds of little scraps of paper and receipts. There is a "
-"large desk in the back of the room that is also piled high with "
-"a large assortment of papers. Against the other wall is a smaller "
-"table with a large balance. Above the table is a painting.");
+    set("long",@ext 
+You have entered a small dirty room. The stone walls are covered 
+with hundreds of little scraps of paper and receipts. There is a 
+large desk in the back of the room that is also piled high with 
+a large assortment of papers. Against the other wall is a smaller 
+table with a large balance. Above the table is a painting.
+
+    @
+        out
+    
+ext);
     set_exits( ({ UNDER+"dm60"}),
       ({ "out" }));
     set_items( ([

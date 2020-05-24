@@ -1,5 +1,5 @@
 #include <std.h>
-#include <nevin.h>
+#include "nevin.h"
 
 inherit ROOM;
 
@@ -9,12 +9,14 @@ void create() {
 	set_property("light", 1);
 	set_property("no castle", 1);
 	set("short", "Mouth of the Canyon");
-	set("long",
-		"Directly to the east is a large open area caused by "
-		"erosion upon the canyon walls.  You can make out "
-		"all manners of weapons and armor scattered upon the "
-		"ground.  Unfortunately it is all rusted and burned."
-	);
+	set("long",@ext
+		Directly to the east is a large open area caused by 
+		erosion upon the canyon walls.  You can make out 
+		all manners of weapons and armor scattered upon the 
+		ground.  Unfortunately it is all rusted and burned.
+
+ 0--@--0	
+ext);
 	set_listen("default", "Your voice bounces back and forth as you hum a hiking tune.");
 	set_items( ([
 		"walls":  "Black marks scar the walls from top to bottom.",

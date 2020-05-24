@@ -24,12 +24,16 @@ void create() {
 	set_property("indoors",1);
 	set_property("no castle",1);
 	set("short","In a prison cell");
-	set("long","You are in a tiny prison cell and you get the feeling that prisoners "+
-		"in this jail are not treated very well. There is blood on the wall of "+
-		"this cell from 'interrogations' that have happened here. These basically "+
-		"consist of a prisoner getting the crap beatin out of him until he "+
-		"confesses to whatever the torturer wants him to."+
-		"There is a small toilet on one wall.");
+	set("long",@ext You are in a tiny prison cell and you get the feeling that prisoners 
+		in this jail are not treated very well. There is blood on the wall of 
+		this cell from 'interrogations' that have happened here. These basically 
+		consist of a prisoner getting the crap beatin out of him until he 
+		confesses to whatever the torturer wants him to.
+		There is a small toilet on one wall.
+    0   
+    |   
+    @
+ext);
 	set_items((["toilet":"It is out in the open for guards to see.",
 		({"cell door","door","cell"}):"It is made out of bars that guards can "+
 			"see right through.",

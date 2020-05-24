@@ -26,8 +26,13 @@ create() {
       case 8:zlevel=7;break;
       case 9:zlevel=8;break;
     }
-    set_level(zlevel);
-    set_short("citizen");
+if (zlevel == 6) set_short("[6]citizen");
+else 
+if (zlevel == 7) set_short("[7]citizen");
+else
+if (zlevel == 8) set_short("[8]citizen");
+else set_short("[5]citizen");
+	set_level(zlevel);
     set_long("The citizen is tending to the daily chores." 
       );
     set("race", "pech");

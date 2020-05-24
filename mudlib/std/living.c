@@ -323,6 +323,26 @@ void do_healing(int x) {
     int tmp, i;
     mapping limb_info;
     string *severed;
+    string mind;
+    int level, nlevel, exp, nexp;
+    mixed lexp;
+
+    level=this_player()->query_level();
+    nlevel=level+1;
+    exp=this_player()->query_exp();
+    nexp="/adm/daemon/advance_d"->get_exp(nlevel);
+    lexp=nexp-exp;
+            switch((int)this_player()->percent_buffer()) {
+            case 0..5: mind = "clear"; break;
+            case 6..25: mind = "almost clear"; break;
+            case 26..50: mind = "slightly fuzzy"; break;
+            case 51..75: mind = "clouded"; break;
+            case 76..89: mind = "very fuzzy"; break;
+            case 90..99: mind = "%^MAGENTA%^full of facts%^RESET%^"; break;
+            case 100..110: mind = "%^GREEN%^OVER FOF%^RESET%^"; break;
+            default: mind = "clear"; break;
+            }
+
 
     if(this_object() && this_object()->is_player()) {
 	this_object()->add_exp2(0);
@@ -363,10 +383,25 @@ void do_healing(int x) {
           this_object()->add_hp((1 + (int)this_object()->query_potion_healing() / 5));
       }
     if(this_object()->is_player() && (string)this_object()->
-      getenv("SCORE") != "off" && !(query_hp() >= query_max_hp() &&
+      getenv("SCORE") == "on" && !(query_hp() >= query_max_hp() &&
 	query_mp() >= query_max_mp()))
-	message("info","hp: "+query_hp()+" ("+query_max_hp()+")  mp: "+
-	  query_mp() + " ("+query_max_mp()+")", this_object());
+message("info","%^BOLD%^RED%^hp:%^BOLD%^RED%^"+this_player()->query_hp()+"/"+this_player()->query_max_hp()+
+        "%^CYAN%^  mp:%^BOLD%^CYAN%^"+this_player()->query_mp()+"/"+this_player()->query_max_mp()+
+        " %^GREEN%^experience:%^BOLD%^WHITE%^"+lexp+""
+        " %^YELLOW%^Mind:%^BOLD%^WHITE%^"+mind+"%^RESET%^", this_object());
+	//message("info","hp: "+query_hp()+" ("+query_max_hp()+")  mp: "+
+	  //query_mp() + " ("+query_max_mp()+")", this_object());
+//TLNY2020 Made this change for Status on prompt
+
+//TLNY2020 added in so as long as mind status is not clear show prompt
+
+    if(this_object()->is_player() && (string)this_object()->
+      getenv("SCORE") == "on" && mind != "clear")
+message("info","%^BOLD%^RED%^hp:%^BOLD%^RED%^"+this_player()->query_hp()+"/"+this_player()->query_max_hp()+
+        "%^CYAN%^  mp:%^BOLD%^CYAN%^"+this_player()->query_mp()+"/"+this_player()->query_max_mp()+
+        " %^GREEN%^experience:%^BOLD%^WHITE%^"+lexp+""
+        " %^YELLOW%^Mind:%^BOLD%^WHITE%^"+mind+"%^RESET%^", this_object());
+
     if(this_object()->query_property("limb regen") &&
       !this_object()->query_ghost()) {
 	severed = (string *)this_object()->query_severed_limbs();

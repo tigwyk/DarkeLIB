@@ -10,15 +10,18 @@ void create() {
     set_property("light", 0);
     set_property("indoors", 1);
     set("short", "You are standing in a large room boarding a river.");
-    set("long", 
-"You have entered a large room bordering an underground river. "
-"The water isn't moving very fast, but you can hear a tremendous "
-"roar coming from further downstream. There must be a large "
-"waterfall there. The sounds of the falling water echo through "
-"the chamber and hurt your ears. By the edge of the river is a dock "
-"of some sort. The heavy wooden platform reachs out into the river, "
-"connecting to two large wooden pillars submerged in the deep water.\n" 
-       );
+    set("long",@ext 
+You have entered a large room bordering an underground river. 
+The water isn't moving very fast, but you can hear a tremendous 
+roar coming from further downstream. There must be a large 
+waterfall there. The sounds of the falling water echo through 
+the chamber and hurt your ears. By the edge of the river is a dock 
+of some sort. The heavy wooden platform reachs out into the river, 
+connecting to two large wooden pillars submerged in the deep water.      
+   
+ 0--@
+       river
+ext);
     set_exits( ({ UNDER+"dm14", UNDER+"dm16" }),
       ({ "west", "river" }) );
     set_items( ([

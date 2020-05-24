@@ -7,9 +7,10 @@ create() {
     	::create();
    	set_name("fisherman");
     	set_id( ({ "citizen", "fisherman" }) );
-    	set_short("A fishing citizen of Kuril");
+    	set_level(7);
+    	set_short("[7]A fishing citizen of Kuril");
    	set("aggressive", 0);
-  	set_level(7);
+
     	set_long(
 		"Looking down upon the dark blue waters of the ocean, "
 		"the citizen casts his fishing pole into the murky waters."

@@ -21,15 +21,21 @@ void create() {
 set_property("light",1);
 set_property("indoors",0);
 set("short","Outside the tunnel");
-set("long","South of here the street you are on enters a large tunnel, "+
-"and the outcast quarter. The outcast quarter is an area where non-"+
-"human residents of the city are forced to live. You shudder to think "+
-"of what the conditions must be like there. You shudder so hard you "+
-"almost turn and run right out of the city, but you regain control and "+
-"remain where you are. There are several torches here shining proudly "+
-"and doing there best to light up the area, because little light gets "+
-"here from above. There is also a sign here. Perhaps you should look "+
-"at these things more closely.");
+set("long",@ext South of here the street you are on enters a large tunnel, 
+and the outcast quarter. The outcast quarter is an area where non-
+human residents of the city are forced to live. You shudder to think 
+of what the conditions must be like there. You shudder so hard you 
+almost turn and run right out of the city, but you regain control and 
+remain where you are. There are several torches here shining proudly 
+and doing there best to light up the area, because little light gets 
+here from above. There is also a sign here. Perhaps you should look 
+at these things more closely.
+    0   
+    |   
+    @
+    |
+    0
+ext);
 set_items( ([ ({"street","tunnel"}):"The street enters a tunnel.",
 "sign":"The sign informs you that you are on street 27d","torches":
 "One of the torches looks loose. You could probably grab it." ]) );

@@ -10,11 +10,15 @@ void create() {
     set_property("light", 2);
     set_property("indoors", 1);
     set("short", "The New Faerie Dust board room");
-    set("long",
-        "This is where explorers of New Faerie Dust can post their problems, "+
-        	"comments, suggestions, or even (gasp) complaints. You then see "+
-        	"a small wastebasket here, which may be an even better place to post "+
-        	"those complaints.");
+    set("long",@ext
+        This is where explorers of New Faerie Dust can post their problems, 
+        	comments, suggestions, or even (gasp) complaints. You then see 
+        	a small wastebasket here, which may be an even better place to 
+            post those complaints.
+    @
+    |
+    0
+ext);
 	set_items(([({"trash can","waste basket","basket"}):"You just can't seem to "+
 		"figure out how to post something on it!"
 		]));

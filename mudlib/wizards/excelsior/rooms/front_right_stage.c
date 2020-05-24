@@ -8,14 +8,22 @@ void create() {
 	set_property("light",-1);
 	set_property("indoors",1);
 	set("short","To the right of the stage");
-	set("day long","You are walking in front of the seats to the right of the "+
-		"stage. If it were night time and people were trying to watch a play they "+
-		"may be getting quite mad at you. There is a passageway to your northeast that "+
-		"leads to the back stage area.");
-	set("night long","You are walking in front of many angry people who want to "+
-		"watch the play. You are preventing this. It is not as bad, however, "+
-		"as the anger of the people to your west. To the northeast is a passageway "+
-		"that appears to lead to the back stage area.");
+	set("day long",@ext You are walking in front of the seats to the right of the 
+		stage. If it were night time and people were trying to watch a play they 
+		may be getting quite mad at you. There is a passageway to your northeast that 
+		leads to the back stage area.
+      0 
+     / 
+ 0--@
+ext);
+	set("night long",@ext You are walking in front of many angry people who want to 
+		watch the play. You are preventing this. It is not as bad, however, 
+		as the anger of the people to your west. To the northeast is a passageway 
+		that appears to lead to the back stage area.
+      0 
+     / 
+ 0--@
+ext);
 	set_items( (["people":"You make a better door then a window.",
 		"stage":"To your northwest a bit",
 		"passageway":"To your northeast. Check it out." ]) );

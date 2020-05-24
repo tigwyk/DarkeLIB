@@ -1,0 +1,104 @@
+Fighter     Arch-Mage           Cleric      Chaotic-Lord
+Thief       Elementalist        War-Priest  Nightblade
+Tinker      Enchanter           Paladin     Sword-Mage
+            Necromancer                     Dark-Paladin
+            Nethermancer                    Assassin
+            Elemental-Mage
+			
+"fighter", "thief", "tinker", "arch-mage", "elementalist", "enchanter", "necromancer", "nethermancer", "elemental-mage", "cleric", "war-priest", "paladin", "chaotic-lord", "nightblade", "sword-mage", "dark-paladin",	"assassin"
+			
+Fighter = 
+Related:	"tinker", "dark-paladin", "paladin"
+Odd:		"arch-mage", "elementalist", "enchanter", "necromancer", "nethermancer", "elemental-mage", "chaotic-lord", "nightblade", "sword-mage", "assassin"
+Other:		"cleric", "war-priest", 
+			
+Thief =
+Related:	"tinker",  "assassin", "nightblade",
+Odd:		"arch-mage", "elementalist", "enchanter", "necromancer", "nethermancer", "elemental-mage", "chaotic-lord", "sword-mage", "dark-paladin",
+Hated by:	"cleric", "war-priest", "paladin"
+other:		"fighter", 
+
+Tinker =
+Related:	"fighter", "thief", "enchanter"
+Odd:		"arch-mage", "elementalist", "necromancer", "nethermancer", "elemental-mage", "sword-mage",
+other:		"chaotic-lord", "nightblade", "sword-mage", "dark-paladin", "assassin", "cleric", "war-priest", "paladin"
+
+Arch-Mage =
+Related:	"sword-mage", "elemental-mage", "elementalist"
+Odd:		"fighter", "thief", "tinker",  "cleric", "war-priest", "paladin", "assassin", "nightblade", "dark-paladin", "chaotic-lord"
+other:		"enchanter", "necromancer", "nethermancer"
+
+Elementalist = 
+Related:	"arch-mage", "elemental-mage",
+Odd:		"fighter", "tinker", "thief", "cleric", "war-priest", "paladin"
+other:		"enchanter", "necromancer", "nethermancer", "chaotic-lord", "nightblade", "sword-mage", "dark-paladin",	"assassin"
+
+Enchanter= 
+Related:	"tinker", "arch-mage", "necromancer", "nethermancer",
+odd:		"cleric", "war-priest", "paladin", "chaotic-lord", "nightblade", "sword-mage", "dark-paladin", "assassin"
+other:		"fighter", "thief",  "elementalist",  "elemental-mage",
+
+Necromancer=
+Related:	"nethermancer", "elementalist", "elemental-mage", "arch-mage", "enchanter",
+odd:		"fighter", "thief", "tinker", 
+Hated By:	"cleric", "war-priest", "paladin",
+other: 		"chaotic-lord", "nightblade", "sword-mage", "dark-paladin",	"assassin" 
+
+Nethermancer=
+Related:	"necromancer", "elementalist", "elemental-mage", "arch-mage", "enchanter",
+odd:		"fighter", "thief", "tinker", 
+Hated By:	"cleric", "war-priest", "paladin",
+other: 		"chaotic-lord", "nightblade", "sword-mage", "dark-paladin",	"assassin" 
+
+Elemental-mage=
+Related:	"sword-mage", "arch-mage", "elementalist"
+Odd:		"fighter", "thief", "tinker",  "cleric", "war-priest", "paladin", "assassin", "nightblade", "dark-paladin", "chaotic-lord"
+other:		"enchanter", "necromancer", "nethermancer"
+
+Cleric=
+Related:	"war-priest", "paladin",
+odd:		"sword-mage", "fighter", "thief", "tinker", "nightblade", "assassin",
+Hated By:	"necromancer", "nethermancer", "dark-paladin", "chaotic-lord", 
+Other: 		"arch-mage", "elementalist", "enchanter", "elemental-mage",
+
+War-Priest=
+Related:	"fighter", "paladin", "cleric",
+odd:		"nightblade", "assassin"
+Hated By:	"necromancer", "nethermancer", "dark-paladin", "chaotic-lord",
+other:		 "thief", "tinker", "arch-mage", "elementalist", "enchanter", "elemental-mage", "sword-mage", 
+
+Paladin=
+Related:	"fighter", "war-priest", "cleric",
+odd:		"nightblade", "assassin"
+Hated By:	"necromancer", "nethermancer", "dark-paladin", "chaotic-lord",
+other:		 "thief", "tinker", "arch-mage", "elementalist", "enchanter", "elemental-mage", "sword-mage", 
+
+Chaotic-Lord=
+Related:	"sword-mage", "dark-paladin",	
+Odd:		"assassin" "nightblade",
+Hated By:	"cleric", "war-priest", "paladin", 
+Other:		"fighter", "thief", "tinker", "arch-mage", "elementalist", "enchanter", "necromancer", "nethermancer", "elemental-mage",
+
+Nightblade=
+Related:	"assassin", "thief", "dark-paladin",
+Odd:		"arch-mage", "elementalist", "enchanter",
+Hated By:	"cleric", "war-priest", "paladin",  
+Other:		"fighter",  "tinker", "chaotic-lord", "sword-mage", "necromancer", "nethermancer", "elemental-mage", 
+
+Sword-Mage=
+Related:	"arch-mage", "elementalist", "elemental-mage",
+Odd:		"nightblade", "dark-paladin", "assassin"
+Other:		"fighter", "thief", "tinker", "enchanter", "necromancer", "nethermancer",  "cleric", "war-priest", "paladin", "chaotic-lord", 
+
+Dark-Paladin=
+Realted:	"nethermancer", "assassin", "nightblade", 
+Odd:		"arch-mage", "elementalist", "enchanter", "elemental-mage",	
+Hated by:	"cleric", "war-priest", "paladin",
+Other:		"fighter", "thief", "tinker",  "necromancer", "chaotic-lord", "sword-mage",
+
+Assassin=
+Realted:	"nethermancer", "dark-paladin", "nightblade", 
+Odd:		"arch-mage", "elementalist", "enchanter", "elemental-mage",	
+Hated by:	"cleric", "war-priest", "paladin",
+Other:		"fighter", "thief", "tinker",  "necromancer", "chaotic-lord", "sword-mage",
+

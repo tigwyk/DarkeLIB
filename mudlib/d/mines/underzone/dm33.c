@@ -12,14 +12,17 @@ void create() {
     set("short","You are crouched in a small room at the end of the tunnel. "
 "The center of the chamber has sunk down, breaking through the ceiling "
 "of a room below, and creating a huge hole.");
-    set("long", 
-"You are crouched in a small room at the end of the tunnel. The "
-"center of the chamber has sunk down, breaking through the ceiling "
-"of a room below, and creating a huge hole.\nYour feeble light in unable to penetrate very far "
-"into the lower level. You think you can see some sort of stone floor "
-"about forty feet below.\nA shiny new anchor bolt has been placed in "
-"the wall here.\n"
-        );
+    set("long",@ext 
+You are crouched in a small room at the end of the tunnel. The 
+center of the chamber has sunk down, breaking through the ceiling 
+of a room below, and creating a huge hole.
+Your feeble light in unable to penetrate very far 
+into the lower level. You think you can see some sort of stone floor 
+about forty feet below.\nA shiny new anchor bolt has been placed in 
+the wall here.
+   
+   @--0        
+ext);
     set_exits( ({ UNDER+"dm32" }),
       ({ "east" })
     );

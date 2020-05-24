@@ -6,7 +6,7 @@ void create() {
 	string var;
 	object ob;
 	int wc;
-	int HPBASE, LEV;
+	int HPBASE, LEV,zlevel;
 
 	HPBASE = 100;
 
@@ -14,15 +14,19 @@ void create() {
 	seteuid(geteuid());
 	set_name("watchman");
 	set("id", ({"watchman", "kuril city watchman" }) );
-	set_level(12 + random(5));
-	switch(random(5)) {
-		case 0: var = "A burly watchman"; break;
-		case 1: var = "A grim faced watchman"; break;
-		case 2: var = "A scarred watchman"; break;
-		case 3: var = "A strong watchman"; break;
-		case 4: var = "A vigilant watchman"; break;
-	}
-	this_object()->set("short", var);
+zlevel=(12+random(5));
+if (zlevel == 16) set_short("[16]A vigilant watchman");
+else 
+if (zlevel == 15) set_short("[15]A strong watchman");
+else
+if (zlevel == 14) set_short("[14]A scarred watchman");
+else
+if (zlevel == 13) set_short("[13]A grim faced watchman");
+else
+if (zlevel == 12) set_short("[12]A burly watchman");
+else set_short("[17]A vigilant watchman");
+	set_level(zlevel);
+
 	set("long",
 		"The elite of the city guard, the watchmen of Kuril are "
 		"dedicated to following the orders of their superiors."

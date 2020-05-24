@@ -12,7 +12,7 @@ create() {
     set_name("half-orc scout");
     set_id( ({ "scout","orc", "half-orc scout"}) );
     set_level(1);
-    set_short("half-orc scout");
+    set_short("[1]half-orc scout");
     set_long("The half-orc scout is hunting wood-elves." 
       );
     set("race", "half-orc");

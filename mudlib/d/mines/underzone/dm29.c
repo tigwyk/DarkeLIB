@@ -11,12 +11,16 @@ void create() {
     set_property("indoors", 1);
     set("short", "You are standing in a small tunnel that stretches to "
         "the west and the southeast.");
-    set("long", 
-"You are standing in a small tunnel that stretches to the west"
-"and the southeast. The walls are smooth and dry, except for areas "
-"where the miners were chipping away at some small mineral deposits."
-"The small gems sparkle as the light reflects off their surfaces."
-        );
+    set("long",@ext 
+You are standing in a small tunnel that stretches to the west
+and the southeast. The walls are smooth and dry, except for areas 
+where the miners were chipping away at some small mineral deposits.
+The small gems sparkle as the light reflects off their surfaces.
+
+ 0--@
+     \
+      0       
+ext);
     set_exits( ({ UNDER+"dm28",UNDER+"dm30" }),
       ({ "west", "southeast" })
     );

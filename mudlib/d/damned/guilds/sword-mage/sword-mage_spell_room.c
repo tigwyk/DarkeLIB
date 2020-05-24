@@ -71,6 +71,7 @@ void create() {
   add_spell("teleport", 17, 1);
   add_spell("create teleport beacon", 17, 1);
   add_spell("fire shield", 14);
+  add_spell("banshee blade", 20);
   add_spell("blizzard", 21);
   add_spell("meteor storm", 28);
   return;

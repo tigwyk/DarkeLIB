@@ -12,14 +12,14 @@ create() {
     ::create();
    set_name("Miner");
    set_id( ({ "Miner","dwarf","miner" }) );
-   set_short("A stocky dwarf Miner");
-   set_level(20);
+   set_short("[25]A stocky dwarf Miner");
+   set_level(25);
    set("long", "The Miner is covered in dust and dirt.");
    set_gender("male");
    set("race", "dwarf");
    set_max_hp(2500);
    set_hp(2500);
-   set_exp(400000);
+   //set_exp(400000);
    set_alignment(0);
    set_wielding_limbs( ({"right hand","left hand"}) );
    set_body_type("human");

@@ -1,7 +1,21 @@
 #include "../../daybreak.h"
 #include <std.h>
 
+#include <security.h>
+#include <dirs.h>
+#include <clock.h>
+
+
 inherit ROOM;
+
+//HONSPRON 2020
+void claim(object killer, object victim);
+void bounty_exp(object killer,object victim);
+int bounty(string str);
+string find_bounty(string nom);
+int pay(int amt, string nom, object killer);
+string mudtime(int time_sec);
+
 
 void init() {
     ::init();
@@ -13,14 +27,15 @@ void create() {
   set_property("light", 2);
   set_property("indoors", 1);
   add_exit(ROOMS+"dbvl2", "west");
+  //HONSPRON 2020
+  //add_exit(ROOMS+"shop/tavern_b", "down");
   set_short("The gold Lion Tavern");
   set("long",
   "The Silver Lion Tavern is a large room with several "
   "benches and tables and a bar at the back of the room.  "
   "The room is lit by a few lanterns which hang from the "
   "walls.  Several patrons mill about, enjoying the various "
-  "distilled and brewed spirits available here.  There is a "
-  "menu on the wall.");
+  "distilled and brewed spirits available here. \nThere is a menu on the wall.");
     set_items(
         (["benches":"They are sturdy and are fashioned of wood.",
            "menu":(: call_other, this_object(), "read", "menu" :),

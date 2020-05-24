@@ -27,8 +27,8 @@ void create() {
 	set_name("juggler");
 	set("id",({"juggler","joker","live entertainment","entertainment",
 			"joker the juggler","juggler the joker","Joker"}));
-	set_level(16);
-	set("short","Joker the Juggler");
+	set_level(19);
+	set("short","[19]Joker the Juggler");
 	set("long","This is Joker the jugggler, providing live entertainment "+
 		"to the people here at the market.  Not only is he a master juggler, "+
 		"but a master illusionist as well. If you want to talk to him, you "+

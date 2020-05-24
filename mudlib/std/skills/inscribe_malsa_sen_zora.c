@@ -42,8 +42,8 @@ void skill_func(object from, object at, string arg) {
   while(shadow(at, 0)) shadow(at, 0)->external_destruct(shadow(at, 0));
   tmp = (string *)at->query_property("runes");
   if(!tmp) tmp = ({});
-  if(sizeof(tmp) >= 4) {
-    message("info", "No armour may receive more than 4 runes.",
+  if(sizeof(tmp) >= 10) {
+    message("info", "No armour may receive more than 10 runes.",
       from);
     remove();
     return;
@@ -89,16 +89,13 @@ void finish_work(object from, object at) {
 //TLNY 2020 consider taking out holy protection and giving to bless armour for cleric 
  if(!wc["holy"]) wc["holy"] = 0;
   wc["holy"] += skill / 3 + 5;
-  if(!wc["time"]) wc["time"] = 0;
-  wc["time"] += skill / 3 + 5;
+//TLNY 2020 consider taking out unholy protection and giving to bless armour for cleric 
+ if(!wc["unholy"]) wc["holy"] = 0;
+  wc["unholy"] += skill / 3 + 5;
   if(!wc["aether"]) wc["aether"] = 0;
   wc["aether"] += skill / 3 + 5;
- if(!wc["acid"]) wc["acid"] = 0;
-  wc["acid"] += skill / 3 + 5;
  if(!wc["stress"]) wc["stress"] = 0;
   wc["stress"] += skill / 3 + 5;
- if(!wc["depression"]) wc["depression"] = 0;
-  wc["depression"] += skill / 3 + 5;
 if(!wc["infernal"]) wc["infernal"] = 0;
   wc["infernal"] += skill / 3 + 5;
   wc_keys = keys(wc);

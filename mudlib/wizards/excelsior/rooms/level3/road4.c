@@ -16,21 +16,33 @@ void create() {
 	set_property("no castle",1);
 	set_property("no mine",1);
 	set("short","The market continues");
-	set("day long","The open air New Faerie Dust market, featuring "+
-		"the products of farmers, tinkers, craftsmen, folk artists, "+
-		"live entertainment and almost anything else you can think "+
-		"of continues here, with very little that interests you. "+
-		"There is an alchemist (bah! like that works!) and a clothes "+
-		"washer who have set up shop in this part of the market. The road "+
-		"curves to the northeast here and appears to lead to a lookout "+
-		"of sorts.");
-	set("night long","Even during the night the streets are alive here. "+
-		"Though an alchemist's and clothes washer's shops are closed now, "+
-		"people continue on their way because many other shops in this "+
-		"market are opened all day and all night. There is a lot of demand "+
-		"for their services in a city like this! The road continues by "+
-		"curving to the northeast here. There appears to be some sort of "+
-		"vista point in that direction.");
+	set("day long",@ext The open air New Faerie Dust market, featuring
+		the products of farmers, tinkers, craftsmen, folk artists,
+		live entertainment and almost anything else you can think
+		of continues here, with very little that interests you.
+		There is an alchemist (bah! like that works!) and a clothes
+		washer who have set up shop in this part of the market. The road 
+		curves to the northeast here and appears to lead to a lookout 
+		of sorts.
+      0  
+     /   
+    @
+    |
+    0
+ext);
+	set("night long",@ext Even during the night the streets are alive here. 
+		Though an alchemist's and clothes washer's shops are closed now, 
+		people continue on their way because many other shops in this 
+		market are opened all day and all night. There is a lot of demand 
+		for their services in a city like this! The road continues by 
+		curving to the northeast here. There appears to be some sort of 
+		vista point in that direction.
+      0  
+     /   
+    @
+    |
+    0
+ext);
 	set_items(([({"farmers","craftsmen","folk artists","farmers","tinkers",
 			"live entertainment","almost anything else"}):"Though there "+
 			"are none here on this very spot which you stand, there "+

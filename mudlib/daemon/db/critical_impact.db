@@ -1,7 +1,8 @@
+#IMPACT CRIT
 (A):
-0..3:$A $V $T roughly, but no damage is done.:push:NO_EFFECT
-4..7:$A $V $T with $(APP) attack.:bruise:DAMAGE 1
-8..14:$A $V into $T painfully.:smash:DAMAGE 2
+0..3:$A $V $T roughly.:push:DAMAGE 1
+4..7:$A $V $T with $(APP) attack.:bruise:DAMAGE 2
+8..14:$A $V into $T painfully.:smash:DAMAGE 3
 15..20:$A $V $T to the ground.:knock:DAMAGE 4
 #TLNY2020 removed:STAT_MOD dex -5 3
 21..30:$A $V into $T forcefully.:slam:DAMAGE 5:SKILL_MOD attack -5 3
@@ -21,8 +22,8 @@
 96..99:$T $(VT) like crushed jelly from $(AP) blow.:feel:DAMAGE 30:STUN 5:CONT_DAMAGE 5 5
 100..100:A large weight crushes $(TP) arms and paralyzes them.::DAMAGE 25:LIMB_LOSS arm cripple:STUN 3
 (B):
-0..5:$T $(VT) from the hit but no damage is done.:sway:NO_EFFECT
-6..10:::DAMAGE 3
+0..5:$T $(VT) from the hit.:sway:DAMAGE 2
+6..10:$T $(VT) unbalanced from $(AP) attack.:are:DAMAGE 3
 11..20:$T $(VT) unbalanced from $(AP) attack.:are:DAMAGE 3:STUN 1
 21..30:$T $(VT) severely unbalanced by $(AP) attack.:are:DAMAGE 7:STUN 1
 31..40:$T $(VT) severely unbalanced by $(AP) attack.:are:DAMAGE 12:STUN 1
@@ -39,8 +40,8 @@
 96..99:$(AP) attack strikes $T in the head, knocking $(TO) flat!::DAMAGE 37:CONT_DAMAGE 10 3
 100..100:$A $V a mightly whack to $(TP) neck, temporarily paralyzing $(TO)!:deliver:DAMAGE 45:STUN 10:SKILL_MOD parry -100 10
 (C):
-0..5:::DAMAGE 1
-6..10:::DAMAGE 4
+0..5:$T $(VT) unbalanced by $(AP) attack.:are:DAMAGE 1
+6..10:$T $(VT) unbalanced by $(AP) attack.:are:DAMAGE 4
 11..20:$T $(VT) unbalanced by $(AP) attack.:are:DAMAGE 5:STUN 1
 21..30:$T $(VT) unbalanced by $(AP) attack.:are:DAMAGE 12:STUN 1
 31..40:$T $(VT) severely unbalanced by $(AP) attack.:are:DAMAGE 15:STUN 1
@@ -58,8 +59,8 @@
 96..99:$A $V a fierce blow to $(TP) chest, breaking several ribs.:deliver:DAMAGE 75
 100..100:A fierce blow from $A to $(TP) head crushes $(TPP) skull, sending tiny brain and bone fragments flying!::KILL
 (D):
-0..5:::DAMAGE 3
-6..10:::DAMAGE 6
+0..5:$T $(VT) unbalanced by $(AP) attack.:are:DAMAGE 3
+6..10:$T $(VT) unbalanced by $(AP) attack.:are:DAMAGE 6
 11..20:$T $(VT) unbalanced by $(AP) attack.:are:DAMAGE 6:STUN 1
 21..30:$T $(VT) unbalanced by $(AP) attack.:are:DAMAGE 15:STUN 1
 31..40:$T $(VT), severely unbalanced by $(AP) attack.:stagger:DAMAGE 15:STUN 1:SKILL_MOD parry -100 1
@@ -75,9 +76,9 @@
 96..99:$A $V a mighty strike to $(TP) side, driving bone into $(TPP) kidneys...OW!:deliver:DAMAGE 37:CONT_DAMAGE 25 40
 100..100:With a fierce blow to the chest, $A $V $(TP) heart and lungs to explode!:cause:KILL
 (E):
-0..5:::DAMAGE 4
-6..10:::DAMAGE 4:STUN 1
-11..20:::STUN 1:DAMAGE 13
+0..5:$T $(VT) from $(AP) mighty attack.:reel:DAMAGE 4
+6..10:$T $(VT) from $(AP) mighty attack.:reel:DAMAGE 4:STUN 1
+11..20:$T $(VT) from $(AP) mighty attack.:reel:DAMAGE 13:STUN 1
 21..30:$T $(VT) from $(AP) mighty attack.:reel:DAMAGE 22:STUN 1
 31..40:$T $(VT) sent flying by $(AP) attack, landing 10 feet from the point of impact.:are:DAMAGE 30:STUN 2
 41..50:$T $(VT) under the might of $(AP) attack!:stagger:DAMAGE 30:STUN 1:SKILL_MOD parry -100 1

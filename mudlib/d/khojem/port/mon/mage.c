@@ -35,7 +35,7 @@ create() {
     set_name("mage");
     set_id( ({ "wizened mage", "mage" }) );
     set_level(16);
-    set_short("wizened mage");
+    set_short("[16]wizened mage");
     set_long("The mage is old and mishapened.  He scowls at your presence."
       );
     set("race", "drow-elf");

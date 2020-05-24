@@ -17,14 +17,14 @@ void create() {
 	::create();
 	set_name("citizen");
 	set("id",({"citizen","happy citizen","comrade"}) );
-	set_level( 6 );
-	set("short","A mindless citizen");
+	set_level( 10 );
+	set("short","[10]mindless citizen");
 	set("long","This is a happy but ignorant and mindless citizen just minding "+
 		"his own business. Leave him alone.");
 	set("race","human");
 	set_gender("male");
 	set_body_type("human");
-	set_overall_ac( 4 );
+	set_overall_ac( 10 );
 	set_max_hp( 720 );
 	set_skill("attack",55);
 	set_skill("blunt",55);

@@ -15,7 +15,7 @@ create() {
     set_id( ({ "hyena", "dog" }) );
     mod=(random(2));
     set_level(5);
-    set_short("A blood-thirsty hyena");
+    set_short("[5]blood-thirsty hyena");
     set_long("A blood-frenzied hyena is attracted by the smell of blood.  "+
       "It bares its teeth and snarls at you."
       );

@@ -12,14 +12,19 @@ void create() {
     set_property("indoors", 1);
     set("short", "You are standing at the eastern end of the "
 "breakdown pile.");
-    set("long", 
-"You are standing at the eastern end of the breakdown pile. The "
-"large boulders block the entire tunnel to the west, except for a small passage "
-"that leads up into the middle of the pile of rubble. The carved "
-"tunnel, now clear of all but a few boulders, stretchs off to the "
-"east. Stacked against the walls of the tunnel are more crates. Some "
-"of the crates have been torn apart, leaving only a few rusty nails "
-"and busted hinges scattered among the debris." );
+    set("long",@ext 
+You are standing at the eastern end of the breakdown pile. The 
+large boulders block the entire tunnel to the west, except for a small passage 
+that leads up into the middle of the pile of rubble. The carved 
+tunnel, now clear of all but a few boulders, stretchs off to the 
+east. Stacked against the walls of the tunnel are more crates. Some 
+of the crates have been torn apart, leaving only a few rusty nails 
+and busted hinges scattered among the debris.
+
+       up
+    @--0
+        
+ext);
     set_exits( ({ UNDER+"dm27",UNDER+"dm29" }),
        ({ "up", "east" }));
     set_items( ([

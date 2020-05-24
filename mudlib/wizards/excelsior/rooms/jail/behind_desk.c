@@ -23,11 +23,16 @@ void create() {
 	set_property("light",3);
 	set_property("indoors",1);
 	set("short","Behind the guard's desk");
-	set("long","You are behind the guards desk of the NFDPF. This is where the "+
-		"supervising guard sits and makes sure things are going fine in the "+
-		"prison. On the north window is an open window with no bars on it. 'Not "+
-		"very secure' you think. There is a large desk that separates this area "+
-		"from the one to your south.");
+	set("long",@ext You are behind the guards desk of the NFDPF. This is where the 
+		supervising guard sits and makes sure things are going fine in the 
+		prison. On the north window is an open window with no bars on it. 'Not
+		very secure' you think. There is a large desk that separates this area
+		from the one to your south.
+
+    @
+    |
+    0
+ext);
 	set_items((["desk":"It is large and piled high with papers.",
 		"papers":"To many to sift through.",
 		"window":"It looks like you could go through the open window to the "+

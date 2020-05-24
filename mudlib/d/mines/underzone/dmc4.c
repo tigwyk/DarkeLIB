@@ -13,11 +13,15 @@ void create() {
     set_property("indoors", 1);
     set("short", "You are standing in a short hallway. There is a door "
     "to the north.\n");
-    set("long", 
-"You are standing in a short hallway. The low ceiling is covered in dirty "
-"cobwebs and mold. There is a sturdy looking door to the north. There "
-"is a large pool of ooze to the south.\n"
-       );
+    set("long",@ext 
+You are standing in a short hallway. The low ceiling is covered in dirty 
+cobwebs and mold. There is a sturdy looking door to the north. There 
+is a large pool of ooze to the south.
+    0   
+    |   
+    @
+        pool    
+ext);
     set_exits( ({ UNDER+"dmc3",UNDER+"dmc5" }),
       ({ "pool","north"})
     );

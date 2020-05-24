@@ -27,9 +27,17 @@ create() {
       case 8:zlevel=3;break;
       case 9:zlevel=4;break;
     }
-    set_level(zlevel);
+if (zlevel == 1) set_short("[1]wood-elf commoner");
+else 
+if (zlevel == 2) set_short("[2]wood-elf commoner");
+else
+if (zlevel == 3) set_short("[3]wood-elf commoner");
+else
+if (zlevel == 4) set_short("[4]wood-elf commoner");
+else set_short("[5]wood-elf commoner");
+	set_level(zlevel);
     zskill=8*zlevel;
-    set_short("wood-elf commoner");
+
     set_long("The wood-elf commoner is out tending to the daily chores." 
       );
     set("race", "wood-elf");

@@ -26,7 +26,7 @@ message("help",
 "This spell animates a corpse into a Dracolich, a powerful, undead dragon, who will serve you as an undead thrall.  "
 "She will serve you by fighting beside you in combat.  "
 "This is a long-term spell (see help long-term), and it takes very much real "
-"time to cast.  The spell must be cast on an embalmed corpse of level 1 or higher, which must "
+"time to cast.  The spell must be cast on an embalmed corpse of level 24 or higher, which must "
 "be prepared with the 'prepare corpse' skill.  If you are interrupted while casting, "
 "you may pick up again at a later time.",
 this_player());

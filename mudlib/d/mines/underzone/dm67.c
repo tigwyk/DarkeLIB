@@ -10,10 +10,13 @@ void create() {
     set_property("light", 0);
     set_property("indoors", 1);
     set("short", "You are standing in an mining tunnel.");
-    set("long", 
-"You are standing in a small tunnel. The rough walls are jagged and cut "
-"at sharp angles where the miners dug out gems. There is a thick layer "
-"of dust and debris on the floor.\n"); 
+    set("long",@ext 
+You are standing in a small tunnel. The rough walls are jagged and cut 
+at sharp angles where the miners dug out gems. There is a thick layer 
+of dust and debris on the floor.
+ 
+ 0--@--0
+ext); 
     set_exits( ({ UNDER+"dm3", UNDER+"dm68a" }),
       ({ "east", "west" })
     );

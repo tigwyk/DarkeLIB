@@ -19,8 +19,8 @@ void create() {
 	::create();
 	set_name("skeleton");
 	set("id",({"skeleton","wrath","skeleton guard"}));
-	set_level(12);
-	set("short","skeleton guard");
+	set_level(14);
+	set("short","[14]skeleton guard");
 	set("long","This skeleton isn't really enjoying the party, he is really just "+
 		"making sure no one gets out of line.");
 	set("race","wrath");

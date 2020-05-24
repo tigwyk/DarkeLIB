@@ -11,7 +11,7 @@ void create() {
   set_save(1);
 	set_overall_ac(1);
   set_level(15);
-  set_short("huge minotaur");
+  set_short("[15]huge minotaur");
   set_long("This intelligent looking animal stares right back at you.");
   set_aggr_status(0);
   return;

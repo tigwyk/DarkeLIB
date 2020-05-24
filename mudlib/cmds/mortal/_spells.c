@@ -35,7 +35,7 @@ int cmd_spells(string str) {
     skills = sort_array(skills,"alphabetize",this_object());
     list = ({});
     for(i=0;i<sizeof(skills);i++)
-        list += ({ sprintf("%-27s *%1d",capitalize(skills[i]),
+        list += ({ sprintf("%-26s *%1d             ",capitalize(skills[i]),
             (int)this_player()->query_spell_level(skills[i])) });
     message("info", "%^BOLD%^Your spells are:%^RESET%^\n%^BLUE%^%^BOLD%^"+
       repeat_string("-", 65)

@@ -11,13 +11,18 @@ void create() {
     set_property("light", 0);
     set_property("indoors", 1);
     set("short", "You are standing in an mining tunnel.");
-    set("long", 
-"You are standing in a damp mine tunnel somewhere within the "
-"Under'Drin Mining complex. Water slowly rolls down the walls in "
-"little streams, soaking the moldy straw that is lining the passage. "
-"You can see faint seams of mineral deposits in the walls.\n" 
-"There is an arch to the west, framed by several support beams.\n" 
-     );
+    set("long",@ext 
+You are standing in a damp mine tunnel somewhere within the 
+Under'Drin Mining complex. Water slowly rolls down the walls in 
+little streams, soaking the moldy straw that is lining the passage. 
+You can see faint seams of mineral deposits in the walls.
+There is an arch to the west, framed by several support beams.
+      0  
+     /   
+    @
+   /   arch
+  0      
+ext);
     set_exits( ({ UNDER+"dm7",UNDER+"dm8", UNDER+"dm5" }),
                ({ "arch", "southwest", "northeast" })
     );

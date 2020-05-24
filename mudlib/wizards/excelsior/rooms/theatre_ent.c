@@ -18,22 +18,32 @@ void create() {
 	set_property("night light",1);
 	set_property("indoors",0);
 	set("short","Theatre entrance");
-	set("day long","This is the entrance to the New Faerie Dust "+
-	"Theatre Company- one of the few places in the lower levels "+
-	"of the city that the rich attend. Lately, however, business "+
-	"has been down and the company is in trouble. They have already "+
-	"had to lay off several workers. During the day trash blows "+
-	"this way and that around the area. It is rather deserted here, "+
-	"except for a few squatters feebishly trying to set up camp. "+
-	"You know however that they will be removed as soon as night falls. "+ 		"There 
-is a ticket booth here.");
-	set("night long","You have arrived at the entrance to the New "+
-	"Faerie Dust Theatre Company. There is a long line of well off "+
-	"people waiting to get in to see tonights show. It sure doesn't "+
-	"seem like the theatre is doing bad to you. In fact, as you stand "+
-	"here gawking several people get quite mad at you for cutting in "+
-	"line. 'Wow,' you think, 'this must be the place to be!' There "+
-	"is a ticket booth here.");
+	set("day long",@ext This is the entrance to the New Faerie Dust 
+	Theatre Company- one of the few places in the lower levels 
+	of the city that the rich attend. Lately, however, business 
+	has been down and the company is in trouble. They have already 
+	had to lay off several workers. During the day trash blows 
+	this way and that around the area. It is rather deserted here, 
+	except for a few squatters feebishly trying to set up camp. 
+	You know however that they will be removed as soon as night falls.  		There 
+is a ticket booth here.
+    0   
+    |   
+ 0--@
+
+ext);
+	set("night long",@ext You have arrived at the entrance to the New 
+	Faerie Dust Theatre Company. There is a long line of well off 
+	people waiting to get in to see tonights show. It sure doesn't 
+	seem like the theatre is doing bad to you. In fact, as you stand
+	here gawking several people get quite mad at you for cutting in
+	line. 'Wow,' you think, 'this must be the place to be!' There
+	is a ticket booth here.
+    0   
+    |   
+ 0--@
+
+ext);
 	set_pre_exit_functions( ({"north"}) , ({"go_north"}) );
 	set_items( (["trash":"It seems to have a mind of its own, always "+
 		"seeming to find a new and unique way to blow.","squatters":

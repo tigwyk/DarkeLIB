@@ -15,17 +15,34 @@ combat, and represent some of the most powerful elementalists and chaotic
 lords on the planet.
 
 
-SUMMARY:
+-=-=-=- Stat Bonuses -=-=-=- 
+Strength:           +15
+Constitution:       +10
+Intelligence:       +15
+Wisdom:             -5
+Dexterity:          +10
+Charisma:           -25 
+  
+-=-=-=-=-=- Abilities -=-=-=-=-=-     
+Body Size:         Medium             
+HP Regen:          Good                
+MP Regen:          High               
+Natural Weapons:   Crushing Disruption Hands     
+Sight:             Above Avg
+         
++------ Special Abilities ------+     
+Resistance to Disruption
+Weakness to Holy 
++-------------------------------+     
 
-Dex: Above Avg      Str: High          Con: High
-Int: Very High      Wis: Below Avg     Char: Very Low
+-=-=-=-=-= Skills =-=-=-=-=-
+chaos magic            +  5%
+control demon          +  5%
 
-Sight: Above Avg 
-HP Regen: High
-SP Regen: Higher
-Natural Weaponry: Standard/Disruption (Above Avg)
-Natural Armour: Nil
-Ambidextry: Nil
-Innate spells/skills: Both
-Exp Modifier: Very Low
+-=-=-=-=-= Spells =-=-=-=-=-
+disruption bolt        *  1
+
+    +-----------------Experience Gain Rates-----------------+
+    |                        Very Low                       |
+    +-------------------------------------------------------+
 

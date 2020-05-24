@@ -3,7 +3,7 @@
 // eog metal as of 5-6-96
 // Excelsior 5-6-96
 
-#define AETHER_ELEMENTS ({"vacuum","electricity","fire","cold","holy"})
+#define AETHER_ELEMENTS ({"vacuum","electricity","fire","cold","holy","unholy"})
 #define A_NAME ((string)from->query_name())
 #define T_NAME ((string)to->query_name())
 #define MONEY_TYPES ({"gold","silver","mithril","electrum","copper",\
@@ -537,7 +537,6 @@ void go_to_hell(object from,object to) {
 	if(!to->is_player()) return;
 	to->move_player("/wizards/excelsior/crits/hell");
 }
-
 
 
 

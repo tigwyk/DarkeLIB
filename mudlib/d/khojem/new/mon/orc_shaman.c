@@ -13,7 +13,7 @@ create() {
     set_name("half-orc shaman");
     set_id( ({ "half-orc shaman","shaman" }) );
     set_level(6);
-    set_short("half-orc shaman");
+    set_short("[6]half-orc shaman");
     set_long("The dark, robed half-orc shaman stands before you.  "+
       "A hood is drawn up over his head and shadows his face from view.  "+
       "He is a short, stocky half-orc but you are wary of his powers." 

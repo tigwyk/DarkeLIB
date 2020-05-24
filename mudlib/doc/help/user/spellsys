@@ -1,11 +1,11 @@
-DarkeMUD Spell System
+DayBreak Spell System
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 
 Introduction
 -=-=-=-=-=-=
 
-     DarkeMUD has a very complex system of spellcasting with many spells 
+     DayBreak has a very complex system of spellcasting with many spells 
 available to players through the variety of guilds.  Here, we will 
 discuss the entire spell system, including learning spells, casting 
 spells, and other issues which may arise while spellcasting.
@@ -94,7 +94,7 @@ Moon Magi
 
      The Moon Mage guild is unique in that they have access to most 
 spells on the mud at base or slightly increased cost.  They, however, 
-suffer an important disadvantage.  Every spell in DarkeMUD is linked to 
+suffer an important disadvantage.  Every spell in DayBreak is linked to 
 one of the three moons: Warzau (red, governs combat and necromancy), 
 Ankh (blue, governs healing and protection), and Luna (green, governs 
 summoning and other sorceries).  If you wish to see what moon is linked 
