@@ -4,7 +4,7 @@ inherit "/std/spells/spell";
 void create() {
     ::create();
     set_property("name","call lightning");
-    set_property("skill","conjuration");
+    set_property("skill","jedi lore");
     set_property("casting time",8);
     set_property("base mp cost",42);
     set_property("dev cost",52);
