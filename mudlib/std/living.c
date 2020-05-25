@@ -385,8 +385,8 @@ void do_healing(int x) {
     if(this_object()->is_player() && (string)this_object()->
       getenv("SCORE") == "on" && !(query_hp() >= query_max_hp() &&
 	query_mp() >= query_max_mp()))
-message("info","%^BOLD%^RED%^hp:%^BOLD%^RED%^"+this_player()->query_hp()+"/"+this_player()->query_max_hp()+
-        "%^CYAN%^  mp:%^BOLD%^CYAN%^"+this_player()->query_mp()+"/"+this_player()->query_max_mp()+
+message("info","%^BOLD%^RED%^hp:%^BOLD%^WHITE%^"+this_player()->query_hp()+"/"+this_player()->query_max_hp()+
+        "%^CYAN%^  mp:%^BOLD%^WHITE%^"+this_player()->query_mp()+"/"+this_player()->query_max_mp()+
         " %^GREEN%^experience:%^BOLD%^WHITE%^"+lexp+""
         " %^YELLOW%^Mind:%^BOLD%^WHITE%^"+mind+"%^RESET%^", this_object());
 	//message("info","hp: "+query_hp()+" ("+query_max_hp()+")  mp: "+
@@ -394,14 +394,14 @@ message("info","%^BOLD%^RED%^hp:%^BOLD%^RED%^"+this_player()->query_hp()+"/"+thi
 //TLNY2020 Made this change for Status on prompt
 
 //TLNY2020 added in so as long as mind status is not clear show prompt
-
+/*
     if(this_object()->is_player() && (string)this_object()->
-      getenv("SCORE") == "on" && mind != "clear")
+      getenv("SCORE") == "on" && mind != "clear") {
 message("info","%^BOLD%^RED%^hp:%^BOLD%^RED%^"+this_player()->query_hp()+"/"+this_player()->query_max_hp()+
         "%^CYAN%^  mp:%^BOLD%^CYAN%^"+this_player()->query_mp()+"/"+this_player()->query_max_mp()+
         " %^GREEN%^experience:%^BOLD%^WHITE%^"+lexp+""
         " %^YELLOW%^Mind:%^BOLD%^WHITE%^"+mind+"%^RESET%^", this_object());
-
+      } */
     if(this_object()->query_property("limb regen") &&
       !this_object()->query_ghost()) {
 	severed = (string *)this_object()->query_severed_limbs();

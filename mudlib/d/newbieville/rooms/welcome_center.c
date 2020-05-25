@@ -47,9 +47,8 @@ string msg;
   msg =
 "Welcome new player! You should follow the rooms description and go up\n"
 "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=\n"
-"in this room you can%^YELLOW%^read board%^RESET%^ to see helpful posts from other players this is recommended if you are looking for what to do as a new player.\n\n"
-"It is suggested that you follow the rooms description for now and go up one room and gather the items on the 2 upper flows and then come back here to read the board and then go%^YELLOW%^out%^RESET%^ and follow the directions of that sign\n\n"
-"type in the command%^YELLOW%^'look sign'%^RESET%^ outside the castle and follow the directions on the next sign to travel to Daybreak\n";
+"In this room you can %^YELLOW%^read board%^RESET%^ to see helpful posts from other players this is recommended for new players.\n\n"
+"Follow the instructions in the room descriptions for now and go up one room, gather the items on the 2 upper floors and then come back here to read the board. Then go %^YELLOW%^out%^RESET%^ and follow the directions of that sign\n\n";
   this_player()->more(explode(msg, "\n"));
   return 1;
 }
