@@ -140,8 +140,8 @@ void adjust_exp() {
     rate = 2+next_lev_exp/11000;
     if((int)this_object()->query_level() > 19) rate /= 2;
     rate += rate * query_skill("quick study") / 200;
-    if(environment() && environment()->query_property("quick study"))
-	rate *= 2;
+    if(environment() && environment()->query_property("quick study")) rate *= 2;
+    if(environment() && environment()->query_property("newbie study")) rate *= 4;
     if(!login_flag && player_data["general"]["last adjust"]) {
 	rate *= (time() - player_data["general"]["last adjust"]) / 10;
 	login_flag = 1;
@@ -338,7 +338,7 @@ void do_healing(int x) {
             case 26..50: mind = "slightly fuzzy"; break;
             case 51..75: mind = "clouded"; break;
             case 76..89: mind = "very fuzzy"; break;
-            case 90..99: mind = "%^MAGENTA%^full of facts%^RESET%^"; break;
+            case 90..99: mind = "%^BOLD%^full of facts%^RESET%^"; break;
             case 100..110: mind = "%^GREEN%^OVER FOF%^RESET%^"; break;
             default: mind = "clear"; break;
             }
@@ -379,7 +379,7 @@ void do_healing(int x) {
 	this_object()->add_hp(-(1 + (int)this_object()->query_poisoning() / 5));
     }
       if(query_potion_healing()) {
-          message("info","%^WHITE%^%^BOLD%^You feel much better.",this_object());
+          message("info","%^WHITE%^BOLD%^You feel much better.",this_object());
           this_object()->add_hp((1 + (int)this_object()->query_potion_healing() / 5));
       }
     if(this_object()->is_player() && (string)this_object()->
@@ -428,7 +428,7 @@ message("info","%^BOLD%^RED%^hp:%^BOLD%^RED%^"+this_player()->query_hp()+"/"+thi
 		if(member_array(severed[i], (string *)RACE_D->
 		    query_wielding_limbs((string)this_object()->query("race"))) != -1)
 		    this_object()->add_wielding_limb(severed[i]);
-		message("info", "%^CYAN%^%^BOLD%^Your "+severed[i]+" grows back.",
+		message("info", "%^CYAN%^BOLD%^Your "+severed[i]+" grows back.",
 		  this_object());
 	    } else
 		healing[severed[i]+" regen"]--;

@@ -11,13 +11,12 @@ void create() {
     set_property("indoors", 0);
     set("short", "   0\n   | \n0--@--0\n   center \n   0\nTown Square.");
     set("long", @ext This is the town square of Newbieville. In every direction, dusty roads branch out to the ends of town. In front of you is a large Welcome Center sponsored by the local planetary tourism council.
-    %^B_RED%^If you are a new player you should type %^YELLOW%^center%^RESET%^
-   0   
-   |   
-0--@--0
+    
+   0            %^B_RED%^If you are a new player you should type %^YELLOW%^center%^RESET%^.
+   |            
+0--@--0         This room has an %^BOLD%^GREEN%^increased knowledge transfer%^RESET%^ rate.
    |   center
    0
-
 ext);
     add_exit(ROOMS+"welcome_center", "center");
     add_exit(ROOMS+"lightway", "east");
@@ -25,6 +24,7 @@ ext);
     add_exit(ROOMS+"majestyave", "north");
     add_exit(ROOMS+"commonstreet", "south");
     add_exit("d/damned/guilds/join_rooms/jedi_join", "down");
+    set_property("newbie study", 1);
 
 set_items(([
 "sign": (: call_other, this_object(), "read_sign" :),
