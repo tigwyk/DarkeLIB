@@ -10,7 +10,8 @@ void create() {
     set_property("light", 3);
     set_property("indoors", 0);
     set("short", "   0\n   | \n0--@--0\n   center \n   0\nTown Square.");
-    set("long", @ext This is the town square of Newbieville. In every direction, dusty roads branch out to the ends of town. In front of you is a large castle, presumably that of Lord Tailwind.%^B_RED%^If you are a new player you should type%^YELLOW%^castle%^RESET%^
+    set("long", @ext This is the town square of Newbieville. In every direction, dusty roads branch out to the ends of town. In front of you is a large Welcome Center sponsored by the local council.
+    %^B_RED%^If you are a new player you should type %^YELLOW%^center%^RESET%^
    0   
    |   
 0--@--0
