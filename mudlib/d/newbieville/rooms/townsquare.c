@@ -138,3 +138,16 @@ void close_door(){
    x = 0;
    return;
 }
+
+void reset(){
+  object h_rune;
+    ::reset();
+      if(!present("fountain")){
+      new("/d/daybreak/obj/fountain.c")->move(this_object());
+      }
+      if (!present("rune")) {
+    h_rune = new ("/std/diewarzau/obj/misc/h_rune");
+      h_rune->move(this_object());
+    }
+  }
+  
