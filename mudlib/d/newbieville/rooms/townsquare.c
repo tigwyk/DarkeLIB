@@ -9,16 +9,16 @@ void create() {
     
     set_property("light", 3);
     set_property("indoors", 0);
-    set("short", "   0\n   | \n0--@--0\n   castle \n   0\nTown Square.");
-    set("long", @ext This is the town square of Newbieville. In every direction, roads branch out to the ends of town. In front of you is a large castle, presumably that of Lord Tailwind.%^B_RED%^If you are a new player you should type%^YELLOW%^castle%^RESET%^
+    set("short", "   0\n   | \n0--@--0\n   center \n   0\nTown Square.");
+    set("long", @ext This is the town square of Newbieville. In every direction, dusty roads branch out to the ends of town. In front of you is a large castle, presumably that of Lord Tailwind.%^B_RED%^If you are a new player you should type%^YELLOW%^castle%^RESET%^
    0   
    |   
 0--@--0
-   |   castle
+   |   center
    0
 
 ext);
-    add_exit(ROOMS+"castle", "castle");
+    add_exit(ROOMS+"center", "center");
     add_exit(ROOMS+"lightway", "east");
     add_exit(ROOMS+"shadowroad", "west");
     add_exit(ROOMS+"majestyave", "north");
