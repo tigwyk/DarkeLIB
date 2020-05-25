@@ -5,7 +5,7 @@ void create() {
   ::create();
     set_property("light",3);
     set_property("night light", 2);
-    add_exit("/d/damned/guilds/cleric/confess", "east");
+    //add_exit("/d/damned/guilds/cleric/confess", "east");
     add_exit(ROOMS+"dbbw2","west");
     add_exit("/d/standard/square","north");
     add_exit(ROOMS+"dbew7","south");
