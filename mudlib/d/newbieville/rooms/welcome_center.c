@@ -13,7 +13,7 @@ void create() {
   ob->set_board_id("newbieville_welcome_center_board");
   ob->set_max_posts(50);
   ob->set_location(ROOMS+"welcome_center");
-  ob->set("short","Newbieville Welcome Center Bulletin Board");
+  ob->set("short","Planetary Welcome Center Bulletin Board");
   ob->set("long",@TEXT
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 This board is meant to help newbies out as they first begin their journeys
