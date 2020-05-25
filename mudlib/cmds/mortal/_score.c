@@ -213,10 +213,10 @@ string         *ADVENTURERa_PIC = (
 			  if(flag)
 			      switch(to_int(columns)) {
 			  case -100..6:
-			      borg = "%^FLASH%^%^B_RED%^%^YELLOW%^";
+			      borg = "%^FLASH%^B_RED%^YELLOW%^";
 			      break;
 			  case 7..14:
-			      borg = "%^B_RED%^%^YELLOW%^";
+			      borg = "%^B_RED%^YELLOW%^";
 			      break;
 			  case 15..30:
 			      borg = "%^YELLOW%^";
@@ -225,7 +225,7 @@ string         *ADVENTURERa_PIC = (
 			      borg = "%^BLUE%^BOLD%^";
 			      break;
 			  case 46..54:
-			      borg = "%^GREEN%^%^BOLD%^";
+			      borg = "%^GREEN%^BOLD%^";
 			      break;
 			  default:
 			      borg = "";
@@ -246,10 +246,10 @@ string         *ADVENTURERa_PIC = (
 			      borg = "%^YELLOW%^";
 			      break;
 			  case 46..50:
-			      borg = "%^B_RED%^%^BOLD%^";
+			      borg = "%^B_RED%^BOLD%^";
 			      break;
 			  default:
-			      borg = "%^FLASH%^%^B_RED%^%^YELLOW%^";
+			      borg = "%^FLASH%^B_RED%^YELLOW%^";
 			      break;
 			  }
 			  for (i = 0; i < MAX_BAR_COLS; i++)
@@ -455,13 +455,13 @@ else hand2 = "You are " + hand + "ed.";
 			      }
 			      else gm = "None";
 			      if(wizardp(op)) gm = "immortal";
-			      message("Ninfo", "%^BOLD%^%^WHITE%^" + sprintf("%|72s\n", title), tp);
+			      message("Ninfo", "%^BOLD%^WHITE%^" + sprintf("%|72s\n", title), tp);
 			      message("Ninfo", "%^BLUE%^" + sprintf("%s\n", dashes), tp);
 
 			      message("Ninfo", "%^BLUE%^       +------------------------------------------------------------+%^RESET%^ \n", tp);
-			      message("Ninfo", "Health %^BLUE%^|%^RESET%^" + bargraph(hp, max_hp,1) + "%^RESET%^%^BLUE%^|%^RESET%^ " + hp + "\n", tp);
-			      message("Ninfo", "Mental %^BLUE%^|%^RESET%^" + bargraph(mp, max_mp,1) + "%^RESET%^%^BLUE%^|%^RESET%^ " + mp + "\n", tp);
-			      message("Ninfo", "Carry  %^BLUE%^|%^RESET%^" + bargraph(sp, max_sp,0) + "%^RESET%^%^BLUE%^|%^RESET%^ " + sp + "\n", tp);
+			      message("Ninfo", "Health %^BLUE%^|%^RESET%^" + bargraph(hp, max_hp,1) + "%^RESET%^BLUE%^|%^RESET%^ " + hp + "\n", tp);
+			      message("Ninfo", "Mental %^BLUE%^|%^RESET%^" + bargraph(mp, max_mp,1) + "%^RESET%^BLUE%^|%^RESET%^ " + mp + "\n", tp);
+			      message("Ninfo", "Carry  %^BLUE%^|%^RESET%^" + bargraph(sp, max_sp,0) + "%^RESET%^BLUE%^|%^RESET%^ " + sp + "\n", tp);
 			      message("Ninfo", "%^BLUE%^       +------------------------------------------------------------+\n", tp);
 
 			      message("Ninfo", "%^BLUE%^" + sprintf("%s\n", dashes), tp);
@@ -482,7 +482,7 @@ else hand2 = "You are " + hand + "ed.";
 
 			      message("Ninfo", "%^BLUE%^  Mind: %^RESET%^" + sprintf("%-15s", mind) + "%^BLUE%^|]=-"+sprintf("%|13s", attrib[7] )+"-=[%^BLUE%^ |%^RESET%^      Catch:  " + sprintf("%11s\n", ccatch), tp);
 
-			      message("Ninfo", "%^BLUE%^Alerts:%^RESET%^" + sprintf("%-15s", alerts) +"%^RESET%^%^BLUE%^ |                    |%^RESET%^     Master:  " + sprintf("%11s\n", capitalize(gm)), tp);
+			      message("Ninfo", "%^BLUE%^Alerts:%^RESET%^" + sprintf("%-15s", alerts) +"%^RESET%^BLUE%^ |                    |%^RESET%^     Master:  " + sprintf("%11s\n", capitalize(gm)), tp);
 
 			      message("Ninfo", sprintf("%-15s", hand2) + "    %^BLUE%^|%^RESET%^                  " + "%^BLUE%^ |%^RESET%^  Quest Pts:  " + sprintf("%11d\n", qp), tp);
 
