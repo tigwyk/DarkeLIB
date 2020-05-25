@@ -1,5 +1,5 @@
 # Darke Forces
-Forked from Tiny, Parnell, etc.  Currently in development.
+Forked from the Darkelib from Tlny, Parnell, etc.  Currently in development.
 
 ![screenshot](https://i.imgur.com/MQ4rfy3.png)
 
