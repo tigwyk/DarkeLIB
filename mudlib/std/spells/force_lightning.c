@@ -3,7 +3,7 @@ inherit "/std/spells/spell";
 
 void create() {
     ::create();
-    set_property("name","call lightning");
+    set_property("name","force lightning");
     set_property("skill","jedi lore");
     set_property("casting time",8);
     set_property("base mp cost",42);
@@ -11,7 +11,7 @@ void create() {
     set_property("fast dev cost",140);
     set_property("spell level", 12);
     set_property("moon","luna");
-    set_property("caster message","You cast call lightning.");
+    set_property("caster message","You focus on calling forth a bolt of lightning.");
     set_property("target observer message", "");
     set_property("target message","You see some storm clouds gather above you...");
     set_property("observer message","$C concentrates intently.");
@@ -29,7 +29,7 @@ void info() {
 message("help",
 "This spell can call a lightning bolt to strike the target ANYWHERE ON "
 "THE MUD!!!!!!  You must scry the target first.\n"
-"Syntax: cast *3 call lightning",
+"Syntax: cast *3 force lightning",
 this_player());
 }
 
