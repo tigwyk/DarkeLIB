@@ -468,13 +468,13 @@ else hand2 = "You are " + hand + "ed.";
 
 			      message("Ninfo", "%^BLUE%^ Level: %^RESET%^" + sprintf("%-15s", attrib[0]) + "%^BLUE%^|%^RESET%^" + pic_string[0] + "%^BLUE%^|%^GREEN%^          WEALTH\n", tp);
 
-			      message("Ninfo", "%^BLUE%^  Race: %^RESET%^" + sprintf("%-15s", attrib[1]) + "%^BLUE%^|%^RESET%^" + pic_string[1] + "%^BLUE%^|%^RESET%^    Mithril:  " + sprintf("%11i\n", op->query_money("mithril")), tp);
+			      message("Ninfo", "%^BLUE%^  Race: %^RESET%^" + sprintf("%-15s", attrib[1]) + "%^BLUE%^|%^RESET%^" + pic_string[1] + "%^BLUE%^|%^RESET%^    Credits:  " + sprintf("%11i\n", op->query_money("mithril")), tp);
 
-			      message("Ninfo", "%^BLUE%^   Age: %^RESET%^" + sprintf("%-15s", attrib[2]) + "%^BLUE%^|%^RESET%^" + pic_string[2] + "%^BLUE%^|%^RESET%^       Gold:  " + sprintf("%11i\n", op->query_money("gold")), tp);
+			      message("Ninfo", "%^BLUE%^   Age: %^RESET%^" + sprintf("%-15s", attrib[2]) + "%^BLUE%^|%^RESET%^" + pic_string[2] + "%^BLUE%^|%^RESET%^              " + sprintf("%11s\n", ""), tp);
 
-			      message("Ninfo", "%^BLUE%^DevPts: %^RESET%^" + sprintf("%-15s", attrib[3]) + "%^BLUE%^|%^RESET%^" + pic_string[3] + "%^BLUE%^|%^RESET%^     Silver:  " + sprintf("%11i\n", op->query_money("silver")), tp);
+			      message("Ninfo", "%^BLUE%^DevPts: %^RESET%^" + sprintf("%-15s", attrib[3]) + "%^BLUE%^|%^RESET%^" + pic_string[3] + "%^BLUE%^|%^RESET%^              " + sprintf("%11s\n", ""), tp);
 
-			      message("Ninfo", "%^BLUE%^ State: %^RESET%^" + sprintf("%-15s", attrib[4]) + "%^BLUE%^|%^RESET%^" + pic_string[4] + "%^BLUE%^|%^RESET%^     Copper:  " + sprintf("%11i\n", op->query_money("copper")), tp);
+			      message("Ninfo", "%^BLUE%^ State: %^RESET%^" + sprintf("%-15s", attrib[4]) + "%^BLUE%^|%^RESET%^" + pic_string[4] + "%^BLUE%^|%^RESET%^              " + sprintf("%11s\n", ""), tp);
 
 			      message("Ninfo", "%^BLUE%^Thirst: %^RESET%^" + sprintf("%-15s", attrib[5]) + "%^BLUE%^|%^RESET%^" + pic_string[5] + "%^BLUE%^|--------------------------\n", tp);
 
