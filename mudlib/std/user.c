@@ -610,7 +610,7 @@ varargs static void heart_beat(int recurs_flag) {
 	autosave = player_age + 500;
     }
     if(sizeof(query_attackers()) && getenv("SCORE") == "on")
-	message("my_combat",""+sprintf("health: %d/%d energy: %d%/%d", query_hp(), query_max_hp(),query_mp(), query_max_mp()), this_object());
+	message("my_combat",""+sprintf("health: %d/%d energy: %d/%d", query_hp(), query_max_hp(),query_mp(), query_max_mp()), this_object());
 /* //old code replaced by TLNY2020 with new code above ^
     if(sizeof(query_attackers()) && getenv("SCORE") != "off")
 	message("my_combat", sprintf("hp: %d (%d)  mp: %d (%d)",
