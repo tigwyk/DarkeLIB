@@ -1,8 +1,9 @@
 //	Cast command for invoking spells!
+//  Renamed to 'focus' for Jedi and other Force-sensitives
 //	DarkeLIB 0.1
 //	Diewarzau 4/4/94
 
-int cmd_cast(string str) {
+int cmd_focus(string str) {
     string spell_dir, file, spell,arg;
     int pow;
     object spell_ob;
@@ -14,9 +15,9 @@ if(this_player()->query_ghost()) {
     seteuid(getuid());
     if(!str || (sscanf(str,"*%d %s at %s",pow,spell,arg) != 3 &&
 	sscanf(str,"*%d %s",pow,spell) != 2))
-	return notify_fail("Usage: cast *<pow> <spell> at <target>[<args>]\n");
+	return notify_fail("Usage: focus *<pow> <force ability> at <target>[<args>]\n");
     if(pow < 0)
-    return notify_fail("Usage: cast *<pow> <spell> at <target>[<args>]\n");
+    return notify_fail("Usage: focus *<pow> <force ability> at <target>[<args>]\n");
         if(!this_player()->query_spell_level(spell))
 	return notify_fail("You do not know that spell.\n");
     spell = replace_string(spell," ","_");

@@ -10,5 +10,5 @@ post_exit_func ([])
 tracks ({})
 __Items (["blue moon":,"chest":,"sky":,"ankh":,"moon":,"red moon":,"sun":,"warzau":,"green moon":,"hatch":"It looks surprisingly strong.","moons":,"luna":,])
 reset_number 76
-doors (["hatch":(["direction":"up","key":"trenton mine key","lock level":35,"destination":"/d/damned/virtual/trenton_mine1_4_12.mine","open":0,"locked":1,]),])
-minerals (["davistone":1,"laen":4,"javednite":25,"mithril":4,"mabril":4,"mcgrail":4,"platnite":2,"catoetine":38,"elrodnite":3,"raysorite":59,])
+doors (["hatch":(["lock level":35,"key":"trenton mine key","direction":"up","locked":1,"open":0,"destination":"/d/damned/virtual/trenton_mine1_4_12.mine",]),])
+minerals (["davistone":1,"laen":4,"javednite":26,"mithril":4,"mcgrail":4,"mabril":4,"platnite":2,"catoetine":38,"raysorite":59,"elrodnite":3,])
