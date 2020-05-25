@@ -42,12 +42,8 @@ void create() {
 
 	set_items((["pot":"You don't really want to know what its for. In it is some kind of potion. Perhaps this warrants further investigation.",
 		"potion":"The more you stare at this the more you think you could 'enter' it!" ]));
-  add_spell("fireball", 7);
-  add_spell("magic missile", 3);
-  add_spell("explosive fireball", 15, 1);
   add_spell("lightning bolt", 10);
   add_spell("killing cloud", 8, 1);
-  add_spell("ice dagger", 7, 1);
   add_spell("power word, stun", 5);
   add_spell("power word, blind", 9);
   add_spell("light", 3);
@@ -57,23 +53,17 @@ void create() {
   add_spell("clone");
   add_spell("darkness", 3);
   add_spell("clairvoyance", 5);
-  add_spell("faerie fire", 3);
   add_spell("dark vision", 5);
   add_spell("blur", 12);
   add_spell("living weapon", 4);
   add_spell("mirror image", 16);
-  add_spell("lesser plasma blade");
-  add_spell("greater plasma blade");
   add_spell("mad rage",13);
   add_spell("invisibility", 15);
   add_spell("summon", 15);
   add_spell("transport", 17);
   add_spell("teleport", 17, 1);
   add_spell("create teleport beacon", 17, 1);
-  add_spell("fire shield", 14);
   add_spell("banshee blade", 20);
-  add_spell("blizzard", 21);
-  add_spell("meteor storm", 28);
   return;
 }
 
