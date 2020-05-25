@@ -45,19 +45,15 @@ set("long",
   //			the skill will be considered "secondary" to
   //			the guild and cost double to develop.
 
-  add_skill("blade", 1);
+  add_skill("lightsaber", 1);
   add_skill("perception",1, 1);
   add_skill("trade lore", 1, 1);
    add_skill("swimming", 1);
    add_skill("melee", 1);
    add_skill("thrown", 1);
-  add_skill("two handed blade", 1);
-  add_skill("magery", 3, 1);
-   add_skill("conjuration", 3, 1);
+   add_skill("jedi lore", 1);
   add_skill("illusionism", 3, 1);
-  add_skill("flail", 1, 1);
-  add_skill("two handed flail", 1, 1);
-  add_skill("axe", 1, 1);
+  add_skill("dual-bladed lightsaber", 15);
   add_skill("consider", 1);
   add_skill("compare", 3, 1);
   add_skill("dual attack", 15, 1);
