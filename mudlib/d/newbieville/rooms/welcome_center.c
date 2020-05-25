@@ -32,8 +32,7 @@ TEXT
     set_property("light", 4);
     set_property("indoors", 1);
     set("short", "The Welcome Center");
-    set("long", "This is the Welcome Center set up by the local planetary council. You see a bulletin board in the center of the room, a staircase leading upwards, and nothing else.\n%^B_RED%^If you are a new player you should type%^YELLOW%^up or 'u' for short%^RESET%^%^RESET%^\n\n you can also%^YELLOW%^'look sign'%^RESET%^for further directions");
-
+    set("long", "This is the Welcome Center set up by the local planetary council. You see a bulletin board in the center of the room, a wide spiral staircase is near the back wall.\n\nYou can %^YELLOW%^'look sign'%^RESET%^ for further directions.");
     add_exit(ROOMS+"upperfloor", "up");
     add_exit(ROOMS+"townsquare", "out");
 

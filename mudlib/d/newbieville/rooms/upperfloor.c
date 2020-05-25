@@ -18,9 +18,8 @@ void create() {
     set_property("light", 4);
     set_property("indoors", 1);
     set("short", "Upper Level of The Castle of Tailwind");
-    set("long", "This is the upper floor of the castle. You see before you scattered many weapons left by other adventures.\n%^B_RED%^If you are a new player you should wait and%^YELLOW%^read sign%^RESET%^%^RESET%^\nAfter you gather the weapon or weapons you need\n%^BOLD%^%^RED%^you should go%^YELLOW%^up or 'u' for short%^RESET%^%^RESET%^\n\n you can also%^YELLOW%^'look sign'%^RESET%^for further directions
-");
-    add_exit("/d/newbieville/rooms/castle", "down");
+    set("long", "This is the upper floor of the castle. You see before you scattered many weapons left by other adventures. %^B_RED%^If you are a new player you should wait and %^YELLOW%^read sign%^RESET%^. After you gather the weapon or weapons you need you should go %^YELLOW%^up or 'u' for short%^RESET%^. You can also %^YELLOW%^'look sign'%^RESET%^ for further directions.");
+    add_exit("/d/newbieville/rooms/welcome_center", "down");
     add_exit("/d/newbieville/rooms/upperfloor2", "up");
 set_items((["window" :
 "You peer down.
@@ -70,7 +69,7 @@ int read_it(string str) {
 
 void reset() {
 object ob;
-if(!present("lightsaber")) 
+if(!present("lightsaber")) {
     ob = new("/d/damned/virtual/lightsaber_1.weapon");
     ob -> set("short", "apprentice lightsaber");
     ob -> set("long","This is a lightsaber.");
@@ -82,4 +81,5 @@ if(!present("lightsaber"))
     ob -> set_parry_bonus(50);
     ob -> set_material("metal/mithril");
     ob->move(this_object());
+}
 }

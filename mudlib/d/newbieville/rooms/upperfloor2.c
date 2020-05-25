@@ -76,33 +76,41 @@ int read_it(string str) {
 
 void reset() {
       object ob;
-if(!present("pack"))
+if(!present("pack")) {
 ob = new("/std/diewarzau/obj/misc/rations_pack");
 ob->set_rations(5, 1);
 ob->move(this_object());
-if(!present("chain coif"))
+}
+if(!present("chain coif")) {
 ob = new("/d/damned/virtual/chain-coif.armour");
     ob->move(this_object());
-if(!present("leather vest"))
+}
+if(!present("leather vest")) {
 ob = new("/d/damned/virtual/leather-vest.armour");
     ob->move(this_object());
-if(!present("iron bracer"))
+}
+if(!present("iron bracer")) {
     ob = new("/d/damned/virtual/iron-bracer.armour");
     ob->move(this_object());
     ob = new("/d/damned/virtual/iron-bracer.armour");
     ob->move(this_object());
-if(!present("padded glove"))
+}
+if(!present("padded glove")) {
     ob = new("/d/damned/virtual/padded-glove.armour");
     ob->move(this_object());
     ob = new("/d/damned/virtual/padded-glove.armour");
     ob->move(this_object());
-if(!present("leather pants"))
+}
+if(!present("leather pants")) {
     ob = new("/d/damned/virtual/leather-pants.armour");
     ob->move(this_object());
-if(!present("leather boots"))
+}
+if(!present("leather boots")) {
     ob = new("/d/damned/virtual/leather-boots.armour");
     ob->move(this_object());
-if(!present("lantern"))
+}
+if(!present("lantern")) {
     ob = new("/std/obj/lantern");
     ob->move(this_object());
+}
 }
