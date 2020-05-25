@@ -72,9 +72,9 @@ void reset() {
 object ob;
 if(!present("lightsaber")) 
     ob = new("/d/damned/virtual/lightsaber_1.weapon");
-    ob -> set("short", "%^BOLD%^GREEN%^bright green%^RESET%^ lightsaber");
+    ob -> set("short", "apprentice lightsaber");
     ob -> set("long","This is a lightsaber.");
-    ob -> set("id", ({ "lightsaber","saber","green lightsaber", "bright green lightsaber","green saber","bright green saber"}));
+    ob -> set("id", ({ "lightsaber","saber","apprentice lightsaber","apprentice saber"}));
     //ob -> set_wc(40,"cutting");
     //ob -> set_wc(20,"impaling");
     ob -> set_wc(40,"fire");
