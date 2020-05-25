@@ -385,10 +385,10 @@ void do_healing(int x) {
     if(this_object()->is_player() && (string)this_object()->
       getenv("SCORE") == "on" && !(query_hp() >= query_max_hp() &&
 	query_mp() >= query_max_mp()))
-message("info","%^BOLD%^RED%^hp:%^BOLD%^WHITE%^"+this_player()->query_hp()+"/"+this_player()->query_max_hp()+
-        "%^CYAN%^  mp:%^BOLD%^WHITE%^"+this_player()->query_mp()+"/"+this_player()->query_max_mp()+
-        " %^GREEN%^experience:%^BOLD%^WHITE%^"+lexp+""
-        " %^YELLOW%^Mind:%^BOLD%^WHITE%^"+mind+"%^RESET%^", this_object());
+message("info","%^BOLD%^RED%^hp: %^BOLD%^WHITE%^"+this_player()->query_hp()+"/"+this_player()->query_max_hp()+
+        "%^CYAN%^  mp: %^BOLD%^WHITE%^"+this_player()->query_mp()+"/"+this_player()->query_max_mp()+
+        " %^GREEN%^experience: %^BOLD%^WHITE%^"+lexp+""
+        " %^YELLOW%^Mind: %^BOLD%^WHITE%^"+mind+"%^RESET%^", this_object());
 	//message("info","hp: "+query_hp()+" ("+query_max_hp()+")  mp: "+
 	  //query_mp() + " ("+query_max_mp()+")", this_object());
 //TLNY2020 Made this change for Status on prompt
