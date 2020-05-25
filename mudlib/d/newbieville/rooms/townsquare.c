@@ -18,7 +18,7 @@ void create() {
    0
 
 ext);
-    add_exit(ROOMS+"center", "center");
+    add_exit(ROOMS+"welcome_center", "center");
     add_exit(ROOMS+"lightway", "east");
     add_exit(ROOMS+"shadowroad", "west");
     add_exit(ROOMS+"majestyave", "north");
