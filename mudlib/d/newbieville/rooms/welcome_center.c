@@ -17,7 +17,7 @@ void create() {
   ob->set("long",@TEXT
 -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 This board is meant to help newbies out as they first begin their journeys
-in Daybreak Ridge. Post guild tips, directions, or anything else that you
+in Darke Forces. Post guild tips, directions, or anything else that you
 think will come in handy for them. You can also post advertisements for
 wares or other services which may be appropriate for newbies.
 

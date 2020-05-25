@@ -12,7 +12,7 @@ void create() {
     seteuid(getuid());
     atmos = allocate_mapping(250);
     line = 1;
-    message("broadcast", "Soul Daemon shouts: Welcome to Daybreak Ridge!", users());
+    message("broadcast", "Soul Daemon shouts: Welcome to Darke Forces!", users());
     set_heart_beat(1);
 }
 

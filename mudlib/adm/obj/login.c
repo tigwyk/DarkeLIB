@@ -306,7 +306,7 @@ static void choose_gender(string str) {
       } 
     __Player->set_gender(str); 
     message("logon", 
-	"Welcome to DayBreak Ridge Reborn\n"
+	"Welcome to Darke Forces\n"
 	"It is VERY important that you supply a valid email\n"
 	"after you create your character!  If you do not have an email\n"
 	"address, you CAN still play, but you must talk to an arch.\n"
