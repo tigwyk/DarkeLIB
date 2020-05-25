@@ -478,13 +478,13 @@ else hand2 = "You are " + hand + "ed.";
 
 			      message("Ninfo", "%^BLUE%^Thirst: %^RESET%^" + sprintf("%-15s", attrib[5]) + "%^BLUE%^|%^RESET%^" + pic_string[5] + "%^BLUE%^|--------------------------\n", tp);
 
-                              message("Ninfo", "%^BLUE%^Hunger: %^RESET%^" + sprintf("%-15s", attrib[6]) + "%^BLUE%^|%^RESET%^" + pic_string[6] + "%^BLUE%^|%^RESET%^ Experience:  " + sprintf("%11i\n", lexp), tp);
+                  message("Ninfo", "%^BLUE%^Hunger: %^RESET%^" + sprintf("%-15s", attrib[6]) + "%^BLUE%^|%^RESET%^" + pic_string[6] + "%^BLUE%^|%^RESET%^ Experience:  " + sprintf("%11i\n", lexp), tp);
 
-			      message("Ninfo", "%^BLUE%^  Mind: %^RESET%^" + sprintf("%-15s", mind) + "%^BLUE%^|]=-"+sprintf("%|13s", attrib[7] )+"-=[%^BLUE%^ |%^RESET%^      Catch:  " + sprintf("%11s\n", ccatch), tp);
+			      message("Ninfo", "%^BLUE%^  Mind: %^RESET%^" + sprintf("%-15s", mind) + "%^BLUE%^|]=-"+sprintf("%|13s", attrib[7] )+"-=[%^BLUE%^|%^RESET%^      Catch:  " + sprintf("%11s\n", ccatch), tp);
 
-			      message("Ninfo", "%^BLUE%^Alerts:%^RESET%^" + sprintf("%-15s", alerts) +"%^RESET%^BLUE%^ |                    |%^RESET%^     Master:  " + sprintf("%11s\n", capitalize(gm)), tp);
+			      message("Ninfo", "%^BLUE%^Alerts:%^RESET%^" + sprintf("%-15s", alerts) +"%^RESET%^BLUE%^|                    |%^RESET%^     Master:  " + sprintf("%11s\n", capitalize(gm)), tp);
 
-			      message("Ninfo", sprintf("%-15s", hand2) + "    %^BLUE%^|%^RESET%^                  " + "%^BLUE%^ |%^RESET%^  Quest Pts:  " + sprintf("%11d\n", qp), tp);
+			      message("Ninfo", sprintf("%-15s", hand2) + "    %^BLUE%^|%^RESET%^                  " + "%^BLUE%^|%^RESET%^  Quest Pts:  " + sprintf("%11d\n", qp), tp);
 
 			      message("Ninfo", "%^BLUE%^" + sprintf("%s\n", dashes) + "%^RESET%^", tp);
 			      return 1;
