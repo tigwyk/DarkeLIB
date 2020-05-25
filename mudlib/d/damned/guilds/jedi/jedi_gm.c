@@ -13,11 +13,11 @@ void create() {
   ::create();
 
   //  The one difference is the following line:
-  set_join_room("/d/damned/guilds/join_rooms/sword-mage_join");
+  set_join_room("/d/damned/guilds/join_rooms/jedi_join");
   //  The above refers the guildmaster to the joining room, which
   //  handles all "book keeping"
 
-  set("short", "Xira, the Sword Mage Guildmaster");
+  set("short", "Luke Skywalker, the Jedi Guildmaster");
   set("long", 
 "Xira is a strong-looking Seraph clad in robes and wielding an impressive sword.");
   set_level(20);
@@ -28,13 +28,13 @@ void create() {
   set_property("base mp regen", 140);
   set_property("base hp regen", 70);
   set_gender("female");
-  set("race", "half-elf");
+  set("race", "human");
   set_body_type("human");
   set_skill("conjuration", 150);
   set_skill("magery", 150);
   set_skill("sorcery", 150);
   set_skill("illusionism", 150);
-  set_id(({ "xira", "guildmaster", "sword-mage", "sword-mage guildmaster" }));
+  set_id(({ "luke", "guildmaster", "jedi", "jedi guildmaster" }));
   //  NOTE:  It is important that, if you set_id, you include
   //  "guildmaster" as one of them.  If you do not set_id, he
   //  will still work.
@@ -45,6 +45,7 @@ void create() {
   set_skill("melee", 90);
   set_skill("dodge", 150);
   set_skill("parry", 100);
+  set_skill("lightsaber", 100);
   set_skill("two handed blade", 200);
   set_stats("strength", 200);
   set_stats("intelligence", 140);
