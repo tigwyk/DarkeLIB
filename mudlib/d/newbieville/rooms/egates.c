@@ -14,5 +14,5 @@ void create() {
 
 ext);
     add_exit(ROOMS+"lightway", "west");
-    add_exit("/d/damned/virtual/room_10_10.world", "plains");
+    //add_exit("/d/damned/virtual/room_10_10.world", "plains");
 }

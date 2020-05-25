@@ -15,5 +15,5 @@ plains--@--0
 
 ext);
     add_exit(ROOMS+"shadowroad", "east");
-    add_exit("/d/damned/virtual/room_10_10.world", "plains");
+    //add_exit("/d/damned/virtual/room_10_10.world", "plains");
 }
