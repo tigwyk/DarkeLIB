@@ -440,6 +440,9 @@ else hand2 = "You are " + hand + "ed.";
 				      break;
 				  case "child":
 				      pic_string = NONE_PIC;
+					  break;
+				  case "jedi":
+				      pic_string = DARK_PALADIN_PIC;
 				      break;
 				 default:
 				      pic_string = OTHER_PIC;

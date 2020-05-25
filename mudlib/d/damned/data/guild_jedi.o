@@ -1,0 +1,13 @@
+#/d/damned/guilds/join_rooms/jedi_join.c
+props (["base mp regen":4,"guild mods":(["constitution":5,"intelligence":5,]),"base hp regen":4,"light":2,"mp advance":21,"hp advance":32,"indoors":1,])
+__Smells ([])
+__Listens ([])
+__Searches ([])
+destinations (["down":"/d/damned/guilds/jedi/train_room",])
+invis_exits ([])
+pre_exit_func ([])
+post_exit_func ([])
+tracks ({})
+__Items (["blue moon":,"sky":,"ankh":,"moon":,"red moon":,"green moon":,"warzau":,"sun":,"luna":,"moons":,])
+guild_list (["tigwyk":(["status":"member",]),])
+banish ([])
