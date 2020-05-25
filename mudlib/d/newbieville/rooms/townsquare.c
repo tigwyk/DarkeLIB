@@ -10,7 +10,7 @@ void create() {
     set_property("light", 3);
     set_property("indoors", 0);
     set("short", "   0\n   | \n0--@--0\n   center \n   0\nTown Square.");
-    set("long", @ext This is the town square of Newbieville. In every direction, dusty roads branch out to the ends of town. In front of you is a large Welcome Center sponsored by the local council.
+    set("long", @ext This is the town square of Newbieville. In every direction, dusty roads branch out to the ends of town. In front of you is a large Welcome Center sponsored by the local planetary tourism council.
     %^B_RED%^If you are a new player you should type %^YELLOW%^center%^RESET%^
    0   
    |   
@@ -30,7 +30,7 @@ set_items(([
 "sign": (: call_other, this_object(), "read_sign" :),
 "lever": "a lever that looks like you can pull it",       
 ]));
-set_search("lever","This lever is made if solid iron you wonder if you%^YELLOW%^pull%^RESET%^it something might happen?");
+set_search("lever","This lever is made if solid iron you wonder if you %^YELLOW%^pull%^RESET%^ it something might happen?");
 
 
 }

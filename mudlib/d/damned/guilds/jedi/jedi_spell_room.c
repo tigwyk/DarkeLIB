@@ -12,23 +12,23 @@ void init() {
 }
 void create() {
   ::create();
-  set("short", "The Sword Mage's Spell Training Room");
+  set("short", "The Jedi's Focus Training Room");
   set("long", 
 "This room is even darker and more mystic then the one above. "+
 "All about the room are ancient tomes and other books. Spaced "+
 	"along the walls evenly are brightly burning torches. "+
 	"In the middle of the room is a large pot with some sort "+
 	"of mystic potion brewing in it. This is obviously the "+
-	"sword-mage spell training room.\n");
+	"Jedi Focus training room.\n");
   //  "\n" important here, too.
 
   set_property("light", 2);
   set_property("indoors", 1);
   
   //  The following line is VERY, VERY important.
-  set_join_room("/d/damned/guilds/join_rooms/sword-mage_join");
+  set_join_room("/d/damned/guilds/join_rooms/jedi_join");
 
-  set_exits( ([ "up" : "/d/damned/guilds/sword-mage/train_room" ]) );
+  set_exits( ([ "up" : "/d/damned/guilds/jedi/train_room" ]) );
   //  All the rest is adding the spells.  The add_skill lines are of the
   //  following form:
   //  	add_spell(string spell, int level, int flag)

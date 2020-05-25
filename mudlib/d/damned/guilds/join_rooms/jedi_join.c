@@ -31,6 +31,7 @@ new("d/damned/guilds/join_rooms/tcan")->move(this_object());
 
   set_exits( ([ 
               //"west" : "/d/daybreak/room/dblw3",
+              "up" : "/d/newbieville/rooms/townsquare",
 	      "down" : "/d/damned/guilds/jedi/train_room" ]) );
 
   set("guildmaster", "/d/damned/guilds/jedi/jedi_gm");

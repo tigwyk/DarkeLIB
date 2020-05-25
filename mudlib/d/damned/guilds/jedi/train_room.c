@@ -32,8 +32,8 @@ set("long",
   set_join_room("/d/damned/guilds/join_rooms/jedi_join");
 
   add_exit("/d/damned/guilds/join_rooms/jedi_join", "up");
-  add_exit("/d/damned/guilds/sword-mage/jedi_treas", "east");
-  add_exit("/d/damned/guilds/sword-mage/jedi_spell_room", "down");
+  add_exit("/d/damned/guilds/jedi/jedi_treas", "east");
+  add_exit("/d/damned/guilds/jedi/jedi_spell_room", "down");
   
   //  All the rest is adding the skills.  The add_skill lines are of the
   //  following form:
