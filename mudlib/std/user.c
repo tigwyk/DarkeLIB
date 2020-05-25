@@ -34,7 +34,7 @@ inherit "/std/user/more";
 inherit "/std/user/ansi_convert.c";
 //changed to enherit and moveddown here let's see if this breaks
 #define OVERRIDE_IGNORE_MSG ({ "broadcast", "info", "more", "room_description", "room_exits","smell","listen","write","say", "system", "prompt", "inanimate_item", "living_item"})
-int platinum, gold, electrum, silver, copper;
+int credits;
 
 int level, ghost, crash_money, rolls, verbose_moves;
 int birth;
@@ -499,7 +499,7 @@ void setup() {
     if(!hiddenp(this_object()))
 	INFORM_D->do_inform("logins_and_quits","Info: " +
 	  capitalize((string)this_object()->query_name()) +
-       " steps out of the forest and onto the mountain of Daybreak Ridge.",
+       " hyperspaces into Darke Forces.",
 	  who_exc);
     catch(ROLECALL_D->html());
     log_file("enter", "ENTER:"+
@@ -507,11 +507,7 @@ void setup() {
       ":"+ctime(time())+
       ":"+query_ip_name()+
       ":"+query_exp()+":exp"+
-      ":"+query_money("mithril")+":mi"+
-      ":"+query_money("gold")+":gd"+
-      ":"+query_money("electrum")+":el"+
-      ":"+query_money("silver")+":sl"+
-      ":"+query_money("copper")+":cp\n");
+      ":"+query_money("credits")+":cr"+"\n");
     if(query_class() && stringp(query_class()) && query_class() != "child"
       && file_exists("/d/damned/guilds/join_rooms/"+query_class()+"_join.c")) {
 	join_room = load_object("/d/damned/guilds/join_rooms/"+
@@ -533,13 +529,9 @@ void setup() {
     }
     more(explode(NEWS_D->get_news(this_object()), "\n") );
     command("look");
-    if(platinum || gold || silver || electrum || copper) {
-	add_money("electrum", electrum);
-	add_money("gold", gold);
-	add_money("silver", silver);
-	add_money("platinum", platinum);
-	add_money("copper", copper);
-	platinum = gold = electrum = silver = copper = 0;
+    if(credits) {
+	add_money("credits", credits);
+	credits = 0;
     }
     reset_money();
     if(query_exp() < 0) {
@@ -1294,7 +1286,7 @@ void  fix_crash_victim() {
     int i;
 
     i= random(5);
-    add_money("gold", to_int(crash_money*currency_rate("gold")));
+    add_money("credits", to_int(crash_money*currency_rate("credits")));
     message("info", "You recover some of your lost money.", this_player());
     crash_money = 0;
 }
