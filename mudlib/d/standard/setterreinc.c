@@ -187,7 +187,7 @@ who->reset_xp_to_dev();
 
 void do_rolls() {
   write("Now you will assign your stats.\n"
-  "DayBreak Ridge has a point-based stat assignment system.  Basically, "
+  "Darke Forces has a point-based stat assignment system.  Basically, "
   "you start out with a 50 in each stat and 325 points to spend.  "
   "Stats get more costly as the stat increases, ie, getting from 50 "
   "to 51 in a stat costs less than getting from 90 to 91.  You may also "
