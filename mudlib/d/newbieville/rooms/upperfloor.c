@@ -70,117 +70,16 @@ int read_it(string str) {
 
 void reset() {
 object ob;
-if(!present("long sword")) 
-    ob = new("/d/damned/virtual/long-sword_1.weapon");
-    ob -> set("short", "flamming longsword");
-    ob -> set("long","This is a longsword that's blade is magicaly burning and on fire it is used by new players to help them explore and understand the world of DayBreak");
-    ob -> set("id", ({ "sword", "Sword","longsword","flamming longsword","cheap flamming longsword"}));
+if(!present("lightsaber")) 
+    ob = new("/d/damned/virtual/lightsaber_1.weapon");
+    ob -> set("short", "%^BOLD%^GREEN%^bright green%^RESET%^ lightsaber");
+    ob -> set("long","This is a lightsaber.");
+    ob -> set("id", ({ "lightsaber","saber","green lightsaber", "bright green lightsaber","green saber","bright green saber"}));
     //ob -> set_wc(40,"cutting");
     //ob -> set_wc(20,"impaling");
-    //ob -> set_wc(40,"fire");
+    ob -> set_wc(40,"fire");
     ob -> set_hit_bonus(50);
     ob -> set_parry_bonus(50);
     ob -> set_material("metal/mithril");
-    ob->move(this_object());
-if(!present("short sword")) 
-    ob = new("/d/damned/virtual/short-sword_1.weapon");
-    ob -> set("short", "frozen short sword");
-    ob -> set("long","This is a short sword that's blade is frozen solid as it comes close in contact with living things it begins to freeze all that is near. It is used by new players to help them explore and understand the world of DayBreak");
-    ob -> set("id", ({ "sword", "Sword","short sword","frozen short sword","cheap frozen short sword"}));
-    //ob -> set_wc(40,"cutting");
-    //ob -> set_wc(20,"impaling");
-    //ob -> set_wc(40,"cold");
-    ob -> set_hit_bonus(50);
-    ob -> set_parry_bonus(50);
-    ob -> set_material("metal/elrodnite");
-    ob->move(this_object());
-if(!present("rapier")) 
-    ob = new("/d/damned/virtual/rapier_1.weapon");
-    ob -> set("short", "wind rapier");
-    ob -> set("long","This is a rapier that's blade is surrounded by what looks like a tornado. It is used by new players to help them explore and understand the world of DayBreak");
-    ob -> set("id", ({ "rapier", "Rapier","wind rapier","cheap wind rapier" }));
-    ob -> set_wc(10,"impaling");
-    ob -> set_wc(10,"vacuum");
-    ob -> set_hit_bonus(50);
-    ob -> set_parry_bonus(50);
-    ob->move(this_object());
-if(!present("scimitar")) 
-    ob = new("/d/damned/virtual/scimitar_1.weapon");
-    ob -> set("short", "electric scimitar");
-    ob -> set("long","This is a scimitar that's blade is surounded by tiny electric bolts as you look closer it almost appears to pulse with energy. It is used by new players to help them explore and understand the world of DayBreak");
-    ob -> set("id", ({ "scimitar", "scimitar","electric scimitar","cheap electric scimitar", "sword" }));
-    //ob -> set_wc(40,"cutting");
-    //ob -> set_wc(20,"impaling");
-    //ob -> set_wc(40,"electricity");
-    ob -> set_hit_bonus(50);
-    ob -> set_parry_bonus(50);
-    ob -> set_material("metal/platnite");
-    ob->move(this_object());
-    if(!present("two handed sword")) 
-    ob = new("/d/damned/virtual/two-handed-sword_1.weapon");
-    ob -> set("short", "electric two handed sword");
-    ob -> set("long","This is a two handed sword that's blade is surounded by tiny electric bolts as you look closer it almost appears to pulse with energy. It is used by new players to help them explore and understand the world of DayBreak");
-    ob -> set("id", ({ "two handed sword", "electric two handed sword","cheap electric two handed sword" }));
-    //ob -> set_wc(50,"cutting");
-    //ob -> set_wc(30,"impaling");
-    //ob -> set_wc(50,"electricity");
-    ob -> set_hit_bonus(50);
-    ob -> set_parry_bonus(50);
-    ob -> set_material("metal/platnite");
-    ob->move(this_object());
-    if(!present("halberd")) 
-ob = new("/d/damned/virtual/halberd_1.weapon");
-    ob -> set("short", "electric halberd");
-    ob -> set("long","This is a halberd that's blade is surounded by tiny electric bolts as you look closer it almost appears to pulse with energy. It is used by new players to help them explore and understand the world of DayBreak");
-    ob -> set("id", ({ "halberd", "electric halberd","cheap electric halberd" }));
-    //ob -> set_wc(51,"cutting");
-    //ob -> set_wc(31,"impaling");
-    //ob -> set_wc(51,"electricity");
-    ob -> set_hit_bonus(50);
-    ob -> set_parry_bonus(50);
-    ob -> set_material("metal/platnite");
-    if(!present("dagger")) 
-    ob = new("/d/damned/virtual/dagger_1.weapon");
-    ob -> set("short", "electric dagger");
-    ob -> set("long","This is a short dagger that's blade is surounded by tiny electric bolts as you look closer it almost appears to pulse with energy. It is used by new players to help them explore and understand the world of DayBreak");
-    ob -> set("id", ({ "dagger", "electric dagger","cheap electric dagger","knife" }));
-    //ob -> set_wc(35,"impaling");
-    //ob -> set_wc(35,"electricity");
-    ob -> set_hit_bonus(50);
-    ob -> set_parry_bonus(50);
-    ob -> set_material("metal/platnite");
-    ob->move(this_object());
-    if(!present("footman's mace")) 
-    ob = new("/d/damned/virtual/footman's-mace_1.weapon");
-    ob -> set("short", "electric footman's mace");
-    ob -> set("long","This is a footman's mace that is surounded by tiny electric bolts as you look closer it almost appears to pulse with energy. It is used by new players to help them explore and understand the world of DayBreak");
-    ob -> set("id", ({ "mace","footman's mace", "electric footman's mace","cheap electric footman's mace", "electric mace","cheap electric mace" }));
-    //ob -> set_wc(40,"crushing");
-    //ob -> set_wc(40,"electricity");
-    ob -> set_hit_bonus(50);
-    ob -> set_parry_bonus(50);
-    ob -> set_material("metal/platnite");
-    ob->move(this_object());
-    if(!present("quarter staff")) 
-    ob = new("/d/damned/virtual/quarter-staff_1.weapon");
-    ob -> set("short", "electric quarter staff");
-    ob -> set("long","This is a quarter staff that is surounded by tiny electric bolts as you look closer it almost appears to pulse with energy. It is used by new players to help them explore and understand the world of DayBreak");
-    ob -> set("id", ({ "staff","quarter staff", "electric quarter staff","cheap electric quarter staff", "electric staff","cheap electric staff" }));
-    //ob -> set_wc(45,"crushing");
-    //ob -> set_wc(45,"electricity");
-    ob -> set_hit_bonus(50);
-    ob -> set_parry_bonus(50);
-    ob -> set_material("metal/platnite");
-    ob->move(this_object());
-    if(!present("hand axe")) 
-    ob = new("/d/damned/virtual/hand-axe_1.weapon");
-    ob -> set("short", "electric hand axe");
-    ob -> set("long","This is a hand axe that is surounded by tiny electric bolts as you look closer it almost appears to pulse with energy. It is used by new players to help them explore and understand the world of DayBreak");
-    ob -> set("id", ({ "axe","hand axe", "electric hand axe","cheap electric hand axe", "electric axe","cheap electric axe" }));
-    //ob -> set_wc(42,"cutting");
-    //ob -> set_wc(42,"electricity");
-    ob -> set_hit_bonus(50);
-    ob -> set_parry_bonus(50);
-    ob -> set_material("metal/platnite");
     ob->move(this_object());
 }

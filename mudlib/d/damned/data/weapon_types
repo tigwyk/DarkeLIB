@@ -266,6 +266,31 @@ ac:::
 verb:::
 "slice"
 
+(lightsaber):
+id:::
+({ "lightsaber", "saber"})
+type:::
+"lightsaber"
+short:::
+"lightsaber"
+long:::
+"The mainstay of the Jedi's arsenal, the lightsaber is crafted from
+choice materials. A blade of pure energy extends from the hilt."
+wc:::
+10;"cutting"
+wc:::
+6;"impaling"
+weight:::
+90
+value:::
+100
+parry_bonus:::
+5
+ac:::
+4
+verb:::
+"slice"
+
 
 (bastard-sword):
 id:::
