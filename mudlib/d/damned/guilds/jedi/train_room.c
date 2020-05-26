@@ -50,6 +50,7 @@ set("long",
   add_skill("trade lore", 1, 1);
    add_skill("swimming", 1);
    add_skill("melee", 1);
+   add_skill("blade", 1,1);
    add_skill("thrown", 1);
    add_skill("jedi lore", 1);
   add_skill("illusionism", 3, 1);
@@ -66,6 +67,7 @@ set("long",
   add_skill("dodge", 7, 1);
   add_skill("block", 3, 1);
   add_skill("concentrate", 1);
+  add_skill("sense force", 1);
   return;
 }
 

@@ -1,4 +1,4 @@
-inherit "/std/weapon";
+inherit "/std/lightsaber";
 
 	create() {
 	::create();
@@ -13,7 +13,8 @@ inherit "/std/weapon";
 	set_property("no add quality", 1);
 	set_property("poisoning", 5);
 	set_weight(15);
-	set_wield((: call_other, this_object(), "check_newbie" :));
+	set_wield((: call_other, this_object(), "extra_wield" :));
+	set_unwield((: call_other, this_object(), "extra_unwield" :));
 	set_value(30);
          set_wc(10, "cutting");
       set_property("enchantment", 4);
@@ -22,27 +23,4 @@ inherit "/std/weapon";
 	set_wc(2, "fire");
 	set_wc(1, "cold");
 	set_verb("eviscerate");
-}
-
-int check_newbie() {
-  if(!this_player()->is_player()) return 1;
-  if((int)this_player()->query_level() > 5) {
-    write("This weapon is intended to help newbies and may not be wielded "+
-	  "by players over level 5.");
-    return 0;
-  }
-  return 1;
-}
-
-void retro_set() {
-  set_wield((: call_other, this_object(), "check_newbie" :));
-  return;
-}
-
-int restore_me(string file) {
-  int res;
-
-  res = ::restore_me(file);
-  this_object()->retro_set();
-  return res;
 }

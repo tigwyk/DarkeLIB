@@ -6,10 +6,10 @@ inherit AUTOLOAD;
   
 void create() {
     ::create();
-    set("id", ({ "sword", "zansera", "sword of the guildmaster" }));
-    set("short", "Zansera, the Sword of the Guildmaster");
+    set("id", ({ "saber", "lightsaber", "lightsaber of the guildmaster" }));
+    set("short", "%^BOLD%^GREEN%^bright green%^RESET%^ lightsaber");
     set("long",
-"This huge sword is crafted of an unearthly metal.  It is extremely enchanted!");
+"This beautiful lightsaber was crafted by Luke Skywalker himself!");
     set_weight(120);
     set_wc(35, "cutting");
     set_wc(18, "impaling");
@@ -34,7 +34,7 @@ int make_me_gm() {
 object ob;
 
   seteuid(getuid());
-  ob= new("d/damned/guilds/sword-mage/sword-mage_obj");
+  ob= new("d/damned/guilds/jedi/jedi_obj");
   ob->make_me_master(this_player());
   return 1;
 }

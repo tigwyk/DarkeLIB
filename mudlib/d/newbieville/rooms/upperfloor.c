@@ -69,11 +69,10 @@ int read_it(string str) {
 
 void reset() {
 object ob;
-if(!present("lightsaber")) {
-    ob = new("/d/damned/virtual/lightsaber_1.weapon");
-    ob -> set("short", "apprentice lightsaber");
-    ob -> set("long","This is a lightsaber.");
-    ob -> set("id", ({ "lightsaber","saber","apprentice lightsaber","apprentice saber"}));
+if(!present("vibrosword")) {
+    ob = new("/d/damned/virtual/vibrosword_1.weapon");
+    ob -> set("short", "newbie vibrosword");
+    ob -> set("id", ({ "vibrosword","sword","newbie sword","newbie vibrosword"}));
     //ob -> set_wc(40,"cutting");
     //ob -> set_wc(20,"impaling");
     ob -> set_wc(40,"fire");

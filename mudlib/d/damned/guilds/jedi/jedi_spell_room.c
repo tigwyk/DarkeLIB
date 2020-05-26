@@ -64,6 +64,7 @@ void create() {
   add_spell("teleport", 17, 1);
   add_spell("create teleport beacon", 17, 1);
   add_spell("banshee blade", 20);
+  add_spell("combat healing",2);
   return;
 }
 

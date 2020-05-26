@@ -175,8 +175,8 @@ else if(pointerp(val)) set("id", val);
 else return;
 }
 
-void   set_short(string str)     { set("short", str); }
-void   set_long(string str)      { set("long", str); }
+void set_short(mixed str)      { set("short", str); }
+void set_long(mixed str)       { set("long", str); }
 void   set_value(int x)          { set_property("value", x); }
 void   set_float_value(float x)  { set_property("float value", x); }
 string *query_id()               { return query("id"); }
@@ -282,13 +282,15 @@ void set_name(string str) {
 }
 
 string query_short() {
-    string desc;
+    mixed desc;
 
     if(!ob_data) init_ob();
     if(wizardp(this_object()) && this_object()->query_invis()) return 0;
     if(functionp(ob_data["short"]))
 	desc = (string)(*ob_data["short"])();
     else desc = ob_data["short"];
+    if(functionp(desc))
+    desc = (*desc)();
     if(this_player() && this_object()->query_property("enchantment") &&
       random(100) < (int)this_player()->query_skill("detect magic"))
 	desc += " *glowing*";

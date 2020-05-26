@@ -8,7 +8,7 @@ inherit DAEMON;
 int cmd_inventory() {
    object *items ;
    int x,silly;
-   string result;
+   mixed result;
     if(effective_light(this_player()) < 0) {
 	notify_fail("It is too dark.\n");
 	return 0;
@@ -26,7 +26,8 @@ int cmd_inventory() {
    result = "You are carrying:\n";
    for (x=0; x < sizeof(items); x++) {
       if(items[x]->query_short()) {
-         result += (string)items[x]->query_short() + ".\n";
+         //result += (string)items[x]->query_short() + ".\n";
+         result += items[x]->query_short() + ".\n";
         }
    }
    if(result == "You are carrying:\n") result = "You are empty-handed.\n";

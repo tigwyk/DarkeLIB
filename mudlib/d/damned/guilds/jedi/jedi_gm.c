@@ -19,7 +19,7 @@ void create() {
 
   set("short", "Luke Skywalker, the Jedi Guildmaster");
   set("long", 
-"Xira is a strong-looking Seraph clad in robes and wielding an impressive sword.");
+"Luke Skywalker was thought to be a myth.");
   set_level(20);
   set_max_hp(4000);
   set_hp(4000);
@@ -27,7 +27,7 @@ void create() {
   set_mp(5000);
   set_property("base mp regen", 140);
   set_property("base hp regen", 70);
-  set_gender("female");
+  set_gender("male");
   set("race", "human");
   set_body_type("human");
   set_skill("conjuration", 150);
@@ -52,8 +52,7 @@ void create() {
   set_skill("attack", 180);
   set_overall_ac(50);
   set_property("enhance criticals", -2);
-  set_languages(({ "common", "serra", "yin", "treefolk", "catfolk", "elvish",
-		"dwarvish", "drow", "undead-tongue", "middle-english", "stormspeak" }));
+  set_languages(({ "common" }));
   set_spell_level("blizzard", 6);
   add_spell("blizzard", "$A");
   set_spell_level("internal flame", 6);
@@ -70,7 +69,7 @@ void create() {
   set_spell_level("draxnar's anti-magic field", 4);
   add_spell("draxnar's anti-magic field", "", 1, 500);
   set_property("ambidextry", 1);
-  ob = new("/d/damned/guilds/sword-mage/gm_sword");
+  ob = new("/d/damned/guilds/jedi/gm_sword");
   ob->set_property("enchantment", 15);
   ob->set_property("enhance criticals", 1);
   ob->set_property("hit bonus", 10);
