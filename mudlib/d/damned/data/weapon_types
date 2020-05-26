@@ -48,17 +48,17 @@ long:::
 metal.  The end has several blade-like protrusions to maximize
 damage."
 
-(battle-axe):
+(vibroaxe):
 wc:::
 10;"cutting"
 type:::
 "axe"
 id:::
-({"axe","battle axe"})
+({"axe","vibroaxe"})
 short:::
-"battle axe"
+"vibroaxe"
 long:::
-"This is a rather large and impressive weapon with a heavy blade at the end."
+"This is a rather large and impressive weapon with a heavy vibrating blade at the end."
 weight:::
 210
 value:::
@@ -71,17 +71,17 @@ verb:::
 "chop"
 
 
-(hand-axe):
+(hand-vibroaxe):
 wc:::
 6;"cutting"
 type:::
 "axe"
 id:::
-({"axe","hand axe"})
+({"axe","hand vibroaxe","vibroaxe","hand axe"})
 short:::
 "small hand axe"
 long::
-"This is a small axe-like weapon which may be wielded or thrown."
+"This is a small vibrating axe-like weapon which may be wielded or thrown."
 weight:::
 70
 throwable:::
@@ -119,19 +119,19 @@ verb:::
 float_value:::
 0.23
 
-(knife):
+(vibroknife):
 wc:::
 4;"impaling"
 type:::
 "knife"
 id:::
-({"knife"})
+({"vibroknife"})
 throwable:::
 1
 short:::
 "knife"
 long:::
-"This is a short pointed knife which may be wielded or thrown."
+"This is a short pointed vibroknife which may be wielded or thrown."
 weight:::
 30
 ac:::
@@ -191,18 +191,17 @@ verb:::
 "stab"
 
 
-(glaive):
+(vibroglaive):
 wc:::
 15;"cutting"
 type:::
 "two handed polearm"
 id:::
-({"glaive"})
+({"glaive", "vibroglaive"})
 short:::
-"glaive"
+"vibroglaive"
 long:::
-"The glaive is a large polearm with an odd crescent-shaped
-blade at the end."
+"The vibroglaive is a large polearm with an odd crescent-shaped vibrating blade at the end."
 weight:::
 150
 value:::
@@ -214,15 +213,13 @@ parry_bonus:::
 verb:::
 "slice"
 
-
-(halberd):
+(vibrohalberd):
 id:::
-({ "halberd" })
+({ "halberd", "vibrohalberd" })
 short:::
-"halberd"
+"vibrohalberd"
 long:::
-"It is a long polearm with an axe-like blade at the end. 
-At the end of the blade is a long point for piercing."
+"It is a long polearm with a vibrating axe-like blade at the end. At the end of the blade is a long point for piercing."
 type:::
 "two handed polearm"
 wc:::
@@ -240,46 +237,20 @@ verb:::
 parry_bonus:::
 -5
 
-
-(long-sword):
+(vibrosword):
 id:::
-({ "long sword", "longsword", "sword" })
+({ "vibrosword", "sword"})
 type:::
 "blade"
 short:::
-"longsword"
+"vibrosword"
 long:::
-"The mainstay of the fighter's arsenal, the longsword is crafted from
-choice steel.  It's edge is sharp, and its point allows stabbing attacks."
+"The mainstay of the ground fighter's arsenal, the vibrosword is crafted from
+choice materials. The blade vibrates at a very high frequency."
 wc:::
 10;"cutting"
 wc:::
-6;"impaling"
-weight:::
-90
-value:::
-100
-parry_bonus:::
-5
-ac:::
-4
-verb:::
-"slice"
-
-(lightsaber):
-id:::
-({ "lightsaber", "saber"})
-type:::
-"lightsaber"
-short:::
-"lightsaber"
-long:::
-"The mainstay of the Jedi's arsenal, the lightsaber is crafted from
-choice materials. A blade of pure energy extends from the hilt."
-wc:::
-10;"cutting"
-wc:::
-6;"impaling"
+10;"impaling"
 weight:::
 90
 value:::
@@ -292,38 +263,13 @@ verb:::
 "slice"
 
 
-(bastard-sword):
+(short-vibrosword):
 id:::
-({ "sword", "bastard sword" })
+({ "sword", "short sword", "vibrosword", "short vibrosword" })
 short:::
-"bastard sword"
+"short vibrosword"
 long:::
-"This two-handed sword has a thick, heavy blade and a sharp thrusting point."
-type:::
-"two handed blade"
-wc:::
-14;"cutting"
-wc:::
-6;"impaling"
-ac:::
-4
-value:::
-220
-weight:::
-150
-parry_bonus:::
-2
-verb:::
-"slice"
-
-
-(short-sword):
-id:::
-({ "sword", "short sword" })
-short:::
-"short sword"
-long:::
-"This short and light sword is the weapon of choice for thieves."
+"This short and light vibrosword is the weapon of choice for thieves."
 type:::
 "blade"
 wc:::
@@ -342,13 +288,13 @@ parry_bonus:::
 8
 
 
-(two-handed-sword):
+(two-handed-vibrosword):
 id:::
-({ "two handed sword", "two-handed sword", "sword" })
+({ "two handed vibrosword", "two-handed vibrosword", "vibrosword", "sword", "two-handed sword","two handed sword" })
 short:::
-"two-handed sword"
+"two-handed vibrosword"
 long:::
-"This huge, impressive weapon bears a blade which appears to be
+"This huge, impressive weapon bears a vibrating blade which appears to be
 no less than five feet in length."
 wc:::
 18;"cutting"
@@ -392,30 +338,6 @@ parry_bonus:::
 5
 verb:::
 "slice"
-
-
-(great-axe):
-id:::
-({ "axe", "great axe" })
-short:::
-"great axe"
-long:::
-"This huge polearm has a heavy chopping blade at the end."
-wc:::
-20;"cutting"
-value:::
-120
-weight:::
-320
-parry_bonus:::
--30
-type:::
-"two handed polearm"
-ac:::
-4
-verb:::
-"chop"
-
 
 (quarter-staff):
 id:::
@@ -604,28 +526,6 @@ parry_bonus:::
 verb:::
 "stab"
 
-(shod-staff):
-id:::
-({ "staff", "shod staff" })
-short:::
-"metal shod staff"
-long:::
-"This metal shod staff is difficult to wield but can be used to bash opponents!"
-type:::
-"two handed staff"
-wc:::
-15;"crushing"
-weight:::
-30
-value:::
-65
-parry_bonus:::
-10
-ac:::
-6
-verb:::
-"bash"
-
 (spiked-gauntlet):
 id:::
 ({ "gauntlet", "spiked gauntlet" })
@@ -650,25 +550,6 @@ verb:::
 parry_bonus:::
 5
 
-(rapier):
-wc:::
-18;"impaling"
-type:::
-"blade"
-id:::
-({"raper"})
-short:::
-"A rapier"
-long:::
-"A long, slender, two-edged sword with a cuplike hilt."
-weight:::
-30
-ac:::
-1
-parry_bonus:::
-25
-verb:::
-"stab"
 
 (stiletto):
 wc:::
