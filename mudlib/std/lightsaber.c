@@ -99,8 +99,8 @@
 	/* 31 */ ,"%^COLOR22%^very dim green%^RESET%^"\
 	/* 32 */ ,"%^COLOR28%^dim green%^RESET%^"\
 	/* 33 */ ,"%^COLOR34%^green%^RESET%^"\
-	/* 34 */ ,"%^COLOR40%^verdant green%^RESET%^"\
-	/* 35 */ ,"%^COLOR46%^richly verdant green%^RESET%^"\
+	/* 34 */ ,"%^BOLD%^GREEN%^verdant green%^RESET%^"\
+	/* 35 */ ,"%^BOLD%^GREEN%^richly verdant green%^RESET%^"\
 	/* 36 */ ,"%^COLOR27%^very dim cyan%^RESET%^"\
 	/* 37 */ ,"%^COLOR33%^dim cyan%^RESET%^"\
 	/* 38 */ ,"%^COLOR39%^cyan%^RESET%^"\
@@ -133,7 +133,7 @@ varargs string query_color(int x) {
 		return COLORS[x];
 	else
 		//return "%^BOLD%^GREEN%^bright green%^RESET%^";
-		return COLORS[29];
+		return COLORS[3];
   }
 
 string base_saber_name() {
@@ -188,6 +188,13 @@ string lightsaber_long() {
 	set_verb("slash");
 }
 
+void set_saber(int x) {
+	saber_color = COLORS[x];
+  }
+
+void set_custom_color(string col) {
+	saber_color = col;
+  }
 
 string query_special_id() {
 	return 0;

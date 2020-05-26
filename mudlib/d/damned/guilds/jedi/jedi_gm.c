@@ -74,7 +74,7 @@ void create() {
   ob->set_property("enhance criticals", 1);
   ob->set_property("hit bonus", 10);
   ob->move(this_object());
-  force_me("wield sword in right hand and left hand");
+  force_me("wield saber in right hand");
   return;
 }
 

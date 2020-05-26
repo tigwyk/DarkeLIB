@@ -1,15 +1,14 @@
 #include <move.h>
 #include <std.h>
 
-inherit "/std/weapon";
+inherit "/std/lightsaber";
 inherit AUTOLOAD;
   
 void create() {
     ::create();
+    set_saber(34);
     set("id", ({ "saber", "lightsaber", "lightsaber of the guildmaster" }));
-    set("short", "%^BOLD%^GREEN%^bright green%^RESET%^ lightsaber");
-    set("long",
-"This beautiful lightsaber was crafted by Luke Skywalker himself!");
+    set("long","This beautiful lightsaber was crafted by Luke Skywalker himself!");
     set_weight(120);
     set_wc(35, "cutting");
     set_wc(18, "impaling");
