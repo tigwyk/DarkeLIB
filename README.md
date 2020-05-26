@@ -2,7 +2,7 @@
 Forked from the Darkelib from Tlny, Parnell, etc.  Currently in development.
 
 ## Customized Newbie Area
-![screenshot](https://i.imgur.com/MQ4rfy3.png)
+![screenshot](https://i.imgur.com/ZMvgc73.png)
 
 ## A sample of playable races
 ![available_races](https://i.imgur.com/g23BOkK.png)

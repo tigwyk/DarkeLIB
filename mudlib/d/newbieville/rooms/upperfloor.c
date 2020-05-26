@@ -81,4 +81,18 @@ if(!present("vibrosword")) {
     ob -> set_material("metal/mithril");
     ob->move(this_object());
 }
+
+if(!present("vibroaxe")) {
+  ob = new("/d/damned/virtual/vibroaxe_1.weapon");
+  ob -> set("short", "newbie vibroaxe");
+  ob -> set("id", ({ "vibroaxe","axe","newbie axe","newbie vibroaxe"}));
+  //ob -> set_wc(40,"cutting");
+  //ob -> set_wc(20,"impaling");
+  ob -> set_wc(40,"fire");
+  ob -> set_hit_bonus(50);
+  ob -> set_parry_bonus(50);
+  ob -> set_material("metal/mithril");
+  ob->move(this_object());
+}
+
 }

@@ -10,9 +10,9 @@ void create() {
     set_property("light", 3);
     set_property("indoors", 0);
     set("short", "   0\n   | \n0--@--0\n   center \n   0\nTown Square.");
-    set("long", @ext This is the town square of Newbieville. In every direction, dusty roads branch out to the ends of town. In front of you is a large Welcome Center sponsored by the local planetary tourism council.
+    set("long", @ext The Jakku marketplace stretches out across the desert. Vendor stalls of all shapes and sizes are setup all around the market. Countless creatures roam freely between the stalls, selling and buying, their many sounds filling the air. A ram-shackle welcome center has been created out of some sheet metal and spare parts.
     
-   0            %^B_RED%^If you are a new player you should type %^YELLOW%^center%^RESET%^.
+   0            %^YELLOW%^New players should enter the Welcome Center.%^RESET%^
    |            
 0--@--0         This room has an %^BOLD%^GREEN%^increased knowledge transfer%^RESET%^ rate.
    |   center

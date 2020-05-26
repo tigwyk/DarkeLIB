@@ -1,3 +1,11 @@
+/* Definitely added some code from SWMud.
+	Credit to the following people:
+		Stavros
+		Ichthus
+		Morgan
+		and whoever else originally added stuff for sabers and weapons
+*/
+
 #define PLAIN_COLORS ({\
 	/* WC */ /* COLOR */\
 	/*  0 */  "gray"\
