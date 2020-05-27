@@ -8,4 +8,4 @@ Forked from the Darkelib from Tlny, Parnell, etc.  Currently in development.
 ![available_races](https://i.imgur.com/g23BOkK.png)
 
 ## Lightsabers!
-![lightsabers](https://i.imgur.com/bc9FD2x.png)
+![lightsabers](https://i.imgur.com/Ws3P0u4.png)
