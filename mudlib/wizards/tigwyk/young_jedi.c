@@ -2,8 +2,9 @@
 
 inherit MONSTER;
 
-
 create() {
+	object weap;
+
 	::create();
 	set_name("young jedi");
 	set_id(({"jedi","young jedi", "jedi child", "child"}) );
@@ -26,9 +27,16 @@ create() {
 	set_stats("charisma", -10);
 	set_stats("wisdom", 10);
 	set_gender("male");
+	set_class("jedi");
 	set_alignment(-10);
 
-set_languages( ({"common"}) );
+	set_languages( ({"common"}) );
 	set_speech(3, "common", ({"I'm learning how to use a lightsaber!", "Mom says I have to stay here until I can save the universe.", "Are you here to slay us all?"}), 1 );
-	set_money("silver", 1);
+	set_money("credits", 10);
+	if(!present("saber")) {
+	weap = new("/std/lightsaber");
+	weap->set_saber(random(2)+1);
+	weap->move(this_object());
+	force_me("wield saber in left hand");
+	}
 }
