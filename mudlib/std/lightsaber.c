@@ -94,13 +94,13 @@
 	/* 26 */ ,"%^COLOR52%^very dim red%^RESET%^"\
 	/* 27 */ ,"%^COLOR88%^dim red%^RESET%^"\
 	/* 28 */ ,"%^COLOR124%^red%^RESET%^"\
-	/* 29 */ ,"%^BOLD%^RED%^bright red%^RESET%^"\
+	/* 29 */ ,"%^COLOR160%^bright red%^RESET%^"\
 	/* 30 */ ,"%^COLOR196%^vivid scarlet red%^RESET%^"\
 	/* 31 */ ,"%^COLOR22%^very dim green%^RESET%^"\
 	/* 32 */ ,"%^COLOR28%^dim green%^RESET%^"\
 	/* 33 */ ,"%^COLOR34%^green%^RESET%^"\
-	/* 34 */ ,"%^BOLD%^GREEN%^verdant green%^RESET%^"\
-	/* 35 */ ,"%^BOLD%^GREEN%^richly verdant green%^RESET%^"\
+	/* 34 */ ,"%^COLOR40%^verdant green%^RESET%^"\
+	/* 35 */ ,"%^COLOR46%^richly verdant green%^RESET%^"\
 	/* 36 */ ,"%^COLOR27%^very dim cyan%^RESET%^"\
 	/* 37 */ ,"%^COLOR33%^dim cyan%^RESET%^"\
 	/* 38 */ ,"%^COLOR39%^cyan%^RESET%^"\

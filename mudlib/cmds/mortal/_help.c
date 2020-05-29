@@ -34,13 +34,13 @@ int call_help (string path, string topic) {
         case DIR_USER_HELP :
           group = "General Help";
           write_banner(group, topic);
-                   this_player()->more(path+"/"+topic, "help");
+                   this_player()->more(path+"/"+topic, "info");
           return 1;
           break;
         case DIR_CREATOR_HELP :
           group = "Developer Help";
           write_banner(group, topic);
-          this_player()->more(path+"/"+topic, "help");
+          this_player()->more(path+"/"+topic, "info");
           return 1;
           break;
         case DIR_MORTAL_CMDS :
