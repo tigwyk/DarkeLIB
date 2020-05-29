@@ -42,8 +42,8 @@ void skill_func(object from, object at, string arg) {
   while(shadow(at, 0)) shadow(at, 0)->external_destruct(shadow(at, 0));
   tmp = (string *)at->query_property("runes");
   if(!tmp) tmp = ({});
-  if(sizeof(tmp) >= 10) {
-    message("info", "No armour may receive more than 10 runes.",
+  if(sizeof(tmp) >= 3) {
+    message("info", "No armour may receive more than 3 runes.",
       from);
     remove();
     return;
@@ -79,7 +79,7 @@ void finish_work(object from, object at) {
   wc["crushing"] += skill / 4 + 2;
   if(!wc["impaling"]) wc["impaling"] = 0;
   wc["impaling"] += skill / 4 + 2;
-//TLNY 2020 This is kind of Magic and melee AC added at a lower value
+//TLNY 2020 technically magic AC added at a lower value
   if(!wc["impact"]) wc["impact"] = 0;
   wc["impact"] += skill / 2 + 1;
  if(!wc["strike"]) wc["strike"] = 0;

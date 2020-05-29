@@ -17,9 +17,7 @@ void create() {
   set_property("light", 3);
   set_property("indoors", 1);
 new("d/damned/guilds/join_rooms/tcan")->move(this_object());
-  set_related_guilds(({ "fighter", "war-priest", "cleric", }));
-    set_hated_guilds(({ "necromancer", "nethermancer", "dark-paladin", "chaotic-lord",  }));
-    set_odd_guilds(({ "nightblade", "assassin" }));
+  set_related_guilds(({ "cleric", "fighter" }));
   set("short", "The Paladin's Guild Joining Room");
   set("long", 
 "This is a the Paladin's Guild joining room.  It is very well lit with "

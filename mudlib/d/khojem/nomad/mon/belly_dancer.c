@@ -23,7 +23,7 @@ create() {
     set_name("belly dancer");
     set_id( ({ "belly dancer", "dancer" }) );
     set_level(5);
-    set_short("[5]belly dancer");
+    set_short("a belly dancer");
     set_long("The raven-haired dancer is stunningly beautiful.  Her face is "+
       "veiled, but her dark, doe-like eyes entrance you.  She is a "+
       "full-figured, olive-skinned young woman with rounded breasts.  Her "+

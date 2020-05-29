@@ -12,9 +12,9 @@ void create() {
     set_property("spell level", 12);
     set_property("moon","warzau");
     set_property("damage multiplier", 1);
-    set_property("caster message","You cast war-hewn weapon at $T.");
+    set_property("caster message","You cast holy blade at $T.");
     set_property("target message","");
-    set_property("observer message","$C casts war-hewn weapon at $T.");
+    set_property("observer message","$C casts holy blade at $T.");
     set_property("spell type",({}));
     set_property("duration", 240);
     set_property("must be present", 1);
@@ -34,22 +34,16 @@ this_player());
 
 void spell_func(object caster, object at, int power, string args, int flag) {
   object ob;
-	//int stack;
+	int stack;
   if(!at->is_weapon()) {
     message("info", "You must cast this spell at a weapon.", caster);
     caster->add_mp(props["mp cost"]);
     return;
   }
-if(flag) {
-    message("info", "The spell fizzles, costing double mp.", caster);
-    caster->add_mp(-1* props["mp cost"]);
-    remove();
-    return;
-  }
+
   message("info", "Your weapon glows with holy power.",
           caster);
   ob = new("/std/spells/shadows/weapon_shadow");
-/* TLNY2020 Removed this messed up code and added proper stacking code
 // stack check code modified to work, Nevin 10/06/96
   if(at->query_property("war-hewn") > 2) {
     message("info", "You may not stack any more war-hewn weapon spells on that weapon.",
@@ -58,21 +52,12 @@ if(flag) {
     remove();
     return;
   }
-*/
-if(!check_stack(at, ob)) {
-    message("info", "You may not stack any more war-hewn weapon spells on that weapon.",
-      caster);
-    caster->add_mp(props["mp cost"]);
-    remove();
-    return;
-  }
-/*
+// new stack stuff added, Nevin 10/06/96
 	stack = at->query_property("war-hewn");
 	stack += 1;
   at->set_property("war-hewn", stack);
-*/
-  ob->set_extra_wc(([ "holy" : 4*power, "holy" : 4*power ]));
-  ob->set_auto_crits((["holy A" : 5*power, "holy A" : 5*power ] )); 
+  ob->set_extra_wc(([ "holy" : 4*power, "impact" : 4*power ]));
+  ob->set_auto_crits((["holy A" : 5*power, "impact A" : 5*power ] )); 
   ob->start_shadow(at,props["duration"], "%^CYAN%^A war-hewn weapon spell wears off.");
   remove();
   return;

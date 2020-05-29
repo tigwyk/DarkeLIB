@@ -70,14 +70,11 @@ void pre_register() {
     em = (string)pl->query_email();
     if(em == "ccrain@marlin.utmb.edu") write("Found You!");
     em = em_lower(em);
- 
- if(email[em] && email[em] != files[i]) {
+    if(email[em] && email[em] != files[i]) {
       rept += "Duplicate email: "+
         sprintf("%s and %s (%s)", files[i], email[em],
           em)+"\n";
-    } 
-
-else
+    } else
       email += ([ em : files[i] ]);
   }
   seteuid(UID_ROOT);

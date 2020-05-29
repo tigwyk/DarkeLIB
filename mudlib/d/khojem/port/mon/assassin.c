@@ -33,6 +33,7 @@ create() {
     set_name("shadowy figure");
     set_id( ({ "assassin", "man", "shadowy figure", "rogue", "thief",
        "figure" }) );
+    set_level(6);
     set_short("shadowy figure");
     set_long("He is a hooded, full-bearded man with a mischevious glint "+
       "in his eyes." 
@@ -65,8 +66,7 @@ create() {
     money->set_money("silver",((random(20))+90));
     money->move(this_object());
     ob=new("/d/damned/virtual/dagger_5.weapon");
-    set_level(6);
-    ob->set_short("[6]darke shiv");
+    ob->set_short("darke shiv");
     ob->set("id",({ "dagger", "knife", "shiv", "darke shiv" }));
     ob->set_long("The short, darke shiv appears to be a dangerous "+
             "weapon.  Wielded by the proper hand it can do much damage."); 

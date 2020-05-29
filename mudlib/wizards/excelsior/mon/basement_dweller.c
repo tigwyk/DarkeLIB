@@ -13,14 +13,14 @@ void create() {
 	::create();
 	set_name("dweller");
 	set("id",({"basement dweller","dweller","orc"}) );
-	set_level( 17 );
-	set("short","[17]well outfited basement dweller");
+	set_level( 15 );
+	set("short","a well outfited basement dweller");
 	set("long","This is a ferocious looking fellow. It is a large deformed "+
 		"orc that has spent his life hiding in the theatre basement. It has "+
 		"clad itself in some sort of modern-day platemail. This is not "+
 		"something the novice adventurer should mess with.");
 	set("race","half-orc");
-	set_money("silver",300);
+	set_money("copper",300);
 	set_money("gold",30);
 	set_gender("neuter");
 	set_body_type("human");

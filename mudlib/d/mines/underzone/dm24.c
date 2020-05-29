@@ -12,16 +12,14 @@ void create() {
     set_property("indoors", 1);
     set("short", "You are standing in a small chamber under the breakdown "
                  "pile.");
-    set("long",@ext  
-You are standing in a small chamber under the breakdown pile. 
-It appears that the miners reached this area and were unable to 
-continue further to the east. An unusually large boulder dropped 
-right into the center of the passage. You can see several areas 
-on it where the miners tried to crack it and break off chunks. 
-However the task was too great and the miners eventuallly gave up.
-  
- 0--@  
-ext);
+    set("long", 
+"You are standing in a small chamber under the breakdown pile. "
+"It appears that the miners reached this area and were unable to "
+"continue further to the east. An unusually large boulder dropped "
+"right into the center of the passage. You can see several areas "
+"on it where the miners tried to crack it and break off chunks. "
+"However the task was too great and the miners eventuallly gave up."
+  );
     set_exits( ({ UNDER+"dm23"}),
       ({ "west" })
        );

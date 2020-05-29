@@ -57,18 +57,12 @@ void create() {
 	set_property("light",0);
 	set_property("indoors",0);
 	set("short","On a drainpipe");
-	set("long",@ext You have your way onto a drainpipe on the side of the 
-		theatre buildings. It is very scary up this high, and you wonder 
-		how you manage to get yourself into these predicaments. In fact, 
-		if you don't climb now, you may just fall and hurt yourself. To your 
-		left is a window you could enter, and to your right is a really cute blue bird. 
-		As you stare at this bird dumbfoundedly, your fingers begin to slip...
-       
-      climb  
-    @
-      window
-    
-ext);
+	set("long","You have your way onto a drainpipe on the side of the "+
+		"theatre buildings. It is very scary up this high, and you wonder "+
+		"how you manage to get yourself into these predicaments. In fact, "+
+		"if you don't climb now, you may just fall and hurt yourself. To your "+
+		"left is a window you could enter, and to your right is a really cute blue bird. "+
+		"As you stare at this bird dumbfoundedly, your fingers begin to slip...");
 	set_items( (["window":"Type 'window' to enter it.",
 		"bird":"It is incredibly cute, but really it is just a time wasting "+
 			"device to try and get you to fall. The gods are such practical "+

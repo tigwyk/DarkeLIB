@@ -13,7 +13,7 @@ create() {
     set_id( ({ "nomad war cleric","war cleric","cleric","Rom'mir",
       "rom'mir", "rommir", "Rommir" }) );
     set_level(16);
-    set_short("[16]Rom'mir");
+    set_short("Rom'mir");
     set_long("The dark, robed half-orc shaman stands before you.  "+
       "A hood is drawn up over his head and shadows his face from view.  "+
       "He is a short, stocky half-orc but you are wary of his powers." 

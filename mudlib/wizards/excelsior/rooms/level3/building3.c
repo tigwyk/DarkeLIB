@@ -16,19 +16,14 @@ void create() {
 	set_property("indoors",1);
 	set_property("light",3);
 	set("short","The crowd is rioting");
-	set("long",@ext You walk into the room and are almost hit by a flying chair. After 
-		taking cover behind an overturned table you ask someone who has done 
-		the same what all the ruckess is about. 'The tax man isn't taking any 
-		more people today. The problem is that if many of the people don't 
-		see him by today they will be arrested.' Then, as you watch, armed 
-		guards storm into the room and proceed to massacre dozens of people. 
-		The rest calm down and solemnly walk away. To the east there appears 
-		to be an office of some sort.
-
-    @--0
-    |
-    0
-ext);
+	set("long","You walk into the room and are almost hit by a flying chair. After "+
+		"taking cover behind an overturned table you ask someone who has done "+
+		"the same what all the ruckess is about. 'The tax man isn't taking any "+
+		"more people today. The problem is that if many of the people don't "+
+		"see him by today they will be arrested.' Then, as you watch, armed "+
+		"guards storm into the room and proceed to massacre dozens of people. "+
+		"The rest calm down and solemnly walk away. To the east there appears "+
+		"to be an office of some sort.");
 	set_items((["chair":"It was flying alright.",
 		"table":"It is providing you cover",
 		"someone":"They were very helpful.",

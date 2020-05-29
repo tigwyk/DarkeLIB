@@ -12,15 +12,11 @@ void create() {
     set("short", "You are standing in a long tunnel. The walls appear "
 "to have been mined recently. The floor is "
 "covered with a large amount of straw and other debris.");
-    set("long",@ext 
-You are standing in a long tunnel somewhere in the Mining Complex. 
-The cold walls stretch off in front of you, filled with pits and 
-fresh cracks from the recent mining of the Dwarves. The floor is 
-covered with a large amount of straw and other debris
-    0   
-    |   
- 0--@
-ext);
+    set("long", 
+"You are standing in a long tunnel somewhere in the Mining Complex. "
+"The cold walls stretch off in front of you, filled with pits and "
+"fresh cracks from the recent mining of the Dwarves.\nThe floor is "
+"covered with a large amount of straw and other debris\n");
     set_exits( ({ UNDER+"dm71",UNDER+"dm82"}),
       ({ "west","north" })
     );

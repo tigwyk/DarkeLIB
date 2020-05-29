@@ -222,11 +222,8 @@ if(!res) res = "";
 if(stringp(query_type()))
     res += sprintf("\nThis weapon uses the skill: %s.\n",
       query_type());
-//HONSPRON 2020 Add brittle to weapons so people know when they might explode
-    res += sprintf("\nIt is fashioned of: %s.\n",
+res += sprintf("\nIt is fashioned of %s.",
    this_object()->query_property("material_name"));
-res += sprintf("\nTotal Magic: %d",
-   this_object()->query_property("brittle"));
   if(tmp=query_property("extra long")) {
     if(stringp(tmp)) res += "\n"+tmp;
     else if(pointerp(tmp)) {
@@ -261,9 +258,9 @@ int __Wield(string str) {
     if(query("skill level") > (int)this_player()->query_skill(query_type()))
 	return notify_fail("You do not have the talent to use that weapon.\n");
 
-//HONSPRON 2020
+//Added so low level players can't wield super weapons ++Drizzt 10/15/96
     if(this_player()->is_player() &&
-      (int)this_player()->query_skill(query_type()) < (int)query_property("brittle"))
+      (int)this_player()->query_level()*4 < (int)query_property("brittle"))
         return notify_fail("There is too much magic inside this weapon for you to control.\n");
 
     if(__Weapon["wielded"]) {

@@ -41,7 +41,7 @@ string         *ADVENTURERa_PIC = (
 	  "\\\\               //",
 	  " \\\\ Unaffiliated// ",
 	  "  \\\\_         _//  ",
-	  "    _ CITIZEN _    ",
+	  "    _ %^BOLD%^WHITE%^CITIZEN%^RESET%^ _    ",
 	  "  //           \\\\  ",
 	  " // Join a Guild\\\\ ",
 	  "//               \\\\",
@@ -63,28 +63,6 @@ string         *ADVENTURERa_PIC = (
 	    "                   ",
 	  });
 
-	  	string         *DARK_PALADIN_PIC = (
-	{
-	    "                |  ",
-	    "              - o -",
-	    "    |           |  ",
-	    " oxx]========>     ",
-	    "    |              ",
-	    "                   ",
-	    "                   ",
-	  });
-
-	   string         *TINKER_PIC = (
-	{
-	    "       _           ",
-	    "  *   | | _______  ",
-	    "    * | &gt;:''''' ",
-	    "   __*|_|______    ",
-	    "  '-._     :_.-'   ",
-	    "      ) _ (        ",
-	    "     '-' '-'       ",
-	  });
-
 	string         *ARCHMAGE_PIC = (
 	  {
 	      "              ==   ",
@@ -95,41 +73,6 @@ string         *ADVENTURERa_PIC = (
 	      "{_____{/   ########",
 	      "                   ",
 	    });
-
-	string         *NECROMANCER_PIC = (
-	  {
-	      "   .---.           ",
-	      "  /     \\  .---.   ",
-	      "  |() ()| /     \\  ",
-	      "  (_ 0 _) |(\\ /)|  ",
-	      "   |xxx|  (_ o _)  ",
-	      "   '---'   |===|   ",
-	      "           '-.-'   ",
-	    });
-
-
-	  string         *ENCHANTER_PIC = (
-	    {
-		"     .-'':''-.     ",
-		"    /:+'.'.+'.\\    ",
-		"   |:-=: * :=-:|   ",
-		"   |:: .'.'.+ :|   ",
-		"    \\:.+ :.  :/    ",
-		"     /`-...-'\\     ",
-		"    `-.,___,.-'    ",
-	      });
-
-	  string         *ELEMENTALIST_PIC = (
-	    {
-		" '              |  ",
-		"  .-.,-'``'-. - o -",
-		"  '=/_       \\  |  ",
-		"*  |::'=._    ;  ' ",
-		"    \\::.  `=./`,   ",
-		"  .  '-::..-'``'  *",
-		"    *     .   +  . ",
-	      });
-
 
 	  string         *FIGHTER_PIC = (
 	    {
@@ -213,10 +156,10 @@ string         *ADVENTURERa_PIC = (
 			  if(flag)
 			      switch(to_int(columns)) {
 			  case -100..6:
-			      borg = "%^FLASH%^B_RED%^YELLOW%^";
+			      borg = "%^FLASH%^%^B_RED%^%^YELLOW%^";
 			      break;
 			  case 7..14:
-			      borg = "%^B_RED%^YELLOW%^";
+			      borg = "%^B_RED%^%^YELLOW%^";
 			      break;
 			  case 15..30:
 			      borg = "%^YELLOW%^";
@@ -225,7 +168,7 @@ string         *ADVENTURERa_PIC = (
 			      borg = "%^BLUE%^BOLD%^";
 			      break;
 			  case 46..54:
-			      borg = "%^GREEN%^BOLD%^";
+			      borg = "%^GREEN%^%^BOLD%^";
 			      break;
 			  default:
 			      borg = "";
@@ -246,10 +189,10 @@ string         *ADVENTURERa_PIC = (
 			      borg = "%^YELLOW%^";
 			      break;
 			  case 46..50:
-			      borg = "%^B_RED%^BOLD%^";
+			      borg = "%^B_RED%^%^BOLD%^";
 			      break;
 			  default:
-			      borg = "%^FLASH%^B_RED%^YELLOW%^";
+			      borg = "%^FLASH%^%^B_RED%^%^YELLOW%^";
 			      break;
 			  }
 			  for (i = 0; i < MAX_BAR_COLS; i++)
@@ -334,10 +277,7 @@ else hand2 = "You are " + hand + "ed.";
             case 26..50: mind = "slightly fuzzy"; break;
             case 51..75: mind = "clouded"; break;
             case 76..89: mind = "very fuzzy"; break;
-            //case 90..110: mind = "full of facts"; break;
-            case 90..98: mind = "full of facts"; break;
-            case 99..100: mind = "OVER FOF"; break;
-            case 101..110: mind = "OVER FOF"; break;
+            case 90..110: mind = "full of facts"; break;
             default: mind = "clear"; break;
             }
             
@@ -397,27 +337,18 @@ else hand2 = "You are " + hand + "ed.";
 				      pic_string = PRIEST_PIC;
 				      break;
 				  case "elementalist":
-				      pic_string = ELEMENTALIST_PIC;
-				      break;
-                 case "elemental-mage":
-				      pic_string = ELEMENTALIST_PIC;
+				      pic_string = ARCHMAGE_PIC;
 				      break;
 				  case "enchanter":
-				      pic_string = ENCHANTER_PIC;
+				      pic_string = ARCHMAGE_PIC;
 				      break;
 				  case "fighter":
 				      pic_string = FIGHTER_PIC;
 				      break;
 				  case "necromancer":
-				      pic_string = NECROMANCER_PIC;
-				      break;
-				  case "nethermancer":
-				      pic_string = NECROMANCER_PIC;
+				      pic_string = ARCHMAGE_PIC;
 				      break;
 				  case "nightblade":
-				      pic_string = NIGHTBLADE_PIC;
-				      break;
-                   case "assassin":
 				      pic_string = NIGHTBLADE_PIC;
 				      break;
 				  case "sword-mage":
@@ -427,7 +358,7 @@ else hand2 = "You are " + hand + "ed.";
 				      pic_string = RANGER_PIC;
 				      break;
 				  case "tinker":
-				      pic_string = TINKER_PIC;
+				      pic_string = ADVENTURERb_PIC;
 				      break;
 				  case "war-priest":
 				      pic_string = PRIEST_PIC;
@@ -435,14 +366,8 @@ else hand2 = "You are " + hand + "ed.";
 				  case "paladin":
 				      pic_string = PALADIN_PIC;
 				      break;
-                  case "dark-paladin":
-				      pic_string = DARK_PALADIN_PIC;
-				      break;
 				  case "child":
 				      pic_string = NONE_PIC;
-					  break;
-				  case "jedi":
-				      pic_string = DARK_PALADIN_PIC;
 				      break;
 				 default:
 				      pic_string = OTHER_PIC;
@@ -455,34 +380,34 @@ else hand2 = "You are " + hand + "ed.";
 			      }
 			      else gm = "None";
 			      if(wizardp(op)) gm = "immortal";
-			      message("Ninfo", "%^BOLD%^WHITE%^" + sprintf("%|72s\n", title), tp);
+			      message("Ninfo", "%^BOLD%^%^WHITE%^" + sprintf("%|72s\n", title), tp);
 			      message("Ninfo", "%^BLUE%^" + sprintf("%s\n", dashes), tp);
 
 			      message("Ninfo", "%^BLUE%^       +------------------------------------------------------------+%^RESET%^ \n", tp);
-			      message("Ninfo", "Health %^BLUE%^|%^RESET%^" + bargraph(hp, max_hp,1) + "%^RESET%^BLUE%^|%^RESET%^ " + hp + "\n", tp);
-			      message("Ninfo", "Mental %^BLUE%^|%^RESET%^" + bargraph(mp, max_mp,1) + "%^RESET%^BLUE%^|%^RESET%^ " + mp + "\n", tp);
-			      message("Ninfo", "Carry  %^BLUE%^|%^RESET%^" + bargraph(sp, max_sp,0) + "%^RESET%^BLUE%^|%^RESET%^ " + sp + "\n", tp);
+			      message("Ninfo", "Health %^BLUE%^|%^RESET%^" + bargraph(hp, max_hp,1) + "%^RESET%^%^BLUE%^|%^RESET%^ " + hp + "\n", tp);
+			      message("Ninfo", "Mental %^BLUE%^|%^RESET%^" + bargraph(mp, max_mp,1) + "%^RESET%^%^BLUE%^|%^RESET%^ " + mp + "\n", tp);
+			      message("Ninfo", "Carry  %^BLUE%^|%^RESET%^" + bargraph(sp, max_sp,0) + "%^RESET%^%^BLUE%^|%^RESET%^ " + sp + "\n", tp);
 			      message("Ninfo", "%^BLUE%^       +------------------------------------------------------------+\n", tp);
 
 			      message("Ninfo", "%^BLUE%^" + sprintf("%s\n", dashes), tp);
 
 			      message("Ninfo", "%^BLUE%^ Level: %^RESET%^" + sprintf("%-15s", attrib[0]) + "%^BLUE%^|%^RESET%^" + pic_string[0] + "%^BLUE%^|%^GREEN%^          WEALTH\n", tp);
 
-			      message("Ninfo", "%^BLUE%^  Race: %^RESET%^" + sprintf("%-15s", attrib[1]) + "%^BLUE%^|%^RESET%^" + pic_string[1] + "%^BLUE%^|%^RESET%^    Credits:  " + sprintf("%11i\n", op->query_money("credits")), tp);
+			      message("Ninfo", "%^BLUE%^  Race: %^RESET%^" + sprintf("%-15s", attrib[1]) + "%^BLUE%^|%^RESET%^" + pic_string[1] + "%^BLUE%^|%^RESET%^    Mithril:  " + sprintf("%11i\n", op->query_money("mithril")), tp);
 
-			      message("Ninfo", "%^BLUE%^   Age: %^RESET%^" + sprintf("%-15s", attrib[2]) + "%^BLUE%^|%^RESET%^" + pic_string[2] + "%^BLUE%^|%^RESET%^              " + sprintf("%11s\n", ""), tp);
+			      message("Ninfo", "%^BLUE%^   Age: %^RESET%^" + sprintf("%-15s", attrib[2]) + "%^BLUE%^|%^RESET%^" + pic_string[2] + "%^BLUE%^|%^RESET%^       Gold:  " + sprintf("%11i\n", op->query_money("gold")), tp);
 
-			      message("Ninfo", "%^BLUE%^DevPts: %^RESET%^" + sprintf("%-15s", attrib[3]) + "%^BLUE%^|%^RESET%^" + pic_string[3] + "%^BLUE%^|%^RESET%^              " + sprintf("%11s\n", ""), tp);
+			      message("Ninfo", "%^BLUE%^DevPts: %^RESET%^" + sprintf("%-15s", attrib[3]) + "%^BLUE%^|%^RESET%^" + pic_string[3] + "%^BLUE%^|%^RESET%^   Electrum:  " + sprintf("%11i\n", op->query_money("electrum")), tp);
 
-			      message("Ninfo", "%^BLUE%^ State: %^RESET%^" + sprintf("%-15s", attrib[4]) + "%^BLUE%^|%^RESET%^" + pic_string[4] + "%^BLUE%^|%^RESET%^              " + sprintf("%11s\n", ""), tp);
+			      message("Ninfo", "%^BLUE%^ State: %^RESET%^" + sprintf("%-15s", attrib[4]) + "%^BLUE%^|%^RESET%^" + pic_string[4] + "%^BLUE%^|%^RESET%^     Silver:  " + sprintf("%11i\n", op->query_money("silver")), tp);
 
 			      message("Ninfo", "%^BLUE%^Thirst: %^RESET%^" + sprintf("%-15s", attrib[5]) + "%^BLUE%^|%^RESET%^" + pic_string[5] + "%^BLUE%^|--------------------------\n", tp);
 
-                  message("Ninfo", "%^BLUE%^Hunger: %^RESET%^" + sprintf("%-15s", attrib[6]) + "%^BLUE%^|%^RESET%^" + pic_string[6] + "%^BLUE%^|%^RESET%^ Experience:  " + sprintf("%11i\n", lexp), tp);
+                              message("Ninfo", "%^BLUE%^Hunger: %^RESET%^" + sprintf("%-15s", attrib[6]) + "%^BLUE%^|%^RESET%^" + pic_string[6] + "%^BLUE%^|%^RESET%^ Experience:  " + sprintf("%11i\n", lexp), tp);
 
 			      message("Ninfo", "%^BLUE%^  Mind: %^RESET%^" + sprintf("%-15s", mind) + "%^BLUE%^|]=-"+sprintf("%|13s", attrib[7] )+"-=[%^BLUE%^|%^RESET%^      Catch:  " + sprintf("%11s\n", ccatch), tp);
 
-			      message("Ninfo", "%^BLUE%^Alerts: %^RESET%^" + sprintf("%-15s", alerts) +"%^RESET%^BLUE%^|                   |%^RESET%^     Master:  " + sprintf("%11s\n", capitalize(gm)), tp);
+			      message("Ninfo", "%^BLUE%^Alerts: %^RESET%^" + sprintf("%-15s", alerts) + "%^RESET%^%^BLUE%^|                   |%^RESET%^     Master:  " + sprintf("%11s\n", capitalize(gm)), tp);
 
 			      message("Ninfo", sprintf("%-15s", hand2) + "  %^BLUE%^|%^RESET%^                   " + "%^BLUE%^|%^RESET%^  Quest Pts:  " + sprintf("%11d\n", qp), tp);
 

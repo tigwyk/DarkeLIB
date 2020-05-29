@@ -44,7 +44,7 @@ void create() {
       "A darkened passageway can be seen to the south.  "+
       "A brass sign is securely fastened to the wall."
     );
-    add_exit("/d/damned/virtual/room_13_9.world","west");
+    add_exit("/d/damned/virtual/room_11_9.world","west");
     set_pre_exit_functions(({"west"}),({"exit_city"}));
     add_exit("/d/khojem/port/room/s01","east");
     add_exit("/d/khojem/port/room/t1","south");

@@ -8,8 +8,8 @@ void create() {
 	::create();
 	set_name("bertha");
 	set("id",({"bertha","big bertha"}) );
-	set_level( 10 );
-	set("short","[10]Big Bertha the theatre manager");
+	set_level( 5 );
+	set("short","Big Bertha the theatre manager");
 	set("long","This is Big Bertha. She runs the New Faerie Dust Theatre "+
 		"company. She looks very stressed out. Maybe you should say hi to "+
 		"her. ('say bertha, hi')");

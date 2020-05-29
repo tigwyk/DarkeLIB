@@ -16,25 +16,25 @@
 #
 # (superuser) group: Defines the general operations personnel
 # that perform the day to day global support or emergency recovery
-(god): tigwyk
-(admin): tigwyk
-(superuser): tigwyk
+(god): tiny mud
+(admin): tiny mud
+(superuser): tiny mud
 #
 # (assist) group: Defines people who require Arch-Wizard access
 # in the performance of bug hunting and/or specific functionality 
-(siteadmin): tigwyk
+(siteadmin): tiny
 (assist): noone
 #
 # (arch) group: Defines the combined resources of (superuser) and
 # the (assist) personnel.  Plans are expected to change this to
 # contain (admin) and (assist) eventually to further isolate SU
-(arch): (superuser) (assist) 
+(arch): (superuser) (assist) noone
 #
 # (approval) group: To be honest, this is pretty much unused at this
 # time and its functionality in the future is uncertain.
 # ZNOTE: Approval removal in favor of mentor expansion unless
 # this is a good place to put your QC personnel?
-(approval): 
+(approval): tiny
 #
 # DANGER: add people to (mudlib) with extreem care, people in this
 # group _potentially_ could su themselves
@@ -62,7 +62,7 @@
 #
 # (wizard) group: Contains the complete list of all low ranking immortals
 # that have yet to distinguish or prove themselves in extraordinary ways
-(wizard): noone 
+(wizard): noone zephlen geire dreadnought nual felice tailwind hellbringer xavier trisk huma gumpper
 #
 # (ambassador) group: Unused at this time (BUT REQUIRED FOR NOW)
 (ambassador): noone
@@ -81,5 +81,5 @@
 (arm_dealers): Arm_dealers
 (weavers): Weavers
 (illuminarae): Illuminarae
-(newbieville): Newbieville
+(newbieville): Newbieville tailwind thrace
 

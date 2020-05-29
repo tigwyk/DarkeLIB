@@ -19,15 +19,9 @@ void create() {
 	set_property("light",-1);
 	set_property("indoors",1);
 	set("short","A mamoth intersection");
-	set("long",@ext You have come to a large intersection in the sewer system. 
-		Tunnels head in almost every conceivable direction. However, there 
-		is a trail of bread crumbs leading southeast. Hrm...
-  0 0 0  
-   \|/  up   
- 0--@--0
-   /|\  down
-  0 0 0
-ext);
+	set("long","You have come to a large intersection in the sewer system. "+
+		"Tunnels head in almost every conceivable direction. However, there "+
+		"is a trail of bread crumbs leading southeast. Hrm...");
 	set_items( ([ ({"bread crumbs","crumbs"}):"They seem to beckon you to "+
 			"go southeast."]) );
 	set_exits( (["up":"/wizards/excelsior/rooms/sewer2.6",

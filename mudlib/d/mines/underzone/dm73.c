@@ -9,14 +9,8 @@ void create() {
     ::create();
     set_property("light", 0);
     set_property("indoors", 1);
-    set("long", @ext You are on an unstable wooden and metal mine track 
-high above a deep chasm. You can see a thundering river far below you.
-  
-        up   
-    @
-     \
-      0
-ext);
+    set("long", "You are on an unstable wooden and metal mine track "
+"high above a deep chasm. You can see a thundering river far below you.");
     set("short", 
 "You are on an unstable mine track, high above a chasm.");
     set_exits( ({ UNDER+"dm72",UNDER+"dm74"}),

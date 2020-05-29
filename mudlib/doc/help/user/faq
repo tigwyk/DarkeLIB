@@ -2,11 +2,11 @@
                     This is what it's all about!
 
 
-DayBreak (Driver: MudOS 0.9.18, Mudlib: DarkeLIB 0.1)
+Darkemud (Driver: MudOS 0.9.18, Mudlib: DarkeLIB 0.1)
 Based in Houston,Tx
 
-Gods: Tlny, Tiny
-Arches: TBD
+Gods: Diewarzau, Drizzt
+Arches: Blade, Mikus, Sakar, Warsyn, Vlaad
 
 Ok, I am going to break down the mud.
 
@@ -46,7 +46,7 @@ Ok, I am going to break down the mud.
      a medieval theme.     
 
 2)  Races
-         We try to have a variety of races on DayBreak.  Races get 
+         We try to have a variety of races on Darke.  Races get 
      bonuses to stats and they can have special abilities.  Ex: faster 
      healing, natural weaponry, etc... The races are unbalanced,  so 
      we balance the races by putting an experience modifier on the exp 
@@ -56,7 +56,7 @@ Ok, I am going to break down the mud.
      races for more information.
 
 3)  Stats
-         There are six stats on DayBreak.  Str, Con, Wis, Int, Dex, and 
+         There are six stats on Darke.  Str, Con, Wis, Int, Dex, and 
      Chr.  Stats are from 1-106.  Stats can later be modified by races, 
      items, and other things.  I love those technical terms like things.
      The stats tell how many development points you will have.
@@ -69,8 +69,8 @@ Ok, I am going to break down the mud.
 	stats
 
 4) Guilds
-        There are many guilds in DayBreak. Guilds are an important part of 
-     DayBreak.  First, guild unity is very big here. There will be a guild 
+        There are many guilds in Darke. Guilds are an important part of 
+     Darke.  First, guild unity is very big here. There will be a guild 
      master and guild represenatives. You must be invited into the guild 
      by one of them. Some guilds lean towards soloing while others lean 
      towards partying. Try to match your guild with your race. 
@@ -165,7 +165,7 @@ Ok, I am going to break down the mud.
 
      The Penalties of Death:
 
-	On DayBreak, death is relatively common, so the penalties are not
+	On DarkeMUD, death is relatively common, so the penalties are not
      terribly severe.  No permanent damage is done to your character
      unless you are killed by another player (in which case you can lose
      points off your skills).
@@ -203,7 +203,7 @@ Ok, I am going to break down the mud.
 
 
 9)  Economy
-	   DayBreak economy is based on a system of inflation.  All
+	   DarkeMUD economy is based on a system of inflation.  All
 	currency types inflate at different rates and can be exchanged at
 	the money changer.  The prices at stores change accordingly.
 	Note that store prices are usually negotiable, meaning you are
@@ -261,7 +261,7 @@ Ok, I am going to break down the mud.
 
 12) The Mud Clock
 
-     	On DayBreak, time passes roughly four times as fast as real
+     	On DarkeMUD, time passes roughly four times as fast as real
      world time.  In order to see what time, day, month, etc. it is on
      the mud clock, type 'time'.  Several spells, skills, etc. as well
      as night/day cycles, shop opening/closing times, and other events

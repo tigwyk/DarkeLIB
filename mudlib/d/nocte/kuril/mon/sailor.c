@@ -15,10 +15,9 @@ create() {
     	::create();
    	set_name("sailor");
     	set_id( ({ "sailor", "kuril mob" }) );
-  	set_level(10);
-    	set_short("[10]A swarthy sailor");
+    	set_short("A swarthy sailor");
    	set("aggressive", 0);
-
+  	set_level(10);
     	set_long(
 		"Reeking of sweat and alchohol, this sailor saunters past you. "
 	);

@@ -19,8 +19,8 @@ create() {
     ::create();
    set_name("Trechin");
    set_id( ({ "Trechin","trechin","monster" }) );
-   set_short("[25]nasty mold covered Trechin");
-   set_level(25);
+   set_short("a nasty mold covered Trechin");
+   set_level(20);
    set("long", "The Trechin is coverd in foul smelling mold. You can see "
     "drool running out from the corner of her razor sharp mouth. The "
     "drool drips down and bursts into small clouds of white acidic ash.\n");

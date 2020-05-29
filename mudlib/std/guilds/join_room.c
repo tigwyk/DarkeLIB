@@ -20,8 +20,6 @@ static string class_name;
 string master;
 static private string *related_guilds;
 static private string guild_obj;
-static private string *hated_guilds;
-static private string *odd_guilds;
 
 private void save_this_room();
 string query_class_name();
@@ -39,17 +37,6 @@ void set_related_guilds(string *guilds) {
   related_guilds = guilds;
   return;
 }
-//add
-void set_hated_guilds(string *guilds) {
-  hated_guilds = guilds;
-  return;
-}
-
-void set_odd_guilds(string *guilds) {
-  odd_guilds = guilds;
-  return;
-}
-//end
 
 void set_guild_obj(string file) {
   guild_obj = file;
@@ -60,18 +47,6 @@ string *query_related_guilds() {
   if(!related_guilds || !pointerp(related_guilds)) return ({ });
   return related_guilds;
 }
-
-//add
-string *query_hated_guilds() {
-  if(!hated_guilds || !pointerp(hated_guilds)) return ({ });
-  return hated_guilds;
-}
-
-string *query_odd_guilds() {
-  if(!odd_guilds || !pointerp(odd_guilds)) return ({ });
-  return odd_guilds;
-}
-//end
 
 void create() {
   string which;

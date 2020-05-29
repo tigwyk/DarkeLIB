@@ -2,7 +2,7 @@ inherit "/std/room";
 void create() {
    ::create();
    set_property("indoors",1);
-   set_property("light",-1);
+   set_property("light",3);
   set_property("no scry", 1);
 set_property("no summon", 1);
 	set_property("no teleport",1);

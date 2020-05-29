@@ -10,15 +10,11 @@ void create() {
 	set_property("indoors",0);
 	set_property("light",2);
 	set("short","On a bridge");
-	set("long",@ext You are on a bridge. To your east is the large building at 
-		the center of the town, the large building you were (or should have been) 
-		wondering so much about. The bridge leads right into it! The joy! You 
-		are so overcome with glee you barely notice the large merchant stand set 
-		up here. Maybe you are not as observant as you like to think.
-
- 0--@--0
-
-ext);
+	set("long","You are on a bridge. To your east is the large building at "+
+		"the center of the town, the large building you were (or should have been) "+
+		"wondering so much about. The bridge leads right into it! The joy! You "+
+		"are so overcome with glee you barely notice the large merchant stand set "+
+		"up here. Maybe you are not as observant as you like to think.");
 	set_items(([({"merchant stand","vendor","vendor stand","stand"}):"A large sign "+
 				"on top of the stand reads 'pies'. This "+
 				"must be one of the famous New Faerie Dust pie vendors!",

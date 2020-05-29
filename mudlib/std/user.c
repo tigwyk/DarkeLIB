@@ -30,11 +30,11 @@
 #define RESURRECT "/cmds/adm/_resurrect"
 #define LOG_PROPS ({ "old exp", "dev points", "dev point base", "xp mod", "hp advance", "mp advance" })
 
-//inherit "/std/user/more";
+inherit "/std/user/more";
 inherit "/std/user/ansi_convert.c";
 //changed to enherit and moveddown here let's see if this breaks
 #define OVERRIDE_IGNORE_MSG ({ "broadcast", "info", "more", "room_description", "room_exits","smell","listen","write","say", "system", "prompt", "inanimate_item", "living_item"})
-int credits;
+int platinum, gold, electrum, silver, copper;
 
 int level, ghost, crash_money, rolls, verbose_moves;
 int birth;
@@ -107,7 +107,6 @@ nomask string query_position();
 void remove();
 string query_catch();
 void set_catch(string str);
-varargs int more(mixed what, string cl, function endfun);
 
 
 void set_catch(string str) {
@@ -309,7 +308,7 @@ void reset_euid() {
 }
 
 void create() {
-    ::create();
+    more::create();
     seteuid(getuid());
     position = "player";
     wielded = ([]);
@@ -337,7 +336,7 @@ void remove() {
 	if(count)
 	    INFORM_D->do_inform("logins_and_quits","Info: " +
 	      capitalize((string)this_object()->query_name()) +
-                " has hyperspaced away from Darke Forces.",
+                " has stepped beyond the boundary of Daybreak Ridge.",
 	      who_exc);
     MULTI_D->quit(query_name());
     this_object()->tsh_cleanup();
@@ -380,9 +379,9 @@ static int finish_quit(object ob) {
 		message("quit_save", "%^BLUE%^Successful.%^RESET%^", ob);
 	    else message("quit_save", "%^RED%^Unsuccessful.%^RESET%^", ob);
 	} else {
-	    message("Nquit_save", "Setting start location to Town Square...", ob);
-	    ob->setenv("start", "/d/newbieville/rooms/townsquare");
-	    if((string)ob->getenv("start") == "/d/newbieville/rooms/townsquare")
+	    message("Nquit_save", "Setting start location to Akkad Church...", ob);
+	    ob->setenv("start", "/d/standard/square");
+	    if((string)ob->getenv("start") == "/d/standard/square")
 		message("quit_save", "%^BLUE%^Successful.%^RESET%^", ob);
 	    else message("quit_save", "%^RED%^Unsuccessful.%^RESET%^", ob);
 	}
@@ -500,7 +499,7 @@ void setup() {
     if(!hiddenp(this_object()))
 	INFORM_D->do_inform("logins_and_quits","Info: " +
 	  capitalize((string)this_object()->query_name()) +
-       " hyperspaces into Darke Forces.",
+       " steps out of the forest and onto the mountain of Daybreak Ridge.",
 	  who_exc);
     catch(ROLECALL_D->html());
     log_file("enter", "ENTER:"+
@@ -508,7 +507,11 @@ void setup() {
       ":"+ctime(time())+
       ":"+query_ip_name()+
       ":"+query_exp()+":exp"+
-      ":"+query_money("credits")+":cr"+"\n");
+      ":"+query_money("mithril")+":mi"+
+      ":"+query_money("gold")+":gd"+
+      ":"+query_money("electrum")+":el"+
+      ":"+query_money("silver")+":sl"+
+      ":"+query_money("copper")+":cp\n");
     if(query_class() && stringp(query_class()) && query_class() != "child"
       && file_exists("/d/damned/guilds/join_rooms/"+query_class()+"_join.c")) {
 	join_room = load_object("/d/damned/guilds/join_rooms/"+
@@ -530,9 +533,13 @@ void setup() {
     }
     more(explode(NEWS_D->get_news(this_object()), "\n") );
     command("look");
-    if(credits) {
-	add_money("credits", credits);
-	credits = 0;
+    if(platinum || gold || silver || electrum || copper) {
+	add_money("electrum", electrum);
+	add_money("gold", gold);
+	add_money("silver", silver);
+	add_money("platinum", platinum);
+	add_money("copper", copper);
+	platinum = gold = electrum = silver = copper = 0;
     }
     reset_money();
     if(query_exp() < 0) {
@@ -555,12 +562,6 @@ void setup() {
 	GUILD_D->set_last_on(query_class(), time());
     SAVEALL_D->restore_crash_items(this_object());
 }
-
-
-varargs int more(mixed what, string cl, function endfun) {
-    return MORE_D->more(what, cl, endfun);
-  }
-
 
 // Added these lines so wizzes couldn't just call heart_beat() and
 // get age.  - Geldron 051296
@@ -616,16 +617,10 @@ varargs static void heart_beat(int recurs_flag) {
 	save_player(query_name());
 	autosave = player_age + 500;
     }
-    /*
-    if(sizeof(query_attackers()) && getenv("SCORE") == "on")
-    message("my_combat",""+sprintf("health: %d (%d) energy: %d (%d)", query_hp(), query_max_hp(),query_mp(), query_max_mp()), this_object());
-    */
-//old code replaced by TLNY2020 with new code above ^
     if(sizeof(query_attackers()) && getenv("SCORE") != "off")
 	message("my_combat", sprintf("hp: %d (%d)  mp: %d (%d)",
 	    query_hp(), query_max_hp(), query_mp(), 
 	    query_max_mp()), this_object());
-
     if(stringp(props["lycanthrope moon"]) && !this_object()->
       query("in creation")) {
 	tod = (string)EVENTS_D->query_time_of_day();
@@ -856,7 +851,7 @@ nomask void die() {
 catch ("/daemon/pk_d"->add_player_kill((query_attackers())[0]));
     cease_all_attacks();
     ghost = 1;
-    setenv("start", "/d/newbieville/rooms/townsquare");
+    setenv("start", "/d/standard/square");
     save_player( query_name() );
     PLAYER_D->add_player_info();
 }
@@ -1295,7 +1290,7 @@ void  fix_crash_victim() {
     int i;
 
     i= random(5);
-    add_money("credits", to_int(crash_money*currency_rate("credits")));
+    add_money("gold", to_int(crash_money*currency_rate("gold")));
     message("info", "You recover some of your lost money.", this_player());
     crash_money = 0;
 }

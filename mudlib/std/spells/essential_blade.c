@@ -58,25 +58,22 @@ void spell_func(object caster, object at, int power, string args, int flag) {
     remove();
     return;
   }
-  
+  message("info", "You imbue the weapon with the power of "+props["element"]+".",
+        caster);
   tmp = ([]);
   i = sizeof(ele);
   while(i--) tmp += ([ ele[i] + " B" : 5*power ]);
   seteuid(getuid());
-  
-
   ob = new("/std/spells/shadows/weapon_shadow");
-  if(check_stack(at, ob)) {
-	message("info", "You imbue the weapon with the power of "+props["element"]+".", caster);
-	ob->set_auto_crits(tmp);
-	ob->start_shadow(at, props["duration"], "%^CYAN%^An essential blade spell wears off.");
+  if(!check_stack(at, ob)) {
+    message("info", "You may not stack any further essential blades on that weapon.",
+      caster);
+    caster->add_mp(props["mp cost"]);
+    remove();
+    return;
   }
-   else{
-	   message("info", "You may not stack any further essential blades on that weapon.", caster);
-	caster->add_mp(props["mp cost"]);
-	ob->external_destruct(ob);
-  }
-
+  ob->set_auto_crits(tmp);
+  ob->start_shadow(at, props["duration"], "%^CYAN%^An essential blade spell wears off.");
   remove();
   return;
 }

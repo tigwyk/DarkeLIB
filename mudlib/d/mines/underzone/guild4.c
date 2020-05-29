@@ -10,11 +10,9 @@ void create() {
   set_property("light", 2);
   set_property("indoors", 1);
   set("short", "You are standing in a dark dungeon.\n");
-  set("long", @ext You are standing in a dark dungeon. The slimy cold 
-      stone walls seem to close in on you. Sealing you into the 
-      darkness. The wall to the west is totally dry.
-
-ext);
+  set("long", "You are standing in a dark dungeon. The slimy cold "
+      "stone walls seem to close in on you. Sealing you into the "
+      "darkness.\nThe wall to the west is totally dry.\n");
 }
 init(){
   ::init();

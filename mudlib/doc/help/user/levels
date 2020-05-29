@@ -1,4 +1,4 @@
-Levels on DayBreak are gained by having the requisite amount of exp for
+Levels on Darkemud are gained by having the requisite amount of exp for
 the level you are trying to attain. Levels grant you more hp, mp, and allow
 you to learn more powerful skills, along with becoming more powerful in
 the skills you already have.
@@ -21,5 +21,3 @@ Lvl   Exp    |  Lvl   Exp      |  Lvl   Exp       |  Lvl   Exp
 If you get past level 40 you need to get a life!  :)  ++Drizzt
 If this does not fit on one screen you can extend the screen by:
 setenv LINES <amt>
-
-Pending Heavy Changes ++Tlny 2020

@@ -11,20 +11,14 @@ void create() {
     set_property("indoors", 1);
     set("short",
 "You are standing at the northern end of the entrance tunnel.");
-    set("long",@ext
-You are now standing at the northern end of the entrance 
-tunnel. The air is becoming slightly stuffy. The rough walls are cracked 
-and chipped after years of being exposed to the elements. Several lit 
-torch stands cast errie shadows on them as the flames flicker back 
-and forth in the wind currents.
-The floor has deep ruts cut into 
-it. The loaded mining carts that pass through here must be very heavy.
-    0   
-    |   
-    @
-    |
-    0   
-ext);
+    set("long",
+"You are now standing at the northern end of the entrance "
+"tunnel. The air is becoming slightly stuffy. The rough walls are cracked "
+"and chipped after years of being exposed to the elements. Several lit "
+"torch stands cast errie shadows on them as the flames flicker back "
+"and forth in the wind currents.\nThe floor has deep ruts cut into "
+"it. The loaded mining carts that pass through here must be very heavy.\n"
+    );
       set_exits(({UNDER+"dme",
     UNDER+"dm2"}),
       ({ "south", "north" })

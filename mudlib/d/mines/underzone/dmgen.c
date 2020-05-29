@@ -10,12 +10,7 @@ void create() {
     set_property("light", 2);
     set_property("indoors", 1);
      set("short", "Mining tunnel.");
-     set("long", @ext You are standing in a mining tunnel.
-      
-        workroom   
-    @
-        entrance   
-ext);
+     set("long", "You are standing in a mining tunnel.");
     set_exits( ({ "/wizards/maxwell/workroom", "/wizards/maxwell/underzone/dme" }),
       ({ "workroom", "entrance" })
     );

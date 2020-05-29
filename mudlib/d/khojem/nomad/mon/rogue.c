@@ -35,17 +35,8 @@ void create() {
     set_id( ({ "shadowy figure", "man", "rogue", "thief", "nomad", "figure",
           "shadowy", "peasant", "nomad peasant" }) );
     zlevel=15+random(3);
-
-if (zlevel == 15) set_short("[15]nomad peasant");
-else 
-if (zlevel == 16) set_short("[16]nomad peasant");
-else
-if (zlevel == 17) set_short("[17]nomad peasant");
-else
-if (zlevel == 18) set_short("[18]nomad peasant");
-else set_short("[19]nomad peasant");
-	set_level(zlevel);
-
+    set_level(zlevel);
+    set_short("nomad peasant");
     set_long("He is a hooded, full-bearded man with a mischevious glint "+
       "in his eyes.  He seems to wander aimlessly through camp." 
       );

@@ -10,14 +10,12 @@ void create() {
     set_property("indoors", 1);
     set("short", "You are standing on a long wooden dock, bordering a"
      "silent bay leading out to the sea.\n");
-    set("long",@ext 
-     You are standing on a large wooden dock. The long wooden pilars 
-     are spaced out every few feet, sumerged into the cold murky water.
-     You can see the ocean stretching out to the horizon.
-
-ext);          
-    set_exits( ({ "/d/damned/virtual/room_16_27.world",
-                  "/d/damned/virtual/room_16_28.world"}),
+    set("long", 
+     "You are standing on a large wooden dock. The long wooden pilars "
+     "are spaced out every few feet, sumerged into the cold murky water.\n"
+     "You can see the ocean stretching out to the horizon.\n");          
+    set_exits( ({ "/d/damned/virtual/room_24_18.world",
+                  "/d/damned/virtual/room_24_19.world"}),
       ({ "coast","sea"}) );
     set_items( ([
           "dock" : "The dock is made of long wooden boards.",

@@ -22,7 +22,7 @@ create() {
     set_name("dervish");
     set_id( ({ "dervish", "whirling dervish" }) );
     set_level(12);
-    set_short("[12]a whirling dervish");
+    set_short("a whirling dervish");
     set_long("The dervish is moving, whirling, and twirling so fast... you can't "+
       "destinguish many of its features."
       );

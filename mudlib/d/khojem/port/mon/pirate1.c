@@ -13,14 +13,6 @@ create() {
   ::create();
     zlevel = 8 + random(3);
 	set_overall_ac((zlevel-2));
-if (zlevel == 8) set_short("[8]pirate");
-else 
-if (zlevel == 9) set_short("[9]pirate");
-else
-if (zlevel == 10) set_short("[10]pirate");
-else
-if (zlevel == 11) set_short("[11]pirate");
-else set_short("[12]pirate");
     set_level(zlevel);
     zlevel = 2400 * zlevel;
     set_exp(zlevel);
@@ -33,6 +25,7 @@ else set_short("[12]pirate");
       default : set_name("another sailor"); break;
     }
     set_id( ({ "pirate", "mob" }) );
+    set_short("pirate");
     set_long("The skin of the pirate's face has been roughened by "+
       "years of exposure to sun and sea."
       );

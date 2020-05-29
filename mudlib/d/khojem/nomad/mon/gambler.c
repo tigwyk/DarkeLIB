@@ -14,7 +14,7 @@ create() {
     set_name("gambler");
     set_id( ({ "nomad gambler", "gambler", "nomad" }) );
     set_level(13);
-    set_short("[13]nomad gambler");
+    set_short("nomad gambler");
     set_long("The gambler appears interested in playing the game.  He is a short "+
       "fat nomad with a bald, sunburnt head.  He is alert to the game and "+
       "constantly mutters to himself."

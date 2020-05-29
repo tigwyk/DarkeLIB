@@ -12,7 +12,7 @@ create() {
     set_name("King's Champion");
     set_id( ({ "champion","wood-elf" }) );
     set_level(5);
-    set_short("[5]king's champion");
+    set_short("king's champion");
     set_long("The Wood-Elf King's Champion is a formidable opponent." 
       );
     set("race", "wood-elf");

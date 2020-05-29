@@ -14,8 +14,8 @@ create() {
     ::create();
    set_name("Mikarty");
    set_id( ({ "Mikarty","dwarf","guard","mikarty" }) );
-   set_short("[25]Mine guard Mikarty");
-   set_level(25);
+   set_short("Mine guard Mikarty");
+   set_level(20);
    set("long", "Mikarty is standing before you wearing the traditional "
     "uniform of a Dwarf security officer.");
    set_gender("male");
@@ -24,7 +24,7 @@ create() {
    set_hp(2500);
    set_alignment(0);
    set("aggressive", 0);
-   //set_exp(400000);
+   set_exp(400000);
    set_body_type("human");
    set_overall_ac(25);
    set_wielding_limbs( ({"right hand","left hand"}) );

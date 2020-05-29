@@ -10,11 +10,8 @@ void create() {
     set_property("light", 2);
     set_property("indoors", 1);
     set("short", "You are standing in an underground room");
-    set("long",@ext 
-You are in a long tunnel 75.
-   
- 0--@
-ext);
+    set("long", 
+"You are in a long tunnel 75.");
     set_exits( ({ UNDER+"dm9c"}),
       ({ "west" })
     );

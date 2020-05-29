@@ -9,9 +9,9 @@ void init() {
 
 void create() {
     ::create();
-    set("short", "Daybreak Church");
+    set("short", "Akkad Church");
     set("long",
-      "This is the ornate church of Daybreak.  Here you may pray for "
+      "This is the ornate church of Akkad.  Here you may pray for "
       "resurrection.  Clerics and other clergy mill about the room.  "
       "The post office lies beneath a trap door in the church.  "+
       "To the north is Blessing Way.\nThere are a northern and a southern "

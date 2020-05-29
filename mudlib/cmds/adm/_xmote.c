@@ -22,7 +22,7 @@
 
 #include <security.h>
 
-#define CHANGE_GROUPS ({ "superuser", "assist", "mentor", "elder", "wizard" , "player" })
+#define CHANGE_GROUPS ({ "superuser", "assist", "mentor", "elder", "wizard" })
 
 
 

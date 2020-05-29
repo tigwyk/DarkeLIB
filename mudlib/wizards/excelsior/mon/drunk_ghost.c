@@ -20,9 +20,9 @@ void create() {
 	::create();
 	set_name("ghost");
 	set("id",({"ghost","drunk ghost"}));
-	set_level(10);
+	set_level(3);
 	set("long","This ghost may have ahd a bit too much to drink.");
-	set("short","[10]This ghost may have had a bit to much to drink");
+	set("short","This ghost may have had a bit to much to drink");
 	set("race","undead");
 	set_gender("male");
 	set_body_type("human");

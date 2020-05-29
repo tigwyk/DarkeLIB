@@ -9,7 +9,7 @@ void create(){
 	set_name("gate sentry");
 	set_id( ({"sentry", "gate sentry" }) );
 	set_level(15);
-	set("short", "[15]A gate sentry");
+	set("short", "A gate sentry");
 	set("long",
 		"With yellow-shot eyes, gate guard leers at you as you pass.  "
 		"Well known to accept 'gifts' from travellers, they can "

@@ -31,7 +31,4 @@ int any_hook(string str) {
     return 0;
 }
 */
-void reset() {
-	::reset();
-}
 

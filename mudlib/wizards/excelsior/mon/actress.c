@@ -17,15 +17,15 @@ void create() {
 	::create();
 	set_name("actress");
 	set("id",({"actress","crazy actress"}) );
-	set_level(10);
-	set("short","[10]actress running amuck");
+	set_level(5);
+	set("short","An actress running amuck");
 	set("long","This appears to be an actress at the New Faerie Dust theatre "+
 		"company who has gone mad and is running amuck. She had locked herself "+
 		"in her dressing room and totally trashed it.");
 	set("race","human");
 	set_gender("female");
 	set_body_type("human");
-	set_overall_ac( 10 );
+	set_overall_ac( 4 );
 	set_moving(1);
 	set_speed(20);
 	set_max_hp( 100);

@@ -10,7 +10,7 @@ void create() {
   set_carry(1);
   set_save(1);
   set_level(2);
-  set_short("[2]quick little brownie");
+  set_short("quick little brownie");
   set_long("Taken from its forest home, this small brownie looks at you "
 	"sadly.");
   set_aggr_status(0);

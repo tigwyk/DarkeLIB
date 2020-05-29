@@ -10,15 +10,10 @@ void create() {
 	set_property("night light",2);
 	set_property("indoors",1);
 	set("short","Entering the newbie zone");
-	set("long",@ext This is a portal room to a small newbie area just outside 
-		the city limits in the forest. Because newbies need the help, only 
-		players levels 1 and 2 may use this transporter and thus enter the 
-		area.
-
- 0--@
-       portal
-    
-ext);
+	set("long","This is a portal room to a small newbie area just outside "+
+		"the city limits in the forest. Because newbies need the help, only "+
+		"players levels 1 and 2 may use this transporter and thus enter the "+
+		"area.");
 	set_items((["portal":"Type 'portal' to use it."]));
 	set_exits((["west":"/wizards/excelsior/rooms/emporium/foyer",
 		"portal":"/wizards/excelsior/newbie/rooms/fr1.2"]));

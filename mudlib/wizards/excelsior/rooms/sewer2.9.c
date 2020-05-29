@@ -15,14 +15,8 @@ void create() {
 	set_property("light",0);
 	set_property("indoors",1);
 	set("short","Deeper in the sewers");
-	set("long",@ext You have clawed your way even deeper into the sewer system. 
-		All these tunnels look the same. Sigh.
-  0    
-   \   
-    @
-    |
-    0
-ext);
+	set("long","You have clawed your way even deeper into the sewer system. "+
+		"All these tunnels look the same. Sigh.");
 	set_items( (["sewer":"Wtf.",
 		"tunnels":"They all look the same.", ]) );
 	set_exits( (["northwest":"/wizards/excelsior/rooms/sewer1.8",

@@ -12,7 +12,7 @@ create() {
     ::create();
    set_name("slave");
    set_id( ({ "slave" }) );
-   set_short("[1]haggard and dirty slave");
+   set_short("a haggard and dirty slave");
    set_level(1);
    set("gang bang",0);
    set("long", "This poor guy looks like he has suffered considerably. "

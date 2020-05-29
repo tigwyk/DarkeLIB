@@ -1,5 +1,5 @@
 #include <std.h>
-#include "nevin.h"
+#include <nevin.h>
 
 inherit ROOM;
 
@@ -9,16 +9,13 @@ void create() {
 	set_property("light", 1);
 	set_property("no castle", 1);
 	set("short", "Tunnel Entrance");
-	set("long",@ext
-		To the east is a tunnel carved from the very rocks of the 
-		canyon.  Small symbols and shapes line the cave entrance.  
-		It appears that this cave is inhabited...or it once was.
-		  The remains of a large bonfire lays smoldering in front of 
-		the tunnnel's mouth.
-    0   
-    |   
- 0--@--0	
-ext);
+	set("long",
+		"To the east is a tunnel carved from the very rocks of the "
+		"canyon.  Small symbols and shapes line the cave entrance.  "
+		"It appears that this cave is inhabited...or it once was."
+		"  The remains of a large bonfire lays smoldering in front of "
+		"the tunnnel's mouth."
+	);
 	set_items( ([
 		"tunnel": "It's too dark to see very far into the tunnel.",
 		"symbols": "You are unable to make out any meaning from them.",

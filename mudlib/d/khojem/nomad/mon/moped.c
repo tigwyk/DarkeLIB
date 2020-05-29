@@ -13,7 +13,7 @@ create() {
     set_name("moped");
     set_id( ({ "chief", "moped", "chief moped" }) );
     set_level(18);
-    set_short("[18]chief moped");
+    set_short("chief moped");
     set_long("Chief Moped is aged and worn from years of service for the tribe.  "+
       "He has lived a good life and life in his position and level have rewarded "+
       "him well.  He is obese and large folds of fat create multiple chins and "+

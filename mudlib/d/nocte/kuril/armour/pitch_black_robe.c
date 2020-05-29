@@ -8,7 +8,7 @@ void create() {
 	set("long",
 		"Long flowing robes that cover almost the entire body.  "
 	);
-	set_type("robe");
+	set_type("armor");
 	set_ac(12);
 	set_limbs( ({ "torso", "left arm", "right arm", "left leg",
 		"right leg" }) );

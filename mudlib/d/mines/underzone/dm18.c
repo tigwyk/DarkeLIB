@@ -11,19 +11,14 @@ void create() {
     set_property("light", 0);
     set_property("indoors", 1);
     set("short", "You are floating in an underground river.");
-    set("long",@ext 
-You are floating in an underground river somewhere below the 
-Under'Drin Mining complex. The passage is almost completely filled 
-with the dark green water. Your light can only penetrate a few feet 
-into the deep murky waves. Several large rocks, sticking out from 
-the deep water, threaten to smash your body.
-The river opens into a larger room upstream.  
- 
-        upstream
-    @
-        downstream
-           
-ext);
+    set("long", 
+"You are floating in an underground river somewhere below the "
+"Under'Drin Mining complex. The passage is almost completely filled "
+"with the dark green water. Your light can only penetrate a few feet "
+"into the deep murky waves. Several large rocks, sticking out from "
+"the deep water, threaten to smash your body.\n"
+"The river opens into a larger room upstream.\n"    
+       );
     set_exits( ({ UNDER+"dm17o",UNDER+"dm19" }),
       ({ "downstream", "upstream" })
     );

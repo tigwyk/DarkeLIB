@@ -25,8 +25,8 @@ void create() {
    ::create();
    set_name("orderly");
    set("id", ({ "orderly","nurse","a orderly","a nurse"}) );
-   set_level( 10 );
-   set("short","[10]orderly");
+   set_level( 3 );
+   set("short","An orderly");
    set("long","This guy is smoking while people all around him "+
       "are in agony. He appears to be some sort of a male nurse, not quite a cleric. In any case, he is totally ignoring you. You should 'talk' "+
       "to him. (see 'help communication')");

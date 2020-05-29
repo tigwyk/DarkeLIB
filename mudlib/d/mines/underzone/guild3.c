@@ -11,16 +11,12 @@ void create() {
   set_property("light", 2);
   set_property("indoors", 1);
   set("short", "You are standing in a smooth tunnel.\n");
-  set("long", @ext You have entered a circular chamber. Painted on the 
-      walls and ceiling are huge murals of gory battle fields
-      and fallen warriors. Large columns stretch up and lock 
-      against huge metal bands that line the ceiling between 
-      the murals.\nAttached to the walls are several steel 
-      rings. Below one of the rings is a large steel plate.
-  0    
-   \  
-    @
-ext);
+  set("long", "You have entered a circular chamber. Painted on the "
+      "walls and ceiling are huge murals of gory battle fields "
+      "and fallen warriors. Large columns stretch up and lock "
+      "against huge metal bands that line the ceiling between "
+      "the murals.\nAttached to the walls are several steel "
+      "rings. Below one of the rings is a large steel plate.");
   set_exits( ({ GUILDR+"guild2"}),
             ({ "northwest"}) );
   inv = ({});

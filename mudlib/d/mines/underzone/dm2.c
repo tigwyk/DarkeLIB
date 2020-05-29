@@ -13,17 +13,11 @@ void create() {
     set_property("indoors", 1);
     set("short",
 "You are standing in a dark chamber somewhere in the mine.");
-    set("long",@ext 
-You are standing in a dark chamber surrounded by  mine carts, barrels 
-and a couple of dirty burlap bags. A set of rusty mine cart tracks stretch 
-into a dusty tunnel to the northwest. The entrance tunnel is to the 
-south.
-  0   
-   \   
-    @
-    |
-    0
-ext);
+    set("long", 
+"You are standing in a dark chamber surrounded by  mine carts, barrels "
+"and a couple of dirty burlap bags. A set of rusty mine cart tracks stretch "
+"into a dusty tunnel to the northwest. The entrance tunnel is to the "
+"south." );
     x = 1;
     set_exits( ({ "dm1","dm3"}),
                ({ "south", "northwest"}));

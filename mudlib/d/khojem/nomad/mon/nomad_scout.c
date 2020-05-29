@@ -14,7 +14,7 @@ create() {
     set_name("nomad scout");
     set_id( ({ "nomad scout", "nomad", "scout" }) );
     set_level(10);
-    set_short("[10]nomad scout");
+    set_short("nomad scout");
     set_long("The nomad scout is looking for invaders of his land."
       );
     set("race", "high-man");

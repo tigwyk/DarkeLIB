@@ -18,12 +18,5 @@ chest or locker open, all items contained therein would be
 given unto our God.
 TEXT
 );
-
-if (!present("rune")) {
-	new ("/std/diewarzau/obj/misc/h_rune") ->move(this_object());
-	 }
-if (!present("locker")) {
-	new("/std/diewarzau/obj/misc/storage_locker")->move(this_object());
-	}
 }
 

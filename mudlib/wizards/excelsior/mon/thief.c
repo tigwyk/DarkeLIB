@@ -22,7 +22,7 @@ void create() {
 	set("id",({"thief","criminal","crook","robber"}) );
 	set_level( 10 );
 	set_fingers( 5 );
-	set("short","[10]crafty little thief");
+	set("short","A crafty little thief");
 	set("long","This little thief is likely to steal from you if you don't "+
 		"watch out.");
 	ben = random(3);

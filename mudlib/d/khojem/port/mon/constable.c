@@ -15,22 +15,12 @@ create() {
     set_name("constable");
     set_id( ({ "constable", "guard", "cop" }) );
     zlevel = 16 + random(4);
-if (zlevel == 16) set_short("[16]constable");
-else 
-if (zlevel == 17) set_short("[17]constable");
-else
-if (zlevel == 18) set_short("[18]constable");
-else
-if (zlevel == 19) set_short("[19]constable");
-else
-if (zlevel == 20) set_short("[20]constable");
-else set_short("[15]constable");
     set_level(zlevel);
     set_melee_damage( ([ "crushing" : 30, "strike" : 10 ]) );
     set_overall_ac(25);
     set_exp(200000);
     set("gang bang",1);
-
+    set_short("constable");
     set_long("A broad shouldered constable of Vo'Sangor."
       );
     set("race", "dwarf");

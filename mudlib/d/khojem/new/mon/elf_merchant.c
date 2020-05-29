@@ -12,7 +12,7 @@ create() {
     set_name("Elf Merchant");
     set_id( ({ "elf merchant","merchant", "elf" }) );
     set_level(1);
-    set_short("[1]elf merchant");
+    set_short("elf merchant");
     set_long("The Wood-Elf Merchant is busy carrying his goods to market." 
       );
     set("race", "wood-elf");
@@ -30,7 +30,6 @@ create() {
     set_lang_prof("drow",8);
     set_lang_prof("middle-english",8);
 	for(int x = 0;x > 5;x++)
-    new("/std/obj/torch")->move(this_object());
     new("/std/obj/torch")->move(this_object());
 
     add_money("silver",random(50)+20);

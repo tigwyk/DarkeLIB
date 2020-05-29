@@ -17,7 +17,6 @@ void create() {
 	mod = 0;
 }
 
-
 void set_stat(string arg) { stat = arg; }
 
 void set_mod(int arg) { mod = arg; }

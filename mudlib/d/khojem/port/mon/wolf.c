@@ -15,13 +15,7 @@ create() {
     set_id( ({ "silvery wolf", "wolf" }) );
     mod=(random(2));
     set_level((9+mod));
-if (mod == 0) set_short("[9]A silvery wolf");
-else 
-if (mod == 1) set_short("[10]A silvery wolf");
-else
-if (mod == 2) set_short("[11]A silvery wolf");
-
-else set_short("[12]A silvery wolf");
+    set_short("A silvery wolf");
     set_long("The wolf has human-like intelligence as it looks deeply into your "+
       "soul.  Its fur radiates a silvery glow and its snout is surrounded by "+
       "aged, bushy gray hairs."

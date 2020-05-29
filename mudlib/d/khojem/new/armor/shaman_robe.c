@@ -14,7 +14,7 @@ void create() {
       "sleeves are designed to protect the wearer's arms.");
     set_weight(90);
     set_value(220);
-    set_type("robe");
+    set_type("armour");
     set_limbs( ({ "torso", "right arm", "left arm" }) );
     set_ac(10);
         set_ac(11, "aether");

@@ -71,8 +71,8 @@ int check_brittle(object weap, object from, int brit) {
     return 1;
 
   }
-  //HONSPRON 2020 - getting rid of random weapons blowing up... work in progress
-  if(200 < old) {
+
+  if(random(100) < (old-5)) {
 
     message("info",
 

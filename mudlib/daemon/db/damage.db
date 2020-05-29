@@ -1,4 +1,4 @@
-#       These be the damage tables for DayBreak.  They are really
+#       These be the damage tables for DarkeMUD.  They are really
 #       simple.  They are of the format <roll-range>:<effect>
 #       roll-range is a range of numbers in the form: <low>..<hi>
 #           ex: 0..25

@@ -44,11 +44,6 @@ void create() {
 	restore_object("/open/stuff");
    set_property("indoors",1);
    set_property("light",3);
-    set_property("no attack", 1); 
-    set_property("no scry", 1);
-    set_property("no teleport", 1);
-    set_property("no summon", 1);
-    set_property("no cast", 1);
    add_exit("/d/damned/guilds/tinker/special_room", "south");
    //add_exit("/d/damned/guilds/join_rooms/tinker_join", "east");
    add_exit("/d/damned/guilds/tinker/t_hole_storage", "north");

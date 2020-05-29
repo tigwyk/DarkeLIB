@@ -14,9 +14,9 @@ void create() {
 }
 
 void reset() {
-  //object ob;
- // if(!present("philip"))
-    //new("/d/damned/guilds/cleric/c_guard")->move(this_object());
+  object ob;
+  if(!present("philip"))
+    new("/d/damned/guilds/cleric/c_guard")->move(this_object());
 // #if 0
 // removed the below lines of code because it was broken JLAU
  /* if(!present("box")) {

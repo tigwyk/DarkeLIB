@@ -11,15 +11,15 @@ create() {
     ::create();
    set_name("jenkarb");
    set_id( ({ "jenkarb","Jenkarb","dwarf","miner" }) );
-   set_short("[28]Jenkarb the Evil Dwarf");
-   set_level(28);
+   set_short("Jenkarb the Evil Dwarf");
+   set_level(25);
    set_max_hp(3500);
    set_hp(3500);
    set("long", "Jenkarb stands before you and sneers in your general "
        "direction. He reminds you of the typical bully.");
    set_gender("male");
    set("race", "dwarf");
-   //set_exp(800000);
+   set_exp(800000);
    set_alignment(-500);
    set_wielding_limbs( ({"right hand","left hand"}) );
    set_body_type("human");

@@ -588,7 +588,7 @@ void receive_message(string cl, string msg) {
   object from;
   string who, line, me;
 
-  msg = decolorize(msg);
+  msg = eliminate_colour(msg);
   if(sscanf(msg, "%s tells you: %s", who, line) == 2) {
     if(from = find_player(lower_case(who))) {
       while(strlen(line) > 1 && line[0] == ' ')

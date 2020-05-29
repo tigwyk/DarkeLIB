@@ -1,4 +1,4 @@
-DayBreak is best experienced from a colour terminal.  Information
+DarkeMUD is best experienced from a colour terminal.  Information
 comes across to people with special codes denoting what type of information
 is being sent.  If you have used the "setenv" command to specify
 a terminal protocol that supports colour codes, then the informations

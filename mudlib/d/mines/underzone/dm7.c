@@ -10,17 +10,14 @@ void create() {
     set_property("light", 0);
     set_property("indoors", 1);
     set("short", "You have entered some sort of storage area.");
-    set("long",@ext 
-You have entered some sort of storage area. There are several empty 
-wooden shelves leaning against the walls and a couple of crates 
-scattered on the cracked stone floor. You can hear the timber support 
-beams groan under their heavy load. Most of the beams look like they 
-should be replaced. The moist air has rotted the wood and a white 
-mold has started to grow on the damper sections.  
-       
-    @
-       arch         
-ext);
+    set("long", 
+"You have entered some sort of storage area. There are several empty "
+"wooden shelves leaning against the walls and a couple of crates "
+"scattered on the cracked stone floor. You can hear the timber support "
+"beams groan under their heavy load. Most of the beams look like they "
+"should be replaced. The moist air has rotted the wood and a white "
+"mold has started to grow on the damper sections." 
+      );
     set_exits( ({ UNDER+"dm6" }),({ "arch" }) );
     set_items( ([
        "shelves" : "The wooden shelves are empty.",

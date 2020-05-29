@@ -4,7 +4,7 @@
 // 031596
 
 #include <std.h>
-#include "../canyon.h"
+#include "/wizards/zortek/canyon/canyon.h"
 
 inherit ROOM;
 
@@ -52,8 +52,7 @@ to lead south.
 NIGHT
     );
    add_exit(ROOMS+"path4", "up");
-//Not finished removed TLNY2020
-   //add_exit("/wizards/zortek/virtual/ztest/rooms/-1,3.ztest", "south");
+   add_exit("/wizards/zortek/virtual/ztest/rooms/-1,3.ztest", "south");
 
    set_smell("default", "There is a certain scent of decay in the air.");
    set_listen("default", "It is strangely quiet.");

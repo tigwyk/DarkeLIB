@@ -14,8 +14,8 @@ create() {
     set_name("oiled eunuch");
     set_id( ({ "oiled eunuch", "eunuch" }) );
     mod=random(2);
-    set_level(15);
-    set_short("[15]oiled eunuch");
+    set_level(15+mod);
+    set_short("oiled eunuch");
     set_long("He is a large, rotund castrated servant.  The eunuch's "+
       "entire body is devoid of hair.  His massive body and bald head "+
       "are oiled from rare, desert plant oils."

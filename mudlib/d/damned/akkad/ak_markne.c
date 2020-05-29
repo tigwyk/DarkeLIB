@@ -22,16 +22,11 @@ void create() {
     set_items( ([ "east door": "It looks quite sturdy", "north door" : "It looks quite sturdy.",
 	"door" : "There is an east door and a north door." ]));
     set("short","   0\n   | \n0--@--0\n    \n   \nNortheast corner of Market Square");
-    set("long",@ext You are standing on the northeast corner of Market Square.
-	There are shops to the north and east of you.  The noisy salesmen
-	here have apparently been killed by the irate shopkeepers for driving 
-	away business
-    S   
-    |   
- 0--@--S
-    
-	There are two signs here. 
-ext);
+    set("long","You are standing on the northeast corner of Market Square. "+
+	"There are shops to the north and east of you.  The noisy salesmen "+
+	"here have apparently been killed by the irate shopkeepers for driving " +
+	"away business\n   0\n   | \n0--@--0\n    \n   \n\n" +
+	"There are two signs here. ");
     add_item("sign 1", "This sign points north.\n"
 "*********************\n"
 " The Armoursmith Shop\n"

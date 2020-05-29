@@ -98,7 +98,7 @@ void finish_work(object caster, object at, int power) {
       arrange_string(tmp[i][0], 14) == "Blessing:") idx = i;
   }
   if(idx >= 0) tmp = exclude_array(tmp, idx);
-  tmp += ({ ({ sprintf("Blessing: %%^CYAN%%^%+d%^RESET%^", power+ench),
+  tmp += ({ ({ sprintf("Blessing: %%^CYAN%%^%+d", power+ench),
     "detect magic" }) });
   at->set_property("extra long", tmp);
   remove();

@@ -241,8 +241,8 @@ void create() {
 	::create();
 	set_name("dealer");
 	set("id",({"dealer","poker dealer","card dealer"}));
-	set("short","[10]card dealer");
-	set_level(10);
+	set("short","A card dealer");
+	set_level(6);
 }
 
 void start_game() {

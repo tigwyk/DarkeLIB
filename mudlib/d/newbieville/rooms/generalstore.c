@@ -17,7 +17,7 @@ void reset() {
     set("long", "This is Jack's famous general store. He sells pretty much anything to anyone, and will buy anything that you don't need. You see an iron trap door on the floor, presumably where Jack stores his things.\n   \n    \n   @--0\n    \n   \n
 ");
     add_exit(ROOMS+"commonstreet", "east");
-    add_exit(ROOMS+"shadowroad", "north");
+//    add_exit(ROOMS+"shadowroad", "north");
     add_exit(ROOMS+"gstores", "down");
    set_door("iron door", ROOMS+"gstores", "door",
             "newbieville general store");

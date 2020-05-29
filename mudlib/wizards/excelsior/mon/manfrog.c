@@ -19,9 +19,9 @@ void create() {
 	::create();
 	set_name("manfrog");
 	set("id",({"man frog","manfrog"}));
-	set_level( 16 );
+	set_level( 12 );
       set_exp(40000);
-	set("short","[16]vicious manfrog");
+	set("short","A vicious manfrog");
 	set("race","amphibian");
 	if ( random(1) == 0 ) {
 		set_gender("female");
@@ -36,7 +36,7 @@ void create() {
 	set_max_hp(max);
 	set_hp( max - random(10) );
 	this_object()->set_money("silver",random( 300 ) + 234 );
-	set_overall_ac( 11 );
+	set_overall_ac( 5 );
 	set("aggressive",(: call_other, this_object(), "check_attack" :) );
 	set_fingers(4);
 	set_skill("dodge",84);

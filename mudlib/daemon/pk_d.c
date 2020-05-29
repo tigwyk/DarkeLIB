@@ -103,7 +103,7 @@ void add_player_kill(object who) {
     x = -1;
     killer = who->query_cap_name();
     victim = ob->query_cap_name();
-    if ( (who->query_class() == "nightblade" || "assassin") &&
+    if( (who->query_class() == "nightblade") &&
         (BOUNTY->find_bounty(ob->query_name()) != "none") )
     BOUNTY->bounty_exp(who,ob);
     wibble = random(10);

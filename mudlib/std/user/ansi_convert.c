@@ -14,11 +14,11 @@ string ansi_convert(string str) {
     if(str == "cyan") return "%^CYAN%^";
     if(str == "magenta") return "%^MAGENTA%^";
     if(str == "black") return "%^BLACK%^";
-    if(str == "hired") return "%^BOLD%^RED%^";
-    if(str == "higreen") return "%^BOLD%^GREEN%^";
-    if(str == "hiblue") return "%^BOLD%^BLUE%^";
-    if(str == "hiyellow") return "%^BOLD%^ORANGE%^";
-    if(str == "hicyan") return "%^BOLD%^CYAN%^";
-    if(str == "hiblack") return "%^BOLD%^BLACK%^";
+    if(str == "hired") return "%^BOLD%^%^RED%^";
+    if(str == "higreen") return "%^BOLD%^%^GREEN%^";
+    if(str == "hiblue") return "%^BOLD%^%^BLUE%^";
+    if(str == "hiyellow") return "%^BOLD%^%^ORANGE%^";
+    if(str == "hicyan") return "%^BOLD%^%^CYAN%^";
+    if(str == "hiblack") return "%^BOLD%^%^BLACK%^";
     return "";
 }

@@ -1,9 +1,5 @@
 #include <std.h>
 #include <guildguard.h>
-#include <daemons.h>
-#include <balance.h>
-#include <party.h>
-#include <ritual.h>
 
 inherit MONSTER;
 
@@ -23,7 +19,6 @@ create() {
     set_skill("block", 125);
     set_stats("strength", 300);
     set_property("handedness", "right hand");
-    set_languages(({ "common" }));
     new("/d/damned/virtual/long-sword_5.weapon")->
       move(this_object());
     new("/d/damned/virtual/large-shield.armour")->
@@ -50,34 +45,20 @@ add_action("block_exit", "north");
   return;
 }
 
-int block_exit(object who, object caster) {
+int block_exit() {
   int gld;
   string p_name;
-  object join_room, *inv, owner, owner2;
-    string cparty;
-
-	 if(wizardp(this_player())) return 0;
-    if(TP->is_pet()){
-	p_name = TP->query_owner();
-	if(find_player(p_name) && find_player(p_name)->query_class() == "tinker") return 0;
-	     force_me("speak common");
-     force_me("say I will not allow a pet named "+TP->query_name()+" from entering as you are not a Tinker");		
-		return 1;
-    }
-
+  object join_room, *inv;
 
   if(wizardp(this_player())) return 0;
    if((string)this_player()->query_class() != "tinker") {
-     force_me("speak common");
-     force_me("say Only tinkers may pass.");
+     write("The Guard says in Common: Only tinkers may pass.");
     return 1;
   }
-
   inv = filter_array(all_inventory(this_player()), "locker_filter",
         this_object());
   if(sizeof(inv)) {
-     force_me("speak common");
-     force_me("say We do not allow storage devices in here.");
+    write("The Guard says in Common: We do not allow storage devices in here.");
     return 1;
   }
 join_room = find_object_or_load("/d/damned/guilds/join_rooms/tinker_join");
@@ -87,7 +68,6 @@ join_room = find_object_or_load("/d/damned/guilds/join_rooms/tinker_join");
     write("The Guard says in Common: You have been barred from the treasury by the Guildmaster.");
     return 1;
   }
-
   return 0;
 }
 

@@ -40,12 +40,6 @@ void spell_func(object caster, object at, int power, string args, int flag) {
         remove();
         return;
     }
-  if(flag) {
-    message("info", "The spell fizzles, costing double mp.", caster);
-    caster->add_mp(-1* props["mp cost"]);
-    remove();
-    return;
-  }
     ob = new("/std/spells/shadows/weapon_shadow");
     if(check_stack(at, ob)){
         message("info", "Your weapon glows with holy power.", caster);

@@ -4,7 +4,7 @@
 //      Tailwind 10/28/98
 
 #include <std.h>
-//#include <../merc.h>
+#include <../merc.h>
 
 
 inherit "/std/locker_room";
@@ -13,7 +13,7 @@ void create() {
    ::create();
    set_property("indoors",1);
    set_property("light",3);
-   //add_exit(ROOMS+"train_room", "west");
+   add_exit(ROOMS+"train_room", "west");
    set("short","The Mercenaries' Public Stores");
    set("long",
 "This is the Mercenaries' Treasury.  Any mercenary may store items here, "

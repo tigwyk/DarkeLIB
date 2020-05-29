@@ -13,8 +13,8 @@ void create() {
 	::create();
 	set_name("bob");
 	set("id",({"bob","tinker","dealer","Bob"}));
-	set_level(10);
-	set("short","[10]Bob the tinker");
+	set_level(6);
+	set("short","Bob the tinker");
 	set("long","Bob is not a tinker in the ordinairy since, he just goes "+
 		"by that for lack of a better title. He deals in all sorts of odds "+
 		"and ends. You can ask him for help if you need it.");

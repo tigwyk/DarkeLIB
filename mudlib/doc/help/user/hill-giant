@@ -5,31 +5,17 @@
 of men.  They possess immense strength and are not very agile.
 They are also not very smart and therefore only good for fighting.
 
--=-=-=- Stat Bonuses -=-=-=- 
-Strength:           +25
-Constitution:       +20
-Intelligence:       -5
-Wisdom:             -10
-Dexterity:          -5
-Charisma:           -5 
-  
--=-=-=-=-=- Abilities -=-=-=-=-=-     
-Body Size:         Giant             
-HP Regen:          Above Avg                
-MP Regen:          Normal               
-Natural Weapons:   Huge Crushing Hands     
-Sight:             Normal
-         
-+------ Special Abilities ------+     
-Tough Skin  
-+-------------------------------+     
 
--=-=-=-=-= Skills =-=-=-=-=-
-None
+SUMMARY:
 
--=-=-=-=-= Spells =-=-=-=-=-
-None
+Dex: Low               Str: Very high        Con: Very high 
+Int: Below Avg         Wis: Low              Char: Low
 
-    +-----------------Experience Gain Rates-----------------+
-    |                    Below Average                      |
-    +-------------------------------------------------------+
+HP Regen: Above Avg
+SP Regen: Nil
+Natural Weaponry/Damage: Standard (High)
+Natural Armour: Tough Skin (Above Avg)
+Ambidextry: Nil
+Innate spells/skills: Nil
+Exp Modifier: Below Avg
+

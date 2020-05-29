@@ -17,7 +17,7 @@ create() {
     ::create();
    set_name("venkart");
    set_id( ({ "venkart","Dwarven Mage","mage","dwarven mage" }) );
-   set_short("[25]The Dwarven Mage Venkart is standing here");
+   set_short("The Dwarven Mage Venkart is standing here");
    set_level(25);
    set_max_hp(5000);
    set_hp(5000);

@@ -25,8 +25,8 @@ create() {
     set_name("matron");
     set_id( ({ "hareem matron", "matron" }) );
     mod=random(2);
-    set_level(18);
-    set_short("[18]hareem matron");
+    set_level(18+mod);
+    set_short("hareem matron");
     set_long("She's a big, olde gal and she protects Chief Moped's "
       "hareem like a mother wolf protects her cubs!."
       );

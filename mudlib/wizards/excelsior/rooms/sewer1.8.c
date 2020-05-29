@@ -26,16 +26,11 @@ void create() {
 	set_property("light",-2);
 	set_property("indoors",1);
 	set("short","Deep in the sewer system");
-	set_long(@ext You have found your way deep into the New Faerue Dust 
-	sewer system. You really don't know what you are doing here, 
-	but your subconcious mind seems to be going crazy trying to get 
-	you to go just a bit deeper. You wonder why you listen to your 
-	brain so much.
-   
-    @
-    |\
-    0 0
-ext);
+	set_long("You have found your way deep into the New Faerue Dust "+
+	"sewer system. You really don't know what you are doing here, "+
+	"but your subconcious mind seems to be going crazy trying to get "+
+	"you to go just a bit deeper. You wonder why you listen to your "+
+	"brain so much.");
 	set_items( (["sewer":"They are incredibly intricate, unmaintained, "+
 	"and complex. New Faerie Dust is defenitely ahead of its time."]) );
 	set_exits( (["south":"/wizards/excelsior/rooms/sewer2.8",

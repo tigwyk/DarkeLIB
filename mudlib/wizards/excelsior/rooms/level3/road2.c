@@ -11,27 +11,20 @@ void create() {
 	set_property("indoors",0);
 	set_property("night light",2);
 	set("short","The market continues");
-	set("long",@ext As you stand and watch the mass, the people come,
-					the people pass, 
-				the beggars beg, the drunkards fall, 
-					the people pass on down the mall.
-				No one seems to have a care,
-					 for the others here and there, 
-				they ignore them or scorn them, hit them or kick them, 
-				but no one seems to think anything could help them.
-				Then to your horror a man draws his sword, 
-					and strikes down a beggar as though he his lord.
-				He kicks the dead body and spits on it too,
-					and people pass by- this is nothing new. 
-				No one cares for the lesser folk, by God no one would!
-					They keep walking by, never thinking they should.
-
-    0   
-    |   
-    @
-     \
-      0
-ext);
+	set("long","As you stand and watch the mass, the people come,\n"+
+				"	the people pass, \n"+
+				"the beggars beg, the drunkards fall, \n"+
+				"	the people pass on down the mall.\n"+
+				"No one seems to have a care,\n"+
+				"	 for the others here and there, \n"+
+				"they ignore them or scorn them, hit them or kick them, \n"+
+				"but no one seems to think anything could help them.\n"+
+				"Then to your horror a man draws his sword, \n"+
+				"	and strikes down a beggar as though he his lord.\n"+
+				"He kicks the dead body and spits on it too,\n"+ 
+				"	and people pass by- this is nothing new. \n"+
+				"No one cares for the lesser folk, by God no one would!\n"+ 
+				"	They keep walking by, never thinking they should.");
 	set_items((["man":"You can't seem to believe his little sin, and the "+
 			"worse thing about it? He's going to win.",
 		"beggars":"They are here, they are there. Very dirty be their hair.",

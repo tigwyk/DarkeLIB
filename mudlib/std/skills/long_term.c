@@ -73,12 +73,10 @@ int start_work(object what, object who, int time_needed) {
   who_working = who;
   worker_name = who->query_name();
   working_on = what;
-/*TLNY2020 test you can walk around and work on LT -but if dropped, you stop working
   my_shadow = new("/std/spells/shadows/move_shadow");
   my_shadow->set_move_func( (: call_other, this_object(), "move_me" :) );
   my_shadow->set_move_arg(who);
   my_shadow->start_shadow(who);
-*/
   your_shadow = new("/std/spells/shadows/move_shadow");
   your_shadow->set_move_func( (: call_other, this_object(), "move_me" :) );
   your_shadow->set_move_arg(who);
@@ -105,9 +103,7 @@ void move_me(object who) {
   message("my_action", "%^BOLD%^%^CYAN%^You interrupt your work.",
 	  who);
   remove_call_out("inc_work_time");
-/*TLNY2020 test you can walk around and work on LT
   if(objectp(my_shadow)) my_shadow->external_destruct(my_shadow);
-*/
   if(objectp(your_shadow)) your_shadow->external_destruct(your_shadow);
   who->set("long term", 0);
   remove();
@@ -127,7 +123,6 @@ void inc_work_time() {
     remove();
     return;
   }
-
 //TLNY 2020 remove interrupt during combat for long term
 /*
   if(who_working->query_current_attacker() != 0) {

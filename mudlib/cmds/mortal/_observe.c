@@ -46,7 +46,7 @@ mixed cmd_observe(string str){
                 exits = room->query_exits();
                 if(landtype == 1){
                    //Water Room
-                    grid[yline][ypos] ="%^B_BLUE%^#%^RESET%^";
+                    grid[yline][ypos] = "%^B_BLUE%^#%^RESET%^";
                 }
                 if(landtype == 0){
                    //Land Room
@@ -65,7 +65,7 @@ mixed cmd_observe(string str){
                      if(member_array("mountains",desc) != -1)                       
                        grid[yline][ypos] ="%^B_RED%^M%^RESET%^";
                      if(member_array("desert",desc) != -1)                       
-                       grid[yline][ypos] ="%^B_ORANGE%^D%^RESET%^";
+                       grid[yline][ypos] ="%^B_YELLOW%^D%^RESET%^";
                      if(member_array("jungle",desc) != -1)                       
                       grid[yline][ypos] ="%^GREEN%^J%^RESET%^";
                      if(member_array("swamp",desc) != -1)                       
@@ -80,7 +80,7 @@ mixed cmd_observe(string str){
                 }
                 //Check to see if Player room
                 if(yline == By && ypos == 4 )
-                    grid[yline][ypos] ="%^ORANGE%^@%^RESET%^";                  
+                    grid[yline][ypos] = "%^ORANGE%^@%^RESET%^";                  
               }
               ypos = ypos + 1;
               xline = xline + 1;
@@ -91,7 +91,6 @@ mixed cmd_observe(string str){
     z = By - 4;
     write("\n");
     loop = 0;
-/*
    if(skill_level >= 90){
     while(loop < 9 ){
       if(z < 0)
@@ -107,7 +106,6 @@ mixed cmd_observe(string str){
       loop = loop + 1;
     }
    }
-
     z = By - 3;
    if(skill_level < 90 && skill_level > 70){ 
       if(z < 0)
@@ -139,37 +137,23 @@ mixed cmd_observe(string str){
         loop = loop + 1;
       }
    }
-*/
-   z = By - 4;
-   if(skill_level > 2 ){ 
-       while(loop < 9 ){
+   z = By - 1;
+   if(skill_level < 1){ 
+       while(loop < 5 ){
       if(z < 0)
         z = 100 + z;
       if(z >= 100)
         z = z - 100;
-      write(""+grid[z][0]+grid[z][1]+grid[z][2]+grid[z][3]+grid[z][4]+grid[z][5]+grid[z][6]+grid[z][7]+grid[z][8]);								
+      write(""+grid[z-1][1]+""+grid[z-1][2]+""+
+            grid[z-1][3]+""+grid[z-1][4]+""+grid[z-1][5]+""+grid[z-1][6]+
+            ""+grid[z-1][7]);
       z = z + 1;
       if(z == 100)
          z = 0;
       loop = loop + 1;
     }
    }
-
-   z = By - 4;
-   if(skill_level < 1 ){ 
-       while(loop < 9 ){
-      if(z < 0)
-        z = 100 + z;
-      if(z >= 100)
-        z = z - 100;
-      write(""+grid[z][0]+grid[z][1]+grid[z][2]+grid[z][3]+grid[z][4]+grid[z][5]+grid[z][6]+grid[z][7]+grid[z][8]);								
-      z = z + 1;
-      if(z == 100)
-         z = 0;
-      loop = loop + 1;
-    }
-   }
-    //z = By - 3;
+    z = By - 3;
    //write("\n %^GREEN%^F%^RESET%^ = Forest  "
       //    "     : %^BLUE%^C%^RESET%^ = Coast\n"
       //    " %^WHITE%^T%^RESET%^ = Tundra  "
@@ -200,7 +184,9 @@ int help() {
   The observe command allows you to look at your current position on
 the world map on a 2D map display. Each block on the map represents
 one room length.
-
+  The number of blocks on the map is directly related to your
+Perception skill level. The higher your skill level is the farther
+you can see.  
 
 ENDHELP
 	);

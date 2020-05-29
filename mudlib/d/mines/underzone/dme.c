@@ -14,18 +14,13 @@ void create() {
     set("short",
       "You are standing at the entrance to the Dwarf mine."
        );
-    set("long",@ext 
-You are standing in the entrance tunnel to the Under'Drin Mines. 
-The smooth tunnel walls look like they were carved out by dedicated 
-workers. There are thick support timbers evenly spaced along the 
-tunnel walls and across the ceiling. The floor has deep ruts cut into 
-it. The loaded mining carts that pass through here must be very heavy.
-    0   
-    |   
-    @
-    |
-    0       
-ext);
+    set("long", 
+"You are standing in the entrance tunnel to the Under'Drin Mines. "
+"The smooth tunnel walls look like they were carved out by dedicated "
+"workers. There are thick support timbers evenly spaced along the "
+"tunnel walls and across the ceiling.\nThe floor has deep ruts cut into "
+"it. The loaded mining carts that pass through here must be very heavy."
+       );
     set_exits( ({ UNDER+"dm1",UNDER+"dmc" }), ({ "north", "south" }) );
 
     set_pre_exit_functions(({"north" }), ({"trap_check"}) );

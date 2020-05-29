@@ -40,7 +40,7 @@ void create() {
       "of the road.\n"
     );
     add_exit("/d/khojem/nomad/room/r1","east");
-    add_exit("/d/damned/virtual/room_50_25.world","out");
+    add_exit("/d/damned/virtual/room_50_52.world","west");
     set_items(([
         "road" : "Coarse gravel stones allow wheeled carts to travel this "+
           "sandy terrain.  But, you see it has fallen into disrepair.\n",

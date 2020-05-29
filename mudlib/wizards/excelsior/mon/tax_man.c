@@ -32,7 +32,7 @@ void create() {
 	::create();
 	set_name("tax man");
 	set("id",({"tax","man","tax man"}));
-	set("short","[2]He's the tax man");
+	set("short","He's the tax man");
 	set_level(2);
 	set("race","human");
 	set("long","The tax man has told all these people he will see no one else "+

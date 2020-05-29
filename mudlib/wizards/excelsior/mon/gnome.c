@@ -15,8 +15,8 @@ void create() {
 	::create();
 	set_name("gnome");
 	set("id",({"gnome","a gnome","a poor gnome"}));
-	set_level(12);
-	set("short","[12]poor gnome");
+	set_level(10);
+	set("short","A poor gnome");
 	set("long","This gnome has been bred like an animal in the gnome farms. "+
 		"The gnome's magical abilities are used to control the populace of "+
 		"New Faerie Dust. He looks very under nourished and mistreated.");
@@ -27,7 +27,7 @@ void create() {
 		set_gender("female");
 	}
 	set_body_type("human");
-	set_overall_ac( 11 );
+	set_overall_ac( 5 );
 	set_combat_chance(95);
 	set_skill("melee",20);
 	set_stats("wisdom",97);

@@ -12,15 +12,10 @@ void create() {
     set_property("indoors", 1);
     set("short", "You are standing in a large room at the base of a spiral "
 "staicase. There is a large archway to the east.");
-    set("long", @ext You are standing in a large room at the base of the 
-spiral staircase. The stone floor is rough and stained from the passage 
-of time. You sense that you are in a sacred place. Perhaps you should 
-not continue further.
-
-        up   
-    @
-        arch   
-ext);
+    set("long", "You are standing in a large room at the base of the "
+"spiral staircase. The stone floor is rough and stained from the passage "
+"of time. You sense that you are in a sacred place. Perhaps you should "
+"not continue further.\n");
     set_exits( ({ UNDER+"dm43",UNDER+"dmc3"}),
       ({ "up","arch" }));
     set_items( ([

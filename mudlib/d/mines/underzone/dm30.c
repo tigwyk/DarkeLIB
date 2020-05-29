@@ -11,18 +11,13 @@ void create() {
     set_property("indoors", 1);
     set("short","You are standing in a small tunnel that slopes sharply "
         "down to the south." );
-    set("long",@ext 
-"You are standing in a small tunnel that slopes sharply down to 
-"the south. The floor of the tunnel is covered with small limestone 
-"formations. The white and brown formations are spread accross the 
-"walls and the ceiling of the tunnel. Several of the larger formations 
-"were broken off by previous visitors.
-  0
-   \
-    @
-    |
-    0        
-ext);
+    set("long", 
+"You are standing in a small tunnel that slopes sharply down to "
+"the south. The floor of the tunnel is covered with small limestone "
+"formations. The white and brown formations are spread accross the "
+"walls and the ceiling of the tunnel. Several of the larger formations "
+"were broken off by previous visitors."
+        );
     set_exits( ({ UNDER+"dm29",UNDER+"dm31" }),
       ({ "northwest", "south" })
     );

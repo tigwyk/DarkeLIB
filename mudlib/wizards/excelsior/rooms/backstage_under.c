@@ -38,17 +38,13 @@ void create() {
 	set_property("light",1);
 	set_property("indoors",1);
 	set("short","In the lair of the phantom");
-	set("long",@ext You are under the stage of the New Faerie Dust Theatre
-		Company. Here, it appears some strange twisted soul has built 
-		himself some sort of strangely American but twistedly gothic 
-		abode. There is an arched passageway leading north. The walls 
-		are cold stone but there a tapestries and paintings hung on the 
-		walls to make the place more cozy. The torches and large pipe organ 
-		diminish the total attempted affect of a well kept apartment though.
-    0   
-    | up   
-    @      
-ext);
+	set("long","You are under the stage of the New Faerie Dust Theatre "+
+		"Company. Here, it appears some strange twisted soul has built "+
+		"himself some sort of strangely American but twistedly gothic "+
+		"abode. There is an arched passageway leading north. The walls "+
+		"are cold stone but there a tapestries and paintings hung on the "+
+		"walls to make the place more cozy. The torches and large pipe organ "+
+		"diminish the total attempted affect of a well kept apartment though.");
 	set_items( (["tapestries":"They are extremely detailed pictures of past "+
 			"stars at this theatre.",
 		"paintings":"Old posters from past productions.",

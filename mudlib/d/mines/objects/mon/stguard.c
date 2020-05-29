@@ -11,7 +11,7 @@ create() {
     ::create();
    set_name("frenish");
    set_id( ({ "guardian","guard","dwarf","frenish" }) );
-   set_short("[35]Frenish the guardian of the Steel Altar");
+   set_short("Frenish the guardian of the Steel Altar");
    set_level(35);
    set("long", " Frenish stands before you in all her glory. Her dark "
     "flowing hair crackles with magical energy as she returns your gaze. "

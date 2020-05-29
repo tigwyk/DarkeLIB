@@ -9,12 +9,12 @@ create() {
     ::create();
    set_name("Donkey");
    set_id( ({ "Donkey","donkey" }) );
-   set_short("[25]A strong brown Donkey.");
-   set_level(25);
+   set_short("A strong brown Donkey.");
+   set_level(20);
    set("long", "The Donkey is covered in dust and dirt.");
    set_gender("male");
    set("race", "equine");
-   //set_exp(400000);
+   set_exp(400000);
    set_overall_ac(30);
    set_alignment(0);
    set_body_type("quadruped");

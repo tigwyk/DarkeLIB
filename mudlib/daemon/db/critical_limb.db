@@ -1,4 +1,5 @@
-#CRIT LIMB
+#Radiation crits
+
 (A):
 0..70:::NO_EFFECT
 71..75:$T $(VT) as $(TN) is given a hairline fracture!:grunt:DAMAGE 15
@@ -14,7 +15,7 @@
 0..39:::NO_EFFECT
 40..45:$T $(VT) in agony as $(TN) loses an arm:scream:DAMAGE 45:LIMB_LOSS arm
 46..50:$A $V like a Muslim on $T , causing $(TO) to lose a hand.:make:DAMAGE 37:LIMB_LOSS hand
-51..60:$A $V like a Muslim on $T , causing $(TO) to lose a hand.:make:DAMAGE 60
+51..60:$T(:laugh:DAMAGE 60
 61..70:$T $(VT) a foot shorter. Literally.:become:LIMB_LOSS foot
 71..80:$T $(VT) an attack by $A , only to discover that $(TN) is short three fingers:dodge:DAMAGE 12:LIMB_LOSS finger:LIMB_LOSS finger:LIMB_LOSS finger
 81..100:Walking will never be easy for $T again, because of the loss of $(TPP) two legs!::DAMAGE 50:LIMB_LOSS leg:LIMB_LOSS leg

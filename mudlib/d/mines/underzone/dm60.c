@@ -10,15 +10,10 @@ void create() {
     set_property("light", 0);
     set_property("indoors", 1);
     set("short", "You are standing in an long hallway with several doors.");
-    set("long",@ext 
-You have entered a long hallway. The stone walls have large wooden 
-support pillars every few feet. Several dirty doors lead off from the 
-passage, some of which have large cobwebs forming over them.
-   
-    @
-    |
-    0
-ext);
+    set("long", 
+"You have entered a long hallway. The stone walls have large wooden "
+"support pillars every few feet. Several dirty doors lead off from the "
+"passage, some of which have large cobwebs forming over them.\n");
     set_exits( ({ UNDER+"dm2"}),
       ({ "south" })
        );

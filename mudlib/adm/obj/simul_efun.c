@@ -82,5 +82,3 @@ string identify(mixed a);
 #include "/adm/simul_efun/write_border.c"
 #include "/adm/simul_efun/legendp.c"
 #include "/adm/simul_efun/herop.c"
-#include "/adm/simul_efun/decolorize.c"
-#include "/adm/simul_efun/tail.c"

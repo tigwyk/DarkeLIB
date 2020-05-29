@@ -11,14 +11,9 @@ void create() {
     set("short", "You are in a musty burial chamber. A door leads out "
 "of the chamber to the south. An archway leads to another chamber to "
 "the east..");
-    set("long", @ext You are standing in a musty burial chamber. Long cobwebs 
-hang down in front of you. You can see another dark chamber to the east. 
-You sense that this is a sacred place. Maybe you should leave.
-  
-    @--0
-    |
-    0
-ext);
+    set("long", "You are standing in a musty burial chamber. Long cobwebs "
+"hang down in front of you. You can see another dark chamber to the east. "
+"You sense that this is a sacred place. Maybe you should leave.");
     set_exits( ({ UNDER+"dmc4",UNDER+"dmc6"}),
       ({ "south","east" }));
     set_items( ([

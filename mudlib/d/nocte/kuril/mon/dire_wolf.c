@@ -10,7 +10,7 @@ void create() {
   set_carry(0);
   set_save(1);
   set_level(5);
-  set_short("[5]large dire wolf");
+  set_short("large dire wolf");
   set_long("Yellow fangs drop drool all over the ground before this large "
 	"wolf.");
   set_aggr_status(0);

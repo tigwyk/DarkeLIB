@@ -25,16 +25,14 @@ void create() {
 	set_property("night light",-2);
 	set_property("indoors",0);
 	set("short","In an abandoned lot");
-	set("long",@ext You have found your way into an abandoned lot in the middle 
-		of the city. By what you've seen in the rest of the city, you can't 
-		understand why squatters have not set up camp here. It suddenly 
-		dawns on you- there is no obvious way to enter this courtyard. 
-		As your slight claustrophobia turns into pure fear you look at your 
-		surroundings. On all sides of the lot are large buildings. On the 
-		one to your south you see a drainpipe that ends some 20 feet up and 
-		an open window. There is trash everywhere.
-
-ext);
+	set("long","You have found your way into an abandoned lot in the middle "+
+		"of the city. By what you've seen in the rest of the city, you can't "+
+		"understand why squatters have not set up camp here. It suddenly "+
+		"dawns on you- there is no obvious way to enter this courtyard. "+
+		"As your slight claustrophobia turns into pure fear you look at your "+
+		"surroundings. On all sides of the lot are large buildings. On the "+
+		"one to your south you see a drainpipe that ends some 20 feet up and "+
+		"an open window. There is trash everywhere.");
 	set_items( (["buildings":"The one to your south is the theatre building.",
 		"drainpipe":"The lower half of the pipe has been broken off. The "+
 			"piece is lying on the ground.",

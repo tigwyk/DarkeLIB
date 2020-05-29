@@ -18,18 +18,12 @@ set_property("light",-2);
 set_property("night light",-3);
 set_property("indoors",1);
 set("short","Deep in the tunnel");
-set("long",@ext The tunnel is very dark here, as many of the torches 
-that are supposed to be lit are out. You suppose that perhaps the 
-guy who's job it is to keep this covered street lit is human, and 
-humans don't like traveling into the outcast quarter. It is to 
-dangerous. In fact, as you gawk at the many strange beings here, 
-you understand why.
-    0   
-    |   
-    @
-    |
-    0
-ext);
+set("long","The tunnel is very dark here, as many of the torches "+
+"that are supposed to be lit are out. You suppose that perhaps the "+
+"guy who's job it is to keep this covered street lit is human, and "+
+"humans don't like traveling into the outcast quarter. It is to "+
+"dangerous. In fact, as you gawk at the many strange beings here, "+
+"you understand why.");
 set_items( (["tunnel":"It is as if the humans who run this city want "+
 "to make the life of the nonhumans even more miserable y forcing them "+
 "to live in a dark tunnel.","torches":"They are not lit, and not yours "+

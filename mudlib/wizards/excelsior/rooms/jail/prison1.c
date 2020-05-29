@@ -17,15 +17,9 @@ void create() {
 	set_property("light",3);
 	set_property("indoors",1);
 	set("short","Inside the prison");
-	set("long",@ext You are inside the New Faerie Dust Prison facility. To your 
-		north is the guards desk, to the south is the door to leave, and to 
-		your east are the cells.
-    0   
-    |   
-    @--0
-    |
-    0
-ext);
+	set("long","You are inside the New Faerie Dust Prison facility. To your "+
+		"north is the guards desk, to the south is the door to leave, and to "+
+		"your east are the cells.");
 	set_items((["desk":"There is a fat guard the sits behind it. You could "+
 		"say hello to him more personally if you went north.",
 		"cells":"They are to your east",

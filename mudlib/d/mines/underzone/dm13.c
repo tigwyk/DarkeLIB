@@ -10,19 +10,14 @@ void create() {
     set_property("light", 0);
     set_property("indoors", 1);
     set("short", "You are standing at the bottom of a long tunnel.");
-    set("long",@ext 
-You are standing at the bottom of a long tunnel. It slopes 
-up several hundred feet to a large wooden door. The flames on 
-several torches are pushed back and forth as a slight breeze blows 
-through the passage to the east. You can hear the sound of water 
-flowing nearby. There must be an underground river at the end of the 
-this passage. 
-  0  
-   \   
-    @
-    | 
-    0        
-ext);
+    set("long", 
+"You are standing at the bottom of a long tunnel. It slopes "
+"up several hundred feet to a large wooden door. The flames on "
+"several torches are pushed back and forth as a slight breeze blows "
+"through the passage to the east. You can hear the sound of water "
+"flowing nearby. There must be an underground river at the end of the "
+"this passage." 
+       );
     set_exits( ({ UNDER+"dm12", UNDER+"dm14" }),
       ({ "northwest", "south" })
     );

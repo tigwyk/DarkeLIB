@@ -18,35 +18,23 @@ void create() {
 	set_property("night light",1);
 	set_property("indoors",0);
 	set("short","On a busy road");
-	set("night long",@ext You are following a busy road through the heart of 
-		New Faerie Dust. Even at night this road is well lit by several 
-		strange lamps attached to the buildings which are on either side of 
-		you. To the west is an expensive jewerly store that seems to have 
-		gone out of business. It is boarded up. Above this there is another 
-		road running parallel to the one you are on. To your east there is  
-		another road below you that leads into the outcast quarter. It boggles 
-		your mind how densely this city is put together. Though it is night 
-		people still scurry about doing their business.
-    0   
-    |   
-    @
-    |
-    0
-ext);
-	set("day long",@ext You are following a busy road through the heart of 
-		New Faerie Dust. This place is abust with activity as people use this 
-		road to reach the upper levels of the city. To the west is an 
-		expensive jewerly store that seems to have 
-		gone out of business. It is boarded up. Above this there is another 
-		road running parallel to the one you are on. To your east there is  
-		another road below you that leads into the outcast quarter. It boggles 
-		your mind how densely this city is put together.
-    0   
-    |   
-    @
-    |
-    0
-ext);
+	set("night long","You are following a busy road through the heart of "+
+		"New Faerie Dust. Even at night this road is well lit by several "+
+		"strange lamps attached to the buildings which are on either side of "+
+		"you. To the west is an expensive jewerly store that seems to have "+
+		"gone out of business. It is boarded up. Above this there is another "+
+		"road running parallel to the one you are on. To your east there is  "+
+		"another road below you that leads into the outcast quarter. It boggles "+
+		"your mind how densely this city is put together. Though it is night "+
+		"people still scurry about doing their business.");
+	set("day long","You are following a busy road through the heart of "+
+		"New Faerie Dust. This place is abust with activity as people use this "+
+		"road to reach the upper levels of the city. To the west is an "+
+		"expensive jewerly store that seems to have "+
+		"gone out of business. It is boarded up. Above this there is another "+
+		"road running parallel to the one you are on. To your east there is  "+
+		"another road below you that leads into the outcast quarter. It boggles "+
+		"your mind how densely this city is put together.");
 	set_items( (["store":"There is obviously no entry into it.",
 		"lamps":"How does this city produce its power? Hrm.",
 		"people":"They are scurrying about like ants when water is poured "+

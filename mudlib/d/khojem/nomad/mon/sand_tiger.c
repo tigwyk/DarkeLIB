@@ -13,7 +13,7 @@ create() {
     set_name("tiger");
     set_id( ({ "sand tiger","tiger" }) );
      set("race", "tiger");
-    set_short("[6]stalking sand tiger");
+    set_short("A stalking sand tiger");
     set_long("The sand tiger's fur is the color of the surrounding sand "+
       "allowing it to close distance with you quickly without being noticed.  "+
       "Its claws are sharp and has long canine teeth to tear and ripe flesh.\n"

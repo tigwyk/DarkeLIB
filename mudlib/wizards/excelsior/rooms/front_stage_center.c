@@ -9,33 +9,23 @@ void create() {
 	set_property("night light", 0 );
 	set_property("indoors", 1);
 	set("short","In front of stage center");
-	set("day long",@ext You have found your way directly in front of the 
-	stage. Looking to your south, you see the vast amount of seats 
-	the theatre has to offer. You don't think you've seen enough 
-	people in this town so far to fill all these seats. Looking at 
-	some of the seats closer you notice tears in the upholstery that 
-	has been cleverly disguised with some stitches of the matching 
-	color. You ponder the shrewdness of the maintanace crew. Maybe the 
-	theatre is facing some hard times.
-
- 0--@--0
-    |
-    0
-ext);
-	set("night long",@ext You have reached the area directly before the 
-	stage. Were this play a musical, you would be right in side the 
-	pit orchestra right now. Wouldn't that be embarrassing! As you
-	stand around admiring your ability to avoid embarrassment some 
-	angry guest pelts you with a tomato for standing in their way. 
-	'Damnation!' you think, 'do people carry these things to theatre 
-	productions?' Your question is answered by the tomatoes of several 
-	other angry guests who wish you to be out of their way. Looks 
-	like you managed to run smack into the face of embarrassment again.
-
- 0--@--0
-    |
-    0
-ext);
+	set("day long","You have found your way directly in front of the "+
+	"stage. Looking to your south, you see the vast amount of seats "+
+	"the theatre has to offer. You don't think you've seen enough "+
+	"people in this town so far to fill all these seats. Looking at "+
+	"some of the seats closer you notice tears in the upholstery that "+
+	"has been cleverly disguised with some stitches of the matching "+
+	"color. You ponder the shrewdness of the maintanace crew. Maybe the "+
+	"theatre is facing some hard times.");
+	set("night long","You have reached the area directly before the "+
+	"stage. Were this play a musical, you would be right in side the "+
+	"pit orchestra right now. Wouldn't that be embarrassing! As you "+
+	"stand around admiring your ability to avoid embarrassment some "+
+	"angry guest pelts you with a tomato for standing in their way. "+
+	"'Damnation!' you think, 'do people carry these things to theatre "+
+	"productions?' Your question is answered by the tomatoes of several "+
+	"other angry guests who wish you to be out of their way. Looks "+
+	"like you managed to run smack into the face of embarrassment again.");
 	set_listen( "default", (: call_other,this_object(), "listen_default":) );
 	set_listen( "play", (: call_other, this_object(), "listen_play" :) );
 	set_listen( "silence","It is very noisy in its silent sort of way.");

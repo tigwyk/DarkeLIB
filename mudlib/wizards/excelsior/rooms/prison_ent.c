@@ -17,29 +17,17 @@ void create() {
 	set_property("night light",1);
 	set_property("indoors",0);
 	set("short","By a large steel door");
-	set("day long",@ext The road you are following ends here at a large steel door. 
-		Engraved on the door are the letters 'NFDPF'- New faerie Dust Prison 
-		facility. On either side of this large steel door are bared windows. 
-		If you are going to get into this jail, you will either need a key or 
-		will have to find another way in.
-    0   
-    |   
-    @
-   /
-  0 
-ext);
-	set("night long",@ext The road you are following ends here at a large steel door. 
-		Engranevd on the door are the letters 'NFDPF'- New faerie Dust Prison 
-		facility. On either side of this large steel door are bared windows. 
-		If you are going to get into this jail, you will either need a key or 
-		will have to find another way in. Off to the side of the road is a 
-		lamp that provides the room with light.
-    0   
-    |   
-    @
-   /
-  0 
-ext);
+	set("day long","The road you are following ends here at a large steel door. "+
+		"Engraved on the door are the letters 'NFDPF'- New faerie Dust Prison "+
+		"facility. On either side of this large steel door are bared windows. "+
+		"If you are going to get into this jail, you will either need a key or "+
+		"will have to find another way in.");
+	set("night long","The road you are following ends here at a large steel door. "+
+		"Engranevd on the door are the letters 'NFDPF'- New faerie Dust Prison "+
+		"facility. On either side of this large steel door are bared windows. "+
+		"If you are going to get into this jail, you will either need a key or "+
+		"will have to find another way in. Off to the side of the road is a "+
+		"lamp that provides the room with light.");
 	set_items((["door":(: call_other,this_object(),"look_at_door":),
 		"lamp":"It provides the area with light.",
 		"windows":"They have thick bars in them."]));

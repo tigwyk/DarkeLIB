@@ -17,17 +17,10 @@ void create() {
 	set_property("light",3);
 	set_property("indoors",1);
 	set("short","In the Excelsior Emporium");
-	set("long",@ext This is the major entertainment center in new faeriedust. 
-		Here is a place where citizens and guests of the city come to get 
-		information, socialize, gamble and play games. This is the place 
-		to be.
-  0 0 0  
-   \|/   
- 0--@--0
-    |
-    0 
-
-ext);
+	set("long","This is the major entertainment center in new faeriedust. "+
+		"Here is a place where citizens and guests of the city come to get "+
+		"information, socialize, gamble and play games. This is the place "+
+		"to be.");
 	set_exits((["south":"/wizards/excelsior/rooms/square",
 		"west":"/wizards/excelsior/rooms/emporium/library",
 		"east":"/wizards/excelsior/rooms/emporium/newbie",

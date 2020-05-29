@@ -28,6 +28,3 @@ void set_level(int x) {
 
 int query_level() { return query_property("level"); }
 
-string query_short() {
-  return capitalize(article(query_property("level") + " ingot"));
-}

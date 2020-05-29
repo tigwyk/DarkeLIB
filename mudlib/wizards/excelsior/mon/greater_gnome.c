@@ -15,8 +15,8 @@ void create() {
 	::create();
 	set_name("gnome");
 	set("id",({"gnome","a gnome","a poor gnome","a greater gnome","greater gnome"}));
-	set_level(18);
-	set("short","[18]greater gnome");
+	set_level(13);
+	set("short","A greater gnome");
 	set("long","This gnome has been bred like an animal in the gnome farms. "+
 		"He looks in a bit better shape then other gnomes you've seen, and "+
 		"is thus probably more powerful.");

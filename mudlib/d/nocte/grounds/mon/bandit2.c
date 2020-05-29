@@ -1,5 +1,5 @@
 #include <std.h>
-#include "nevin.h"
+#include <nevin.h>
 
 inherit MONSTER;
 
@@ -8,7 +8,7 @@ create() {
 	set_name("bandit");
 	set("id", ({ "bandit", "_bandit2" }) );
         set_level(4);
-	set("short", "[4]A bandit");
+	set("short", "A bandit is here staring at the sky with his mouth hanging open.");
 	set("long",
 		"Oh man does his breathe smell!  Too bad you don't have any "
 		"mints for him.  He could really use them."

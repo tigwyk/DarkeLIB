@@ -21,8 +21,7 @@ void create() {
 	       "strike": 8, "stress": 8, "cold": 7, "fire": 7,
                "electricty": 7, "vacuum": 7, "disruption": 7 ]) );
     set_property("target type", "living");
-//Removed due to Shadow Form is broken     TLNY2020
-//set_property("prereq", "shadow form");
+    set_property("prereq", "shadow form");
     set_property("must be present",1);
     set_property("duration", 300);
     return;

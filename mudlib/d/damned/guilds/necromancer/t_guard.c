@@ -20,7 +20,6 @@ create() {
     set_skill("block", 125);
     set_stats("strength", 300);
     set_property("handedness", "right hand");
-    set_languages(({ "common" }));
     new("/d/damned/virtual/long-sword_5.weapon")->
       move(this_object());
     new("/d/damned/virtual/large-shield.armour")->
@@ -56,15 +55,11 @@ int block_exit() {
     if(TP->is_pet()){
 	p_name = TP->query_owner();
 	if(find_player(p_name) && find_player(p_name)->query_class() == "necromancer") return 0;
-	     force_me("speak common");
-     force_me("say I will not allow a pet named "+TP->query_name()+" from entering as you are not a Necromancer");		
-    //write("The Guard blocks "+TP->query_name()+" from entering.");
+		write("The Guard blocks "+TP->query_name()+" from entering.");
 		return 1;
     }
   if((string)this_player()->query_class() != "necromancer") {
-	     force_me("speak common");
-     force_me("say Only necromancers may pass.");	
-    //write("The Guard says in Common: Only necromancers may pass.");
+    write("The Guard says in Common: Only necromancers may pass.");
     return 1;
   }
   inv = filter_array(all_inventory(this_player()), "locker_filter",

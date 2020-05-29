@@ -16,20 +16,17 @@ void create() {
 	set_property("no mine",1);
 	set_property("no castle",1);
 	set("short","The market continues");
-	set("long",@ext Just when you htought it was over, the market 
-		keeps going! It is boggling how many people have set 
-		up shop along this street. Most of them probably didn't 
-		register with the New Ferie Dust Commercial District and 
-		are thus illegal, but the government only has the rescourses 
-		to crack down on them only once in a while. The illegals 
-		usually hear of an impending crack down and clear out in 
-		time. To the south you can see off the edge of the street 
-		down into the depths of the city. There is a building to 
-		your north.%^B_BLUE%^There is a flower vendor here%^RESET%^. The road continues 
-		to the east and west.     
-     
- 0--@--0
-ext);
+	set("long","Just when you htought it was over, the market "+
+		"keeps going! It is boggling how many people have set "+
+		"up shop along this street. Most of them probably didn't "+
+		"register with the New Ferie Dust Commercial District and "+
+		"are thus illegal, but the government only has the rescourses "+
+		"to crack down on them only once in a while. The illegals "+
+		"usually hear of an impending crack down and clear out in "+
+		"time. To the south you can see off the edge of the street "+
+		"down into the depths of the city. There is a building to "+
+		"your north. %^BLUE%^There is a flower vendor here%^RESET%^. The road continues "+
+		"to the east and west.");
 	set_listen("default","You here the sound of an open air market.");
 	set_smell("default","You smell flowers.");
 	set_smell("flowers","They actually don't smell very good.");

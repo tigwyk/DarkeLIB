@@ -29,9 +29,9 @@ void create() {
 	set_body_type("quadruped");
 	set_level(15);
 	switch(random(3)) {
-		case 0: var = "[15]A fanged mass of chaos"; break;
-		case 1: var = "[15]A fire breathing hound"; break;
-		case 2:	var = "[15]A chaos hound"; break;
+		case 0: var = "A fanged mass of chaos"; break;
+		case 1: var = "A fire breathing hound"; break;
+		case 2:	var = "A chaos hound"; break;
 	}
 	this_object()->set("short", var);
 	set_long(

@@ -24,11 +24,7 @@ int cmd_hotcast(string str) {
 
 	return notify_fail("Usage: cast *<pow> <spell> at <target>[<args>]\n");
 
-// HONSPRON 2020 (TLNY2020 note this allows arches only to be able to cast any spell at
-// 200 skill level without knowing the spell or skill level. works only with in
-// conjuction to /std/spells/spell.c code)
-
-if(!this_player()->query_spell_level(spell) && !archp(this_player()))
+    if(!this_player()->query_spell_level(spell))
 
 	return notify_fail("You do not know that spell.\n");
 

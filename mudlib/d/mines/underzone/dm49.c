@@ -12,13 +12,11 @@ void create() {
     set("short", "You are standing on a rope bridge. Directly below you "
 "is the roaring river. The waterwheel is slowly turning in the rough water." 
      );
-    set("long",@ext 
-You are standing on a rope bridge. Directly below you
-is the roaring river. The waterwheel is slowly turning in the rough 
-water.\nFurther to the west is a large stone building.
-
- 0--@--0       
-ext);
+    set("long", 
+"You are standing on a rope bridge. Directly below you "
+"is the roaring river. The waterwheel is slowly turning in the rough "
+"water.\nFurther to the west is a large stone building.\n"
+       );
     set_exits( ({ UNDER+"dm45",UNDER+"dm51" 
      }),
       ({ "east","west" })

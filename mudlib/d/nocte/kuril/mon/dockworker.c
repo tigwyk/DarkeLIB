@@ -17,22 +17,22 @@ create() {
    	set_name("dockworker");
     	set_id( ({ "dockworker" }) );
 	switch(random(4)) {
-		case 0: var = "[5]A filthy dockworker";
+		case 0: var = "A filthy dockworker";
 			var2 = "Filthy from carrying heavy crates and barrels "
 				"all day, the dockworker swaggers by with "
 				"another heavy load.";
 			break;
-		case 1: var = "[5]A dingy dockworker";
+		case 1: var = "A dingy dockworker";
 			var2 = "Poorly paid and over worked, this dirty "
 				"worker, toils daily to survive in this harsh "
 				"city.";
 				break;
-		case 2: var = "[5]A lazy dockworker";
+		case 2: var = "A lazy dockworker";
 			var2 = "Not caring what his employers think, this "
 				"lazy slug has decided that he is sick of "
 				"working for such little pay.";
 				break;
-		case 3: var = "[5]An overworked dockworker";
+		case 3: var = "An overworked dockworker";
 			var2 = "Kneeling on the ground from the pain of "
 				"working each and every single day, carrying "
 				"extremely heavy loads, this decrepid old "
@@ -46,7 +46,7 @@ create() {
 	this_object()->set("short", var);
 	this_object()->set("long", var2);
    	set("aggressive", 0);
-  	set_level(5);
+  	set_level(random(3) + 3);
    	set_gender("male");
 	switch(random(9)) {
 		case 0: var = "werebear"; break;

@@ -1,5 +1,5 @@
 #include <std.h>
-#include "nevin.h"
+#include <nevin.h>
 
 inherit ROOM;
 
@@ -9,15 +9,12 @@ void create() {
 	set_property("light", -3);
 	set_property("no castle", 1);
 	set("short", "Inside the Tunnel");
-	set("long",@ext
-		Having past by the stalactite you can see from behind that a 
-		doorway has been carved into the rear of it.  Unfortunately, 
-		the only way in is fifty feet in the air....
-		  The cave takes a bend to the west.
-    0   
-    |   
- 0--@	
-ext);
+	set("long",
+		"Having past by the stalactite you can see from behind that a "
+		"doorway has been carved into the rear of it.  Unfortunately, "
+		"the only way in is fifty feet in the air...."
+		"  The cave takes a bend to the west."
+	);
 	set_listen("default", "You hear some crunching sounds to the west.");
 	set_items( ([
 		"stalactite": "As you take a closer look you see that it has windows carved into its side...wonder what's in there."

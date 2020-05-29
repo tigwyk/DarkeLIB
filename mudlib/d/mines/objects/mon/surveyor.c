@@ -12,8 +12,8 @@ void create() {
     ::create();
    set_name("samuel");
    set_id( ({ "dwarf","Surveyor","surveyor","samuel" }) );
-   set_short("[25]Dwarf Samuel the Surveyor");
-   set_level(25);
+   set_short("Dwarf Samuel the Surveyor");
+   set_level(20);
    set("long", "Samuel is dressed in better clothes than most of the "
    "other miners. His job must be to inspect the mine, looking for damage "
    "to the structure of the mine.");
@@ -21,7 +21,7 @@ void create() {
    set("race", "dwarf");
    set_body_type("human");
    set_overall_ac(25);
-   //set_exp(400000);
+   set_exp(400000);
    set_alignment(0);
    set_wielding_limbs( ({"right hand","left hand"}) );
    set_moving(1); 

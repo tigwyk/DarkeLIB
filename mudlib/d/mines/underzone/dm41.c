@@ -11,17 +11,12 @@ void create() {
     set_property("indoors", 1);
     set("short", "You are standing in a large dusty chamber. An arch "
 "leads to another room to the south.");
-    set("long", @ext You are standing in a large dusty chamber. The walls are 
-made of solid stone blocks that are stacked all the way to the ceiling.
-Carved into the walls are words written in a language you can't 
-comprehend. The writing wraps around the walls on a border of marble. 
-Scattered on the floor is an assortment of debris that has fallen from 
-the ceiling. An arch leads out of the chamber to the south.
-   
-    @
-    |
-    0
-ext);
+    set("long", "You are standing in a large dusty chamber. The walls are "
+"made of solid stone blocks that are stacked all the way to the ceiling. "
+"Carved into the walls are words written in a language you can't "
+"comprehend. The writing wraps around the walls on a border of marble. "
+"Scattered on the floor is an assortment of debris that has fallen from "
+"the ceiling. An arch leads out of the chamber to the south.\n");
     set_exits( ({ UNDER+"dm43" }),
       ({  "south" }));
     set_items( ([

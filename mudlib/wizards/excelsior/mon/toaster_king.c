@@ -27,8 +27,8 @@ void create() {
 	::create();
 	set_name("toastmaster");
 	set("id",({"toastmaster","toaster king","man"}) );
-	set_level( 16 );
-	set("short","[16]Toastmaster the sewer eccentric");
+	set_level( 14 );
+	set("short","Toastmaster the sewer eccentric");
 	set("long","This is quite a funny little man. He appears to live all "+
 		"by his lonesome deep in the sewers. Maybe he has a story to "+
 		"tell. Perhaps you should say 'hi'. (see 'help communication')");
@@ -114,7 +114,7 @@ int check_quest(object ob) {
 		tell_object(who,
 			"The toasterking pays you 11000 copper coins and gives you his sceptre as "+
 			"a reward.");
-		who->add_money("silver",11000);
+		who->add_money("copper",11000);
 		who->add_exp(550);
 			present("sceptre",this_object())->move(who);
 		if(!present("sceptre",who)) {

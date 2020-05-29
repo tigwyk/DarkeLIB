@@ -11,14 +11,12 @@ void create() {
     set_property("indoors", 1);
     set("short", "You are floating in a large river at the base "
 "of an huge waterfall.");
-    set("long",@ext 
-You are floating in a large pool at the base of a large waterfall. A 
-huge wooden waterwheel is slowly rotating in the water near you.
-The waterwheel's movement is churning up huge waves. You should get to the 
-shore as soon as possible before you drown. 
-       
-    @    shore      
-ext);
+    set("long", 
+"You are floating in a large pool at the base of a large waterfall. A "
+"huge wooden waterwheel is slowly rotating in the water near you.\n"
+"The waterwheel's movement is churning up huge waves. You should get to the "
+"shore as soon as possible before you drown.\n"
+       );
     set_exits( ({ UNDER+"dm48",UNDER+"dm16" }),({ "shore","underwater" }) );
     set_invis_exits( ({"underwater"}) );
     set_pre_exit_functions( ({"shore","underwater" }), ({"mob_check",

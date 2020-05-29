@@ -16,20 +16,16 @@ void create() {
 	set_property("light",2);
 	set_property("indoors",0);
 	set("short","The heart of the farms");
-	set("long",@ext You walk into this room and are immediately blasted by one 
-		of the most intense magical fields you have ever experienced in your 
-		life. The sheer power of this place is demonstrated when a young fun 
-		loving gnome prisoner decides to telepathically force you to clog dance.
-		your performance ends abruptly when a guard realizes what is happens
-		and kicks the gnome in the face with his large military boot. You have
-		the feeling you get when you enter a clearing in the forest. The rest
-		of this sinfull place was a narrow hallway, but here it opens up to
-		better harness the power of the magical creatures. To the northwest is
-		a small tent.
-  0 
-   \
-    @--0
-ext);
+	set("long","You walk into this room and are immediately blasted by one "+
+		"of the most intense magical fields you have ever experienced in your "+
+		"life. The sheer power of this place is demonstrated when a young fun "+
+		"loving gnome prisoner decides to telepathically force you to clog dance. "+
+		"your performance ends abruptly when a guard realizes what is happens "+
+		"and kicks the gnome in the face with his large military boot. You have "+
+		"the feeling you get when you enter a clearing in the forest. The rest "+
+		"of this sinfull place was a narrow hallway, but here it opens up to "+
+		"better harness the power of the magical creatures. To the northwest is "+
+		"a small tent.");
 	set_items((["sky":"Yes, you can see it.",
 		"gnome":"He has been knocked unconcious and may die without medical "+
 			"attention, which he does not recieve.",

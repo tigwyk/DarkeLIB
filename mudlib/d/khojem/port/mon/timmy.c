@@ -18,7 +18,7 @@ create() {
     set_name("Timmy");
     set_id( ({ "tim", "timmy" }) );
     set_level(1);
-    set_short("[1]Timmy a hapless fool is here");
+    set_short("Timmy a hapless fool is here");
     set_long("Timmy is a bearded, hunched man with furtive "+
       "eyes.  His finger is constantly up his nose, but he "+
       "removes it when you look his way.  Once your "+

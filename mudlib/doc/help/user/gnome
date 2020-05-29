@@ -13,31 +13,16 @@ they dislike abandoning their abodes and the treausres guarded within
 even a few days.
 
 
--=-=-=- Stat Bonuses -=-=-=- 
-Strength:           -5
-Constitution:       +5
-Intelligence:       +10
-Wisdom:             +10
-Dexterity:          ---
-Charisma:           -5 
-  
--=-=-=-=-=- Abilities -=-=-=-=-=-     
-Body Size:         Small             
-HP Regen:          Normal                
-MP Regen:          High               
-Natural Weapons:   Tiny Crushing Hands     
-Sight:             Dark Vision
-         
-+------ Special Abilities ------+     
-None  
-+-------------------------------+     
+SUMMARY:
 
--=-=-=-=-= Skills =-=-=-=-=-
-Sorcery                +  5%
-Magery                 +  5%
+Dex: Avg        Str: Below Avg      Con: Above Avg 
+Int: High       Wis: High           Char: Below Avg
 
--=-=-=-=-= Spells =-=-=-=-=-
+HP Regen: Nil
+SP Regen: High
+Natural Weaponry: Standard
+Natural Armour: Nil
+Ambidextry: Nil
+Innate spells/skills: A few skills
+Exp Modifier: Nil
 
-    +-----------------Experience Gain Rates-----------------+
-    |                      Normal                           |
-    +-------------------------------------------------------+

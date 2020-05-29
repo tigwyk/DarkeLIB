@@ -60,7 +60,6 @@ void finish_work(object from, object at) {
       ({ from }));
     ob = new("/wizards/diewarzau/obj/misc/emb_corpse");
     ob->set_level((int)at->query_level());
-    ob->set_short(sprintf("a level %d embalmed corpse", at->query_level()));
     inv=all_inventory(at);
     for (i=0;i<sizeof(inv);i++){
         a=inv[i];

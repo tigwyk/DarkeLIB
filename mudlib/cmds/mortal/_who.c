@@ -92,7 +92,7 @@ string list_users(string *races, string order) {
     else
 	who_list = "ERROR: No who_header found\n\n";
     if(total == 1 && sizeof(users()) == 1)
-        who_list += "There beats but one heart in Darke Forces!\n";
+        who_list += "There beats but one heart in Daybreak Ridge!\n";
     else
 	who_list += "Number of users: "+sizeof(users())+" ("
 	+total+" shown)\n";

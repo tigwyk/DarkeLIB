@@ -5,10 +5,9 @@ create() {
     	::create();
    	set_name("hsspra");
     	set_id( ({ "waitress", "hsspra", "kuril mob" }) );
-  	    set_level(10);
-    	set_short("[10]Hsspra the restaurant waitress");
+    	set_short("Hsspra the restaurant waitress");
    	set("aggressive", 0);
-
+  	set_level(10);
     	set_long("She is ready to take your order.\n");
    	set_gender("female");
    	set("race", "gerudan");

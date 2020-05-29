@@ -20,14 +20,10 @@ void create() {
 	set_property("indoors",1);
 	set_property("no castle",1);
 	set("short","In a prison cell");
-	set("long",@ext You are in a tiny prison cell. You get the feeling that whoever 
-		is kept here is a lunitic. You get this feeling from the various 
-		satanic symbols carved into the stone walls of this place by someone's 
-		finger nails.
-    0 
-    |
-    @  
-ext);
+	set("long","You are in a tiny prison cell. You get the feeling that whoever "+
+		"is kept here is a lunitic. You get this feeling from the various "+
+		"satanic symbols carved into the stone walls of this place by someone's "+
+		"finger nails.");
 	set_items((["symbols":"Someone carved these into the stone walls with there "+
 		"fingernails. You can tell from the bits of fingernail stuck into these "+
 		"carvings.",

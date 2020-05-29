@@ -15,7 +15,7 @@ void create() {
   set_long(
            "This is the storage room for the Weaponsmith Shop. Lots of "
            "valuable looking wares lie about.");
-  set_property("light", 3);
+  set_property("light", 2);
   set_property("indoors", 1);
   set_property("no teleport", 1);
   set_property("no summon", 1);

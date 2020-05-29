@@ -71,10 +71,10 @@ void create(){
 	]) );
 	set_exits( ([
 		"north": ROOMS+"magus_lane3",
+		"east": ROOMS+"south_guard_post",
 		"south": ROOMS+"magus_lane5",
 		"west": ROOMS+"temple_plaza2"
 	]) );
-    add_exit("/d/1tlny/complete/kuril/s1/south_guard_post.c","east");
 	set_door("door", ROOMS+"south_guard_post", "east",
 		"kuril south guard post key");
 	set_open("door", 1);

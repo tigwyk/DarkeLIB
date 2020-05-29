@@ -14,7 +14,7 @@ create() {
     set_name("Wood-Elf King");
     set_id( ({ "king","wood-elf king" }) );
     set_level(6);
-    set_short("[6]Fir'burger, the wood-elf king");
+    set_short("Fir'burger, the wood-elf king");
     set_long("The wood-elf king looks like a veteran of many battles.  "+
       "The years are worn as the wrinkles on his face." 
       );

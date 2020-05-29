@@ -21,9 +21,7 @@ void create() {
   set_property("light", 2);
   set_property("indoors", 1);
 new("d/damned/guilds/join_rooms/tcan")->move(this_object());
-  set_related_guilds(({ "fighter", "paladin", "cleric", }));
-    set_hated_guilds(({ "necromancer", "nethermancer", "dark-paladin", "chaotic-lord",  }));
-    set_odd_guilds(({ "nightblade", "assassin" }));
+  set_related_guilds(({ "cleric", "paladin" }));
   set("short", "Hall of the Honoured");
   set("long", 
 	"Upon entering the Hall of the Honoured, you swear that the building "

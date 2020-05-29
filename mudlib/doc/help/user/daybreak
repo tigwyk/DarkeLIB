@@ -3,23 +3,20 @@ Map of current DBR created by Tiny 1/19/2020
 Other guilds we have files for still pending to add to DBR
 1. Mercenary Guild
 2. Necromancer Guild - located in another city
-3. Elemental-mage
+3. Ranger Guild (incomplete)
+4. Seer Guild (incomplete)
 
 Other Files
-1.Chaotic-Knights (incomplete)
-
-Hidden Guilds (This means it requires deep searching to find these guilds)
--Thief
--Nethermancer	
+1.Chaotic-Knights (incomplete)	
 
 G = Guild										
 S = Shopkeeper or other Sales rooms					
 M = Exit Mountain									
 I = Inkeeper										
-X = Broken or working on (need to fix)						
+X = Broken (need to fix)						
 
-G1= Nightblade Guild
-
+1G=	Nightblade Guild
+G1=	War-Priest Guild
 G2=	Paladin Guild
 G3=	Priest Guild
 G4=	Fighter Guild
@@ -29,26 +26,21 @@ G7=	Archmage Guild
 G8=	Sword-Mage Guild
 G9=	Enchanter Guild
 G10=    Tinker Guild
-G11=    Secret Guilds
-G12=    Dark-Paladin Guild
-G13=    Assassin Guild
-G14=    Elementa-Mage Guild
-G15=	War-Priest Guild
-
+G11=    Secret guild
  
                 M 
                 |      
                 0   
                 |  
-            G13 0          S  
-             |  |          |  
-         G12-0 -0  G10-0-0-0     
+                0          S  
+                |          |  
+             0 -0  G10-0-0-0     
              |  |      |   |          
-             0  0-G1 S-0-0-0-G9         
+             0  0-1G S-0-0-0-G9         
             /   |      |   |     
          G11    0      S   0       
                 |          |      
-     G15 -C     0        S-0-S   
+     G1 0-C     0        S-0-S   
       |   |     |          |                 
       0-0-0-0-G3|          0-S    
       |   | |   0          |                  
@@ -60,7 +52,7 @@ G15=	War-Priest Guild
  G4-0-S  G6     0-I-S      0    
     |     |     | |        | 
  G5-0-0-0-0-0-S 0 I        0-G8   
-    |           |          | 
-   G14          M        0-0   
+                |          | 
+                M        0-0   
                          | |  
                         G7 S   

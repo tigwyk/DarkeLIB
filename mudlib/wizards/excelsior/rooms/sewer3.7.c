@@ -18,13 +18,9 @@ void create() {
 	set_property("light",0);
 	set_property("indoors",1);
 	set("short","Near a light source");
-	set("long",@ext You are extremely deep in the New Faerie Dust sewer system. 
-		To your west there is some sort of lighted room. It appears almost 
-		as though someone lives here. The mind boggles...
-  0    
-   \   
- 0--@      
-ext);
+	set("long","You are extremely deep in the New Faerie Dust sewer system. "+
+		"To your west there is some sort of lighted room. It appears almost "+
+		"as though someone lives here. The mind boggles...");
 	set_items( (["workroom":"To the west, go check it out."
 		]) );
 	set_exits( (["west":"/wizards/excelsior/rooms/sewer_workroom",

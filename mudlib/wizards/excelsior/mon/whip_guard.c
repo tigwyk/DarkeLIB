@@ -8,14 +8,14 @@ void create() {
 	::create();
 	set_name("guard");
 	set("id",({"guard","torturer","interrogator","wife beater","beater"}));
-	set_level(15);
+	set_level(13);
 	set_gender("male");
-	set("short","[15]interrogator");
+	set("short","An 'interrogator'");
 	set("long","This guard is busy forcing valuable information "+
 		"out of a prisoner with his whip.");
 	set("race","gromek");
 	set_body_type("gromek");
-	set_overall_ac(11);
+	set_overall_ac(3);
 	set_emotes(30,({"The guard cracks his whip at the prisoner",
 		"The guard smacks the prisoner one across the face.","The guard "+
 		"spits on the prisoner","The guard threatens the prisoner with "+

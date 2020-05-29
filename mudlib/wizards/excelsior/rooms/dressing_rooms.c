@@ -24,17 +24,12 @@ void create() {
 	set_property("light",2);
 	set_property("indoors",1);
 	set("short","By the dressing rooms");
-	set("long",@ext You have come to the end of a hallway that provides 
-		access to the theatre dressing rooms from the backstage area. 
-		There are only two dressing rooms here. There is a  door 
-		which leads to one to your west, and to your east it appears the 
-		dressing room has been made into an office for the 
-		theatre manager. To your north is an open window.
-
- 0--@--0
-    |
-    0
-ext);
+	set("long","You have come to the end of a hallway that provides "+
+		"access to the theatre dressing rooms from the backstage area. "+
+		"There are only two dressing rooms here. There is a  door "+
+		"which leads to one to your west, and to your east it appears the "+
+		"dressing room has been made into an office for the "+
+		"theatre manager. To your north is an open window.");
 	set_items( (["dressing rooms":"There are only two, one to your "+
 	"east and one to your west.",
 		"door":(: call_other, this_object(), "look_at_door" :),

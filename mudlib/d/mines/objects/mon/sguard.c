@@ -11,7 +11,7 @@ create() {
     ::create();
    set_name("greveck");
    set_id( ({ "guardian","guard","dwarf","greveck" }) );
-   set_short("[35]Greveck the guardian of the silver altar");
+   set_short("Greveck the guardian of the silver altar");
    set_level(35);
    set("long", " As you glance at Greveck you sense his great power. You "
    "can see a faint glow around his body as he moves around.\n"

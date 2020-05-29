@@ -7,15 +7,9 @@ void create() {
 set_property("light",2);
 set_property("indoors",1);
 set("short","Climbing the hospital stairs");
-set("long",@ext You have found your way to the second story of the hospital. 
-Here everything is nice and clean, as it is clear only a few people 
-use these stairs. A door here leads into some kind of doctors office.
-       
-       up   
-    @
-       down
-      door
-ext);
+set("long","You have found your way to the second story of the hospital. "+
+"Here everything is nice and clean, as it is clear only a few people "+
+"use these stairs. A door here leads into some kind of doctors office.");
 set_items( (["stairs":"Yes, stairs, that great device that allows one "+
 "to travel up and down certain things. They are kind of like ladders, "+
 "but not as steep. You don't have to use your hands to climb stairs. "+

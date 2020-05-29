@@ -6,12 +6,11 @@
 //      Messages improved by Brian 2.5.92
 //      Money handling added by Descartes of Borg Halloween 1992
 
-#include <move.h>
+#include "move.h"
 #include <std.h>
 #include <objects.h>
 
 inherit DAEMON;
-
 
 int help();
 

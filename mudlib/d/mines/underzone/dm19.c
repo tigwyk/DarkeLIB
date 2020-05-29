@@ -10,16 +10,12 @@ void create() {
     set_property("light", 0);
     set_property("indoors", 1);
     set("short", "You are floating in a deep underground pool.");
-    set("long",@ext 
-You are floating in  a large underground chamber. The river is 
-flowing from under a large wall upstream. The thick murky water is 
-pouring out at such a fast rate that most of the room is submerged 
-in a deep pool. Alongside the west end of the pool is a large beach.  
-
-        beach
-    @
-        downstream           
-ext);
+    set("long", 
+"You are floating in  a large underground chamber. The river is " 
+"flowing from under a large wall upstream. The thick murky water is "
+"pouring out at such a fast rate that most of the room is submerged "
+"in a deep pool. Alongside the west end of the pool is a large beach.\n"    
+        );
     set_exits( ({ UNDER+"dm18", UNDER+"dm20" }),
       ({ "downstream", "beach" }) );
     set_pre_exit_functions( ({"beach" }), ({"mob_check"}) );

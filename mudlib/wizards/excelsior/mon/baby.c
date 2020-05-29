@@ -12,7 +12,7 @@ void create() {
    set_name("child");
    set("id",({"baby","child","a crying baby","a child"}) );
    set_level( 1 );
-   set("short","[1]crying child");
+   set("short","A crying child");
    set("long","This child is crying for good reason- he is very sick. You better "+
       "get him to the doctor quick before he dies.  You hope it's not contageous.");
    set("race","human");

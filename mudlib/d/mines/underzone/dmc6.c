@@ -11,15 +11,9 @@ void create() {
     set_property("indoors", 1);
     set("short", "You are in a musty burial chamber. There are two seperate "
 "chambers to the north and south and a passage to the east.");
-    set("long", @ext You are standing in a musty burial chamber. Long cobwebs 
-hang down in front of you. There are seperate private chambers to the 
-north and to the south. A passage to the east opens into a larger room.
-    0   
-    |   
- 0--@--0
-    |
-    0
-ext);
+    set("long", "You are standing in a musty burial chamber. Long cobwebs "
+"hang down in front of you. There are seperate private chambers to the "
+"north and to the south. A passage to the east opens into a larger room.");
     set_exits( ({ UNDER+"dmc5",UNDER+"dmc7",UNDER+"dmc8",UNDER+"dm42"}),
       ({ "west","north","south","east" }));
     set_items( ([

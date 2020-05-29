@@ -13,7 +13,7 @@ create() {
     ::create();
    set_name("skeleton");
    set_id( ({ "skeleton","dwarf skeleton","corpse" }) );
-   set_short("[25]decaying skeleton corpse");
+   set_short("a decaying skeleton corpse");
    set_level(25);
    set_max_hp(2500);
    set_hp(2500);

@@ -72,11 +72,10 @@ int start_work(object what, object who, int time_needed, int power) {
   working_on = what;
   what->set_property("pow "+skill_name+"_"+worker_name, power);
   spell_pow = power;
-  /* HONSPRON2020 - You can move and work on LT - but if dropped, you stop working
   my_shadow = new("/std/spells/shadows/move_shadow");
   my_shadow->set_move_func( (: call_other, this_object(), "move_me" :) );
   my_shadow->set_move_arg(who);
-  my_shadow->start_shadow(who);*/
+  my_shadow->start_shadow(who);
   your_shadow = new("/std/spells/shadows/move_shadow");
   your_shadow->set_move_func( (: call_other, this_object(), "move_me" :) );
   your_shadow->set_move_arg(who);
@@ -109,12 +108,12 @@ int start_work(object what, object who, int time_needed, int power) {
   }
   return 0;
 }
+
 void move_me(object who) {
   message("my_action", "%^CYAN%^%^BOLD%^You interrupt your work.",
 	  who);
   remove_call_out("inc_work_time");
-  /*HONSPRON2020 - you can walk around and work on LT
-  if(objectp(my_shadow)) my_shadow->external_destruct(my_shadow);*/
+  if(objectp(my_shadow)) my_shadow->external_destruct(my_shadow);
   if(objectp(your_shadow)) your_shadow->external_destruct(your_shadow);
   who->set("long term", 0);
   remove();

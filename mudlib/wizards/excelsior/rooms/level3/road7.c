@@ -16,14 +16,11 @@ void create() {
 	set_property("light",3);
 	set_property("indoors",0);
 	set("short","By an interesting shop");
-	set("long",@ext You are at the shop of a tinker- for lack of a better 
-		word. He appears to deal in almost all things, as is apparent
-		from all the knicknacks and various junk he has hanging from his stand. 
-		You could 'say shopkeeper, help' for assistance. The market 
-		continues to the west and ends to the east.
-
- 0--@--0
-ext);
+	set("long","You are at the shop of a tinker- for lack of a better "+
+		"word. He appears to deal in almost all things, as is apparent "+
+		"from all the knicknacks and various junk he has hanging from his stand. "+
+		"You could 'say shopkeeper, help' for assistance. The market "+
+		"continues to the west and ends to the east.");
 	set_items((["market":"It seems to be ending, as the stands "+
 			"are becoming farther and farther apart.",
 		({"knicknacks","junk"}):"There may be a few things to interest you.",

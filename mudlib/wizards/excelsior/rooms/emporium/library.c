@@ -16,11 +16,8 @@ void create() {
 	set_property("night light",2);
 	set_property("indoors",1);
 	set("short","In the emporium libary");
-	set("long",@ext This is the emporium library, where books from all around 
-		have been collected and stored. Who knows what you may find here...
-
-    @--0      
-ext);
+	set("long","This is the emporium library, where books from all around "+
+		"have been collected and stored. Who knows what you may find here...");
 	set_items((["books":"They are all over the place."
 		]));
 	set_exits((["east":"/wizards/excelsior/rooms/emporium/foyer"]));

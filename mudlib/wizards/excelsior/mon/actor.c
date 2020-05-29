@@ -28,15 +28,15 @@ void create() {
 	set("id",({"actor","guy"}) );
 	set_stats("strength",80);
 	set_skill("blade",15);
-	set_level( 10 );
-	set("short","[10]bad actor");
+	set_level( 2 );
+	set("short","A bad actor");
 	set("long","This is a young actor just starting his career. He is "+
 		"pretty bad.");
-	this_object()->set_money("silver",100);
+	this_object()->set_money("copper",100);
 	set("race","human");
 	set_gender("male");
 	set_body_type("human");	
-	set_overall_ac( 10 );
+	set_overall_ac( 2 );
 	set_languages( ({"common"}) );
 	set_speech( 45,"common",({"O Romeo, Romeo! Where for art thou Romeo?",
 	"What light through yonder window breaks?","When shall we three "+

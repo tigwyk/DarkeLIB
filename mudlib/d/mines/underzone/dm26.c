@@ -11,16 +11,13 @@ void create() {
     set_property("indoors", 1);
     set("short", "You are crouched in a small crevice under the "
 "breakdown.");
-    set("long",@ext  
-You are crouched down in a small crevice under the breakdown. 
-The floor is covered with a thick layer of dust and broken rocks. 
-There is some old broken glass spread among the rocks. It looks 
-like it was part of an old lantern that was destroyed when the 
-ceiling caved in
-
- 0--@
-       down           
-ext);
+    set("long", 
+"You are crouched down in a small crevice under the breakdown. "
+"The floor is covered with a thick layer of dust and broken rocks. "
+"There is some old broken glass spread among the rocks. It looks "
+"like it was part of an old lantern that was destroyed when the "
+"ceiling caved in"
+        );
     set_exits( ({ UNDER+"dm25",UNDER+"dm27" }),
       ({ "west", "down" })
     );

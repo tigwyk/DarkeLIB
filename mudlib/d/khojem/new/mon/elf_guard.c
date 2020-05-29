@@ -16,18 +16,8 @@ create() {
     set_id( ({ "guard","elf", "wood-elf guard"}) );
     zlevel=random(2)+3;
     zskill=zlevel*8;
-	if (zlevel == 3) set_short("[3]wood-elf guard");
-else 
-if (zlevel == 4) set_short("[4]wood-elf guard");
-else
-if (zlevel == 5) set_short("[5]wood-elf guard");
-else
-if (zlevel == 6) set_short("[6]wood-elf guard");
-else
-if (zlevel == 7) set_short("[7]wood-elf guard");
-else set_short("[8]wood-elf guard");
-	set_level(zlevel);
-
+    set_level(zlevel);
+    set_short("wood-elf guard");
     set_long("The wood-elf guard is defending Fir'nvillee." 
       );
     set("race", "wood-elf");

@@ -232,9 +232,7 @@ void language_display() {
 
 		list += ({ sprintf("%-15s %2d     ",langs[i],
 
-
 		(int)ob->query_lang_prof(langs[i])) });
-        
 
     }
 
@@ -314,7 +312,7 @@ void skills_display() {
 
     for(i=0;i<sizeof(skills);i++) {
 
-		list += ({ sprintf("%-24s %3d%1s            ",skills[i],
+		list += ({ sprintf("%-20s %3d%1s  ",skills[i],
 
 		(int)ob->query_skill(skills[i]),"%") });
 
@@ -326,7 +324,7 @@ void skills_display() {
 
 	,this_player());
 
-    this_player()->more(explode(format_page(list, 2),"\n"));
+    this_player()->more(explode(format_page(list, 2),"\n\n"));
 
 }
 
@@ -352,7 +350,7 @@ void spells_display()
 
     for(i=0;i<sizeof(skills);i++)
 
-        list += ({ sprintf("%-26s *%1d            ",capitalize(skills[i]),
+        list += ({ sprintf("%-27s *%1d",capitalize(skills[i]),
 
             (int)ob->query_spell_level(skills[i])) });
 

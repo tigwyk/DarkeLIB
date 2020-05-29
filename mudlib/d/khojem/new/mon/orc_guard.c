@@ -16,18 +16,8 @@ create() {
     set_id( ({ "guard","orc", "half-orc guard"}) );
     zlevel=random(2)+3;
     zskill=zlevel*8;
-	if (zlevel == 3) set_short("[3]half-orc guard");
-else 
-if (zlevel == 4) set_short("[4]half-orc guard");
-else
-if (zlevel == 5) set_short("[5]half-orc guard");
-else
-if (zlevel == 6) set_short("[6]half-orc guard");
-else
-if (zlevel == 7) set_short("[7]half-orc guard");
-else set_short("[8]half-orc guard");
-	set_level(zlevel);
-
+    set_level(zlevel);
+    set_short("half-orc guard");
     set_long("The half-orc guard is a killing machine." 
       );
     set("race", "half-orc");

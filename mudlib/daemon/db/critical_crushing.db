@@ -1,4 +1,3 @@
-#CRIT CRUSHING
 (A):
 1..5:$(AP) blow was too weak to really harm $T.::NO_EFFECT
 6..10:$A $V $T.:whack:DAMAGE 1
@@ -7,7 +6,7 @@
 21..35:$A $V $T hard.:smack:DAMAGE 3:STUN 1:SKILL_MOD parry -10 1
 36..45:$A $V $T good.:pound:DAMAGE 6:SKILL_MOD attack -10 1:SKILL_MOD parry -10 1
 46..50:$A $V $T with a hard but clumsy strike.:hurt:DAMAGE 4:STUN 1:SKILL_MOD parry -25 1
-51..55:$A $V $T with a blow to the ribs.:bruise:DAMAGE 5:STUN 1:SKILL_MOD parry -25 1
+51..55:$A $V $T with a blow to the ribs.:bruise:DAMAGE 5:STUN 1:SKILL_MOD paryy -25 1
 56..60:$A $V $T hard in the thigh.:strike:DAMAGE 6:STUN 1:SKILL_MOD parry -20 1:SKILL_MOD dodge -15 3
 61..65:$A painfully $V $T in the forearm.:whack:DAMAGE 5:STUN 1:SKILL_MOD attack -20 3
 66..66:$A completely $V $(TP) shoulder with a crushing blow!:shatter:DAMAGE 8:STUN 2:SKILL_MOD parry -110 2:LIMB_LOSS arm cripple
@@ -50,7 +49,7 @@
 51..55:$A $V $T very hard in the chest, knocking $(TO) backward.:pound:DAMAGE 8:STUN 1:SKILL_MOD attack -10 4
 56..60:$A powerfully $V $T in the abdomen.:hammer:DAMAGE 6:STUN 1:SKILL_MOD parry -5 3
 61..65:$A sharply $V $(TP) forearm, making $(TO) wince in pain.:strike:DAMAGE 5:STUN 1
-66..66:$(AP) wicked blow shatters $(TP) knee into tiny fragments!!!::DAMAGE 9:LIMB_LOSS leg cripple:STUN 3:SKILL_MOD parry -75 8:SKILL_MOD dodge -75 8:SKILL_MOD attack -75 8
+66..66:$(AP) wicked blow shatters $(TP) knee into tiny fragments!!!:DAMAGE 9:LIMB_LOSS leg cripple:STUN 3:SKILL_MOD parry -75 8:SKILL_MOD dodge -75 8:SKILL_MOD attack -75 8
 67..70:$A $V a staggering blow to $T!:deliver:DAMAGE 10:STUN 3:SKILL_MOD parry -100 2:SKILL_MOD attack -10 6
 71..75:$A painfully $V $(TP) knee, bringing $(TO) to the floor!:pound:DAMAGE 9:STUN 2:SKILL_MOD parry -40 4:SKILL_MOD dodge -40 6
 76..80:$A badly $V $(TP) arm with a forceful strike.:bruise:DAMAGE 9:STUN 1:SKILL_MOD parry -50 3:SKILL_MOD attack -50 3
@@ -100,3 +99,14 @@
 91..95:$(AP) devastating blow breaks $(TP) ribs and drives lethal bones into $(TPP) vitals!!!::DAMAGE 75:STUN 6:CONT_DAMAGE 25 6
 96..99:$A $V $(TP) heart and lungs with a crushing blow to the side of the chest!!! $(TP) body is flung to the side by the force, with blood pouring from $(TPP) mouth!:destroy:KILL
 100..100:$A $V $(TP) head clean off $(TPP) shoulders, sending it flying and rolling away from the bloody mess!!!!:knock:LIMB_LOSS head:KILL
+
+
+
+
+
+
+
+
+
+
+

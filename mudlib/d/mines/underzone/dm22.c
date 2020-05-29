@@ -10,20 +10,15 @@ void create() {
     set_property("light", 0);
     set_property("indoors", 1);
     set("short", "You are standing in a rubble filled mining tunnel.");
-    set("long",@ext 
-The passage you are standing in now is filled with rocks and 
-large boulders. There must have been a huge cave-in here. The ceiling 
-has deep cuts where large rocks broke off and fell to the floor. There 
-are a couple of broken digging tools laying on the ground. Next to the 
-tools are some shards of glass from a broken lantern.
-There is a smaller passage to the east that has been dug 
-through the breakdown. It looks like the miners were trying to break 
-through to the other side of the cave-in.   
-       
-    @--0
-   /
-  0 
-ext);
+    set("long", 
+"The passage you are standing in now is filled with rocks and "
+"large boulders. There must have been a huge cave-in here. The ceiling "
+"has deep cuts where large rocks broke off and fell to the floor. There "
+"are a couple of broken digging tools laying on the ground. Next to the "
+"tools are some shards of glass from a broken lantern.\n" 
+"There is a smaller passage to the east that has been dug "
+"through the breakdown. It looks like the miners were trying to break "
+"through to the other side of the cave-in.\n");
     set_exits( ({ UNDER+"dm21", UNDER+"dm23" }),
       ({ "southwest", "east" }));
     set_items( ([

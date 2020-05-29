@@ -19,16 +19,13 @@ void create() {
 	set_property("light",0);
 	set_property("indoors",0);
 	set("short","In the gnome farms");
-	set("long",@ext You though you had seen some horrible sights in your life, 
-		but this has got to be one of the worst. All around are deathly thin 
-		and sick looking gnomes. They are lying practically motionless against 
-		the cold stone walls of this small hallway while guards walk amoung them 
-		and beat them. At first you can't tell what they are doing, but you soon 
-		realize that the gnomes are emitting tons of magical forces. What could 
-		this place be?
-
- 0--@--0
-ext);
+	set("long","You though you had seen some horrible sights in your life, "+
+		"but this has got to be one of the worst. All around are deathly thin "+
+		"and sick looking gnomes. They are lying practically motionless against "+
+		"the cold stone walls of this small hallway while guards walk amoung them "+
+		"and beat them. At first you can't tell what they are doing, but you soon "+
+		"realize that the gnomes are emitting tons of magical forces. What could "+
+		"this place be?");
 	set_items((["gnomes":"They are in pretty bad shape.",
 		"walls":"Solid stone. It would be very hard to break in, or out, "+
 			"of this place.",

@@ -11,14 +11,11 @@ void create() {
     set_property("light", 2);
     set_property("indoors", 1);
     set("short", "You are floating in an underground river.");
-    set("long",@ext 
-You are standing in a cramped mine tunnel somewhere in the 
-Under'Drin Mine Complex. The rough walls slope down and sink into the 
-thick debris covering the floor. The wide steel track takes up most of 
-the available walking space.
-   
- 0--@--0
-ext);
+    set("long", 
+"You are standing in a cramped mine tunnel somewhere in the "
+"Under'Drin Mine Complex. The rough walls slope down and sink into the "
+"thick debris covering the floor. The wide steel track takes up most of "
+"the available walking space.");
     set_exits( ({ UNDER+"dm9d",UNDER+"dm63" }),
       ({ "east", "west" })
       );

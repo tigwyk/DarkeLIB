@@ -12,15 +12,11 @@ void create() {
     set_property("indoors", 1);
     set("short", "You are standing in a damp mine tunnel somewhere within "
         "the Under'Drin Mining complex.");
-    set("long",@ext 
-      You are standing in a damp mine tunnel somewhere within the 
-      Under'Drin Mining complex. Water slowly rolls down the walls in 
-      little streams, soaking the moldy staw that is lining the passage. 
-      You can see faint seams of mineral deposits in the walls.
-    0   
-    |  
-    @--0
-ext);
+    set("long", 
+      "You are standing in a damp mine tunnel somewhere within the "
+      "Under'Drin Mining complex. Water slowly rolls down the walls in "
+      "little streams, soaking the moldy staw that is lining the passage. "
+      "You can see faint seams of mineral deposits in the walls." );
     set_exits( ({ UNDER+"dm13",UNDER+"dm15" }),
         ({ "north", "east" }));
     set_items( ([

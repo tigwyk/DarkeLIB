@@ -1,5 +1,5 @@
-melee damage:::(["crushing":6])
-xp mod:::25
+melee damage:::(["crushing":10])
+xp mod:::40
 ambidextry:::1
 dev cost:::-2
 innate skills:::(["trade lore":30])

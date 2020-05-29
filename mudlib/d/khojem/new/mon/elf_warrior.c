@@ -12,19 +12,10 @@ create() {
   ::create();
     set_name("wood-elf warrior");
     set_id( ({ "warrior","elf", "wood-elf warrior"}) );
-    zlevel=random(4)+2;
+    zlevel=random(2)+2;
     zskill=zlevel*8;
-if (zlevel == 1) set_short("[1]wood-elf warrior");
-else 
-if (zlevel == 2) set_short("[2]wood-elf warrior");
-else
-if (zlevel == 3) set_short("[3]wood-elf warrior");
-else
-if (zlevel == 4) set_short("[4]wood-elf warrior");
-else
-if (zlevel == 5) set_short("[5]wood-elf warrior");
-else set_short("[6]wood-elf warrior");
-	set_level(zlevel);
+    set_level(zlevel);
+    set_short("wood-elf warrior");
     set_long("The wood-elf warrior is tracking half-orcs." 
       );
     set("race", "wood-elf");

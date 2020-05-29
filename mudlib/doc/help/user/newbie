@@ -1,12 +1,12 @@
 
-*****===== Glorfindel's Newbie Handbook to DayBreak =====*****
+*****===== Glorfindel's Newbie Handbook to DarkeMUD =====*****
 
-	
+	There is a public ftp site at darke.shadowlands.com
 Check in the /pub/player dir.  This handbook and other stuff is in there.
 
 I.Getting Started
 	A.Choose a Race:  
-	  There are a variety of races on DayBreak.  Races get bonuses 
+	  There are a variety of races on DarkeMUD.  Races get bonuses 
           to stats and get special abilities, i.e. faster healing, 
           ambidexterity, night vision, multiple limbs, etc.  The races 
           are balanced by experience point modifiers.  Some races are 
@@ -15,7 +15,7 @@ I.Getting Started
           of guild you wish to join, i.e. an ogre would be a bad choice 
           for a race if you want to be an arch-mage, not to say it's not 
           possible to do it, just very hard...  Here's a selection of 
-	  races currently on DayBreak:
+	  races currently on DarkeMUD:
      ===========================  Races  ================================
        Drow-Elf    Gromek        High-Man       Storm-Giant    Werebear
        Dwarf       Half-Elf      Hill-Giant     Sword-Demon    Weretiger
@@ -46,8 +46,8 @@ I.Getting Started
                          Werewolves take less damage from mundane weapons.
 
 	B.Choose a Guild:
-	  There are many guilds in DayBreak.  Guilds are a very important 
-          part DayBreak.  First, guild unity is very big.  Guild members 
+	  There are many guilds in DarkeMUD.  Guilds are a very important 
+          part DarkeMUD.  First, guild unity is very big.  Guild members 
           look out for each other.  There will be a guildmaster and guild 
           representatives.  You can join a guild by going to the location 
           of the guild, and if the guildmaster is there and a mob just 
@@ -62,16 +62,21 @@ I.Getting Started
 	  magic points you get and how fast you regenerate those.  Here is
           a list of guilds:
     =============================  Guilds  ==============================
-Warrior     Mage                Priest      Semi-Warrior
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-Fighter     Arch-Mage           Cleric      Chaotic-Lord
-Thief       Elementalist        War-Priest  Nightblade
-Tinker      Enchanter           Paladin     Sword-Mage
-            Necromancer                     Dark-Paladin
-            Nethermancer                    Assassin 
-            Elemental-Mage
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-   
+    Warriors         Cleric          Mage              Semi-Spell Users
+    ---------------------------------------------------------------------
+    Thief +          Cleric +        Arch-Mage +       Nightblade +
+    Fighter +        War-Priest +    Necromancer +     Chaotic-Lords +
+    Cavalier *                       Elementalist +    Druid *
+    Tinker +                         Enchanter +       Elemental-Warrior *
+    Warrior-Monk #                   Moon-Mage *       Monk *
+    Barbarian *                                        Paladin +
+							 Sword-Mage +
+							 Ranger *
+    ----------------------------------------------------------------------
+    * These guilds will not be opening for a while and may not have help 
+      files.
+    + These guilds are up and running.
+    # These guilds are planned for the near future 
     ======================================================================
 	 For more detailed information on each guild just type:
 			 help <guild>
@@ -92,7 +97,7 @@ Tinker      Enchanter           Paladin     Sword-Mage
                 if your stats really suck.
 
 II.Combat System
-	Combat in DayBreak is both entertaining and deadly.  It will require 
+	Combat in DarkeMUD is both entertaining and deadly.  It will require 
 	getting used to before you can go up against powerful monsters 
         without fear of instant death.  At its most basic level, combat 
         consists of 2 second turns in which every participant in combat 
@@ -180,7 +185,7 @@ II.Combat System
           nasty!)  You will notice that this is not so rare if you try to 
           attack a powerful monster with no armor!
 	    Basically, the critical hit system is a large part of what 
-          makes combat on DayBreak so colorful.  There are probably upwards 
+          makes combat on DarkeMUD so colorful.  There are probably upwards 
           of several thousand possible critical hit results with more on 
           the way.  
 	  
@@ -202,7 +207,7 @@ II.Combat System
           in streams, at fountains, etc. (just type:fill waterskin).
           Also, try the tavern on the west side of town.  Clerics and
           some other guilds get 'herb lore' skill which allows the
-          distilling of a potion from the grass of the DayBreak
+          distilling of a potion from the grass of the DarkeMUD
           plains.  This allows a great increase to mp regeneration for
           a short period, but also can interfere with spell casting.
 
@@ -212,7 +217,7 @@ II.Combat System
           chapter on Experience (IV) further down in this document.
 
 III.Spell System
-  DayBreak has a very complex system of spellcasting with many spells 
+  DarkeMUD has a very complex system of spellcasting with many spells 
   available to players throughout the variety of guilds.  The system itself
   is quite simple on the surface.  A player learns a spell much like they 
   would learn a skill through training and spending development points.  
@@ -381,7 +386,7 @@ III.Spell System
          They can become quite powerful.  Type: 'help pet' for more info.
 
 IV. Experience
-    You gain experience from fighting.  However, on DayBreak, it takes a
+    You gain experience from fighting.  However, on DarkeMud, it takes a
     while for you to learn from your encounter with a monster.  The score
     command displays your mind status (clear, almost clear, clouded, etc.).
     As you kill a monster, the experience is accumulated in your mind,
@@ -425,13 +430,13 @@ V.Skills and Development Points
 	---------------
 	     Many MUD's allow multi-classing, ie, the selection of
 	more than one guild for the purpose of diversifying your
-	character.  As an alternative to this, DayBreak has a system
+	character.  As an alternative to this, DarkeMUD has a system
 	of "custom multi-classing" which allows the character to
 	CUSTOMIZE his or her second class.  It works like this...
 	     In town, there is an adventurer's guild.  In order to
 	maintain the favor of the DemiUrge, all of the guilds have
 	donated both material and manpower to the common goal of
-	strengthening the characters of DayBreak.  The workers and
+	strengthening the characters of DarkeMUD.  The workers and
 	trainers of the Guild are then relieved of all ties of loyalty
 	to their guild and teach others as their profession.  As a
 	character, you may NOT join the Guild and teach, but you
@@ -458,7 +463,7 @@ V.Skills and Development Points
 
 
 VI.DEATH
-   On DayBreak, death is relatively common, so the penalties are not 
+   On DarkeMUD, death is relatively common, so the penalties are not 
    terribly severe.  No permanent damage is done to your character unless 
    you are killed by another player (in which case you can lose points 
    off your skills).
@@ -531,7 +536,7 @@ II.Communication Commands:
 
   B.Mail Command
     syntax: mail <player>
-	 This command allows you to send mail to another player on DayBreak. 
+	 This command allows you to send mail to another player on DarkeMUD. 
     This can only be done in the Post Office underneath the church.  You 
     can also read your mail there.
 
@@ -553,7 +558,7 @@ II.Communication Commands:
   D.Say Command
     syntax: say <message>
     syntax: ' <message>
-	 Ok, this command is very important on DayBreak.  This command 
+	 Ok, this command is very important on DarkeMUD.  This command 
     allows you to interact with the mobs and players, especially mobs.  
     If you go into a shop, you can normally just type:
 	   say shopkeeper, help
@@ -612,8 +617,10 @@ II.Communication Commands:
 	You have about 2 or 3 channels available to you at any one time.  
 	Talking on these channels does not cost you mps!  These are usually
 	out of character chat channels.  At levels 1-3 you get newbie 
-        
+        channel.  From levels 4+ you have darke channel.  To talk on a 
+        channel:
 	   newbie <message>
+	   darke <message>
 	Note I would set up alias commands for your chat channels.
 	You also have a guild channel, just type:
 	   <guild name> <message>
@@ -910,10 +917,9 @@ I.You appear in the church.  Look at the world map and the city map to get
   Ohh yea, if you are bugging and nothing seems to work.  Quit and come 
   back before you ask a wiz.  85% of the time this works.
   If anything was left out... please mail drizzt.
-  Above all, have fun.  Good luck!  See ya on the Daybreak Side!
+  Above all, have fun.  Good luck!  See ya on the Darke Side!
 
 
 			Written by: Glorfindel 2/15/96
                         Revised by: Drizzt 2/18/96
-                        Edited by: Tlny 2020
                     

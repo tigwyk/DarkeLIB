@@ -13,12 +13,9 @@ void create() {
 	set_property("no mine",1);
 	set_property("light",3);
 	set("short","In a dank corner");
-	set("long",@ext After brushing yourself off from your little window escapade 
-		you look around. You appear to be in a small closet of someones house.
-       
-       window   
-    @		
-ext);
+	set("long","After brushing yourself off from your little window escapade "+
+		"you look around. You appear to be in a small closet of someones house. "
+		);
 	set_items((["sign":"You decide to read the sign over and over again. "+
 			"'Condemned, do not enter.' 'Condemned, do not enter.' "+
 			"'Condemned, do not enter.' 'Condemned, do not enter.' "+

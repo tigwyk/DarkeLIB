@@ -12,7 +12,7 @@ void create() {
     set("long", "A pair of tanned, leather slippers.");
     set_weight(30);
     set_value(4);
-    set_type("slippers");
+    set_type("boot");
     set_limbs( ({ "right foot", "left foot" }) );
     set_ac(4);
         set_ac(0, "aether");

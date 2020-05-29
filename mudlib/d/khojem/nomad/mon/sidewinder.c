@@ -12,7 +12,7 @@ void create() {
   ::create();
   set_name("sidewinder");
   set_id( ({ "sidewinder", "snake" }) );
-  set_short("[5]slithering sidewinder");
+  set_short("A slithering sidewinder");
   set_long("The sidewinder moves quickly across the desert sand.");
   set("race", "serpent");
   set_property("melee damage", ([ "impaling" : 15 ]));

@@ -10,14 +10,10 @@ void create() {
     set_property("light", 0);
     set_property("indoors", 1);
     set("short", "You are standing in a cluttered office.");
-    set("long",@ext 
-You have entered a cluttered office. The room is covered in assorted 
-dusty papers and tattered documents. Evidently the miners have more 
-important matters to deal with than cleaning.
- 
-    @
-        out   
-ext);
+    set("long", 
+"You have entered a cluttered office. The room is covered in assorted "
+"dusty papers and tattered documents. Evidently the miners have more "
+"important matters to deal with than cleaning.\n");
     set_exits( ({ UNDER+"dm60"}),
       ({ "out" })
        );

@@ -37,9 +37,6 @@ void create() {
     //set_skill("dodge",random(80)+200);
     //set_skill("parry",random(80)+200);
     //set_skill("melee",random(80)+250);
-    set_skill("resist stun", 300);  
-   set_property("enhance criticals",-5);
-   set_property("magic resistance", 300);
 
    set_melee_damage(([ "infernal" : 200  ]));
    set_emotes(5, ({
@@ -56,8 +53,7 @@ void create() {
    //ob->set_wc(10, "infernal");
    //ob->add_poisoning(random(10));
    //force_me("wield cutlass in right hand");
-/*   
- ob = new("/d/damned/virtual/large-shield.armour");
+    ob = new("/d/damned/virtual/large-shield.armour");
     ob->move(this_object());    
     ob->set_ac(200);
     ob = new("/d/damned/virtual/chain-mail.armour");
@@ -84,28 +80,17 @@ void create() {
     ob = new("/d/damned/virtual/gauntlet.armour");
     ob->move(this_object());    
     ob->set_ac(200);
-*/
-   // force_me("equip");
+    force_me("equip");
 }
 
-int loot;
+
  
 void die(object ob) {
    object ob1;
 
-loot=(1+random(3));
-
-if (loot == 1){ 
-   ob = new("/std/diewarzau/obj/misc/ingot");
+ ob = new("/std/diewarzau/obj/misc/ingot");
    ob->set_material("metal/eonmite");
    ob->move(this_object());
-}
-else { 
-   ob = new("/std/diewarzau/obj/misc/ingot");
-   ob->set_material("metal/platnite");
-   ob->move(this_object());
-}
-
 
 
 /*

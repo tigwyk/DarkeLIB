@@ -16,47 +16,30 @@ message("help",
 "This skill may be used to compare two armours or weapons to see which will "+
 "fare better in combat.  Use it with the following format:\n"+
 "	use compare at sword and mace\n"+
-"	use compare at helmet and breastplate\n\n"
-"Tlny note added\n"
-"You can also compare the same piece of armour or weapon to see it's damage or armour if your skill is high enough",
+"	use compare at helmet and breastplate\n",
 this_player());
 }
-
 
 string wc_str(int wc) {
   switch(wc) {
   case -100..0:
     return "terrible";
-  case 1..40:
-    return "very poor";
-  case 41..80:
+  case 1..5:
     return "poor";
-  case 81..120:
-    return "low";
-  case 121..160:
-    return "below average";
-  case 161..200:
+  case 6..10:
+    return "below avg";
+  case 11..17:
     return "average";
-  case 201..240:
-    return "above average";
-  case 241..280:
+  case 18..27:
+    return "above avg";
+  case 28..40:
     return "good";
-  case 281..320:
-    return "very good";
-  case 321..360:
-    return "extreamly good";
-  case 361..400:
-    return "superb";
-  case 401..440:
+  case 41..60:
     return "excellent";
-  case 441..480:
-    return "awsome";
-  case 481..520:
-    return "god awsome";
-  case 521..560:
+  case 61..99:
+    return "awesome";
+  case 100..10000:
     return "INSANE";
-  case 561..10000:
-    return "IMPREGNABLE!";
   default:
     return "terrible";
   }

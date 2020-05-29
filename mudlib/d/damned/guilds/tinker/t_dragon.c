@@ -16,7 +16,6 @@ create() {
     set_overall_ac(GUARD_AC);
     set_property("magic resistance", GUARD_RESIST);
     set_property("enhance criticals", GUARD_ENHCRIT);
-    set_languages(({ "elvish", "common", "dragonish" }));
     set_skill("block", 125);
     set_stats("strength", 300);
     set_property("handedness", "right hand");
@@ -61,22 +60,13 @@ int block_exit() {
 
   if(wizardp(this_player())) return 0;
    if((string)this_player()->query_class() != "tinker") {
-     force_me("speak common");
-    force_me("say Only tinkers may pass.");
+     write("The Dragon says in Common: Only the worthy may pass.");
     return 1;
   }
-if(wizardp(this_player())) return 0;
-   if(this_player()->is_player() && (int)this_player()->query_level() < 16) {
-     force_me("speak common");
-    force_me("say How dare you try to come into in here at such a low level you must be at least level 16 tinker to come in here");
-    return 1;
-  }
-
   inv = filter_array(all_inventory(this_player()), "locker_filter",
         this_object());
   if(sizeof(inv)) {
-     force_me("speak common");
-    force_me("say We do not allow storage devices in here.");
+    write("The Dragon says in Common: We do not allow storage devices in here.");
     return 1;
   }
 join_room = find_object_or_load("/d/damned/guilds/join_rooms/tinker_join");

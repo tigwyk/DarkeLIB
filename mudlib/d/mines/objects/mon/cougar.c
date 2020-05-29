@@ -13,13 +13,13 @@ create() {
     ::create();
    set_name("black cougar");
    set_id( ({ "cougar","black cougar"}) );
-   set_short("[25]A large muscular cougar");
-   set_level(25);
+   set_short("A large muscular cougar");
+   set_level(20);
    set("long", "The black cougar looks very strong and very nasty! His "
        "deep green eyes stare at you intently.");
    set_gender("male");
    set("race", "wolf");
-   //set_exp(400000);
+   set_exp(400000);
    set_alignment(0);
    set_wielding_limbs( ({"right hand","left hand"}) );
    set_body_type("quadruped");

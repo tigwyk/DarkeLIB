@@ -9,8 +9,8 @@ void create() {
     set_name("mother");
     set("id", ({"mother","a mother","a poor mother","poor mother",
       "parent","a parent","a squalid mother","squalid mother"}) );
-    set_level( 10 );
-    set("short", "[10]squalid mother");
+    set_level( 1 );
+    set("short", "A squalid mother");
     set("long","She is very dirty,  and is hopelessly trying to take care "+
       "of several crying babies.  She looks very distressed.  Perhaps you " +
       "say 'hi' to her.");
@@ -19,7 +19,7 @@ void create() {
     set_body_type("human");
     state_of_child = "not created";
     in_charge = 0;
-    set_overall_ac( 10 );
+    set_overall_ac( 1 );
     set_max_hp( 70 );
     set_hp( 55 );
     set_wimpy( 50);

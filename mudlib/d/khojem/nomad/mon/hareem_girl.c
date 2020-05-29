@@ -13,16 +13,15 @@ void init() {
 }
 
 create() {
- // int mod;
+  int mod;
   ::create();
     set_name("hareem girl");
     set_id( ({ "hareem girl", "girl" }) );
-   // mod=random(10);
-    //if(mod==0) { set_level(5); }
-    //if(mod>0)  { set_level(6); }
-   // if(mod>7)  { set_level(7); }
-set_level(7)
-    set_short("[7]hareem girl");
+    mod=random(10);
+    if(mod==0) { set_level(5); }
+    if(mod>0)  { set_level(6); }
+    if(mod>7)  { set_level(7); }
+    set_short("hareem girl");
     set_long("A dark-haired attractive woman.  Her face is "+
       "veiled, but you notice a mischievous glint in her eye."
       );

@@ -56,10 +56,8 @@ void create(){
 	set_exits( ([
 		"north": ROOMS+"fountain_square",
 		"south": ROOMS+"magus_lane2",
+		"west": ROOMS+"guard_post"
 	]) );
-add_exit("/d/1tlny/complete/kuril/s2/guard_post.c","west");
-
-
 }
 
 int hit_wall() {

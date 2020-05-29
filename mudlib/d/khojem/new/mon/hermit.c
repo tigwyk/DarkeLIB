@@ -13,7 +13,7 @@ create() {
     set_name("gnome hermit");
     set_id( ({ "gnome hermit","hermit" }) );
     set_level(5);
-    set_short("[5]gnome hermit");
+    set_short("gnome hermit");
     set_long("A gnome hermit with a pleasant smile and warm eyes.  "+
       "Long ago this hermit decided to leave the trappings of the "+
       "world and live the life of a recluse.  Now, tempered by years "+

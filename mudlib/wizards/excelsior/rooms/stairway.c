@@ -13,17 +13,11 @@ void create() {
 set_property("light",2);
 set_property("indoors",1);
 set("short","The back stairway");
-set("long",@ext You have made your way into a back stairway of the 
-hospital, carefully ignoring a sign posted here that says '
-employees only'. The stairway goes both directions- up and down 
-for those who couldn't figure that out. You can also leave through 
-a door that leads to the main area of the hospital.
-       
-       up   
-    @
-       down
-      out
-ext);
+set("long","You have made your way into a back stairway of the "+
+"hospital, carefully ignoring a sign posted here that says '"+
+"employees only'. The stairway goes both directions- up and down "+
+"for those who couldn't figure that out. You can also leave through "+
+"a door that leads to the main area of the hospital.");
 set_items( (["stairway":"A mighty fine looking stairway that appears "+
 "to be in full operational order.","sign":"You carefully ignore it.",
 "door":"It appears to lead back to the main area of the hospital. "+

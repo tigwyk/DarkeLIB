@@ -12,12 +12,8 @@ void create() {
     set("short",
       "You are standing in Max's Spare Parts Room."
        );
-    set("long",@ext 
-You are standing in a cluttered Spare Parts Room.
-    0   
-    |   
-    @
-ext);
+    set("long", 
+"You are standing in a cluttered Spare Parts Room.\n");
     set_exits( ({ UNDER+"dm1" }), ({ "north" }) );
  
 //Trap Code Variable

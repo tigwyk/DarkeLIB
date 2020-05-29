@@ -10,9 +10,9 @@ void create() {
   set_can_change_aggr(1);
   set_carry(0);
   set_save(0);
-  set_level(16);
-  set_overall_ac(15);
-  set_short("[16]Joey, the pet rock");
+  set_level(11);
+  set_overall_ac(9);
+  set_short("Joey, the pet rock");
 	set_long("This common household mineral is here to serve you. Some sort of strange magical power has transformed it into a sturdy fighting machine. See 'help pet' "+
   	"for info on how to control it.");
   set_aggr_status(0);

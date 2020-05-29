@@ -13,7 +13,7 @@ void create() {
       "and has a few holes.");
     set_weight(50);
     set_value(20);
-    set_type("mitten");
+    set_type("glove");
     set_limbs( ({ ({ "right hand", "left hand", 
       "first branch", "second branch", "third branch", "fourth branch" }) }) );
     set_ac(4);

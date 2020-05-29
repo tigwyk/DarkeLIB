@@ -27,13 +27,13 @@ void create() {
 	set_id( "wight" );
 	set("race", "undead");
 	set_body_type("human");
-	set_level(8);
+	set_level(5 + random(3));
 	switch(random(5)) {
-		case 0: var = "[8]A bloodthirsty wight"; break;
-		case 1: var = "[8]A predatious wight"; break;
-		case 2:	var = "[8]A bloody wight"; break;
-		case 3: var = "[8]A horrid wight"; break;
-		case 4: var = "[8]A ferocious wight"; break;
+		case 0: var = "A bloodthirsty wight"; break;
+		case 1: var = "A predatious wight"; break;
+		case 2:	var = "A bloody wight"; break;
+		case 3: var = "A horrid wight"; break;
+		case 4: var = "A ferocious wight"; break;
 	}
 	this_object()->set("short", var);
 	set_long(

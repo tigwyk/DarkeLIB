@@ -21,8 +21,5 @@
 #define GUILD "/std/guild"
 #define SHADOW "/std/spells/shadows/shadow"
 
-#define QUARRY "/d/areas/quarry/"
+#define DAMAGE_TYPES ({ "crushing", "cutting", "impaling", "fire", "impact", "electricity", "acid", "plasma","vacuum", "cold", "depression", "time", "disruption", "holy","aether", "stress", "strike", "infernal", "light" })
 
-#define DAMAGE_TYPES ({ "crushing", "cutting", "impaling", "strike", "impact", "stress", "fire", "cold",  "vacuum", "electricity",  "disruption", "plasma", "holy", "unholy",    "infernal", "aether",})
-
-//"depression", "time", "acid",

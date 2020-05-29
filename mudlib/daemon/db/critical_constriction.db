@@ -95,3 +95,4 @@
 #TLNY2020 removed:STAT_MOD strength -40 4
 91..99:$(TP) face $V purple and black and $(TPP) loses consciousness as $A crushes $(TPP) neck!:turn:KILL
 100..100:$A $V up $(TP) head, so hard that $(TPP) eyes bug out and $(TPP) skull collapses!:wrap:KILL
+

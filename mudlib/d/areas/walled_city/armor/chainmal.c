@@ -1,9 +1,7 @@
 /* Armor coded by Duridian for DarkeMud. */
  
 #include <std.h>
-
-inherit "/std/armour";
-//inherit ARMOR;
+inherit ARMOR;
  
 void create() {
    ::create();

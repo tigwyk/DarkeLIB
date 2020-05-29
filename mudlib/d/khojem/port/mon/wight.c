@@ -14,7 +14,7 @@ create() {
     set_name("wight");
     set_id( ({ "wight", "shadowy wight" }) );
     set_level(7);
-    set_short("[7]shadowy wight");
+    set_short("shadowy wight");
     set_long("The wight appears to be humanoid, but lacks any definition of feature.  "+
       "Where a face should be is blankness and two glowing red eyes." 
       );

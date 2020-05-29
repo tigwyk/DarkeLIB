@@ -7,8 +7,8 @@ void create() {
 	::create();
 	set_name("guard");
 	set("id",({"theatre guard","guard","a guard"}));
-	set_level( 22 );
-	set("short","[22]theatre guard");
+	set_level( 20 );
+	set("short","A theatre guard");
 	set("long","This is an storm-giant that has been hired to guard "+
 		"the theatre. Looking at his impressive build you realize "+
 		"he is a black belt in karate. If you think you're really "+

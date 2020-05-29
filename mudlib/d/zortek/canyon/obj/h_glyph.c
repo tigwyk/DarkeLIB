@@ -1,6 +1,6 @@
 //    Harming Glyph
 //    Based on Diewarzau's Rune Code
-inherit "/d/zortek/canyon/obj/glyph";
+inherit "/wizards/zortek/canyon/obj/glyph";
 
 static int hb_on;
 static int heal_status;

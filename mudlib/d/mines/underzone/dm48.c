@@ -12,14 +12,12 @@ void create() {
     set("short", "You are standing on the bank of a large river. A huge "
 "waterfall is roaring in front of you.\n" 
      );
-    set("long",@ext 
-You are standing on the bank of a large river. A huge 
-waterfall is roaring in front of you. Thousands of gallons of water 
-are falling every second. Cascading down and slamming into the lower 
-river.   
-        up   
-    @    river       
-ext);
+    set("long", 
+"You are standing on the bank of a large river. A huge "
+"waterfall is roaring in front of you. Thousands of gallons of water "
+"are falling every second. Cascading down and slamming into the lower "
+"river.\n"
+       );
     set_exits( ({ UNDER+"dm47",UNDER+"dm45" 
      }),
       ({ "river","up" })

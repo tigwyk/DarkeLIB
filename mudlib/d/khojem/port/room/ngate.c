@@ -42,7 +42,7 @@ void create() {
       "tour.  A dirt road extends to the south and a torch provides light.  "+
       "A brass sign is securely fastened to the wall."
     );
-    add_exit("/d/damned/virtual/room_13_9.world","north");
+    add_exit("/d/damned/virtual/room_11_9.world","north");
     set_pre_exit_functions(({"north"}),({"exit_city"}));
     add_exit("/d/khojem/port/room/constable","east");
     add_exit("/d/khojem/port/room/s06","south");

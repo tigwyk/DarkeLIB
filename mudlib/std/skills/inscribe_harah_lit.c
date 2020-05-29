@@ -42,8 +42,8 @@ void skill_func(object from, object at, string arg) {
   while(shadow(at, 0)) shadow(at, 0)->external_destruct(shadow(at, 0));
   tmp = (string *)at->query_property("runes");
   if(!tmp) tmp = ({});
-  if(sizeof(tmp) >= 10) {
-    message("info", "No weapon may receive more than 10 runes.",
+  if(sizeof(tmp) >= 3) {
+    message("info", "No weapon may receive more than 3 runes.",
       from);
     remove();
     return;

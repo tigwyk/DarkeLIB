@@ -14,7 +14,7 @@ create() {
     set_name("sand devil");
     set_id( ({ "sand devil","devil" }) );
     set_level(8);
-    set_short("[8]sand devil");
+    set_short("sand devil");
     set_long("The sand devil is a small, four-legged creature with an arched back "+
       "and small spiked horns protruding from its head.  "+
       "The devil's skin is dry and cracked and looks much like sand.  "

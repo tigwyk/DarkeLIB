@@ -14,25 +14,15 @@ void init() {
 void create(){
 	string var;
 	object ob;
-	int HPBASE, LEV,zlevel;
+	int HPBASE, LEV;
 
 	HPBASE = 70;
 
 	::create();
 	set_name("temple guard");
 	set("id", ({"guard", "temple guard" }) );
-zlevel=(12+random(5));
-if (zlevel == 16) set_short("[16]A temple guard");
-else 
-if (zlevel == 15) set_short("[15]A temple guard");
-else
-if (zlevel == 14) set_short("[14]A temple guard");
-else
-if (zlevel == 13) set_short("[13]A temple guard");
-else
-if (zlevel == 12) set_short("[12]A temple guard");
-else set_short("[17]A temple guard");
-	set_level(zlevel);
+	set_level(12 + random(5));
+	set("short", "A temple guard");
 	set("long",
 		"Standing guard about the temple of their dark lord, the "
 		"temple guards are known to be both dangerous and suspicious "

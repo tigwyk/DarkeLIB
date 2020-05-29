@@ -38,32 +38,18 @@ void spell_func(object caster, object at, int power, string args, int flag)
     caster->add_mp(props["mp cost"]);
     return;
   }
-   if(flag) {
-    message("info", "The spell fizzles, costing double mp.", caster);
-    caster->add_mp(-1* props["mp cost"]);
-    remove();
-    return;
-  }
 
-
+  message("info", "Your weapon turns to stone.", caster);
   ob = new("/std/spells/shadows/weapon_shadow");
-  	if(check_stack(at, ob)) {
-    message("info", "Your weapon turns to stone.", caster);
-		if(power < 4 ){
-		ob->set_extra_wc(([ "impact" : 6*power, "crushing" : 6*power ]));
-		ob->set_auto_crits((["impact A" : 6*power ])); 
-		}
-		else{
-		ob->set_extra_wc(([ "impact" : 8*power, "crushing" : 8*power ]));
-		ob->set_auto_crits((["impact A" : 7*power ] )); 
-		ob->start_shadow(at,props["duration"], "%^YELLOW%^A stone blade spell wears off.");
-		}
-	}	
-	else{
-	message("info", "You may not stack any further stone blade spells on that weapon.", caster);
-    caster->add_mp(props["mp cost"]);
-	ob->external_destruct(ob);	
-	}	
+  if(power < 4 ){
+  ob->set_extra_wc(([ "impact" : 6*power, "crushing" : 6*power ]));
+  ob->set_auto_crits((["impact A" : 6*power ])); 
+  }
+  else
+  ob->set_extra_wc(([ "impact" : 8*power, "crushing" : 8*power ]));
+  ob->set_auto_crits((["impact A" : 7*power ] )); 
+  ob->start_shadow(at,props["duration"], "%^YELLOW%^A stone blade spell wears off.");
+ 
   remove();
   return;
 }

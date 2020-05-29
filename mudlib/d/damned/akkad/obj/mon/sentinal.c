@@ -7,7 +7,7 @@ create() {
   ::create();
     set_name("sentinal");
     set_id( ({ "sentinal" }) );
-	set_short("[18]Sentinal");
+	set_short("A Sentinal");
      set("race", "high-man");
     set_long(
 "The guard stands in front of the west exit.");

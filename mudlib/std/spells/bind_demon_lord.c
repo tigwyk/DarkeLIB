@@ -14,11 +14,10 @@ void create() {
     set_property("target message","");
     set_property("observer message","$C casts bind demon at $T.");
     set_property("spell type",({ "protection" }));
-    //HONSPRON2020 - protection was at 13...really low... and added holy
-    set_property("protection types", ([ "impaling" : 20, "crushing" : 20,
-          "cutting" : 20, "disruption" : 20, "strike" : 20,
-          "fire" : 20, "cold" : 20, "electricity" : 20,
-          "impact" : 20, "stress" : 20, "holy" : 20 ]));
+    set_property("protection types", ([ "impaling" : 13, "crushing" : 13,
+          "cutting" : 13, "disruption" : 13, "strike" : 13,
+          "fire" : 12, "cold" : 12, "electricity" : 11,
+          "impact" : 11, "stress" : 12 ]));
     set_property("stack key", "demon armour");
     set_property("stack num", 3);
     set_property("duration", 1300);
@@ -40,7 +39,7 @@ this_player());
 void spell_func(object caster, object at, int power, string args, int flag) {
     object ob;
   if(!at->id("demon lord")) {
-    message("info", "You must cast this spell at a demon lord.", caster);
+    message("info", "You must cast this spell at a greater demon.", caster);
     caster->add_mp(props["mp cost"]);
     remove();
     return;

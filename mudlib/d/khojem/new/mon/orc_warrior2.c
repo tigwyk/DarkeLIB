@@ -12,7 +12,7 @@ create() {
     set_name("half-orc warrior");
     set_id( ({ "warrior","orc", "half-orc warrior"}) );
     set_level(3);
-    set_short("[3]half-orc warrior");
+    set_short("half-orc warrior");
     set_long("The half-orc warrior is bruising for anyone." 
       );
     set("race", "half-orc");

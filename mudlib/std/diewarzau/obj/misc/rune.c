@@ -57,14 +57,13 @@ void set_dur(int dur) {
   return;
 }
 
-/* HONSPRON 2020 - only those with detect magic could see runes. Made it soe everyone can now
 int detect_magic(object who) {
   if(!living(who)) return 0;
   if(caster == (string)who->query_name()) return 1;
   if(random(100) < (int)who->query_skill("detect magic")) return 1;
   return 0;
 }
-*/
+
 void start_preserve() {
   remove_call_out("remove_rune");
   return;
@@ -309,18 +308,12 @@ void delay_action() {
   remove();
   return;
 }
-/* HONSPRON 2020 - only those with detect magic could see runes. Made it soe everyone can now
+
 string query_short() {
   if(!this_player() || random(100) <
     (int)this_player()->query_skill("detect magic"))
     return ::query_short();
-    return 0;
-}*/
-
-string query_short() {
-  if(this_player())
-    return ::query_short();
-    return 0;
+  return 0;
 }
 
 int query_is_locker() {

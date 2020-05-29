@@ -35,7 +35,7 @@ create() {
     set_name("dagget");
     set_id( ({ "master", "harbor master", "dagget", "Dagget" }) );
     set_level(14);
-    set_short("[14]Dagget");
+    set_short("Dagget");
     set_long("Dagget serves as the harbor master in the port town of "+
       "Vo'Sangor.  Which means he does some customs work and takes bribes "+
       "from merchant vessel captains so they can unload their goods." 

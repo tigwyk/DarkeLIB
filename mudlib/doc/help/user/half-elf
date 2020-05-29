@@ -5,32 +5,17 @@
 they are smarter and faster than humans though not as strong.
 
 
--=-=-=- Stat Bonuses -=-=-=- 
-Strength:           ---
-Constitution:       +5
-Intelligence:       +5
-Wisdom:             ---
-Dexterity:          +5
-Charisma:           +5 
+SUMMARY:
 
--=-=-=-=-=- Abilities -=-=-=-=-=-
-Body Size:         Medium             
-HP Regen:          Normal                
-MP Regen:          Above Avg               
-Natural Weapons:   Crushing Hands     
-Sight:             Above Avg
-  
--=-=-=-=-= Skills =-=-=-=-=-
-             None
+Dex: Above Avg       Str: Avg        Con: Above Avg 
+Int: Avg       Wis: Above Avg       Char: Above Avg
 
--=-=-=-=-= Spells =-=-=-=-=-
-             None
-
-+------ Special Abilities ------+     
-Training Bonus
-+-------------------------------+ 
-
-    +-----------------Experience Gain Rates-----------------+
-    |                    Average                            |
-    +-------------------------------------------------------+
+Sight: Above Avg
+HP Regen: Nil
+SP Regen: Above Avg
+Natural Weaponry: Standard (Above Avg)
+Natural Armour: Nil
+Ambidextry: Nil
+Innate spells/skills: One skill
+Exp Modifier: Nil
 

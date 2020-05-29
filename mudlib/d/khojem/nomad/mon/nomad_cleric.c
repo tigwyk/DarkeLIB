@@ -13,7 +13,7 @@ create() {
     set_id( ({ "nomad war cleric","war cleric","cleric","Rom'mir",
       "rom'mir", "rommir", "Rommir" }) );
     set_level(16);
-    set_short("[16]Rom'mir");
+    set_short("Rom'mir");
     set_long("Rom'mir is an elderly, wizened gnome.  She appears aged and "+
       "as timeless as time itself.  Huge folds of skin cover her face and "+
       "parts of her skin are dry and flake away.  Age has not done well "+

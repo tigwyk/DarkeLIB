@@ -17,34 +17,18 @@ prompts them to employ cross bows when a need for missile weapons
 arises.
 
 
--=-=-=- Stat Bonuses -=-=-=- 
-Strength:           +10
-Constitution:       +15
-Intelligence:       -5
-Wisdom:             ---
-Dexterity:          +10
-Charisma:           --- 
-  
--=-=-=-=-=- Abilities -=-=-=-=-=-     
-Body Size:         Small             
-HP Regen:          Normal                
-MP Regen:          Normal               
-Natural Weapons:   Strong Crushing Hands     
-Sight:             Above Avg
-         
-+------ Special Abilities ------+          
-Magic Resistance  
-+-------------------------------+     
+SUMMARY:
 
--=-=-=-=-= Skills =-=-=-=-=-
-carpentry              +  5%
-blacksmith             +  5%
-repair weapon          +  5%
+Dex: High           Str: Above Avg       Con: High
+Int: Below Avg      Wis: Avg             Char: Below Avg
 
--=-=-=-=-= Spells =-=-=-=-=-
-None
-
-    +-----------------Experience Gain Rates-----------------+
-    |                        Normal                         |
-    +-------------------------------------------------------+
+Sight: Night Vision
+HP Regen: Standard (Above Avg)
+SP Regen: Nil
+Natural Weaponry: Above Avg
+Natural Armour: Nil
+Ambidextry: Nil
+Innate spells/skills: Some Skills
+Magic Resistance: Above Avg
+Exp Modifier: Nil
 

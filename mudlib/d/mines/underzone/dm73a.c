@@ -10,11 +10,8 @@ void create() {
     ::create();
     set_property("light", -5);
     set_property("indoors", 1);
-    set("long", @ext You are thrashing about in the icy cold river. The 
-     foul smelling water pushes your body like a leaf.
-   
-    @ 
-ext);
+    set("long", "You are thrashing about in the icy cold river. The "
+     "foul smelling water pushes your body like a leaf.\n");
     set("short", 
     "You are trashing about in the icy river.\n");
    set_smell("default","The foul smelling water overpowers you.");

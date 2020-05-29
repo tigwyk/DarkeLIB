@@ -15,9 +15,9 @@ void create() {
 	::create();
 	set_name("galran");
 	set("id",({"galran","ghost","ghost of galran"}));
-	set_level(22);
+	set_level(20);
 	set("undead",1);
-	set("short","[22]the ghost of galran");;
+	set("short","the ghost of galran");;
 	set("long","This spirit is obviously the leader of the group and sits apon "+
 		"the throne. Could it be that this is the legendary thief Galran, still "+
 		"guarding the jewel of power? Perhaps you could 'ask about jewel'.");

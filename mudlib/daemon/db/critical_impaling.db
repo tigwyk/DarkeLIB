@@ -1,15 +1,13 @@
-#IMPALING CRIT
 # really nasty impaling criticals. not suitable for children
 (A):
-0..5:$A $V at $T.:poke:DAMAGE 1
+0..5:$A $V at $T.:poke:NO_EFFECT
 6..10:$A $V $T a little.:stab:DAMAGE 2
 11..15:$A $V $T in the face.:poke:DAMAGE 2:STUN 1
 16..20:$A $V $T a few times.:jab:DAMAGE 4:SKILL_MOD parry -15 1
 21..25:$A $V $T, putting $(TO) on the defensive.:stab:DAMAGE 5:STUN 1:SKILL_MOD parry -10 1
-26..30:$A $V $(TP) thigh, which was left carelessly unguarded.:stick:SKILL_MOD dodge -5 2:DAMAGE 3
+26..30:$A $V $(TP) thigh, which was left carelessly unguarded.:stick:SKILL-MOD dodge -5 2:DAMAGE 3
 31..35:$A $V $T in the hip. Ow!:jab:DAMAGE 6:SKILL_MOD parry -10 1
-36..40:$A $V $T a stinging scratch on the face.:give:SKILL_MOD dodge -10 6:SKILL_MOD parry -10 9:DAMAGE 4
-#TLNY2020 removed SKILL_MOD defense -10 3:
+36..40:$A $V $T a stinging scratch on the face.:give:SKILL_MOD defense -10 3:SKILL_MOD dodge -10 6:SKILL_MOD parry -10 9:DAMAGE 4
 41..45:$A $V into $(TP) skin.:bite:DAMAGE 7
 46..50:$A $V $(TP) abdomen...and it hurts.:stab:CONT_DAMAGE 2 4:STUN 1
 51..55:$A $V $T in the shoulder.:stab:DAMAGE 6:SKILL_MOD attack -10 2
@@ -25,7 +23,7 @@
 96..99:$A $V $T in the face, leaving an unforgettable scar!:strike:STUN 3:DAMAGE 8:CONT_DAMAGE 1 10:SKILL_MOD parry -10 10:SKILL_MOD dodge -10 10
 100..100:$A $V into $(TP) neck, through the jugular and bleeds profusely.:thrust:DAMAGE 15:STUN 2:SKILL_MOD parry -20
 (B):
-1..5:$A $V a glancing blow to $(TP) chest.:deliver:DAMAGE 2
+1..5:$A $V a glancing blow to $(TP) chest.:deliver:NO_EFFECT
 6..10:$A $V $(TP) skin.:pierce:DAMAGE 3
 11..15:$A $V $T in the side.:jab:DAMAGE 6:SKILL_MOD attack -15 1
 16..20:$A $V $T in the stomach.:stab:DAMAGE 4:SKILL_MOD parry -10 1:STUN 1
@@ -75,8 +73,7 @@
 46..50:$A $V into $(TP) vitals, spilling $(TPP) blood.:stab:DAMAGE 6:STUN 1:SKILL_MOD parry -25 4:SKILL_MOD block -25 4:CONT_DAMAGE 4 4
 51..55:$A $V $T in the chest with a forceful thrust!:wound:DAMAGE 10:STUN 1:CONT_DAMAGE 3 7:SKILL_MOD attack -15 7:SKILL_MOD block -15 7
 56..60:$A $V $T nastily in the thigh, making $(TPP) knees weak.:puncture:DAMAGE 12:STUN 1:SKILL_MOD parry -75 1
-61..65:$A $V $(TP) forearm, biting bone and leaving grave wounds!:pierce:DAMAGE 6:CONT_DAMAGE 4 2:STUN 2:SKILL_MOD parry -10 2:SKILL_MOD attack -50 5
-#TLNY2020 removed SKILL_MOD defense -50 2:
+61..65:$A $V $(TP) forearm, biting bone and leaving grave wounds!:pierce:DAMAGE 6:CONT_DAMAGE 4 2:STUN 2:SKILL_MOD parry -10 2:SKILL_MOD defense -50 2:SKILL_MOD attack -50 5
 66..67:$A $V $T in the head!!! $(TPP) skull nearly splits in half!:shaft:DAMAGE 36:STUN 9:SKILL_MOD parry -100 9:CONT_DAMAGE 21 9
 #TLNY2020 removed:STAT_MOD intelligence -75 9
 68..72:$A $V hard into $(TP) shoulder, spinning $(TPP) around dizzily.:strike:DAMAGE 7:STUN 2:SKILL_MOD parry -20 7:SKILL_MOD attack -20 7

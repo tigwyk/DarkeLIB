@@ -21,16 +21,16 @@ void create() {
     set_property("night light",2);
     set_property("indoors", 0);
 //Basic mapping added by Tiny 1/19/2020
-    set("short", "   0\n   | \n0--@--0\n   |\\ \n   0 0\nVo'Sangor Square");
+    set("short", "   0\n   | \n0--@--0\n   |* \n   0 0\nVo'Sangor Square");
     set("long", "Vo'Sangor Square is the merchant place of all DarkeMud. "+
       "Here all may purchase the fine goods brought in at this town's seaport.  "+
       "Of course, with all rare items they come with a cost.  A tall tower is "+
       "to the southeast.  Shops can be seen north and west of here.  A sign "+
-      "hangs above each doorway.\n   0\n   | \n   @--0\n   |\\ \n   0 0\n"  
+      "hangs above each doorway.\n   0\n   | \n0--@--0\n   |* \n   0 0\n"  
     );
     add_exit("/d/khojem/port/shop/droblek_shop","north");
     add_exit("/d/khojem/port/room/s04","south");
-    //add_exit("/d/khojem/port/shop/gedrak_shop","west");
+    add_exit("/d/khojem/port/shop/gedrak_shop","west");
     add_exit("/d/khojem/port/room/s08","east");
     add_exit("/d/khojem/port/room/s09","southeast");
     set_door("north door", "/d/khojem/port/shop/droblek_shop", "north",

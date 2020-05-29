@@ -16,7 +16,7 @@ create() {
     set_name("criegan");
     set_id( ({ "criegan", "guardian", "Guardian Criegan" }) );
     set_level(20);
-    set_short("[20]Guardian Criegan");
+    set_short("Guardian Criegan");
     set_long(@LONG
 Creigan is a frail old man tired and worn by many seasons.  His hair
 is a stark white, whispy and unkempt.  His crystal blue eyes are sad

@@ -14,7 +14,7 @@ void create() {
    set_name("demi-dragon");
    set("id", ({"dragon", "demi-dragon", "kho_mob"}) );
    set_level(30);
-   set_short("[30]demi-dragon");
+   set_short("demi-dragon");
    set_long("The demi-dragon is huge and can barely stand erect in the vault "+
      "room.  Spawned from the Ethereals' experiments in racial construction "+
      "he has lived many millennia.  His physical appearance is very "+

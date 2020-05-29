@@ -38,31 +38,27 @@ void spell_func(object caster, object at, int power, string args, int flag) {
     caster->add_mp(props["mp cost"]);
     return;
   }
-  if(flag) {
-    message("info", "The spell fizzles, costing double mp.", caster);
-    caster->add_mp(-1* props["mp cost"]);
+  ob = new("/std/spells/shadows/weapon_shadow");
+if(!check_stack(at, ob)) {
+    message("info", "You may not stack any further plasma on that weapon.",
+      caster);
+    caster->add_mp(props["mp cost"]);
     remove();
     return;
   }
-  ob = new("/std/spells/shadows/weapon_shadow");
-	if(check_stack(at, ob)) {
-	message("info", "Your weapon glows with plasma.", caster);
-		if(power < 4 ){
-		ob->set_extra_wc(([ "plasma" : 6*power ]));
-		ob->set_auto_crits((["plasma A" : 6*power ]));
-		ob->start_shadow(at,props["duration"], "%^CYAN%^A lesser plasma blade spell wears off.", caster);
-		}
-		else{
-		ob->set_extra_wc(([ "plasma" : 8*power ]));
-		ob->set_auto_crits((["plasma A" : 7*power ] )); 
-		ob->start_shadow(at,props["duration"], "%^CYAN%^A lesser plasma blade spell wears off.", caster);
-		}
-	}
-	else{
-	message("info", "You may not stack any further plasma on that weapon.", caster);
-    caster->add_mp(props["mp cost"]);
-	ob->external_destruct(ob);	
-	}
-    remove();
-    return;
+  message("info", "Your weapon glows with plasma.",
+          caster);
+
+  if(power < 4 ){
+  ob->set_extra_wc(([ "plasma" : 6*power ]));
+  ob->set_auto_crits((["plasma A" : 6*power ])); 
+  }
+  else
+  ob->set_extra_wc(([ "plasma" : 8*power ]));
+  ob->set_auto_crits((["plasma A" : 7*power ] )); 
+  ob->start_shadow(at,props["duration"], "%^CYAN%^A lesser plasma blade spell wears off.");
+ 
+  remove();
+  return;
 }
+

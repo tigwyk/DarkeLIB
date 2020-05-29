@@ -22,7 +22,7 @@ int cmd_protection(string str) {
   }
   i = sizeof(limbs);
   j = sizeof(DAMAGE_TYPES);
-  if(!str || str != "limbs") {
+  if(!str || str != "limb") {
     tmp =
     "%^BLUE%^+-------------------------------------------------------+%^RESET%^\n"
     "%^BLUE%^|%^RESET%^ %^YELLOW%^%^BOLD%^Protection by Damage Type (avg. over body)            %^RESET%^%^BLUE%^|\n"
@@ -114,7 +114,7 @@ int help() {
   "Tells the protection you have against various types of damage, including "
   "protection from worn armour, spells, etc.\n\n"
   "Syntax:   'protection' (shows prot. by damage type)\n"
-  "          'protection limbs' (shows prot. by limbs)\n",
+  "          'protection limb' (shows prot. by limb)\n",
   this_player());
   return 1;
 }

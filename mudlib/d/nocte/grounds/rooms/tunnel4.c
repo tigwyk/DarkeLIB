@@ -1,5 +1,5 @@
 #include <std.h>
-#include "nevin.h"
+#include <nevin.h>
 
 inherit ROOM;
 
@@ -9,16 +9,11 @@ void create() {
 	set_property("light", -3);
 	set_property("no castle", 1);
 	set("short", "Inside the Tunnel");
-	set("long",@ext
-		The cave begins to descend here.  You notice that the cave 
-		walls are covered with buildings.  The cave continues south 
-		past that large stalactite.
-    0   
-    |   
-    @
-    |
-    0	
-ext);
+	set("long",
+		"The cave begins to descend here.  You notice that the cave "
+		"walls are covered with buildings.  The cave continues south "
+		"past that large stalactite."
+	);
 	set_items( ([
 		"stalactite":  "Wow, now that is one HUGE stalactite.  Hmm...if you look at it from the right angle it looks like a face.",
 		"buildings": "They appear to be the ruins of an ancient civilization."

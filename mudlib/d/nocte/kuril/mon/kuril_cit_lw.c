@@ -32,13 +32,13 @@ create() {
 	sub = (string)this_object()->query_subjective();
 	poss = (string)this_object()->query_possessive();
 	switch(random(30)) {
-		case 0: var = "[5]An average looking citizen";
+		case 0: var = "An average looking citizen";
 			var2 = "Trying to keep from being noticed unduly, "
 				"this citizen keeps quiet and minds "+poss+
 				" own business to keep from attracting "
 				"attention.";
 			break;
-		case 1: var = "[5]A busy citizen";
+		case 1: var = "A busy citizen";
 			var2 = "Trying to run a business in Kuril is "
 				"often both risky financially and dangerous "
 				"personally.  The three factions in Kuril "
@@ -46,7 +46,7 @@ create() {
 				"on good terms with all on them can be "
 				"both difficult and dangerous at times.";
 				break;
-		case 2: var = "[5]A hunched back citizen";
+		case 2: var = "A hunched back citizen";
 			var2 = "From years of hard labor, this poor citizen "
 				"can barely move about.  Doing the dangerous "
 				"work that the rich and powerful would not "
@@ -62,12 +62,12 @@ create() {
 				"in Kuril.  From this conflict arise "
 				"opportunities for such people.";
 				break;
-		case 4: var = "[5]A black toothed citizen";
+		case 4: var = "A black toothed citizen";
 			var2 = "Filthy and reaking of the gods know what, "
 				+sub+" graces you with only a cursory glance "
 				"before returning to more important things.";
 				break;
-		case 5: var = "[5]A facial scarred citizen";
+		case 5: var = "A facial scarred citizen";
 			var2 = "Who knows what battles this citizen has "
 				"fought in the near state of war that has "
 				"existed in Kuril for the past few centuries.  "
@@ -78,14 +78,14 @@ create() {
 				"is only because of the new threat that an "
 				"uncomfortable 'peace' now reigns in Kuril.";
 				break;
-		case 6: var = "[5]A drunken citizen";
+		case 6: var = "A drunken citizen";
 			var2 = "Smelling of potent ales and other liquors "
 				"this citizen has chosen the bottle over "
 				"reality.  Thieves and murderers will mostly "
 				"likely liberate this person of "+poss+" life "
 				"before the sun rises once again.";
 				break;
-		case 7: var = "[5]A weapon toting citizen";
+		case 7: var = "A weapon toting citizen";
 			var2 = "No citizen of Kuril would ever be caught "
 				"without a weapon.  In a city where even "
 				"the watch cannot be trusted at times, "
@@ -95,7 +95,7 @@ create() {
 				"for it is known that the foul denizens of "
 				"this city are often resistant to normal arms.";
 				break;
-		case 8: var = "[5]A cautious citizen";
+		case 8: var = "A cautious citizen";
 			var2 = "Ever a way of life to prevent death, "
 				"cautiousness is something that is taught "
 				"to each and every child of Kuril.  Those that "
@@ -105,13 +105,13 @@ create() {
 				"to seek for food...after their parents fail "
 				"to return for days.";
 				break;
-		case 9: var = "[5]A hawk eyed citizen";
+		case 9: var = "A hawk eyed citizen";
 			var2 = "Preying upon the weak and helpless, this "
 				"person makes "+poss+" living by night.  "
 				"Careful not to venture into the Lower Ward, "
 				"even this person does not have a death wish.";
 				break;
-		case 10: var = "[5]A hapless citizen";
+		case 10: var = "A hapless citizen";
 			var2 = "Weak from malnutrition this citizen will "
 				"likely not live for more than a few days "
 				"at best.  From the symbol on "+poss+
@@ -121,7 +121,7 @@ create() {
 				+poss+ " family may live another month in the "
 				"heartless streets of Kuril.";
 				break;
-		case 11: var = "[5]A crazed citizen";
+		case 11: var = "A crazed citizen";
 			var2 = "In order to keep the populace in line, "
 				"the Necromancers of the School of Magic "
 				"often release some of their experimental "
@@ -131,21 +131,21 @@ create() {
 				"arms, and chest, "+sub+" staggers about "
 				"in an almost euphoring stupor.";
 				break;
-		case 12: var = "[5]A contemplative citizen";
+		case 12: var = "A contemplative citizen";
 			var2 = "A rare sight in this city, "+sub+" must "
 				"be new to this city to be wasting time "
 				"thinking about life and the universe.  "
 				"Someone will surely 'educatate' this person "
 				"about the truth of this city before long.";
 				break;
-		case 13: var = "[5]A peaceful citizen";
+		case 13: var = "A peaceful citizen";
 			var2 = "Greeting each passing person with a bow "
 				"and blessing of peace, "+sub+" is viewed "
 				"with suspicion and fear.  Either this citizen "
 				"is up to something sinister or there is "
 				"something not going right up there.";
 				break;
-		case 14: var = "[5]A terrified citizen";
+		case 14: var = "A terrified citizen";
 			var2 = "Shivering from an unseen cold, this "
 				"citizen keeps mumbling about 'their cold "
 				"hands ', 'those cold, cold hands'.  Hugging "
@@ -153,20 +153,20 @@ create() {
 				"eyes and pale skin tell you not to get "
 				"any closer.";
 				break;
-		case 15: var = "[5]A pleasant citizen";
+		case 15: var = "A pleasant citizen";
 			var2 = "Ever a rare sight in this dark city, "
 				"you wonder whether these people are really "
 				"in a good mood of whether they are simply "
 				"crazy.";
 				break;
-		case 16: var = "[5]A foul breathed citizen";
+		case 16: var = "A foul breathed citizen";
 			var2 = "Infested with one of a variety of oral "
 				"infestations, you almost fall over from "
 				"the foulness of this citizen's breathe.  "
 				"Rotting teeth poke out of dry, cracked "
 				"lips as "+sub+" tries to converse with you.";
 				break;
-		case 17: var = "[5]A diseased citizen";
+		case 17: var = "A diseased citizen";
 			var2 = "A common sight here in Kuril, many citizens "
 				"fall prey to diseases and infections of "
 				"various sorts.  Some believe that the "
@@ -174,7 +174,7 @@ create() {
 				"lity of the Necromancers of Kuril.  For the "
 				"rich and powerful never seem to become ill.";
 				break;
-		case 18: var = "[5]An offensive smelling citizen";
+		case 18: var = "An offensive smelling citizen";
 			var2 = "Straight from hours of toil and labor, "
 				"many citizens take to working for minimal "
 				"pay and high risk in order to feed themselves "
@@ -184,13 +184,13 @@ create() {
 				"leave this city, end up leaving this world "	
 				"as well...temporarily though.";
 				break;
-		case 19: var = "[5]A specter-like citizen";
+		case 19: var = "A specter-like citizen";
 			var2 = "Left to wandering the streets of Kuril, "
 				"this sun burned, dehydrated, wraith of a "
 				"person will quickly end up filling the ranks "
 				"of a necromancer's army.";
 				break;
-		case 20: var = "[5]A haughty citizen";
+		case 20: var = "A haughty citizen";
 			var2 = "If raised any higher, the inside of this "
 				"citizen's nose may get sunburned.  You wonder "
 				"what circumstances has given this citizen "
@@ -198,18 +198,18 @@ create() {
 				"the universe.  Perhaps you should bring "
 				+obj+" back to reality.";
 				break;
-		case 21: var = "[5]An insolent citizen";
+		case 21: var = "An insolent citizen";
 			var2 = "Wearing boldly the symbol of the Reclaimers "
 				"upon his forehead, this citizen has dared "
 				"to break the law by displaying the forbidden "
 				"symbol.";
 				break;
-		case 22: var = "[5]A vain citizen";
+		case 22: var = "A vain citizen";
 			var2 = "Stopping at every chance to check "+poss+
 				" clothes and hair, this citizen obviously "
 				"likes the way "+sub+" looks.";
 				break;
-		case 23: var = "[5]A bitter citizen";
+		case 23: var = "A bitter citizen";
 			var2 = "Upset at the current state of Kurilian "
 				"politics and affairs, this citizen cries "
 				"out for an upheaval in the city government, "
@@ -219,14 +219,14 @@ create() {
 				"to "+poss+" death and subsequent 'reeducation'"
 				" within one of the undead armies of Kuril.";
 				break;
-		case 24: var = "[5]A sickly citizen";
+		case 24: var = "A sickly citizen";
 			var2 = "Afflicted with some type of degenerative "
 				"disease, this citizen is coughing up "
 				"blood and phlegm all over the place.  "
 				"You had best stay away and let this poor "
 				"sould die.";
 				break;
-		case 25: var = "[5]A charming citizen";
+		case 25: var = "A charming citizen";
 			var2 = "A charming young citizen, "+sub+" carries "
 				+obj+"self with an air of confidence and "
 				"class.  Being a noble of Kuril has many "
@@ -236,7 +236,7 @@ create() {
 				"At least, that's what the Necromancers tell "
 				"the nobles.  You've heard otherwise.";
 				break;
-		case 26: var = "[5]An affluent citizen";
+		case 26: var = "An affluent citizen";
 			var2 = "Born and breed a noble, this citizen is "
 				"accorded great respect, or is that fear, "
 				"by the majority of the populace.  Having "
@@ -245,17 +245,17 @@ create() {
 				"to be used by those who really rule this "
 				"city.";
 				break;
-		case 27: var = "[5]A bumbling citizen";
+		case 27: var = "A bumbling citizen";
 			var2 = "Almost stepping on your toes while trying "
 				"avoid falling upon "+poss+" face, this "
 				"citizen is a walking disaster.  You are "
 				"surprised that "+sub+" hasn't killed "
 				+obj+"self yet.";
 				break;
-		case 28: var = "[5]A quiet citizen";
+		case 28: var = "A quiet citizen";
 			var2 = "This citizen does not have much to say.";
 			break;
-		case 29: var = "[5]A loquacious citizen";
+		case 29: var = "A loquacious citizen";
 			var2 = "You wonder if this person was a preacher "
 				"in a previous life from the way "+sub+
 				"just keeps on talking about the current "
@@ -269,7 +269,7 @@ create() {
 	this_object()->set("short", var);
 	this_object()->set("long", var2);
    	set("aggressive", 0);
-  	set_level(5);
+  	set_level(random(6) + 1);
 	switch(random(9)) {
 		case 0: var = "werebear"; break;
 		case 1: var = "vulfen"; break;

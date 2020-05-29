@@ -13,15 +13,11 @@ void create() {
     set_property("light", 0);
     set_property("indoors", 1);
     set("short", "You are standing in a small crypt.");
-    set("long",@ext  
-You are standing in a small crypt. The low ceiling is covered in dirty 
-cobwebs. To the northeast, across a deep looking pool of green ooze, 
-is a doorway.
-   
-        arch   
-    @
-        pool            
-ext);
+    set("long", 
+"You are standing in a small crypt. The low ceiling is covered in dirty "
+"cobwebs. To the northeast, across a deep looking pool of green ooze, "
+"is a doorway."
+       );
     set_exits( ({ UNDER+"dmc2",UNDER+"dmc4" }),
       ({ "arch","pool"})
     );

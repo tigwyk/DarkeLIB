@@ -66,8 +66,7 @@ int cmd_tell(string str) {
     }
     if(ob->query_invis() && wizardp(ob) && !archp(this_player())) {
         message("info", sprintf("%s%s", capitalize(who), NOT_HERE), this_player());
-        message("info", sprintf("%s is unaware of telling you: %s", (string)this_player()->query_cap_name(), msg), ob);
-        //message("tell", sprintf("%s is unaware of telling you: %s", (string)this_player()->query_cap_name(), msg), ob);
+        message("tell", sprintf("%s is unaware of telling you: %s", (string)this_player()->query_cap_name(), msg), ob);
         ob->set("reply", (string)this_player()->query_name());
         return 1;
     }

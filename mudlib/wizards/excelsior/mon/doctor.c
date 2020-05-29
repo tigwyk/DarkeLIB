@@ -14,8 +14,8 @@ void create() {
 this_object()->set_money("silver",120);
 set_name("doctor");
 set_id( ({"doctor","psycho doctor"}) );
-set_level( 10 );
-set("short","[10]Psycho doctor from hell");
+set_level( 7 );
+set("short","Psycho doctor from hell");
 set("long","This is an insane doctor who is cackling constantly and "+
 "looks very mean. You feel lucky that he is so involved in amputating "+
 "the appendages of a deceased werewolf and doesn't seem to notice you.");

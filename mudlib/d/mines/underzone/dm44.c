@@ -12,14 +12,10 @@ void create() {
     set("short", "You are standing in a small stairway inside the tomb. "
 "The stairs rise to a large stone slab above you and continue down into "
 "another chamber.");
-    set("long", @ext You are standing in a small stairway inside the tomb. The 
-stairs rise to a large stone slab in the wall above you and continue 
-lower into the tomb. It looks like the staircase opens into another 
-chamber below you.
-   
-    @
-        down   
-ext);
+    set("long", "You are standing in a small stairway inside the tomb. The "
+"stairs rise to a large stone slab in the wall above you and continue "
+"lower into the tomb. It looks like the staircase opens into another "
+"chamber below you.");
     set_exits( ({ UNDER+"dm34"}),
       ({ "down" }));
     set_items( ([

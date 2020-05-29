@@ -4,6 +4,7 @@
 #       weapon poison.  See /wizards/duridian/poison/
 #
 # Duridian   6/3/96
+ 
 (A):
 0..97:::NO_EFFECT
 98..99:$T $(VT) struck blind as a result of $(AP) attack!:are:SPECIAL_RESULT /wizards/duridian/poison/crit_results blind_me2
@@ -16,7 +17,7 @@
 (C):
 0..93:::NO_EFFECT
 94..96:$T $(VT) instantly blinded as $(AP) weapon poison penetrates $(TP) defenses!:are:SPECIAL_RESULT /wizards/duridian/poison/crit_results blind_me5
-97..99:$(AP) potent weapon poison infects $T and causes $(TO) to be blinded!::SPECIAL_RESULT /wizards/duridian/poison/crit_results blind_me6
+97..99:$(AP) potent weapon poison infects $T and causes $(TO) to be blinded!:SPECIAL_RESULT /wizards/duridian/poison/crit_results blind_me6
 100..100:$(AP) weapon poison inflicts blindness on $T, who $V in pain!:scream:SPECIAL_RESULT /wizards/duridian/poison/crit_results blind_me7
 (D):
 0..91:::NO_EFFECT

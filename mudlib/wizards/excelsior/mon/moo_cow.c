@@ -13,9 +13,9 @@ void create() {
 	::create();
 	set_name("gremlin");
 	set("id",({"gremlin","sewer gremlin"}) );
-	level = random( 9 ) + 10;
+	level = random( 9 ) + 5;
 	set_level( level );
-		set("short","["+level+"]Sewer gremlin");
+		set("short","Sewer gremlin");
 	set("long","This is a strange creature indeed. You have heard about them "+
 		"before, a strange race of gremlins who have made their life in the "+
 		"sewers of New Faerie Dust. Actually, they are somewhat of a legend.  "+
