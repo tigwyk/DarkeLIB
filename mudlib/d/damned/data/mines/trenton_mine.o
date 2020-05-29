@@ -9,7 +9,7 @@ pre_exit_func (["up":"GoThroughDoor",])
 post_exit_func ([])
 tracks ({})
 __Items (["blue moon":,"chest":,"sky":,"ankh":,"moon":,"red moon":,"sun":,"warzau":,"green moon":,"hatch":"It looks surprisingly strong.","moons":,"luna":,])
-reset_number 4
+reset_number 7
 doors (["hatch":(["direction":"up","key":"trenton mine key","lock level":35,"destination":"/d/damned/virtual/trenton_mine1_4_12.mine","open":0,"locked":1,]),])
 closed_status 4
-minerals (["davistone":1,"catoetine":4,"laen":1,"raysorite":4,"javednite":1,])
+minerals (["davistone":1,"catoetine":7,"laen":1,"raysorite":7,"javednite":4,])

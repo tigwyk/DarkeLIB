@@ -30,7 +30,7 @@
 #define RESURRECT "/cmds/adm/_resurrect"
 #define LOG_PROPS ({ "old exp", "dev points", "dev point base", "xp mod", "hp advance", "mp advance" })
 
-inherit "/std/user/more";
+//inherit "/std/user/more";
 inherit "/std/user/ansi_convert.c";
 //changed to enherit and moveddown here let's see if this breaks
 #define OVERRIDE_IGNORE_MSG ({ "broadcast", "info", "more", "room_description", "room_exits","smell","listen","write","say", "system", "prompt", "inanimate_item", "living_item"})
@@ -107,6 +107,7 @@ nomask string query_position();
 void remove();
 string query_catch();
 void set_catch(string str);
+varargs int more(mixed what, string cl, function endfun);
 
 
 void set_catch(string str) {
@@ -308,7 +309,7 @@ void reset_euid() {
 }
 
 void create() {
-    more::create();
+    ::create();
     seteuid(getuid());
     position = "player";
     wielded = ([]);
@@ -336,7 +337,7 @@ void remove() {
 	if(count)
 	    INFORM_D->do_inform("logins_and_quits","Info: " +
 	      capitalize((string)this_object()->query_name()) +
-                " has stepped beyond the boundary of Daybreak Ridge.",
+                " has hyperspaced away from Darke Forces.",
 	      who_exc);
     MULTI_D->quit(query_name());
     this_object()->tsh_cleanup();
@@ -379,9 +380,9 @@ static int finish_quit(object ob) {
 		message("quit_save", "%^BLUE%^Successful.%^RESET%^", ob);
 	    else message("quit_save", "%^RED%^Unsuccessful.%^RESET%^", ob);
 	} else {
-	    message("Nquit_save", "Setting start location to Akkad Church...", ob);
-	    ob->setenv("start", "/d/standard/square");
-	    if((string)ob->getenv("start") == "/d/standard/square")
+	    message("Nquit_save", "Setting start location to Town Square...", ob);
+	    ob->setenv("start", "/d/newbieville/rooms/townsquare");
+	    if((string)ob->getenv("start") == "/d/newbieville/rooms/townsquare")
 		message("quit_save", "%^BLUE%^Successful.%^RESET%^", ob);
 	    else message("quit_save", "%^RED%^Unsuccessful.%^RESET%^", ob);
 	}
@@ -554,6 +555,12 @@ void setup() {
 	GUILD_D->set_last_on(query_class(), time());
     SAVEALL_D->restore_crash_items(this_object());
 }
+
+
+varargs int more(mixed what, string cl, function endfun) {
+    return MORE_D->more(what, cl, endfun);
+  }
+
 
 // Added these lines so wizzes couldn't just call heart_beat() and
 // get age.  - Geldron 051296
@@ -849,7 +856,7 @@ nomask void die() {
 catch ("/daemon/pk_d"->add_player_kill((query_attackers())[0]));
     cease_all_attacks();
     ghost = 1;
-    setenv("start", "/d/standard/square");
+    setenv("start", "/d/newbieville/rooms/townsquare");
     save_player( query_name() );
     PLAYER_D->add_player_info();
 }

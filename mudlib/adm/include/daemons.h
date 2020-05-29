@@ -31,6 +31,7 @@
 #define LOCALPOST_D          (DIR_DAEMONS+"/localpost")
 #define LOCK_D		     (DIR_DAEMONS + "/lock_d")
 #define MULTI_D              (DIR_DAEMONS+"/multi_d")
+#define MORE_D              (DIR_SECURE_DAEMONS+"/more_d")
 #define NETWORK_D            (DIR_DAEMONS+"/network")
 #define NEWS_D               (DIR_SECURE_DAEMONS+"/news_d")
 #define PARTY_D              (DIR_SECURE_DAEMONS+"/party_d")

@@ -9,3 +9,6 @@ Forked from the Darkelib from Tlny, Parnell, etc.  Currently in development.
 
 ## Lightsabers!
 ![lightsabers](https://i.imgur.com/Ws3P0u4.png)
+
+## Supports 256 colours!
+![xterm-256](https://i.imgur.com/s0afmmS.png)
