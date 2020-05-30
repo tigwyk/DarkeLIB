@@ -1,14 +1,14 @@
 #/d/damned/guilds/join_rooms/fighter_join.c
-props (["base mp regen":2,"guild mods":(["constitution":10,"strength":10,]),"base hp regen":10,"light":2,"mp advance":4,"hp advance":45,"indoors":1,])
+props (["base mp regen":2,"light":2,"base hp regen":10,"guild mods":(["constitution":10,"strength":10,]),"mp advance":4,"indoors":1,"hp advance":45,])
 __Smells ([])
 __Listens ([])
 __Searches ([])
-destinations (["north":"/d/damned/guilds/fighter/train_room","east":"/d/daybreak/room/dbvl2",])
+destinations (["north":"/d/damned/guilds/fighter/train_room","east":"/d/newbieville/rooms/sgates",])
 invis_exits ([])
 pre_exit_func (["west":"GoThroughDoor",])
 post_exit_func ([])
 tracks ({})
-__Items (["blue moon":0,"sky":0,"ankh":0,"moon":0,"red moon":0,"green moon":0,"warzau":0,"sun":0,"luna":0,"moons":0,])
-guild_list (["bob":(["status":"member",]),"afighter":(["status":"member",]),"dummy":(["status":"member",]),"redeye":(["status":"member",]),"dryneedswagon":(["status":"member",]),"hew":(["status":"member",]),])
+__Items (["blue moon":0,"sky":0,"ankh":0,"moon":0,"red moon":0,"sun":0,"warzau":0,"green moon":0,"moons":0,"luna":0,])
+guild_list (["bob":(["status":"member",]),"afighter":(["status":"member",]),"dummy":(["status":"member",]),"shadow":(["status":"member",]),"dryneedswagon":(["status":"member",]),"redeye":(["status":"member",]),"hew":(["status":"member",]),])
 banish ([])
 master "dummy"

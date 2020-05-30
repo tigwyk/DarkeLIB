@@ -6,10 +6,10 @@ create() {
 	object weap;
 
 	::create();
-	set_name("young jedi");
-	set_id(({"jedi","young jedi", "jedi child", "child"}) );
-	set_level(1);
-	set_short("young Jedi child");
+	set_name("teen jedi");
+	set_id(({"jedi","teen jedi", "jedi teen", "teen"}) );
+	set_level(5);
+	set_short("teenage Jedi");
 	set_long("A distant cousin of someone's uncle.");
 
 	set_body_type("human");
@@ -18,10 +18,10 @@ create() {
 	set_skill("melee", 10);
 	set_skill("parry", 10);
 	set_skill("knife", 10);
-	set_skill("attack", 10);
+	set_skill("attack", 60);
 	set_stats("strength", 20);
 	set_skill("dodge", 15);
-	set_skill("lightsaber", 30);
+	set_skill("lightsaber", 60);
 	set_stats("intelligence", 10);
 	set_stats("dexterity", 20);
 	set_stats("constitution", 10);
@@ -36,7 +36,7 @@ create() {
 	set_money("credits", 10);
 	if(!present("saber")) {
 	weap = new("/std/lightsaber");
-	weap->set_saber(random(3)+1);
+	weap->set_saber(6+random(3)+1);
 	weap->move(this_object());
 	force_me("wield saber in left hand");
 	}

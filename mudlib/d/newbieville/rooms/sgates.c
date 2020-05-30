@@ -16,5 +16,6 @@ void create() {
     plains
 ext);
     add_exit(ROOMS+"commonstreet", "north");
+    add_exit("d/damned/guilds/join_rooms/fighter_join", "west");
     //add_exit("/d/damned/virtual/room_10_10.world", "plains");
 }

@@ -120,7 +120,7 @@ mapping make_speech(mapping speakers, string str, int prof)
 int help()
 {
 write("Command: say\nSyntax: say <text>\n"
-      "        This allows you to speak in a language other than common. \n"
+      "        This allows you to speak in a language other than basic. \n"
        "       Only those around you who understand the language will see the real\n"
        "       text.  The others will see parts of it based on theirspeaking\n"
        "       ability.  If you have problems with languages, visit the sage and ask\n"

@@ -60,7 +60,10 @@ void skill_func(object from, object at, string arg) {
   if(time < 600) time = 600;
   message("info", "%^CYAN%^%^BOLD%^You begin inscribing.", from);
   set_work_message("%^CYAN%^You inscribe upon the weapon.");
+  if(!wizardp(this_player()))
   start_work(at, from, time);
+else
+  start_work(at, from, 0);
   return;
 }
 

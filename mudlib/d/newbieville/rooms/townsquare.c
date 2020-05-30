@@ -23,7 +23,7 @@ ext);
     add_exit(ROOMS+"shadowroad", "west");
     add_exit(ROOMS+"majestyave", "north");
     add_exit(ROOMS+"commonstreet", "south");
-    add_exit("d/damned/guilds/join_rooms/jedi_join", "down");
+
     set_property("newbie study", 1);
 
 set_items(([

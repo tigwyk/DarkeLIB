@@ -878,7 +878,7 @@ int query_physical() { return physical; }
 
 string query_primary_lang() {
     if(!primary_language && living(this_object()) &&
-      !this_object()->is_player()) return "common";
+      !this_object()->is_player()) return "basic";
     return primary_language;
 }
 

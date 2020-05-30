@@ -27,7 +27,7 @@ new("d/damned/guilds/join_rooms/tcan")->move(this_object());
     "west and a busy room to the north.  The Fighter Trainer is Ruck.\n");
   //  The "\n" is important at the end of the long desc.
 
-  set_exits( ([ "east" : "/d/daybreak/room/dbvl2",
+  set_exits( ([ "east" : "/d/newbieville/rooms/sgates",
 		//"west" : "/d/damned/guilds/fighter/fighter_shop",
 	      "north" : "/d/damned/guilds/fighter/train_room" ]) );
 

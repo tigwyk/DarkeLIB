@@ -17,5 +17,6 @@ void create() {
     0
 ext);
     add_exit(ROOMS+"majestyave", "south");
+    add_exit("d/damned/guilds/join_rooms/jedi_join", "west");
     //add_exit("/d/damned/virtual/room_10_10.world", "plains");
 }
