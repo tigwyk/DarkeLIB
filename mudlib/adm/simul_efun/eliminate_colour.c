@@ -9,5 +9,5 @@
 
 string eliminate_colour(string str) {
     if(!str) return "";
-    return (string)TERMINAL_D->eliminate_colour(str);
+    return (string)decolorize(str);
 }
