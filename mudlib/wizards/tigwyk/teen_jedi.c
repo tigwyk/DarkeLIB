@@ -6,10 +6,10 @@ create() {
 	object weap;
 
 	::create();
-	set_name("teen jedi");
-	set_id(({"jedi","teen jedi", "jedi teen", "teen"}) );
+	set_name("jedi teenager");
+	set_id(({"jedi","teen jedi", "jedi teen", "teenager","teen","jedi teenager"}) );
 	set_level(5);
-	set_short("teenage Jedi");
+	set_short("Jedi teenager");
 	set_long("A distant cousin of someone's uncle.");
 
 	set_body_type("human");
