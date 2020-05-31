@@ -20,9 +20,9 @@ class uil {
 
 static int count;
 mapping all_lockers;
-mapping *obj_register = allocate(10);
-class uil *unique_id = allocate(10);
-class uil *unreg_at_reboot = allocate(10);
+mapping *obj_register = allocate(1000);
+class uil *unique_id = allocate(1000);
+class uil *unreg_at_reboot = allocate(1000);
 
 void save_obj_register(int idx);
 void save_all_lockers();
@@ -57,7 +57,7 @@ void downward_compat() {
     if(sscanf(file, "%s_%d.o", key, idx) != 2) continue;
     if(!(tuil = find_uid_list(key))) {
       i = 0;
-      if(unique_id[9]) {
+      if(unique_id[999]) {
 	write("Unique id list is full.  Error.");
 	return;
       }
@@ -110,7 +110,7 @@ void downward_compat() {
 class uil find_uid_list(string key) {
   int i = 0;
 
-  while(i < 10 && unique_id[i]) {
+  while(i < 1000 && unique_id[i]) {
     if(unique_id[i]->key == key)
       return unique_id[i];
     i++;
@@ -121,7 +121,7 @@ class uil find_uid_list(string key) {
 class uil find_uar_list(string key) {
   int i;
   
-  while(i < 10 && unreg_at_reboot[i]) {
+  while(i < 1000 && unreg_at_reboot[i]) {
     if(unreg_at_reboot[i]->key == key)
       return unreg_at_reboot[i];
     i++;
@@ -173,7 +173,7 @@ int register_item(string key) {
   int i;
 
   if(!(tuil = find_uid_list(key))) {
-    if(unique_id[9]) {
+    if(unique_id[999]) {
       error("Cannot register file, uid list full!\n");
       return 0;
     }
@@ -200,7 +200,7 @@ int *register_n_items(string key, int num) {
   int i, tmp;
 
   if(!(tuil = find_uid_list(key))) {
-    if(unique_id[9]) {
+    if(unique_id[999]) {
       error("Cannot register file, uid list full!\n");
       return 0;
     }
@@ -289,7 +289,7 @@ void create() {
 				   "/unreg_at_reboot.v")) {
       rm(DIR_SECURE_DAEMONS_SAVE+"/unreg_at_reboot.v");
   }
-  for(i=0; i<10; i++) {
+  for(i=0; i<1000; i++) {
     if(file_exists(DIR_SECURE_DAEMONS_SAVE+
 		   sprintf("/obj_register_%d.v", i)))
       obj_register[i] = restore_variable(read_file(DIR_SECURE_DAEMONS_SAVE+
@@ -505,7 +505,7 @@ private void manage_lockers() {
   * Initialize the unique id list for building from scratch.
   */
   
-  unique_id = allocate(10);
+  unique_id = allocate(1000);
   unique_id[0] = new(class uil);
   unique_id[0]->key = "obj";
   unique_id[0]->bitlist = "";
@@ -532,8 +532,8 @@ private void manage_lockers() {
       
       if(!tuil) {
         i = 0;
-        while(i < 10 && unique_id[i]) i++;
-        if(i < 10) {
+        while(i < 1000 && unique_id[i]) i++;
+        if(i < 1000) {
           unique_id[i] = new(class uil);
           unique_id[i]->key = key;
           unique_id[i]->bitlist = "";
@@ -569,7 +569,7 @@ private void manage_lockers() {
 
   tuil = find_uid_list("locker");
   otuil = find_uid_list("obj");
-  for(i = 0; i < 10; i++) {
+  for(i = 0; i < 1000; i++) {
     obj_reg = obj_register[i];
     if(!obj_reg) continue;
     lox = ({});
@@ -618,7 +618,7 @@ private void manage_lockers() {
   * in the unique id list.
   */
 
-  for(i=0; i<10; i++) {
+  for(i=0; i<1000; i++) {
     tuil = unique_id[i];
     if(!tuil) continue;
 
@@ -660,7 +660,7 @@ private void manage_lockers() {
 
   save_unique_id();
   save_all_lockers();
-  for(i=0; i<10; i++) if(obj_register[i]) save_obj_register(i);
+  for(i=0; i<1000; i++) if(obj_register[i]) save_obj_register(i);
 
   return;
 }
