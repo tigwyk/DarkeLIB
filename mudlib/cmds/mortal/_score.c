@@ -225,7 +225,7 @@ string         *ADVENTURERa_PIC = (
 			      borg = "%^BLUE%^BOLD%^";
 			      break;
 			  case 46..54:
-			      borg = "%^GREEN%^BOLD%^";
+			      borg = "%^COLOR46%^BOLD%^";
 			      break;
 			  default:
 			      borg = "";
@@ -237,7 +237,7 @@ string         *ADVENTURERa_PIC = (
 			      borg = "";
 			      break;
 			  case 7..14:
-			      borg = "%^BOLD%^GREEN%^";
+			      borg = "%^COLOR46%^BOLD%^";
 			      break;
 			  case 15..30:
 			      borg = "%^BOLD%^BLUE%^";
