@@ -276,7 +276,7 @@ int extra_wield() {
   }
 
   string query_s_color() {
-	return eliminate_colour(query_color());
+	return decolorize(query_color());
   }
   
 string *query_id() {
