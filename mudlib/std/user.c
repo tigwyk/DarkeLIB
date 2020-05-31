@@ -1096,7 +1096,7 @@ void receive_message(string msg_class, string msg) {
     if(!term_info) reset_terminal();
     if(query_colour(msg_class) &&
       query_colour(msg_class) != "")
-	msg = ansi_convert(query_colour(msg_class)) + eliminate_colour(msg);
+	msg = ansi_convert(query_colour(msg_class)) + decolorize(msg);
     for(i=0, max=sizeof(words=explode(msg, "%^")); i<max; i++)
 	if(term_info[words[i]]) words[i] = term_info[words[i]];
     receive(implode(words, "")+term_info["RESET"]);
@@ -1424,8 +1424,8 @@ static private int register_channels() {
     if(query_guild()) channels += ({ query_guild() });
     if(query_level() > 1) channels += ({ "arena" });
     if(query_level() > 1) channels += ({ "chat" });
-    if(query_level() > 1) channels += ({ "bid" });
-    if(query_level() > 1) channels += ({ "darkechat" });
+    if(query_level() > 1) channels += ({ "trade" });
+    //if(query_level() > 1) channels += ({ "darkechat" });
     if(this_player()->query_class() )
     gm = "/d/damned/guilds/join_rooms/"+(string)this_player()->query_class()+"_join.c";
     else gm=0;
