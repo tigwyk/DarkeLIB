@@ -69,6 +69,7 @@ string identify(mixed a);
 #include "/adm/simul_efun/gender.c"
 #include "/adm/simul_efun/skill_contest.c"
 #include "/adm/simul_efun/do_critical.c"
+#include "/adm/simul_efun/decolorize.c"
 #include "/adm/simul_efun/eliminate_colour.c"
 //#include "/adm/simul_efun/arenap.c"
 //#include "/adm/simul_efun/arena_ownerp.c"
@@ -82,5 +83,4 @@ string identify(mixed a);
 #include "/adm/simul_efun/write_border.c"
 #include "/adm/simul_efun/legendp.c"
 #include "/adm/simul_efun/herop.c"
-#include "/adm/simul_efun/decolorize.c"
 #include "/adm/simul_efun/tail.c"
