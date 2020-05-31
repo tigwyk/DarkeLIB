@@ -34,7 +34,7 @@
 # time and its functionality in the future is uncertain.
 # ZNOTE: Approval removal in favor of mentor expansion unless
 # this is a good place to put your QC personnel?
-(approval): 
+(approval): tigwyk
 #
 # DANGER: add people to (mudlib) with extreem care, people in this
 # group _potentially_ could su themselves
