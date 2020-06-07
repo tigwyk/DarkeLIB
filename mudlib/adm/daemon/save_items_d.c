@@ -329,8 +329,7 @@ void update_lockers(object env) {
   if(!env) return;
   if(!env->query_is_locker_room()) return;
   room_file = file_name(env);
-  inv = filter_array(all_inventory(env), (: call_other :),
-		     "query_is_locker");
+  inv = filter_array(all_inventory(env), (: call_other :),"query_is_locker");
   if(!inv || !(i=sizeof(inv))) {
     map_delete(all_lockers, room_file);
     save_all_lockers();
