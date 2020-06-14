@@ -418,12 +418,10 @@ if(!caster->query_skill(props["skill"]) && !props["ritual final"] && !props["rit
 	"power" : power, "arg" : xtra_arg ]);
     if(!props["casting time"]) props["casting time"] = 1;
 
-	if(props["ritual dud"] || props["ritual spell"]){
+if(props["ritual dud"] || props["ritual spell"]) {
 	message("info","%^GREEN%^You begin casting your part of the ritual spell.", caster);
 	message("info","%^GREEN%^" +caster->query_cap_name()+" begins casting a ritual spell with "+caster->query_possessive()+" group.", environment(caster), ({caster}));
-}
-
-else{
+} else {
     message("info","%^CYAN%^You begin your casting.",caster);
     message("info","%^CYAN%^" + (string)caster->query_cap_name() +
 	" begins casting a spell.",
@@ -433,10 +431,11 @@ else{
 }
 
     bonus = ({});
-	if(props["ritual bonus"] || props["ritual bonus"] > 0){
+	if(props["ritual bonus"] || props["ritual bonus"] > 0) {
         props["extra power"] += props["ritual bonus"];
         call_value["power"] += props["ritual bonus"];
-}
+	}
+
     if((int)caster->query_skill(props["skill"]) > 100) {
       i = (int)caster->query_skill(props["skill"]) / 100;
       if(i > 0) set_property("extra power", 0);
@@ -470,11 +469,11 @@ else{
           bonus += ({ "%^CYAN%^Bonus:%^RESET%^ NO mp cost!" });
           props["base mp cost"] = 0;
           break;
-/*        case 10:
+        case 10:
           bonus += ({ "%^CYAN%^Bonus:%^RESET%^ Instant cast!" });
           set("instant cast", 1);
           break;
-*/
+
 //like paladins need that BS ^^^^^ or cLS - parnell 99
         }
       }
@@ -616,13 +615,19 @@ void do_spell(mapping info) {
     int mp_cost;
 	object leader;
 
-    caster = info["caster"]; target = info["target"];
-	 power = info["power"]; args = info["arg"];
-   if(!caster){ TO->remove();return;}
+	caster = info["caster"];
+	target = info["target"];
+	power = info["power"];
+	args = info["arg"];
+
+   if(!caster) {
+	   TO->remove();
+	   return;
+   	}
     caster->set_casting(0);
     caster->set_magic_round(0);
     caster_env = environment(caster);
-        if(environment(caster)->query_property("no spell")) {
+    if(environment(caster)->query_property("no spell")) {
 	message("info","Mystic forces prevent casting.",caster);
 	remove();
 	return;
@@ -642,23 +647,24 @@ void do_spell(mapping info) {
     if(!props["no target"]) {
 	switch(props["target type"]) {
 	    case "any":
-	  if(query_property("can be in room"))
-		at = present(target, environment(caster));
-		else at = 0;
-		if(!at) at = present(target,caster);
-		break;
+			if(query_property("can be in room"))
+				at = present(target, environment(caster));
+			else 
+				at = 0;
+			if(!at) at = present(target,caster);
+			break;
 	    case "player":
-		if(!props["must be present"])
-		at = find_player(target);
-		else at = present(target,caster_env);
-		if(at && !at->is_player()) at = 0;
-		break;
+			if(!props["must be present"])
+			at = find_player(target);
+			else at = present(target,caster_env);
+			if(at && !at->is_player()) at = 0;
+			break;
 	    case "living":
 	    default:
-		if(!props["must be present"])
-		at = find_living(target);
-		else at = present(target,caster_env);
-		if(at && !living(at))at=0;
+			if(!props["must be present"])
+			at = find_living(target);
+			else at = present(target,caster_env);
+			if(at && !living(at))at=0;
 	}
 	if(!at) { message("info","Can't find "+target+" here!  "
 		"Your spell fails.",caster); return; }
@@ -707,15 +713,11 @@ void do_spell(mapping info) {
 	return;
     }
     if(at && living(at)) {
-      props["caster message"] = replace_string(props["caster message"],"$T",
-	(string)at->query_cap_name());
-      props["observer message"] = replace_string(props["observer message"],"$T",
-	(string)at->query_cap_name());
-    } else if(objectp(at)) {
-      props["caster message"] = replace_string(props["caster message"],"$T",
-	(string)at->query_short());
-      props["observer message"] = replace_string(props["observer message"],"$T",
-	(string)at->query_short());
+      props["caster message"] = replace_string(props["caster message"],"$T", (string)at->query_cap_name());
+      props["observer message"] = replace_string(props["observer message"],"$T", (string)at->query_cap_name());
+    } else if(at && objectp(at)) {
+      props["caster message"] = replace_string(props["caster message"],"$T", (string)at->query_short());
+      props["observer message"] = replace_string(props["observer message"],"$T", (string)at->query_short());
     }
     if(props["target observer message"]) {
     if(at && living(at))
