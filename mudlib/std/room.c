@@ -69,14 +69,15 @@ int clean_up() {
   object ob;
 
   if(query_property("storage room")) return 0;
+
   foreach(ob in inv) {
-    if(ob->is_player() && interactive(ob) &&
-       query_idle(ob) < 3600) return 1;
-    if(ob->is_pet() && stringp(ob->query_owner()) &&
-       find_player((string)ob->query_owner())) return 1;
-        if(ob->query_property("no clean"))
+    if(ob->is_player() && interactive(ob) && query_idle(ob) < 3600) 
         return 1;
-       reset_eval_cost();
+    if(ob->is_pet() && stringp(ob->query_owner()) && find_player((string)ob->query_owner())) 
+        return 1;
+    if(ob->query_property("no clean"))
+        return 1;
+    reset_eval_cost();
   }
   inv = deep_inventory(this_object());
   foreach(ob in inv) {
