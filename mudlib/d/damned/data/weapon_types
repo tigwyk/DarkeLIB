@@ -70,6 +70,29 @@ parry_bonus:::
 verb:::
 "chop"
 
+(blaster):
+wc:::
+10;"crushing"
+type:::
+"blaster"
+ranged:::
+1
+id:::
+({"blaster"})
+short:::
+"blaster"
+long:::
+"This is a rather large blaster rifle."
+weight:::
+210
+value:::
+50
+ac:::
+4
+parry_bonus:::
+-20
+verb:::
+"shoot"
 
 (laser-axe):
 wc:::
