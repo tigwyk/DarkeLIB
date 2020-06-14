@@ -318,9 +318,10 @@ string query_short() {
 }*/
 
 string query_short() {
-  if(this_player())
+  // Not sure why this was checking for players but the spell code didn't like a zero result.
+  //if(this_player())
     return ::query_short();
-    return 0;
+  //return 0;
 }
 
 int query_is_locker() {
