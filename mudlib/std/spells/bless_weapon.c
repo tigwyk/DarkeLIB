@@ -113,7 +113,7 @@ void finish_work(object caster, object at, int power) {
   i = sizeof(tmp);
   while(i--) {
     if(pointerp(tmp[i]) && sizeof(tmp[i]) == 2 &&
-       eliminate_colour(tmp[i][0]) == "This weapon is a Blessed Weapon.") idx = 1;
+       decolorize(tmp[i][0]) == "This weapon is a Blessed Weapon.") idx = 1;
   }
   if(idx < 0)
     tmp += ({ ({ "This weapon is a %^BOLD%^Blessed Weapon%^RESET%^." ,
