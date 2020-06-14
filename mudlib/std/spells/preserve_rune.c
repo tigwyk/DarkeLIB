@@ -64,7 +64,7 @@ void spell_func(object caster, object at, int power, string args, int flag) {
     remove();
     return;
   }
-  if((int)at->query_level() > ((props["extra power"])?(power-props["extra power"]):power)) {
+  if((int)at->query_level() > (props["extra power"] ? power + props["extra power"] : power)) {
     message("info", "You must cast this spell at a power equal to or greater than the rune's power.",
 	    caster);
 	  caster->add_mp(props["mp cost"]);
