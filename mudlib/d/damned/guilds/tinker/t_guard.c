@@ -24,7 +24,7 @@ create() {
     set_stats("strength", 300);
     set_property("handedness", "right hand");
     set_languages(({ "common" }));
-    new("/d/damned/virtual/long-sword_5.weapon")->
+    new("/d/damned/virtual/vibrosword_5.weapon")->
       move(this_object());
     new("/d/damned/virtual/large-shield.armour")->
       move(this_object());

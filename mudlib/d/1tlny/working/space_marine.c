@@ -120,7 +120,7 @@ void create() {
     set_property("handedness", "right hand");
 
 
-    ob = new("/d/damned/virtual/battle-axe_6.weapon");
+    ob = new("/d/damned/virtual/vibroaxe_6.weapon");
     ob -> set("short", "%^BOLD%^Power%^RESET%^Axe");
     ob -> set("long", @EndText
 A Power Axe is a Power Weapon taking the form of a single or double-edged battle axe. Power Axes vary in length and design, and have been known to be crafted from one of any number of different materials, though usually Adamantium. As with all Power Weapons, when its power field is activated, usually by operating a control located on the hilt, the blade is sheathed in a lethal corona of disruptive energy. This energy field allows the blade to carve through flesh, bone and most forms of armour plate alike, making a Power Axe a highly effective close combat weapon.
@@ -293,7 +293,7 @@ if (loot == 7) {
 }
 else
 if (loot == 8) {   
-    ob = new("/d/damned/virtual/broad-sword_6.weapon");
+    ob = new("/d/damned/virtual/broad-vibrosword_6.weapon");
     ob->move(this_object());
     ob -> set("short", mtlname+" broad-sword of "+damage1+" and "+damage2);      
     ob->set_wc(zlevel);
@@ -303,7 +303,7 @@ if (loot == 8) {
 }
 else
 if (loot == 9) {   
-    ob = new("/d/damned/virtual/knife_6.weapon");
+    ob = new("/d/damned/virtual/vibroknife_6.weapon");
     ob->move(this_object());
     ob -> set("short", mtlname+" knife of "+damage1+" and "+damage2);      
     ob->set_wc(zlevel);
@@ -323,7 +323,7 @@ if (loot == 10) {
 }
 else
 if (loot == 11) {   
-    ob = new("/d/damned/virtual/battle-axe_6.weapon");
+    ob = new("/d/damned/virtual/vibroaxe_6.weapon");
     ob->move(this_object());
     ob -> set("short", mtlname+" battle-axe of "+damage1+" and "+damage2);      
     ob->set_wc(zlevel);
@@ -333,7 +333,7 @@ if (loot == 11) {
 }
 else
 if (loot == 12) {   
-    ob = new("/d/damned/virtual/two-handed-sword_6.weapon");
+    ob = new("/d/damned/virtual/two-handed-vibrosword_6.weapon");
     ob->move(this_object());
     ob -> set("short", mtlname+" two-handed-sword of "+damage1+" and "+damage2);      
     ob->set_wc(zlevel);

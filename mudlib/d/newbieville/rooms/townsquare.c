@@ -3,12 +3,14 @@
 #include <under.h>
 
 inherit ROOM;
+//inherit "/std/test_save_room";
 int x;
 void create() {
     ::create();
     
     set_property("light", 3);
     set_property("indoors", 0);
+    set_property("storage room", 1);
     set("short", "   0\n   | \n0--@--0\n   center \n   0\nTown Square.");
     set("long", @ext The Jakku marketplace stretches out across the desert. Vendor stalls of all shapes and sizes are setup all around the market. Countless creatures roam freely between the stalls, selling and buying, their many sounds filling the air. A ram-shackle welcome center has been created out of some sheet metal and spare parts.
     

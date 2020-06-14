@@ -26,7 +26,7 @@ void create() {
   set_skill("conjuration", 95);
   set_spell_level("blizzard", 6);
   add_spell("blizzard", "", 1);
-  ob=new("/d/damned/virtual/two-handed-sword_6.weapon");
+  ob=new("/d/damned/virtual/two-handed-vibrosword_6.weapon");
   ob->set_material("metal/mithril");
   ob->move(this_object());
   force_me("wield sword in right hand and left hand");
