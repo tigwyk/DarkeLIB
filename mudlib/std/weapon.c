@@ -74,9 +74,12 @@ void init() {
     add_action("__Unwield", "unwield");
     if(__Weapon["throwable"])
       add_action("throw_me", "throw");
+    if(__Weapon["ranged"])
+    add_action("shoot_me", "shoot");
 }
 
 void set_throwable(int x) { __Weapon["throwable"] = x; }
+void set_ranged(int x) { __Weapon["ranged"] = x; }
 
 int throw_me(string arg) {
   string what, at, *wc_keys, limb, *crits;
@@ -207,6 +210,120 @@ int throw_me(string arg) {
   }
   do_critical(this_player(), who, crits);
   this_object()->remove();
+  return 1;
+}
+
+int shoot_me(string arg) {
+  string what, at, *wc_keys, limb, *crits;
+  object who;
+  mapping wc, tmp_res;
+  int res, i;
+  mixed w_hit, tmp_mix;
+
+  if(sscanf(arg, "%s with %s", at, what) != 2) return 0;
+  if(environment(this_player())->query_property("no attack")) {
+    write("Mystic forces prevent your aggression.");
+    return 1;
+  }
+  wc_keys = (string *)this_player()->query_wielding_limbs();
+  if(!wc_keys || !(i=sizeof(wc_keys))) {
+    write("You cannot shoot a weapon with no wielding limbs!");
+    return 1;
+  }
+  res = 0;
+  while(i--)
+    if(!this_player()->query_weapon(wc_keys[i])) res = 1;
+  if(!res) {
+    write("You must have a free hand to shoot a weapon.");
+    return 1;
+  }
+  if(present(what, this_player()) != this_object()) return 0;
+  if(time() - (int)this_player()->query("last throw") < 4) {
+    write("You may only shoot a weapon every other round.");
+    return 1;
+  }
+  this_player()->set("last throw", time());
+  if(!this_object()->query_wielded()) {
+    write("You may not shoot an unwielded weapon.");
+    return 1;
+  }
+  who = present(at, environment(this_player()));
+  if(!who) {
+    write("There is no '"+at+"' here.");
+    return 1;
+  }
+  if(!living(who)) {
+    write("You could do that, but I doubt it would do much good.");
+    return 1;
+  }
+  message("my_combat", "You shoot at "+ (string)who->query_cap_name()+" with your "+(string)this_object()->query_name() +".", this_player());
+  res = (skill_contest((int)this_player()->query_skill(this_object()->query_type()),
+		       ((int)who->query_skill("dodge") -
+			to_int(percent((int)who->query_internal_encumbrance(),
+				       (int)who->
+				       query_max_internal_encumbrance()))),
+		       1) != 1 && !who->query_paralyzed());
+  res = (res || skill_contest((int)this_player()->query_skill(this_object()->query_type()),
+			      (int)who->query_skill("parry missile"), 1) != 1);
+  who->kill_ob(this_player(), 1);
+  if(res) {
+    message("my_combat", "You miss pitifully.", this_player());
+    message("other_combat", (string)this_player()->query_cap_name() +" misses you with a shot from "+possessive(this_player())+" "+(string)this_object()->query_name()+".",who);
+    message("other_combat", (string)this_player()->query_cap_name()+" shoots at "+ (string)who->query_cap_name() + " but misses pitifully.", all_inventory(environment(this_player())),
+	    ({ this_player(), who }) );
+    return 1;
+  }
+  message("other_combat", (string)this_player()->query_cap_name() +" shoots you with "+possessive(this_player())+" "+(string)this_object()->query_name()+".",who);
+  message("my_combat", "You hit "+objective(who)+" with your shot!", this_player());
+  message("other_combat", (string)this_player()->query_cap_name()+" shoots at "+ (string)who->query_cap_name() +", hitting "+ objective(who)+".",all_inventory(environment(this_player())),({ this_player(), who }) );
+  wc = (mapping)this_player()->get_damage(this_object());
+  if(!mapp(wc)) return 1;
+  w_hit = this_object()->query_hit();
+  if(functionp(w_hit)) {
+    w_hit = (*w_hit)(who);
+    if(intp(w_hit)) tmp_res = ([ "crushing" : w_hit ]);
+    else if(mapp(w_hit)) tmp_res = w_hit;
+  } else if(pointerp(w_hit)) {
+    i = sizeof(w_hit);
+    tmp_res = ([]);
+    while(i--) {
+      if(!functionp(w_hit[i])) continue;
+      tmp_mix = (*w_hit[i])(who);
+      if(intp(tmp_mix)) tmp_res += ([ "crushing" : tmp_mix ]);
+      else if(mapp(tmp_mix)) tmp_res += tmp_mix;
+    }
+  }
+  if(!tmp_res) tmp_res = ([]);
+  wc += tmp_res;
+  wc_keys = keys(wc);
+  i = sizeof(wc_keys);
+  limb = (string)who->return_target_limb();
+  if(!limb) return 1;
+  crits = ({});
+  while(i--) {
+    res = wc[wc_keys[i]] - (int)who->query_ac(limb, wc_keys[i]);
+    if(res < 0) res = 0;
+    who->do_damage(limb, res * 2);
+    res -= (random(100) - 50);
+    switch(res) {
+    case 0..20:
+      crits += ({ sprintf("%s A", wc_keys[i]) });
+      break;
+    case 21..40:
+      crits += ({ sprintf("%s B", wc_keys[i]) });
+      break;
+    case 41..65:
+      crits += ({ sprintf("%s C", wc_keys[i]) });
+      break;
+    case 66..90:
+      crits += ({ sprintf("%s D", wc_keys[i]) });
+      break;
+    case 91..10000:
+      crits += ({ sprintf("%s E", wc_keys[i]) });
+      break;
+    }
+  }
+  do_critical(this_player(), who, crits);
   return 1;
 }
 
